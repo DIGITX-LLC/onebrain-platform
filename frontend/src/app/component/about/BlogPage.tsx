@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-// import { Card, CardContent } from '@/components/ui/card';
-// import { Button } from '@/components/ui/button';
+import { Card, CardContent } from './card';
 import { motion, animate, useMotionValue, useMotionTemplate } from 'framer-motion';
 import ButtonAnimatedGradient from "./ButtonAnimatedGradient";
 import Link from "next/link";
@@ -23,7 +22,7 @@ export default function BlogPage() {
       repeat: Infinity,
       repeatType: "mirror",
     });
-  }, []);
+  }, [color]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -70,7 +69,6 @@ export default function BlogPage() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      const isScrollingUp = prevScrollPos > currentScrollPos;
       setIsSticky(currentScrollPos > 50);
       setPrevScrollPos(currentScrollPos);
     };
@@ -79,8 +77,8 @@ export default function BlogPage() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [prevScrollPos]);
 
-  const X = ({ size }) => <span style={{ fontSize: size }}>X</span>;
-  const Menu = ({ size }) => <span style={{ fontSize: size }}>☰</span>;
+  const X = ({ size }: { size: number }) => <span style={{ fontSize: size }}>X</span>;
+  const Menu = ({ size }: { size: number }) => <span style={{ fontSize: size }}>☰</span>;
 
   return (
     <div className='bg-[#030205] relative hero-space min-h-screen'>
@@ -223,7 +221,7 @@ export default function BlogPage() {
                     <Link href={blog.link}>
                       <ButtonAnimatedGradient
                         text="Read More"
-                        gradientFrom="#0f1747" f
+                        gradientFrom="#0f1747"
                         gradientTo="#0f1747"
                         borderColor="#b2b8f6"
                         className="w-full h-[40px] rounded-xl font-normal block"

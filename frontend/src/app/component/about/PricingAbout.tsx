@@ -3,8 +3,8 @@ import { Star, Zap, Crown, Sparkles, CheckCircle2 } from "lucide-react";
 // import { AIToolsIcons } from "../../data/customData/Tools-Data";
 
 // Placeholder data
-const AIModelIcons: any = {};
-const AIToolsIcons: any = {};
+const AIModelIcons: Record<string, string> = {};
+const AIToolsIcons: Record<string, string> = {};
 
 interface GenerateImageUpTo {
   [key: string]: {
@@ -250,7 +250,7 @@ export default function PricingAbout({
   ];
 
   return (
-    <div className="mx-auto max-w-7xl px-4">
+    <div className="mx-auto px-4">
       {/* Plans Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-9">
         {fixedPlans.map((plan, index) => {

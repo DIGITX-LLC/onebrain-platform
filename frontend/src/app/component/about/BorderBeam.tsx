@@ -11,6 +11,8 @@ export const BorderBeam = ({ size, duration, delay }: BorderBeamProps) => {
     <motion.div
       className="absolute inset-0 border-2 border-transparent rounded-full"
       style={{
+        width: size,
+        height: size,
         backgroundImage: "linear-gradient(45deg, #ff007f, #4f8eff, #ff007f, #4f8eff)",
         backgroundSize: "400% 400%",
       }}
@@ -22,10 +24,6 @@ export const BorderBeam = ({ size, duration, delay }: BorderBeamProps) => {
         repeat: Infinity,
         delay: delay,
         ease: "linear",
-      }}
-      style={{
-        width: size,
-        height: size,
       }}
     />
   );

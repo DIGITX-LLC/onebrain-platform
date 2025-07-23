@@ -1,24 +1,22 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
-import { ArrowUpRight, Facebook, } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import FaqSection from "./FaqSection";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
-import AnimatedBeam from "../about/AnimatedBeam";
-// import { ContainerScroll } from "../ui/container-scroll-animation";
-import ButtonAnimatedGradient from "./ButtonAnimatedGradient";
 import PricingAbout from "./PricingAbout";
-import PlanAndTopUpPlan from "./PricingAbout";
 import Vo3TrendingSection from "./Vo3TrendingSection";
 import DynamicButton from "./DynamicButton";
+import Image from "next/image";
 // import oneBrainLogo from "/oneBrainLogo.svg";
 // import FacebookIcon from '/Frame.svg';
 // import qwenAI from '/Group-427323055.svg';
 // import mistralAI from '/Group-427323058.svg';
 // import perplexityAI from '/Group-427323057.svg';
+
+const tryPro = "/pro.svg";
 
 // Define interface for update object
 interface Update {
@@ -30,7 +28,7 @@ interface Update {
 }
 
 // Update Card Component with optimized image loading
-const UpdateCard: React.FC<{ update: Update; index: number }> = ({ update, index }) => {
+const UpdateCard: React.FC<{ update: Update }> = ({ update }) => {
   const [mainImageLoaded, setMainImageLoaded] = useState(false);
   const [statusImageLoaded, setStatusImageLoaded] = useState(false);
   const [mainImageError, setMainImageError] = useState(false);
@@ -61,12 +59,13 @@ const UpdateCard: React.FC<{ update: Update; index: number }> = ({ update, index
                 </div>
               </div>
             )}
-            <img
+            <Image
               src={update.image}
               alt={`Version ${update.version} feature overview`}
+              width={240}
+              height={208}
               className={`mx-auto h-52 w-60 transition-opacity duration-300 ${mainImageLoaded ? 'opacity-100' : 'opacity-0 absolute'
                 }`}
-              loading="lazy"
               onLoad={() => setMainImageLoaded(true)}
               onError={() => {
                 setMainImageError(true);
@@ -87,12 +86,13 @@ const UpdateCard: React.FC<{ update: Update; index: number }> = ({ update, index
               <span className="text-xs text-gray-300">{update.status}</span>
             </div>
           )}
-          <img
+          <Image
             src={update.statusImage}
             alt={`${update.status} status badge`}
+            width={80}
+            height={24}
             className={`h-6 transition-opacity duration-300 ${statusImageLoaded ? 'opacity-100' : 'opacity-0 absolute'
               }`}
-            loading="lazy"
             onLoad={() => setStatusImageLoaded(true)}
             onError={() => {
               setStatusImageError(true);
@@ -119,6 +119,8 @@ const UpdateCard: React.FC<{ update: Update; index: number }> = ({ update, index
 
 export default function AboutUs() {
   const pathname = usePathname();
+  // Add hydration state to prevent mismatches
+  const [isHydrated, setIsHydrated] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [isTablet, setIsTablet] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -126,9 +128,10 @@ export default function AboutUs() {
   const [activeSection, setActiveSection] = useState("");
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
+  const [imageErrors, setImageErrors] = useState<{[key: string]: boolean}>({});
 
   // Added ambassadors state
-  const [ambassadors, setAmbassadors] = useState([
+  const [ambassadors, _setAmbassadors] = useState([
     {
       name: "Ibrahim khan",
       university: "Barishal University",
@@ -173,7 +176,7 @@ export default function AboutUs() {
     },
   ]);
   // Duplicate for seamless loop
-  const allAmbassadors = [...ambassadors, ...ambassadors];
+  const _allAmbassadors = [...ambassadors, ...ambassadors];
 
   const logos = [
     { name: "Qwen", src: "/Group-427323055.svg" },
@@ -198,7 +201,7 @@ export default function AboutUs() {
   };
 
   // Duplicate logos for seamless infinite scroll
-  const allLogo = [...logos, ...logos, ...logos, ...logos, ...logos];
+  const _allLogo = [...logos, ...logos, ...logos, ...logos, ...logos];
   const trustedByArray = Object.values(trustedBy);
   // Active route function
   const isActiveRoute = (route: string) => {
@@ -210,9 +213,9 @@ export default function AboutUs() {
     return activeSection === section;
   };
 
-  // Update active section based on scroll position
+  // Update active section based on scroll position - only after hydration
   useEffect(() => {
-    if (typeof window === 'undefined') return;
+    if (!isHydrated || typeof window === 'undefined') return;
 
     const handleScroll = () => {
       const sections = [
@@ -247,7 +250,7 @@ export default function AboutUs() {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isHydrated]);
 
 
 
@@ -281,7 +284,7 @@ export default function AboutUs() {
       version: "1.4.8",
       status: "Planned",
       statusImage:
-        "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned.svg  ",
+        "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned-image.svg",
       features: [
         "Midjourney image generation model added with dedicated UI.",
@@ -307,8 +310,13 @@ export default function AboutUs() {
     }
   };
 
+  // Hydration effect - runs only on client
   useEffect(() => {
-    if (typeof window === 'undefined') return;
+    setIsHydrated(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isHydrated || typeof window === 'undefined') return;
 
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -331,6 +339,7 @@ export default function AboutUs() {
       }
     };
 
+    // Initialize responsive states after hydration
     handleResize();
 
     window.addEventListener("resize", handleResize);
@@ -340,7 +349,7 @@ export default function AboutUs() {
       window.removeEventListener("resize", handleResize);
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isOpen, isScrolling, isMobile, isTablet]);
+  }, [isHydrated, isOpen, isScrolling, isMobile, isTablet]);
 
   const toggleMenu = () => {
     console.log("Toggling menu - current:", isOpen, "showBurgerMenu:", showBurgerMenu);
@@ -448,7 +457,8 @@ export default function AboutUs() {
     setOverlayColor({ x, y });
   };
 
-  const showBurgerMenu = isMobile || isTablet;
+  // Only show burger menu after hydration to prevent mismatch
+  const showBurgerMenu = isHydrated && (isMobile || isTablet);
 
   // Slider functions
   const nextSlide = () => {
@@ -463,23 +473,26 @@ export default function AboutUs() {
     setCurrentSlide(index);
   };
 
-  // Auto-navigation effect
+  // Auto-navigation effect - only after hydration
   useEffect(() => {
+    if (!isHydrated) return;
+    
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % 2);
     }, 3000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [isHydrated]);
 
-  // Update slider position when currentSlide changes
+  // Update slider position when currentSlide changes - only after hydration
   useEffect(() => {
-    if (typeof window === 'undefined') return;
+    if (!isHydrated || typeof window === 'undefined') return;
+    
     const slider = document.getElementById('aiSlider');
     if (slider) {
       slider.style.transform = `translateX(-${currentSlide * 100}%)`;
     }
-  }, [currentSlide]);
+  }, [isHydrated, currentSlide]);
 
   return (
     <div
@@ -487,6 +500,7 @@ export default function AboutUs() {
       style={{
         background: 'linear-gradient(0deg, hsla(0, 0%, 0%, 1) 0%, hsla(240, 63%, 10%, 1) 95%, hsla(241, 61%, 26%, 1) 100%)'
       }}
+      suppressHydrationWarning={true}
     >
       {/* Navigation Header */}
       <div
@@ -511,14 +525,17 @@ export default function AboutUs() {
             }}
             className="flex-shrink-0 z-10"
           >
-            <img
+            <Image
               src="/oneBrainLogo.svg"
               alt="OneBrain Logo"
+              width={200}
+              height={40}
               className="h-6 w-[120px] pl-2 xs:h-7 xs:w-[140px] sm:h-8 sm:w-[160px] md:h-10 md:w-[200px]"
               id="index-0"
             />
           </Link>
-          {showBurgerMenu && (
+          {/* Show burger menu only after hydration and on mobile/tablet */}
+        {showBurgerMenu && (
           <button
             onClick={toggleMenu}
             className="text-white focus:outline-none p-2 hover:bg-white/20 rounded-full transition-all duration-200 relative z-20 flex-shrink-0"
@@ -527,8 +544,8 @@ export default function AboutUs() {
             {isOpen ? <X size={20} className="sm:w-6 sm:h-6" /> : <Menu size={20} className="sm:w-6 sm:h-6" />}
           </button>
         )}
-          {/* Desktop Navigation - Middle */}
-          {!showBurgerMenu && (
+          {/* Desktop Navigation - Middle - Show by default until hydrated, then conditionally */}
+          {(!isHydrated || !showBurgerMenu) && (
             <nav className={`${isSticky ? ' ' : ' bg-white/5 border border-white/20'}  h-[40px] sm:h-[45px] flex items-center justify-center rounded-full transition-all duration-300`}>
               <ul className="flex items-center gap-1 xl:gap-2 text-gray-300 px-4">
                 {/* AI Models */}
@@ -654,8 +671,8 @@ export default function AboutUs() {
        
  
 
-        {/* Mobile Dropdown Menu */}
-        {showBurgerMenu && (
+        {/* Mobile Dropdown Menu - Only show after hydration */}
+        {isHydrated && showBurgerMenu && (
           <div
             className={`absolute top-full  right-0 mt-3 w-60 mx-3 sm:mx-4 transition-all duration-200 ease-in-out transform origin-top z-40 ${isOpen
               ? "opacity-100 scale-y-100 translate-y-0 visible"
@@ -764,7 +781,7 @@ export default function AboutUs() {
                   ) : (
                     <Link
                       href="/blog"
-                      onClick={(e) => {
+                      onClick={(_e) => {
                         console.log("Blog clicked");
                         setIsOpen(false);
                       }}
@@ -812,7 +829,7 @@ export default function AboutUs() {
                 <li className="px-5 py-1">
                   <Link
                     href="/login"
-                    onClick={(e) => {
+                    onClick={(_e) => {
                       console.log("Sign-in clicked");
                       setIsOpen(false);
                     }}
@@ -829,13 +846,10 @@ export default function AboutUs() {
           </div>
         )}
       </div>
-      <div className="mx-auto">
-
-
         {/* Hero Section */}
         <section className="min-h-screen flex flex-col items-center justify-center text-center bg-cover bg-center relative">
-          <div className="container mx-auto px-4">
-          <div className="relative w-full h-[320px] xs:h-[350px] sm:h-[400px] md:h-[450px] lg:h-[500px] xl:h-[550px] flex flex-col-reverse md:flex-row items-center justify-center px-4 md:gap-8 ">
+          <div className="container mx-auto">
+          <div className="relative w-full h-[320px] xs:h-[350px] sm:h-[400px] md:h-[450px] lg:h-[500px] xl:h-[550px] flex flex-col-reverse md:flex-row items-center justify-center md:gap-8 ">
             {/* Left Side - Text Section */}
             <div className="flex-1 flex items-center justify-center mt-8 md:mt-0">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-center md:text-left">
@@ -852,7 +866,7 @@ export default function AboutUs() {
                 </svg>
                 {/* Central Logo */}
                 <div className="absolute left-1/2 top-[50%] -translate-x-1/2 -translate-y-1/2 z-10 flex items-center justify-center shadow-lg" >
-                  <img className=" xs:w-[200px] xs:h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[380px] xl:h-[380px] 2xl:w-[400px] 2xl:h-[400px] object-contain" src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/OpenAI_Playground_2025-05-06_at_12.09.18_1__1_-removebg-preview.png" alt="OneBrain" />
+                  <Image className=" xs:w-[200px] xs:h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[380px] xl:h-[380px] 2xl:w-[400px] 2xl:h-[400px] object-contain" src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/OpenAI_Playground_2025-05-06_at_12.09.18_1__1_-removebg-preview.png" alt="OneBrain" width={400} height={400} />
                 </div>
                 {/* 8 AI Icons in a circle with glow */}
                 {[
@@ -898,7 +912,7 @@ export default function AboutUs() {
                         zIndex: 1,
                       }} />
                       {/* Icon */}
-                      <img src={icon.src} alt={icon.alt} style={{ width: '90%', height: '90%', position: 'relative', zIndex: 2, objectFit: 'contain' }} />
+                      <Image src={icon.src} alt={icon.alt} width={32} height={32} style={{ width: '90%', height: '90%', position: 'relative', zIndex: 2, objectFit: 'contain' }} />
                     </div>
                   );
                 })}
@@ -930,7 +944,7 @@ export default function AboutUs() {
 
         {/* AI Model Library */}
         <section className="text-center text-white -mt-4 xs:-mt-6 sm:-mt-8 md:-mt-12 lg:-mt-16 xl:-mt-20">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto">
             <h2 className="text-3xl  mb-10 font-bold mb-">
               <span className="text-white">Explore </span>
               <span className="bg-gradient-to-r from-[#BA87FC] to-[#6BA2FB] text-transparent bg-clip-text">OneBrain</span>
@@ -938,17 +952,41 @@ export default function AboutUs() {
 
             {/* AI Model Slider */}
             <div className="relative overflow-hidden rounded-2xl  ">
-              <div className="flex transition-transform duration-500 ease-in-out" id="aiSlider">
+              <div 
+                className="flex transition-transform duration-500 ease-in-out" 
+                id="aiSlider"
+                style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+              >
                 {/* Slide 1 - AI Models */}
                 <div className="w-full flex-shrink-0  ">
                   <div className="flex flex-col items-center">
 
                     <div className="w-full border-2 border-[#7da6ff]/80 rounded-xl">
-                      <img
-                        src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/explore-ai-models"
-                        alt="AI Models"
-                        className="w-full h-auto object-contain rounded-lg shadow-2xl"
-                      />
+                      {!imageErrors['ai-models'] ? (
+                        <img
+                          src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/explore-ai-models"
+                          alt="AI Models"
+                          className="w-full h-auto object-contain rounded-lg shadow-2xl"
+                          onError={(e) => {
+                            console.error('Failed to load AI Models image, showing placeholder...');
+                            setImageErrors(prev => ({...prev, 'ai-models': true}));
+                          }}
+                          loading="lazy"
+                        />
+                      ) : (
+                        <div className="w-full h-[400px] flex items-center justify-center bg-gradient-to-br from-[#1e293b] to-[#0f172a] rounded-lg">
+                          <div className="text-center p-8">
+                            <div className="text-6xl mb-4">🤖</div>
+                            <h3 className="text-2xl font-bold text-white mb-2">AI Models</h3>
+                            <p className="text-gray-400">Explore our collection of cutting-edge AI models</p>
+                            <div className="flex justify-center gap-4 mt-6">
+                              {['/models/chatgpt-black.svg', '/models/gemini.svg', '/models/cloude-black.svg', '/models/deepseek.svg'].map((icon, i) => (
+                                <Image key={i} src={icon} alt="AI Model" width={32} height={32} className="w-8 h-8 opacity-60" />
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      )}
                     </div>
 
                   </div>
@@ -959,11 +997,31 @@ export default function AboutUs() {
                   <div className="flex flex-col items-center">
 
                     <div className="w-full ">
-                      <img
-                        src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/explore-tools-model"
-                        alt="AI Tools"
-                        className="w-full h-auto object-contain rounded-lg shadow-2xl"
-                      />
+                      {!imageErrors['ai-tools'] ? (
+                        <img
+                          src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/explore-tools-model"
+                          alt="AI Tools"
+                          className="w-full h-auto object-contain rounded-lg shadow-2xl"
+                          onError={(e) => {
+                            console.error('Failed to load AI Tools image, showing placeholder...');
+                            setImageErrors(prev => ({...prev, 'ai-tools': true}));
+                          }}
+                          loading="lazy"
+                        />
+                      ) : (
+                        <div className="w-full h-[400px] flex items-center justify-center bg-gradient-to-br from-[#1e293b] to-[#0f172a] rounded-lg">
+                          <div className="text-center p-8">
+                            <div className="text-6xl mb-4">🛠️</div>
+                            <h3 className="text-2xl font-bold text-white mb-2">AI Tools</h3>
+                            <p className="text-gray-400">Discover powerful AI-driven tools and utilities</p>
+                            <div className="flex justify-center gap-4 mt-6">
+                              {['/models/ImageX.png', '/models/SpeechAI.svg', '/models/Humanizer.svg', '/models/vGen-ai_tools.svg'].map((icon, i) => (
+                                <Image key={i} src={icon} alt="AI Tool" width={32} height={32} className="w-8 h-8 opacity-60" />
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -996,38 +1054,16 @@ export default function AboutUs() {
         </section>
         {/* Trending Section */}
         <div className="py-16" id="vo3TrendingSection">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto">
             <Vo3TrendingSection />
           </div>
         </div>
-
-        {/* <section className="w-full py-12 px-4 md:px-8 animate-fadeIn">
-				<div className="max-w-6xl mx-auto text-center">
-					<h2 className="text-xl md:text-4xl font-bold mb-6 animate-slideUp">Feature Rollout: What's New 🔥</h2>
-					<div className="rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
-						<img
-							src="https://digitxevents.com/wp-content/uploads/2025/05/imagex_new.png"
-							alt="Trending Banner"
-							className="w-full h-auto object-cover"
-						/>
-					</div>
-					                <Link href='/login'>
-						<ButtonAnimatedGradient
-							text='Try ImageX'
-							gradientFrom='#0f1747'
-							gradientTo='#0f1747'
-							borderColor='#b2b8f6'
-							className='w-[200px] h-[45px] z-10 rounded-3xl md:mt-8 transform transition-transform duration-300 hover:scale-110 hover:shadow-lg'
-						/>
-					</Link>
-				</div>
-			</section> */}
         {/* Features Section */}
         <section
           id="featuresSection"
           className="py-16 relative"
         >
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto">
             <div className="py-6 rounded-lg text-center">
               <h2 className="md:text-4xl text-xxl font-semibold text-white">
                 Revolutionizing the workflow for thousands of users
@@ -1037,11 +1073,13 @@ export default function AboutUs() {
               {/* Logo Slider */}
               <div className="relative overflow-hidden mt-6 w-full">
                 <div className="flex animate-infinite-scroll space-x-10">
-                  {allLogo.map((logo, index) => (
-                    <img
+                  {_allLogo.map((logo, index) => (
+                    <Image
                       key={index}
                       src={logo.src}
                       alt={logo.name}
+                      width={120}
+                      height={40}
                       className="h-10 w-auto flex-shrink-0"
                     />
                   ))}
@@ -1053,9 +1091,9 @@ export default function AboutUs() {
 
         {/* Pricing segment Section */}
         <div className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto">
             <h2 className="md:text-4xl text-2xl text-white text-center flex items-center justify-center gap-2 mb-10">
-              Be The AI {/* <img src={tryPro} alt="pro" className="w-16 h-16" /> */}
+              Be The AI <img src={tryPro} alt="pro" className="w-16 h-16" /> 
             </h2>
             <div id="oneBrainPromoSection">
               <PricingAbout
@@ -1073,13 +1111,13 @@ export default function AboutUs() {
           id="updatesSection"
           className="py-16 text-white"
         >
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto">
           <h2 className="md:text-4xl text-3xl font-bold text-center mb-12">
             Brain Upgrading Log
           </h2>
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {updates.map((update, index) => (
-                <UpdateCard key={index} update={update} index={index} />
+                <UpdateCard key={index} update={update} />
               ))}
             </div>
           </div>
@@ -1087,7 +1125,7 @@ export default function AboutUs() {
 
         {/* join comunity Section */}
         <div className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto">
             <div className="flex justify-center items-center gap-4">
               <a
                 href="https://facebook.com/groups/2238159246577852/"
@@ -1180,19 +1218,21 @@ export default function AboutUs() {
   </Link>
 </div>
       </section>
-      {/* Partners Section */}
+              {/* Partners Section */}
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto">
             <h2 className="md:text-4xl text-xxl font-300 text-center mb-12">
               Trusted by outstanding teams worldwide
             </h2>
             <div className="relative overflow-hidden mt-6 w-full flex justify-center">
               <div className="flex animate-infinite-scroll space-x-10">
                 {[...trustedByArray, ...trustedByArray, ...trustedByArray].map((logo, index) => (
-                  <img
+                  <Image
                     key={index}
                     src={logo.src}
                     alt={logo.name}
+                    width={120}
+                    height={40}
                     className="h-10 w-auto flex-shrink-0"
                   />
                 ))}
@@ -1202,63 +1242,47 @@ export default function AboutUs() {
         </section>
         {/* FAQ Section */}
         <div className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto">
             <FaqSection />
           </div>
         </div>
 
         {/* Payment Partner section */}
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto">
             <h2 className="md:text-4xl text-xxl font-bold text-center mb-12">
               Payment Partners
             </h2>
-            <div className="relative overflow-hidden md:mt-6 w-full">
-                              {/* <img src={Payment} alt="partner logo" className="w-full" /> */}
+            <div className="relative overflow-hidden mt-6 w-full">
+              <Image
+                src="/payment_partner.svg"
+                alt="Payment Partners"
+                width={1200}
+                height={400}
+                className="w-full h-auto object-contain"
+              />
             </div>
           </div>
         </section>
 
         {/* social media section */}
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="container">
             <div className="flex items-center justify-center">
               <h2 className="text-base font-semibold text-white mr-10">
                 Follow Us
               </h2>
-              <div className="">
-                {/* <img src={SocialMedia} alt="partner logo" className="w-full" /> */}
-                <div className="flex items-center gap-4 ">
+              <div className="flex items-center gap-4 ">
                   <a
                     href="https://facebook.com/groups/2238159246577852/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img
+                    <Image
                       src="/Frame.svg"
                       alt="Facebook"
-                      className="w-5 h-5"
-                    />
-                  </a>
-                  <a
-                    href="https://www.instagram.com/onebrain.ai/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
-                      alt="Instagram"
-                      className="w-5 h-5"
-                    />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/company/onebrain-ai/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
-                      alt="Linkedin"
+                      width={20}
+                      height={20}
                       className="w-5 h-5"
                     />
                   </a>
@@ -1268,21 +1292,22 @@ export default function AboutUs() {
                     rel="noopener noreferrer"
                     className="w-5 h-5"
                   >
-                    <img
+                    <Image
                       src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
                       alt="WhatsApp"
+                      width={20}
+                      height={20}
                       className="w-5 h-5"
                     />
                   </a>
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Footer Section */}
         <footer className="py-16 relative text-white">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto">
             {/* Spotlight Effect */}
             <div
               onMouseMove={handleMouseMove}
@@ -1302,7 +1327,7 @@ export default function AboutUs() {
               }}
             />
 
-            <div className="container mx-auto border-t border-[#F1F3F414] pt-10 flex flex-col md:flex-row justify-between items-start text-white">
+            <div className="border-t border-[#F1F3F414] pt-10 flex flex-col md:flex-row justify-between items-start text-white">
               {/* Left Section - Branding */}
               <div>
                 {/* Logo */}
@@ -1313,9 +1338,11 @@ export default function AboutUs() {
                 /> */}
 
                 {/* Tagline */}
-                <img
+                <Image
                   src="https://digitxevents.com/wp-content/uploads/2025/07/Multiverse-of-AI.svg"
                   alt="Multiverse of AI"
+                  width={200}
+                  height={24}
                   className="mt-1 h-6 w-auto"
                 />
 
@@ -1338,9 +1365,11 @@ export default function AboutUs() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img
+                    <Image
                       src="https://digitxevents.com/wp-content/uploads/2025/07/digitx_logo.png"
                       alt="DIGITX"
+                      width={80}
+                      height={16}
                       className="h-4 w-auto inline-block"
                     />
                   </a>
@@ -1449,9 +1478,9 @@ export default function AboutUs() {
                 </ul>
               </div>
             </div>
-          </div>
+            </div>
           </div>
         </footer>
-      </div> </div>
+    </div>
   );
 }

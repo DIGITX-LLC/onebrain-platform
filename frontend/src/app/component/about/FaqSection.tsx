@@ -1,10 +1,8 @@
 "use client";
 
 import { useState } from 'react';
-import { FaFacebook, FaEnvelope } from 'react-icons/fa';
 import { IoIosArrowDown, IoIosArrowForward } from 'react-icons/io';
 import Link from "next/link";
-import ButtonAnimatedGradient from './ButtonAnimatedGradient';
 import DynamicButton from './DynamicButton';
 import { Mail } from 'lucide-react';
 // import Facebook from '/Facebook.svg';
@@ -85,12 +83,8 @@ To continue PRO model access, you can top up tokens or wait until your monthly r
               className="w-full "
             >
               <DynamicButton
-                label={
-                  <div className="flex items-center justify-center">
-                    <img src="/Facebook.svg" alt="facebook" className="mr-2 w-4 h-4" />
-                    Community Support
-                  </div>
-                }
+                label="Community Support"
+                icon={<img src="/Facebook.svg" alt="facebook" className="mr-2 w-4 h-4" />}
                 size="w-full h-[45px] mb-3 lg:mb-0 rounded-full font-normal p-0 text-sm flex items-center justify-center"
               />
             </a>
@@ -100,12 +94,8 @@ To continue PRO model access, you can top up tokens or wait until your monthly r
               className="w-full"
             >
               <DynamicButton
-                label={
-                  <div className="flex items-center justify-center">
-                    <Mail className="mr-2 w-4 h-4" />
-                    Email Support
-                  </div>
-                }
+                label="Email Support"
+                icon={<Mail className="mr-2 w-4 h-4" />}
                 size="w-full h-[45px] rounded-full font-normal p-0 text-sm flex items-center justify-center"
               />
             </a>

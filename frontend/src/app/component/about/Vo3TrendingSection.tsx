@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useRef, useState } from 'react';
-import ButtonAnimatedGradient from './ButtonAnimatedGradient';
 import DynamicButton from './DynamicButton';
 import Link from 'next/link';
 
@@ -33,7 +32,7 @@ const carouselCards = [
 ];
 
 export default function Vo3TrendingSection() {
-    const videoRef = useRef<HTMLVideoElement>(null);
+    const _videoRef = useRef<HTMLVideoElement>(null);
     const [isMuted, setIsMuted] = useState(true);
     const [isPlaying, setIsPlaying] = useState(true);
     const [centerIndex, setCenterIndex] = useState(1); // Start with the second card centered
@@ -85,7 +84,7 @@ export default function Vo3TrendingSection() {
         <div className="b text-white min-h-screen font-sans py-10">
             {/* Header Section */}
             <div className="text-center  mb-6">
-            <h2 className="text-2xl md:text-4xl font-bold mb-6 animate-slideUp">Feature Rollout: What's New 🔥</h2>
+            <h2 className="text-2xl md:text-4xl font-bold mb-6 animate-slideUp">Feature Rollout: What&apos;s New 🔥</h2>
                 <h1 className="text-5xl md:text-6xl font-bold m-0">
                     Break the silence 
                     <span 
@@ -103,8 +102,8 @@ export default function Vo3TrendingSection() {
                     </span>
                 </h1>
                 <p className="text-gray-300 text-lg mt-4 px-3 md:px-0">
-                    Create high-quality videos with Veo 3, Google's latest AI video generator.<br />
-                    Get the "Legend of AI" pro plan. Simply describe your idea and watch it come to life with native audio generation.
+                    Create high-quality videos with Veo 3, Google&apos;s latest AI video generator.<br />
+                    Get the &quot;Legend of AI&quot; pro plan. Simply describe your idea and watch it come to life with native audio generation.
                 </p>
                 <Link href='/login'>
                 <DynamicButton
@@ -123,7 +122,7 @@ export default function Vo3TrendingSection() {
                     }}
                 >
                     <video
-                        ref={videoRef}
+                        ref={_videoRef}
                         src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Veo3.mp4 "
                         className="w-full h-full object-cover  block"
                         controls={false}
@@ -137,8 +136,8 @@ export default function Vo3TrendingSection() {
                         {/* Mute/Unmute Button */}
                         <button
                             onClick={() => {
-                                if (videoRef.current) {
-                                    videoRef.current.muted = !isMuted;
+                                if (_videoRef.current) {
+                                    _videoRef.current.muted = !isMuted;
                                     setIsMuted(!isMuted);
                                 }
                             }}
@@ -154,11 +153,11 @@ export default function Vo3TrendingSection() {
                         {/* Play/Pause Button */}
                         <button
                             onClick={() => {
-                                if (videoRef.current) {
+                                if (_videoRef.current) {
                                     if (isPlaying) {
-                                        videoRef.current.pause();
+                                        _videoRef.current.pause();
                                     } else {
-                                        videoRef.current.play();
+                                        _videoRef.current.play();
                                     }
                                     setIsPlaying(!isPlaying);
                                 }
@@ -210,7 +209,7 @@ export default function Vo3TrendingSection() {
                 onTouchMove={handleDragMove}
                 onTouchEnd={handleDragEnd}
             >
-                {visibleIndices.map((idx, i) => {
+                {visibleIndices.map((idx, _i) => {
                     const card = carouselCards[idx];
                     const isCenter = idx === centerIndex;
                     const isVideo = card.img.endsWith('.mp4');

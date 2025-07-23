@@ -4,8 +4,16 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu, X, Share2 } from 'lucide-react';
 
+interface ButtonAnimatedGradientProps {
+  text: string;
+  gradientFrom: string;
+  gradientTo: string;
+  borderColor: string;
+  className?: string;
+}
+
 // Placeholder for ButtonAnimatedGradient
-const ButtonAnimatedGradient = ({ text, gradientFrom, gradientTo, borderColor, className }) => (
+const ButtonAnimatedGradient: React.FC<ButtonAnimatedGradientProps> = ({ text, gradientFrom, gradientTo, borderColor, className }) => (
   <button
     className={className}
     style={{
@@ -18,9 +26,9 @@ const ButtonAnimatedGradient = ({ text, gradientFrom, gradientTo, borderColor, c
 );
 
 // Simple debounce function for scroll performance
-const debounce = (func, wait) => {
-  let timeout;
-  return (...args) => {
+const debounce = (func: (...args: unknown[]) => void, wait: number) => {
+  let timeout: NodeJS.Timeout;
+  return (...args: unknown[]) => {
     clearTimeout(timeout);
     timeout = setTimeout(() => func(...args), wait);
   };
@@ -105,7 +113,7 @@ export default function BlogDetailsTwo() {
             src="https://digitxevents.com/wp-content/uploads/2025/03/onebrain_ab_logo.svg"
             alt="OneBrain Logo"
             className="h-6"
-            onError={(e) => (e.target.src = '/fallback-logo.png')}
+            onError={(e) => ((e.target as HTMLImageElement).src = '/fallback-logo.png')}
           />
         </Link>
         <div className="flex items-center">
@@ -164,7 +172,6 @@ export default function BlogDetailsTwo() {
           style={{
             backgroundImage: `url('https://digitxevents.com/wp-content/uploads/2025/04/blog_cover-2.png')`,
           }}
-          loading="lazy"
         ></div>
 
         {/* Content Overlay */}

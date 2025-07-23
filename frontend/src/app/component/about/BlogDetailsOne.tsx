@@ -4,8 +4,16 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu, X, Share2 } from 'lucide-react';
 
+interface ButtonAnimatedGradientProps {
+  text: string;
+  gradientFrom: string;
+  gradientTo: string;
+  borderColor: string;
+  className?: string;
+}
+
 // Placeholder for ButtonAnimatedGradient
-const ButtonAnimatedGradient = ({ text, gradientFrom, gradientTo, borderColor, className }) => (
+const ButtonAnimatedGradient: React.FC<ButtonAnimatedGradientProps> = ({ text, gradientFrom, gradientTo, borderColor, className }) => (
   <button
     className={className}
     style={{
