@@ -20,8 +20,17 @@ import DynamicButton from "./DynamicButton";
 // import mistralAI from '/Group-427323058.svg';
 // import perplexityAI from '/Group-427323057.svg';
 
+// Define interface for update object
+interface Update {
+  version: string;
+  status: string;
+  statusImage: string;
+  image: string;
+  features: string[];
+}
+
 // Update Card Component with optimized image loading
-const UpdateCard: React.FC<{ update: any; index: number }> = ({ update, index }) => {
+const UpdateCard: React.FC<{ update: Update; index: number }> = ({ update, index }) => {
   const [mainImageLoaded, setMainImageLoaded] = useState(false);
   const [statusImageLoaded, setStatusImageLoaded] = useState(false);
   const [mainImageError, setMainImageError] = useState(false);
@@ -109,7 +118,6 @@ const UpdateCard: React.FC<{ update: any; index: number }> = ({ update, index })
 };
 
 export default function AboutUs() {
-  const scrollRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
   const [isMobile, setIsMobile] = useState(false);
   const [isTablet, setIsTablet] = useState(false);
@@ -189,20 +197,8 @@ export default function AboutUs() {
     },
   };
 
-  // Convert the object values to an array
-  const logoArray = Object.values(logos);
-
-  // Duplicate the array 3 times
-  const allLogos = [
-    ...logoArray,
-    ...logoArray,
-    ...logoArray,
-    ...logoArray,
-    ...logoArray,
-  ];
-
-  // Duplicate for seamless loop
-  const allLogo = [...logos, ...logos];
+  // Duplicate logos for seamless infinite scroll
+  const allLogo = [...logos, ...logos, ...logos, ...logos, ...logos];
   const trustedByArray = Object.values(trustedBy);
   // Active route function
   const isActiveRoute = (route: string) => {
@@ -253,25 +249,7 @@ export default function AboutUs() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    const scrollContainer = scrollRef.current;
-    let scrollAmount = 0;
 
-    const scroll = () => {
-      if (scrollContainer) {
-        scrollAmount += 1;
-        if (scrollAmount >= scrollContainer.scrollWidth / 2) {
-          scrollAmount = 0;
-          scrollContainer.scrollLeft = 0;
-        } else {
-          scrollContainer.scrollLeft = scrollAmount;
-        }
-      }
-    };
-
-    const interval = setInterval(scroll, 30);
-    return () => clearInterval(interval);
-  }, []);
 
   const updates = [
     {
@@ -462,7 +440,7 @@ export default function AboutUs() {
     clientX,
     clientY,
   }: React.MouseEvent) => {
-    let { left, top } = currentTarget.getBoundingClientRect();
+    const { left, top } = currentTarget.getBoundingClientRect();
 
     const x = clientX - left;
     const y = clientY - top;
@@ -496,6 +474,7 @@ export default function AboutUs() {
 
   // Update slider position when currentSlide changes
   useEffect(() => {
+    if (typeof window === 'undefined') return;
     const slider = document.getElementById('aiSlider');
     if (slider) {
       slider.style.transform = `translateX(-${currentSlide * 100}%)`;
@@ -526,10 +505,8 @@ export default function AboutUs() {
             href="/"
             onClick={(e) => {
               e.preventDefault();
-              if (typeof window !== 'undefined') {
-                window.history.pushState("", "", "/about");
-                window.scrollTo(0, 0);
-              }
+              window.history.pushState("", "", "/about");
+              window.scrollTo(0, 0);
               setActiveSection("ai-models");
             }}
             className="flex-shrink-0 z-10"
@@ -852,11 +829,12 @@ export default function AboutUs() {
           </div>
         )}
       </div>
-      <div className="md:px-6 mx-auto">
+      <div className="mx-auto">
 
 
         {/* Hero Section */}
-        <section className="min-h-screen container flex flex-col items-center justify-center text-center bg-cover bg-center relative">
+        <section className="min-h-screen flex flex-col items-center justify-center text-center bg-cover bg-center relative">
+          <div className="container mx-auto px-4">
           <div className="relative w-full h-[320px] xs:h-[350px] sm:h-[400px] md:h-[450px] lg:h-[500px] xl:h-[550px] flex flex-col-reverse md:flex-row items-center justify-center px-4 md:gap-8 ">
             {/* Left Side - Text Section */}
             <div className="flex-1 flex items-center justify-center mt-8 md:mt-0">
@@ -947,11 +925,12 @@ export default function AboutUs() {
               />
             </Link>
           </div>
+          </div>
         </section>
 
         {/* AI Model Library */}
-        <section className="text-center text-white -mt-4 xs:-mt-6 sm:-mt-8 md:-mt-12 lg:-mt-16 xl:-mt-20 container">
-          <div className="">
+        <section className="text-center text-white -mt-4 xs:-mt-6 sm:-mt-8 md:-mt-12 lg:-mt-16 xl:-mt-20">
+          <div className="container mx-auto px-4">
             <h2 className="text-3xl  mb-10 font-bold mb-">
               <span className="text-white">Explore </span>
               <span className="bg-gradient-to-r from-[#BA87FC] to-[#6BA2FB] text-transparent bg-clip-text">OneBrain</span>
@@ -1016,8 +995,10 @@ export default function AboutUs() {
           </div>
         </section>
         {/* Trending Section */}
-        <div className="container" id="vo3TrendingSection">
-          <Vo3TrendingSection />
+        <div className="py-16" id="vo3TrendingSection">
+          <div className="container mx-auto px-4">
+            <Vo3TrendingSection />
+          </div>
         </div>
 
         {/* <section className="w-full py-12 px-4 md:px-8 animate-fadeIn">
@@ -1044,73 +1025,81 @@ export default function AboutUs() {
         {/* Features Section */}
         <section
           id="featuresSection"
-          className="py-16 px-6   mx-auto relative container"
+          className="py-16 relative"
         >
-          <div className="py-6 rounded-lg text-center">
-            <h2 className="md:text-4xl text-xxl font-semibold text-white">
-              Revolutionizing the workflow for thousands of users
-            </h2>
-            <p className="text-gray text-2xl mt-2 mb-8">Powered by</p>
+          <div className="container mx-auto px-4">
+            <div className="py-6 rounded-lg text-center">
+              <h2 className="md:text-4xl text-xxl font-semibold text-white">
+                Revolutionizing the workflow for thousands of users
+              </h2>
+              <p className="text-gray text-2xl mt-2 mb-8">Powered by</p>
 
-            {/* Logo Slider */}
-            <div className="relative overflow-hidden mt-6 w-full container">
-              <div className="flex w-max animate-infinite-scroll space-x-10">
-                {allLogo.map((logo, index) => (
-                  <img
-                    key={index}
-                    src={logo.src}
-                    alt={logo.name}
-                    className="h-10 w-auto"
-                  />
-                ))}
+              {/* Logo Slider */}
+              <div className="relative overflow-hidden mt-6 w-full">
+                <div className="flex animate-infinite-scroll space-x-10">
+                  {allLogo.map((logo, index) => (
+                    <img
+                      key={index}
+                      src={logo.src}
+                      alt={logo.name}
+                      className="h-10 w-auto flex-shrink-0"
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         {/* Pricing segment Section */}
-        <div className="">
-          <h2 className="md:text-4xl text-2xl   text-white text-center flex items-center justify-center gap-2">
-            Be The AI {/* <img src={tryPro} alt="pro" className="w-16 h-16" /> */}
-          </h2>
-
-        </div>
-        <div id="oneBrainPromoSection" className="mt-10">
-          <PricingAbout
-
-            topUpPlans={[]}
-            currentPlan={null}
-            location="bd"
-            handleSelectPlan={(params) => console.log(params)}
-          />
+        <div className="py-16">
+          <div className="container mx-auto px-4">
+            <h2 className="md:text-4xl text-2xl text-white text-center flex items-center justify-center gap-2 mb-10">
+              Be The AI {/* <img src={tryPro} alt="pro" className="w-16 h-16" /> */}
+            </h2>
+            <div id="oneBrainPromoSection">
+              <PricingAbout
+                topUpPlans={[]}
+                currentPlan={null}
+                location="bd"
+                handleSelectPlan={(params) => console.log(params)}
+              />
+            </div>
+          </div>
         </div>
 
         {/* Updates Section */}
         <section
           id="updatesSection"
-          className="py-16 px-6 max-w-6xl mx-auto text-white container"
+          className="py-16 text-white"
         >
+          <div className="container mx-auto px-4">
           <h2 className="md:text-4xl text-3xl font-bold text-center mb-12">
             Brain Upgrading Log
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {updates.map((update, index) => (
-              <UpdateCard key={index} update={update} index={index} />
-            ))}
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {updates.map((update, index) => (
+                <UpdateCard key={index} update={update} index={index} />
+              ))}
+            </div>
           </div>
         </section>
 
         {/* join comunity Section */}
-        <div className="flex justify-center items-center gap-4 container">
-          <a
-            href="https://facebook.com/groups/2238159246577852/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-6 py-3  text-lg  bg-[linear-gradient(360deg,_hsla(235,68%,64%,1)_0%,_hsla(240,100%,27%,1)_73%)] border border-[#656FE2] text-white rounded-full font-medium shadow-md focus:outline-none"
-          >
-            Join Facebook community
-            <ArrowUpRight size={20} />
-          </a>
+        <div className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="flex justify-center items-center gap-4">
+              <a
+                href="https://facebook.com/groups/2238159246577852/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-6 py-3  text-lg  bg-[linear-gradient(360deg,_hsla(235,68%,64%,1)_0%,_hsla(240,100%,27%,1)_73%)] border border-[#656FE2] text-white rounded-full font-medium shadow-md focus:outline-none"
+              >
+                Join Facebook community
+                <ArrowUpRight size={20} />
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* Campus Ambassador Section 
@@ -1192,106 +1181,114 @@ export default function AboutUs() {
 </div>
       </section>
       {/* Partners Section */}
-        <section className="py-16 px-6 container mx-auto ">
-          <h2 className="md:text-4xl text-xxl font-300 text-center mb-12 ">
-            Trusted by outstanding teams worldwide
-          </h2>
-          <div className="relative overflow-hidden mt-6 w-full">
-            <div
-              ref={scrollRef}
-              className="  overflow-hidden flex  justify-center items-center  space-x-10 whitespace-nowrap"
-            >
-              {trustedByArray.map((logo, index) => (
-                <img
-                  key={index}
-                  src={logo.src}
-                  alt={logo.name}
-                  className="h-10 w-auto"
-                />
-              ))}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <h2 className="md:text-4xl text-xxl font-300 text-center mb-12">
+              Trusted by outstanding teams worldwide
+            </h2>
+            <div className="relative overflow-hidden mt-6 w-full flex justify-center">
+              <div className="flex animate-infinite-scroll space-x-10">
+                {[...trustedByArray, ...trustedByArray, ...trustedByArray].map((logo, index) => (
+                  <img
+                    key={index}
+                    src={logo.src}
+                    alt={logo.name}
+                    className="h-10 w-auto flex-shrink-0"
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </section>
         {/* FAQ Section */}
-        <div>
-          <FaqSection />
+        <div className="py-16">
+          <div className="container mx-auto px-4">
+            <FaqSection />
+          </div>
         </div>
 
         {/* Payment Partner section */}
-        <section className="py-8 px-6 container md:mb-10">
-          <h2 className="md:text-4xl text-xxl font-bold text-center mb-12">
-            Payment Partners
-          </h2>
-          <div className="relative overflow-hidden md:mt-6 w-full">
-                            {/* <img src={Payment} alt="partner logo" className="w-full" /> */}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <h2 className="md:text-4xl text-xxl font-bold text-center mb-12">
+              Payment Partners
+            </h2>
+            <div className="relative overflow-hidden md:mt-6 w-full">
+                              {/* <img src={Payment} alt="partner logo" className="w-full" /> */}
+            </div>
           </div>
         </section>
 
         {/* social media section */}
-        <section className=" flex container items-center">
-          <h2 className="text-base font-semibold text-white mr-10">
-            Follow Us
-          </h2>
-          <div className="">
-            {/* <img src={SocialMedia} alt="partner logo" className="w-full" /> */}
-            <div className="flex items-center gap-4 ">
-              <a
-                href="https://facebook.com/groups/2238159246577852/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="/Frame.svg"
-                  alt="Facebook"
-                  className="w-5 h-5"
-                />
-              </a>
-              <a
-                href="https://www.instagram.com/onebrain.ai/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
-                  alt="Instagram"
-                  className="w-5 h-5"
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/onebrain-ai/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
-                  alt="Linkedin"
-                  className="w-5 h-5"
-                />
-              </a>
-              <a
-                href="https://wa.me/8801988121220"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-5 h-5"
-              >
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-                  alt="WhatsApp"
-                  className="w-5 h-5"
-                />
-              </a>
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="flex items-center justify-center">
+              <h2 className="text-base font-semibold text-white mr-10">
+                Follow Us
+              </h2>
+              <div className="">
+                {/* <img src={SocialMedia} alt="partner logo" className="w-full" /> */}
+                <div className="flex items-center gap-4 ">
+                  <a
+                    href="https://facebook.com/groups/2238159246577852/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="/Frame.svg"
+                      alt="Facebook"
+                      className="w-5 h-5"
+                    />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/onebrain.ai/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+                      alt="Instagram"
+                      className="w-5 h-5"
+                    />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/onebrain-ai/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+                      alt="Linkedin"
+                      className="w-5 h-5"
+                    />
+                  </a>
+                  <a
+                    href="https://wa.me/8801988121220"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-5 h-5"
+                  >
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                      alt="WhatsApp"
+                      className="w-5 h-5"
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Footer Section */}
-        <footer className="py-10 px-6 relative text-white">
-          {/* Spotlight Effect */}
-          <div
-            onMouseMove={handleMouseMove}
-            ref={boxWrapper}
-            className="group relative rounded-lg  overflow-hidden w-full mx-auto"
-          >
+        <footer className="py-16 relative text-white">
+          <div className="container mx-auto px-4">
+            {/* Spotlight Effect */}
+            <div
+              onMouseMove={handleMouseMove}
+              ref={boxWrapper}
+              className="group relative rounded-lg  overflow-hidden w-full mx-auto"
+            >
             <div
               className="pointer-events-none absolute opacity-0 z-50 rounded-lg w-full h-full group-hover:opacity-100 transition duration-300"
               style={{
@@ -1386,7 +1383,7 @@ export default function AboutUs() {
                       onClick={() => scrollToSection("vo3TrendingSection")}
                       className="hover:text-white transition text-left"
                     >
-                      What's New
+                      What&apos;s New
                     </button>
                   </li>
                   <li>
@@ -1453,7 +1450,7 @@ export default function AboutUs() {
               </div>
             </div>
           </div>
-
+          </div>
         </footer>
       </div> </div>
   );
