@@ -1,10 +1,10 @@
+"use client";
 import { Star, Zap, Crown, Sparkles, CheckCircle2 } from "lucide-react";
-// import { AIModelIcons } from "../../data/customData/model-data";
-// import { AIToolsIcons } from "../../data/customData/Tools-Data";
+import Image from "next/image";
 
-// Placeholder data
-const AIModelIcons: Record<string, string> = {};
-const AIToolsIcons: Record<string, string> = {};
+// Mock data for icons - these would normally come from data files
+const AIModelIcons: Record<string, any> = {};
+const AIToolsIcons: Record<string, any> = {};
 
 interface GenerateImageUpTo {
   [key: string]: {
@@ -101,6 +101,8 @@ export default function PricingAbout({
       'veo3': 'veo3',
       'vgen': 'vGenWhite',
       'seedance': 'seedance',
+      'hailou': 'hailou',
+      'wan': 'wanWhite',
       'speechai': 'voiceWhite',
       'udio': 'udioWhite',
       'udioai': 'udioWhite',
@@ -211,6 +213,8 @@ export default function PricingAbout({
         "AI Video Generation",
         "• Vgen",
         "• Seedance",
+        "• Hailou 2 Fast",
+        "• Wan 2.2",
         "• RunwayML",
         "• KlingAI V2.1",
         "AI Text to Speech & Music",
@@ -250,7 +254,7 @@ export default function PricingAbout({
   ];
 
   return (
-    <div className="mx-auto px-4">
+    <div className="mx-auto max-w-7xl px-4">
       {/* Plans Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-9">
         {fixedPlans.map((plan, index) => {
@@ -323,7 +327,7 @@ export default function PricingAbout({
                   {/* Token Info */}
                   <div className="  rounded-3xl p-4 mb-6 border border-white/50">
                     <div className="flex items-center justify-center gap-2 mb-1">
-                      <img src="/coin.svg" className="w-4 h-4" alt="coin" />
+                      <Image src="/assets/coin.svg" width={16} height={16} className="w-4 h-4" alt="coin" />
                       <span className="text-white font-semibold">
                         {plan.tokens.toLocaleString('en-IN')} Pro Tokens
                       </span>
@@ -407,7 +411,7 @@ export default function PricingAbout({
                 </p>
                 <div className="bg-gray-800/40 rounded-lg p-3 mb-4 border border-gray-600/20">
                   <div className="flex items-center justify-center gap-2">
-                    <img src="/coin.svg" className="w-4 h-4" alt="coin" />
+                    <Image src="/assets/coin.svg" width={16} height={16} className="w-4 h-4" alt="coin" />
                     <span className="text-white font-semibold">
                       {topUpPlan.tokens.toLocaleString()} Tokens
                     </span>

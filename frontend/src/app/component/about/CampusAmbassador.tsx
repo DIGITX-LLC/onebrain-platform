@@ -1,26 +1,23 @@
-"use client";
-
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { motion, animate, useMotionValue, useMotionTemplate } from 'framer-motion';
 
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
 export default function CampusAmbassador() {
-    const [formData1, _setFormData1] = useState({
+    const [formData1, setFormData1] = useState({
         name: 'John Doe',
         university: 'Harvard University',
         bio: 'Passionate about community building and leadership.',
         profileImage: 'https://digitxevents.com/wp-content/uploads/2025/04/3d-avatar-cartoon-character_113255-103130.avif',
     });
-    const [formData2, _setFormData2] = useState({
+    const [formData2, setFormData2] = useState({
         name: 'Jane Smith',
         university: 'Stanford University',
         bio: 'Interested in tech innovation and entrepreneurship.',
         profileImage: 'https://digitxevents.com/wp-content/uploads/2025/04/3d-avatar-cartoon-character_113255-103130.avif',
     });
-    const [formData3, _setFormData3] = useState({
+    const [formData3, setFormData3] = useState({
         name: 'David Lee',
         university: 'MIT',
         bio: 'Focused on AI research and its applications.',
@@ -42,7 +39,7 @@ export default function CampusAmbassador() {
             repeat: Infinity,
             repeatType: "mirror",
         });
-    }, [color]);
+    }, []);
 
     // Determine if the burger menu should be shown based on screen size
     useEffect(() => {
@@ -65,15 +62,7 @@ export default function CampusAmbassador() {
     const toggleMenu = () => setIsOpen(!isOpen);
     const closeMenu = () => setIsOpen(false);
 
-    interface ButtonAnimatedGradientProps {
-        text: string;
-        gradientFrom: string;
-        gradientTo: string;
-        borderColor: string;
-        className?: string;
-    }
-
-    const ButtonAnimatedGradient: React.FC<ButtonAnimatedGradientProps> = ({ text, gradientFrom, gradientTo, borderColor, className }) => (
+    const ButtonAnimatedGradient = ({ text, gradientFrom, gradientTo, borderColor, className }) => (
         <button
             className={className}
             style={{
@@ -85,10 +74,12 @@ export default function CampusAmbassador() {
         </button>
     );
 
-    // Remove custom Link component - using Next.js Link instead
+    const Link = ({ to, children, className, onClick }) => (
+        <a href={to} className={className} onClick={onClick}>{children}</a>
+    );
 
-    const X = ({ size }: { size: number }) => <span style={{ fontSize: size }}>X</span>;
-    const Menu = ({ size }: { size: number }) => <span style={{ fontSize: size }}>☰</span>;
+    const X = ({ size }) => <span style={{ fontSize: size }}>X</span>;
+    const Menu = ({ size }) => <span style={{ fontSize: size }}>☰</span>;
 
     // State to hold the previous scroll position
     const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -98,7 +89,7 @@ export default function CampusAmbassador() {
             const currentScrollPos = window.pageYOffset;
 
             // Determine if scrolling up or down
-            // const isScrollingUp = prevScrollPos > currentScrollPos;
+            const isScrollingUp = prevScrollPos > currentScrollPos;
 
             // Update the sticky state based on scroll direction
             setIsSticky(currentScrollPos > 0); // Adjust scroll threshold as needed
@@ -156,7 +147,7 @@ export default function CampusAmbassador() {
                 >
                     <li>
                         <Link
-                            href="/about"
+                            to="/about"
                             className="hover:text-gray-600 cursor-pointer px-2 py-2 block"
                             onClick={closeMenu}
                         >
@@ -165,7 +156,7 @@ export default function CampusAmbassador() {
                     </li>
                     <li>
                         <Link
-                            href="/about"
+                            to="/about"
                             className="hover:text-gray-600 cursor-pointer px-2 py-2 block"
                             onClick={closeMenu}
                         >
@@ -174,7 +165,7 @@ export default function CampusAmbassador() {
                     </li>
                     <li>
                         <Link
-                            href="/about"
+                            to="/about"
                             className="hover:text-gray-600 cursor-pointer px-2 py-2 block"
                             onClick={closeMenu}
                         >
@@ -183,7 +174,7 @@ export default function CampusAmbassador() {
                     </li>
                     <li>
                         <Link
-                            href="/blog"
+                            to="/blog"
                             className="hover:text-gray-600 cursor-pointer px-2 py-2 block"
                         >
                             Blog
@@ -191,7 +182,7 @@ export default function CampusAmbassador() {
                     </li>
                     <li>
                         <Link
-                            href="/about"
+                            to="/about"
                             className="hover:text-gray-600 cursor-pointer px-2 py-2 block"
                             onClick={closeMenu}
                         >
@@ -200,7 +191,7 @@ export default function CampusAmbassador() {
                     </li>
                 </ul>
                 {!showBurgerMenu && (
-                    <Link href="/login">
+                    <Link to="/login">
                         <ButtonAnimatedGradient
                             text="Get Started"
                             gradientFrom="#0f1747"
@@ -249,7 +240,7 @@ export default function CampusAmbassador() {
                 {/* Content on top of image */}
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10">
                     <h1 className="text-3xl md:text-6xl lg:text-6xl font-extrabold text-white mb-4">
-                        Campus Ambassador&apos;s
+                        Campus Ambassador's
                     </h1>
                     <p className="text-sm md:text-2xl lg:text-2xl text-gray-300 mt-5">
                         Build by students, For the Students

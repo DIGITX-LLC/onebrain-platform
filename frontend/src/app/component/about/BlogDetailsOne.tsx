@@ -1,19 +1,10 @@
 "use client";
-
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu, X, Share2 } from 'lucide-react';
 
-interface ButtonAnimatedGradientProps {
-  text: string;
-  gradientFrom: string;
-  gradientTo: string;
-  borderColor: string;
-  className?: string;
-}
-
 // Placeholder for ButtonAnimatedGradient
-const ButtonAnimatedGradient: React.FC<ButtonAnimatedGradientProps> = ({ text, gradientFrom, gradientTo, borderColor, className }) => (
+const ButtonAnimatedGradient = ({ text, gradientFrom, gradientTo, borderColor, className }) => (
   <button
     className={className}
     style={{
@@ -31,6 +22,8 @@ export default function BlogDetailsOne() {
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
     const handleScroll = () => {
       setIsSticky(window.scrollY > 50);
     };
@@ -60,7 +53,7 @@ export default function BlogDetailsOne() {
       await navigator.share({
         title: 'Comparing Llama 3.3, GPT-4o, and Grok 3',
         text: 'Check out this detailed comparison of Llama 3.3, GPT-4o, and Grok 3 AI models!',
-        url: window.location.href,
+        url: typeof window !== 'undefined' ? window.location.href : '',
       });
     } catch (err) {
       console.error('Share failed:', err);
@@ -86,7 +79,7 @@ export default function BlogDetailsOne() {
             : 'top-6 bg-transparent'
           }`}
       >
-         <Link href="/about">
+ <Link href="/about">
           <img
             src="https://digitxevents.com/wp-content/uploads/2025/03/onebrain_ab_logo.svg"
             alt="OneBrain Logo"
@@ -128,7 +121,7 @@ export default function BlogDetailsOne() {
           ))}
           {!showBurgerMenu && (
             <li>
-                                <Link href="/login">
+              <Link href="/login">
                 <ButtonAnimatedGradient
                   text="Sign-In"
                   gradientFrom="#0f1747"

@@ -1,12 +1,12 @@
 "use client";
-
 import { useState } from 'react';
+import { FaFacebook, FaEnvelope } from 'react-icons/fa';
 import { IoIosArrowDown, IoIosArrowForward } from 'react-icons/io';
 import Link from "next/link";
+import Image from "next/image";
+import ButtonAnimatedGradient from './ButtonAnimatedGradient';
 import DynamicButton from './DynamicButton';
 import { Mail } from 'lucide-react';
-// import Facebook from '/Facebook.svg';
-// import oneBrainLogo from "/oneBrainLogo.svg";
 export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -84,8 +84,8 @@ To continue PRO model access, you can top up tokens or wait until your monthly r
             >
               <DynamicButton
                 label="Community Support"
-                icon={<img src="/Facebook.svg" alt="facebook" className="mr-2 w-4 h-4" />}
                 size="w-full h-[45px] mb-3 lg:mb-0 rounded-full font-normal p-0 text-sm flex items-center justify-center"
+                icon={<Image src="/assets/Facebook.svg" alt="facebook" width={16} height={16} className="mr-2 w-4 h-4" />}
               />
             </a>
 
@@ -95,8 +95,8 @@ To continue PRO model access, you can top up tokens or wait until your monthly r
             >
               <DynamicButton
                 label="Email Support"
-                icon={<Mail className="mr-2 w-4 h-4" />}
                 size="w-full h-[45px] rounded-full font-normal p-0 text-sm flex items-center justify-center"
+                icon={<Mail className="mr-2 w-4 h-4" />}
               />
             </a>
           </div>
@@ -136,9 +136,11 @@ To continue PRO model access, you can top up tokens or wait until your monthly r
       <div className="w-full max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-full bg-gradient-to-b  from-black to-[#0E1747] border border-[#656FE2] shadow-[0_0_20px_rgba(157,167,216,0.5)] p-6 sm:p-10 rounded-2xl text-center transition-all duration-300 hover:shadow-[0_0_40px_rgba(138,232,255,0.3)]">
 
           {/* Logo */}
-          <img
-            src="/oneBrainLogo.svg"
+          <Image
+            src="/assets/oneBrainLogo.svg"
             alt="OneBrain Logo"
+            width={224}
+            height={80}
             className="mx-auto w-32 sm:w-40 md:w-56 transition-transform duration-300 hover:scale-110"
           />
 
@@ -163,9 +165,14 @@ To continue PRO model access, you can top up tokens or wait until your monthly r
 
   <Link href="/login">
   <DynamicButton
-      label="Try Pro" 
+      label=""
       size="w-full h-[45px] rounded-full font-medium px-8  p-0 text-sm flex items-center justify-center"
-      icon={<img src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/try-pro-star.svg" alt="Pro Icon" className="w-6 h-6 sm:w-8 sm:h-8 mr-2" />}
+              icon={
+          <div className="flex items-center">
+            <Image src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/try-pro-star.svg" alt="Star Icon" width={40} height={40} className="w-8 h-8 sm:w-10 sm:h-10 mr-2" />
+            <Image src="/assets/trypro.svg" alt="Pro Icon" width={48} height={48} className="w-10 h-10 sm:w-12 sm:h-12 mr-2" />
+          </div>
+        }
     />
 
   </Link>

@@ -1,19 +1,10 @@
 "use client";
-
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu, X, Share2 } from 'lucide-react';
 
-interface ButtonAnimatedGradientProps {
-  text: string;
-  gradientFrom: string;
-  gradientTo: string;
-  borderColor: string;
-  className?: string;
-}
-
 // Placeholder for ButtonAnimatedGradient
-const ButtonAnimatedGradient: React.FC<ButtonAnimatedGradientProps> = ({ text, gradientFrom, gradientTo, borderColor, className }) => (
+const ButtonAnimatedGradient = ({ text, gradientFrom, gradientTo, borderColor, className }) => (
   <button
     className={className}
     style={{
@@ -31,6 +22,8 @@ export default function BlogDetails() {
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
     const handleScroll = () => {
       setIsSticky(window.scrollY > 50);
     };
@@ -58,7 +51,7 @@ export default function BlogDetails() {
       await navigator.share({
         title: 'OneBrain Launches Llama 3.3: Comparing with Grok 3',
         text: 'Check out this comparison of Llama 3.3 and Grok 3 AI models by OneBrain!',
-        url: window.location.href,
+        url: typeof window !== 'undefined' ? window.location.href : '',
       });
     } catch (err) {
       console.error('Share failed:', err);
@@ -79,7 +72,7 @@ export default function BlogDetails() {
           transition: "top 0.3s ease-in-out",
         }}
       >
-         <Link href="/about">
+ <Link href="/about">
           <img
             src="https://digitxevents.com/wp-content/uploads/2025/03/onebrain_ab_logo.svg"
             alt="OneBrain Logo"
@@ -155,7 +148,7 @@ export default function BlogDetails() {
           </li>
           {!showBurgerMenu && (
             <li>
-                                <Link href="/login">
+              <Link href="/login">
                 <ButtonAnimatedGradient
                   text="Sign-In"
                   gradientFrom="#0f1747"
@@ -201,7 +194,7 @@ export default function BlogDetails() {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">Brief on Llama 3.3</h2>
               <p className="text-gray-700 leading-relaxed">
-                This is an open-source model, which means it&apos;s free for anyone to use, modify, or improve. It&apos;s perfect for a wide range of tasks, like general text generation, chatbots, or content creation. Since it&apos;s open-source, you can also adjust it to your specific needs if you have the technical ability. Llama 3.3 is highly flexible and can be used for many different applications, but it may not be as specialized in handling complex problems or analyzing large amounts of real-time data. The latest update of Llama 3.3 was released on Dec 6, 2024.
+                This is an open-source model, which means it's free for anyone to use, modify, or improve. It's perfect for a wide range of tasks, like general text generation, chatbots, or content creation. Since it's open-source, you can also adjust it to your specific needs if you have the technical ability. Llama 3.3 is highly flexible and can be used for many different applications, but it may not be as specialized in handling complex problems or analyzing large amounts of real-time data. The latest update of Llama 3.3 was released on Dec 6, 2024.
               </p>
             </section>
             <section className="mb-8">
@@ -216,11 +209,11 @@ export default function BlogDetails() {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">Comparing Llama 3.3 and Grok 3</h2>
               <p className="text-gray-700 leading-relaxed">
-                When comparing Llama 3.3 and Grok 3, both are powerful AI models with distinct strengths. The best choice depends on your specific needs and use case. Here&apos;s a quick breakdown:
+                When comparing Llama 3.3 and Grok 3, both are powerful AI models with distinct strengths. The best choice depends on your specific needs and use case. Here's a quick breakdown:
               </p>
               <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-2">Llama 3.3 Capabilities</h3>
               <p className="text-gray-700 leading-relaxed">
-                Llama 3.3 is designed to tackle a variety of tasks involving text generation, language translation, content summarization, multilingual research, and applications that require contextually accurate text in different languages. It can also support coding and software development. Here&apos;s a more detailed breakdown of the areas where Llama 3.3 can be applied:
+                Llama 3.3 is designed to tackle a variety of tasks involving text generation, language translation, content summarization, multilingual research, and applications that require contextually accurate text in different languages. It can also support coding and software development. Here's a more detailed breakdown of the areas where Llama 3.3 can be applied:
               </p>
               <h4 className="text-lg font-semibold text-gray-800 mt-4 mb-2">Content Creation & Communication</h4>
               <ul className="list-disc pl-6 text-gray-700 leading-relaxed">

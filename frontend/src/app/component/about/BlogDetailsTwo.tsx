@@ -1,19 +1,10 @@
 "use client";
-
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu, X, Share2 } from 'lucide-react';
 
-interface ButtonAnimatedGradientProps {
-  text: string;
-  gradientFrom: string;
-  gradientTo: string;
-  borderColor: string;
-  className?: string;
-}
-
 // Placeholder for ButtonAnimatedGradient
-const ButtonAnimatedGradient: React.FC<ButtonAnimatedGradientProps> = ({ text, gradientFrom, gradientTo, borderColor, className }) => (
+const ButtonAnimatedGradient = ({ text, gradientFrom, gradientTo, borderColor, className }) => (
   <button
     className={className}
     style={{
@@ -26,9 +17,9 @@ const ButtonAnimatedGradient: React.FC<ButtonAnimatedGradientProps> = ({ text, g
 );
 
 // Simple debounce function for scroll performance
-const debounce = (func: (...args: unknown[]) => void, wait: number) => {
-  let timeout: NodeJS.Timeout;
-  return (...args: unknown[]) => {
+const debounce = (func, wait) => {
+  let timeout;
+  return (...args) => {
     clearTimeout(timeout);
     timeout = setTimeout(() => func(...args), wait);
   };
@@ -40,6 +31,8 @@ export default function BlogDetailsTwo() {
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
     const handleScroll = debounce(() => {
       setIsSticky(window.scrollY > 50);
     }, 100);
@@ -68,7 +61,7 @@ export default function BlogDetailsTwo() {
     const shareData = {
       title: 'ChatGPT vs. DeepSeek: Which AI Chatbot Is Right for You?',
       text: 'Compare ChatGPT and DeepSeek to find the best AI chatbot for your needs!',
-      url: window.location.href,
+      url: typeof window !== 'undefined' ? window.location.href : '',
     };
 
     if (navigator.share) {
@@ -113,7 +106,7 @@ export default function BlogDetailsTwo() {
             src="https://digitxevents.com/wp-content/uploads/2025/03/onebrain_ab_logo.svg"
             alt="OneBrain Logo"
             className="h-6"
-            onError={(e) => ((e.target as HTMLImageElement).src = '/fallback-logo.png')}
+            onError={(e) => (e.target.src = '/fallback-logo.png')}
           />
         </Link>
         <div className="flex items-center">
@@ -150,7 +143,7 @@ export default function BlogDetailsTwo() {
           ))}
           {!showBurgerMenu && (
             <li>
-                                <Link href="/login">
+              <Link href="/login">
                 <ButtonAnimatedGradient
                   text="Sign-In"
                   gradientFrom="#0f1747"
@@ -172,6 +165,7 @@ export default function BlogDetailsTwo() {
           style={{
             backgroundImage: `url('https://digitxevents.com/wp-content/uploads/2025/04/blog_cover-2.png')`,
           }}
+          loading="lazy"
         ></div>
 
         {/* Content Overlay */}

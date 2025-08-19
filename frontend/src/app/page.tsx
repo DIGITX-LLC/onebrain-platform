@@ -1,9 +1,5 @@
-import AboutUs from "./component/about/AboutUs";
+import { redirect } from 'next/navigation';
 
 export default function Home() {
-  return (
-    <div className="font-sans">
-      <AboutUs />
-    </div>
-  );
+  redirect('/about');
 }

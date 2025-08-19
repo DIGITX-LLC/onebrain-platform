@@ -2,12 +2,7 @@
 
 import { motion } from "framer-motion"; // Ensure you're importing the correct 'framer-motion' package
 import { RefObject, useEffect, useId, useState } from "react";
-// import { cn } from "../../lib/utils"; // or the correct relative path
-
-// Simple cn utility function
-const cn = (...classes: (string | undefined | null | false)[]) => {
-  return classes.filter(Boolean).join(' ');
-};
+import { cn } from "../../lib/utils"; // or the correct relative path
 
 export interface AnimatedBeamProps {
   className?: string;
@@ -95,7 +90,7 @@ export const AnimatedBeam: React.FC<AnimatedBeamProps> = ({
     };
 
     const resizeObserver = new ResizeObserver((entries) => {
-      for (const _entry of entries) {
+      for (let entry of entries) {
         updatePath();
       }
     });

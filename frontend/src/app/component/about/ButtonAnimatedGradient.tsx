@@ -1,5 +1,4 @@
 'use client'
-
 import { useRef, useState } from 'react'
 import Link from 'next/link'
 
@@ -69,7 +68,7 @@ const ButtonAnimatedGradient: React.FC<ButtonProps> = ({
     </button>
   )
 
-  return link && link.trim() !== '' ? <Link href={link}>{button}</Link> : button
+  return link ? <Link href={link}>{button}</Link> : button
 }
 
 export default ButtonAnimatedGradient
