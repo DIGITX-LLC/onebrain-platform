@@ -2,12 +2,16 @@
   "name": "onebrain-platform",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
   "scripts": {
-    "dev": "cd frontend && pnpm run dev",
-    "build": "cd frontend && pnpm run build",
-    "start": "cd frontend && pnpm run start",
-    "lint": "cd frontend && pnpm run lint",
-    "install:frontend": "cd frontend && pnpm install"
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd frontend && npm run start",
+    "lint": "cd frontend && npm run lint",
+    "install:frontend": "cd frontend && npm install"
   },
   "devDependencies": {},
   "workspaces": [
