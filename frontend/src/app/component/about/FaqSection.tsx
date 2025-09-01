@@ -156,14 +156,14 @@ To continue PRO model access, you can top up tokens or wait until your monthly r
 
           {/* Buttons */}
           <div className="mt-8 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
-  <Link href="/login">
+  <Link href="https://ai.onebrain.app/login">
       <DynamicButton
       label="Free Trial"
       size="w-full h-[45px] rounded-full px-8 font-medium p-0 text-sm flex items-center justify-center"
     />
   </Link>
 
-  <Link href="/login">
+  <Link href="https://ai.onebrain.app/login">
   <DynamicButton
       label=""
       size="w-full h-[45px] rounded-full font-medium px-8  p-0 text-sm flex items-center justify-center"

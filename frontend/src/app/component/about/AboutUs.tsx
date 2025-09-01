@@ -686,7 +686,7 @@ export default function AboutUs() {
 
                 {/* Sign In */}
                 <li className="px-1 py-1 ml-2">
-                  <Link to="/login">
+                  <Link to="https://ai.onebrain.app/login">
                     <DynamicButton
                       label="Sign-In"
                       size="w-auto px-3 xl:px-4 h-[35px] rounded-full font-normal block text-sm"
@@ -858,7 +858,7 @@ export default function AboutUs() {
                 {/* Sign In */}
                 <li className="px-5 py-1">
                   <Link
-                    to="/login"
+                    to="https://ai.onebrain.app/login"
                     onClick={(e) => {
                       console.log("Sign-in clicked");
                       setIsOpen(false);
@@ -954,7 +954,7 @@ export default function AboutUs() {
           </div>
           <div className="pointer-events-auto mt-10 md:mt-0 mb-8 xs:mb-10 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24">
             <Link
-              to="/login"
+              to="https://ai.onebrain.app/login"
               className="inline-block  cursor-pointer touch-manipulation select-none"
               style={{
                 position: "relative",
@@ -1436,13 +1436,13 @@ export default function AboutUs() {
                     </button>
                   </li>
                   <li>
-                    <a href="/terms" className="hover:text-white transition">
+                    <a href="https://ai.onebrain.app/terms" className="hover:text-white transition">
                       Terms of Service
                     </a>
                   </li>
                   <li>
                     <a
-                      href="/privacy-policy"
+                      href="https://ai.onebrain.app/privacy-policy"
                       className="hover:text-white transition"
                     >
                       Privacy Policy

@@ -346,7 +346,7 @@ export default function PricingAbout({
 
                   {/* CTA Button */}
                   <button
-                    onClick={() => window.location.href = '/login'}
+                    onClick={() => window.location.href = 'https://ai.onebrain.app/login'}
                     disabled={isCurrentPlan}
                     className={`w-full py-2 px-4 rounded-3xl font-semibold text-sm transition-all duration-200 mb-6 ${isCurrentPlan
                       ? "bg-gradient-to-r from-green-600 to-emerald-600 text-white cursor-default"

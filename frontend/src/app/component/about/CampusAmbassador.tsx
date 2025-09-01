@@ -191,7 +191,7 @@ export default function CampusAmbassador() {
                     </li>
                 </ul>
                 {!showBurgerMenu && (
-                    <Link to="/login">
+                    <Link to="https://ai.onebrain.app/login">
                         <ButtonAnimatedGradient
                             text="Get Started"
                             gradientFrom="#0f1747"
