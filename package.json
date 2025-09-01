@@ -13,8 +13,5 @@
     "lint": "cd frontend && npm run lint",
     "install:frontend": "cd frontend && npm install"
   },
-  "devDependencies": {},
-  "workspaces": [
-    "frontend"
-  ]
+  "devDependencies": {}
 } 
