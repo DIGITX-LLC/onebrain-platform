@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "OneBrain - Multiverse of AI",
   description: "Revolutionizing the workflow for thousands of users with AI models, tools, and advanced features. Experience the future of AI creation.",
+  icons: {
+    icon: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/fav%20icon.svg",
+  },
 };
 
 export default function RootLayout({

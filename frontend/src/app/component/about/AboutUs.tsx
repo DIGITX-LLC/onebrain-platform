@@ -304,41 +304,41 @@ export default function AboutUs() {
 
   const updates = [
     {
-      version: "1.4.8",
+      version: "1.5",
       status: "Released",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released-image.svg",
       features: [
-        "Hailuo Image-to-Video Model: Instantly turn images into dynamic videos.",
-        "FWan 2.2 Text-to-Video Model: Convert text into captivating videos.",
-        "GPT-5 Series Added: Explore OpenAI's latest advancements.",
-        "Max Model Optimization: Enjoy enhanced performance and a user-friendly UI..",
-
+        "Experience OneBrain Reimagined version: Enhanced UI colors for better visibility.",
+        "Simplified sidenav menu for faster access to AI models & tools.",
+        "Organized categories for Image, Video & Audio models.",
+        "New Canvas view with code & large response preview.",
+        "Upgraded site for smoother, faster performance on all devices.",
       ],
     },
     {
-      version: "1.5",
+      version: "1.5.1",
       status: "In Progress",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress-image.svg",
       features: [
-        "Pdf, xls & docs file creation and download option.",
-        "Canvas view implementation with code preview.",
-        "Boost up site performance with a new framework for better usability in any device.",
+        "Advanced Web Search for real-time data scrap from the internet.",
+        "New Thinking Mode to display the model's reasoning process.",
+        "Memory capability added to all models for long-term response recall.",
       ],
     },
     {
-      version: "2.0",
+      version: "1.5.2",
       status: "Planned",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned.svg  ",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned-image.svg",
       features: [
-        "Voice Input to convert speech into text.",
-        "Assistants API Integration for better memory management.",
-        "AI Agent integration for the futuristic experience of your personal Agent.",
+        "Create, edit & download PDF, XLS & DOC files.",
+        "New budget-friendly video model in the Creator package.",
+        "Affordable Google-powered image model added.",
       ],
     },
   ];

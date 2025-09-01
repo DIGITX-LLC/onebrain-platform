@@ -169,7 +169,7 @@ To continue PRO model access, you can top up tokens or wait until your monthly r
       size="w-full h-[45px] rounded-full font-medium px-8  p-0 text-sm flex items-center justify-center"
               icon={
           <div className="flex items-center">
-            <Image src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/try-pro-star.svg" alt="Star Icon" width={40} height={40} className="w-8 h-8 sm:w-10 sm:h-10 mr-2" />
+            <Image src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Pro%20Star%20(1).svg" alt="Star Icon" width={40} height={40} className="w-8 h-8 sm:w-5 sm:h-5 mr-2" />
             <Image src="/assets/trypro.svg" alt="Pro Icon" width={48} height={48} className="w-10 h-10 sm:w-12 sm:h-12 mr-2" />
           </div>
         }
