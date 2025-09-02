@@ -13,6 +13,7 @@ import PricingAbout from './component/about/PricingAbout';
 import Vo3TrendingSection from './component/about/Vo3TrendingSection';
 import DynamicButton from './component/about/DynamicButton';
 import MobileCountdown from './component/about/MobileCountdown';
+import MediaGallery from './component/mediaGallery/MediaGallery';
 
 // Update Card Component with optimized image loading
 interface UpdateData {
@@ -1077,6 +1078,9 @@ export default function Home() {
         <div>
           <FaqSection />
         </div>
+
+        {/* Media Gallery Section */}
+        <MediaGallery />
 
         {/* Payment Partner section */}
         <section className="py-8 px-6 container md:mb-10">
