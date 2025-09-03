@@ -529,13 +529,13 @@ export default function Home() {
       {/* Navigation Header */}
       <div
         className={`fixed  ${isSticky ? "" : "absolute"
-          } left-1/2 transform -translate-x-1/2 px-2 sm:px-4  flex z-50  items-center justify-between w-[100%] sm:w-[95%] max-w-7xl transition-all duration-300`}
+          } left-1/2 transform -translate-x-1/2 px-2 sm:px-4  flex z-50  items-center justify-between w-[95%] sm:w-[95%] max-w-7xl transition-all duration-300`}
         style={{
           top: isSticky ? "8px" : isMobile ? "12px" : "1.5rem",
           transition: "top 0.3s ease-in-out",
         }}
       >
-        <div className={`${(isSticky || isMobile || isTablet) ? "backdrop-blur-[10px] bg-white/5 border border-white/20 rounded-full" : ""} px-2 sm:px-4 py-2 flex items-center justify-between w-[98%] sm:w-[95%] max-w-7xl rounded-full transition-all duration-300`}>
+        <div className={`${(isSticky || isMobile || isTablet) ? "backdrop-blur-[10px] bg-white/5 border border-white/20 rounded-full" : ""} px-2 sm:px-4 py-2 flex items-center justify-between w-full max-w-7xl rounded-full transition-all duration-300`}>
 
 
           {/* Logo - Always Left Corner */}
@@ -990,7 +990,7 @@ export default function Home() {
 
             {/* Logo Slider */}
             <div className="relative overflow-hidden mt-6 w-full container">
-              <div className="flex w-max animate-infinite-scroll space-x-10">
+              <div className="flex animate-infinite-scroll space-x-10" style={{ width: 'max-content', minWidth: '100%' }}>
                 {allLogo.map((logo, index) => (
                   <Image
                     key={index}
@@ -998,7 +998,7 @@ export default function Home() {
                     alt={logo.name}
                     width={40}
                     height={40}
-                    className="h-10 w-auto"
+                    className="h-10 w-auto flex-shrink-0"
                   />
                 ))}
               </div>
@@ -1059,7 +1059,8 @@ export default function Home() {
           <div className="relative overflow-hidden mt-6 w-full">
             <div
               ref={scrollRef}
-              className="  overflow-hidden flex  justify-center items-center  space-x-10 whitespace-nowrap"
+              className="overflow-hidden flex justify-center items-center space-x-10"
+              style={{ width: 'max-content', minWidth: '100%' }}
             >
               {trustedByArray.map((logo, index) => (
                 <Image
@@ -1068,7 +1069,7 @@ export default function Home() {
                   alt={logo.name}
                   width={40}
                   height={40}
-                  className="h-10 w-auto"
+                  className="h-10 w-auto flex-shrink-0"
                 />
               ))}
             </div>

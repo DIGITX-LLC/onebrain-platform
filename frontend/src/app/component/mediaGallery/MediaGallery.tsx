@@ -98,24 +98,23 @@ const MediaGallery: React.FC = () => {
   }, [currentIndex, extendedImages.length, startIndex]);
 
   return (
-    <section className="py-20 px-6 bg-black min-h-screen flex items-center justify-center">
-      <div className="container mx-auto max-w-7xl">
+    <section className="py-12 px-6 bg-black min-h-[80vh] flex items-center justify-center">
+      <div className="container mx-auto max-w-6xl">
         {/* Header Section */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 tracking-tight">
             Success and Achievement
           </h2>
-          <p className="text-gray-300 text-xl md:text-2xl max-w-5xl mx-auto leading-relaxed">
-            Success and achievement embody the pursuit of goals through dedication, resilience, and continuous growth. 
-            They reflect not only the fulfillment of personal and professional aspirations but also the journey of overcoming 
-            challenges, embracing opportunities, and creating lasting impact.
+          <p className="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+            Success and achievement embody the pursuit of goals through dedication and resilience, 
+            reflecting personal growth and lasting impact.
           </p>
         </div>
 
         {/* Carousel Section */}
         <div className="relative">
           {/* Main Carousel Container with overlapping cards effect */}
-          <div className="relative flex items-center justify-center min-h-[600px] md:min-h-[700px]">
+          <div className="relative flex items-center justify-center min-h-[400px] md:min-h-[500px]">
             {/* Background cards for depth effect */}
             <div className="absolute inset-0 flex items-center justify-center">
               {extendedImages.map((image, index) => {
@@ -140,28 +139,28 @@ const MediaGallery: React.FC = () => {
                   blur = '';
                 } else if (offset === 1) {
                   // Next card (right)
-                  transform = 'translateX(200px) translateY(20px) rotateY(-15deg)';
+                  transform = 'translateX(150px) translateY(15px) rotateY(-15deg)';
                   zIndex = 20;
                   opacity = 0.7;
                   scale = 0.9;
                   blur = 'blur-[1px]';
                 } else if (offset === -1) {
                   // Previous card (left)
-                  transform = 'translateX(-200px) translateY(20px) rotateY(15deg)';
+                  transform = 'translateX(-150px) translateY(15px) rotateY(15deg)';
                   zIndex = 20;
                   opacity = 0.7;
                   scale = 0.9;
                   blur = 'blur-[1px]';
                 } else if (offset === 2) {
                   // Far right card
-                  transform = 'translateX(350px) translateY(40px) rotateY(-25deg)';
+                  transform = 'translateX(250px) translateY(30px) rotateY(-25deg)';
                   zIndex = 10;
                   opacity = 0.4;
                   scale = 0.8;
                   blur = 'blur-sm';
                 } else if (offset === -2) {
                   // Far left card
-                  transform = 'translateX(-350px) translateY(40px) rotateY(25deg)';
+                  transform = 'translateX(-250px) translateY(30px) rotateY(25deg)';
                   zIndex = 10;
                   opacity = 0.4;
                   scale = 0.8;
@@ -180,7 +179,7 @@ const MediaGallery: React.FC = () => {
                       opacity,
                     }}
                   >
-                    <div className="relative w-[400px] h-[500px] md:w-[500px] md:h-[600px] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-gray-900 via-gray-800 to-black border border-gray-700">
+                    <div className="relative w-[280px] h-[350px] md:w-[320px] md:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-gray-900 via-gray-800 to-black border border-gray-700">
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent z-10" />
                       <Image
                         src={image.url}
