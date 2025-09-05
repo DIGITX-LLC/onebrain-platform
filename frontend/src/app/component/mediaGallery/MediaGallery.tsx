@@ -98,7 +98,7 @@ const MediaGallery: React.FC = () => {
   }, [currentIndex, extendedImages.length, startIndex]);
 
   return (
-    <section className="py-12 px-6 bg-black min-h-[80vh] flex items-center justify-center">
+    <section className="py-12 px-6  min-h-[80vh] flex items-center justify-center">
       <div className="container mx-auto max-w-6xl">
         {/* Header Section */}
         <div className="text-center mb-12">
@@ -139,28 +139,28 @@ const MediaGallery: React.FC = () => {
                   blur = '';
                 } else if (offset === 1) {
                   // Next card (right)
-                  transform = 'translateX(150px) translateY(15px) rotateY(-15deg)';
+                  transform = 'translateX(120px) translateY(10px) rotateY(-15deg)';
                   zIndex = 20;
                   opacity = 0.7;
                   scale = 0.9;
                   blur = 'blur-[1px]';
                 } else if (offset === -1) {
                   // Previous card (left)
-                  transform = 'translateX(-150px) translateY(15px) rotateY(15deg)';
+                  transform = 'translateX(-120px) translateY(10px) rotateY(15deg)';
                   zIndex = 20;
                   opacity = 0.7;
                   scale = 0.9;
                   blur = 'blur-[1px]';
                 } else if (offset === 2) {
                   // Far right card
-                  transform = 'translateX(250px) translateY(30px) rotateY(-25deg)';
+                  transform = 'translateX(200px) translateY(20px) rotateY(-25deg)';
                   zIndex = 10;
                   opacity = 0.4;
                   scale = 0.8;
                   blur = 'blur-sm';
                 } else if (offset === -2) {
                   // Far left card
-                  transform = 'translateX(-250px) translateY(30px) rotateY(25deg)';
+                  transform = 'translateX(-200px) translateY(20px) rotateY(25deg)';
                   zIndex = 10;
                   opacity = 0.4;
                   scale = 0.8;
@@ -179,13 +179,12 @@ const MediaGallery: React.FC = () => {
                       opacity,
                     }}
                   >
-                    <div className="relative w-[280px] h-[350px] md:w-[320px] md:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-gray-900 via-gray-800 to-black border border-gray-700">
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent z-10" />
+                    <div className="relative w-[200px] h-[250px] md:w-[240px] md:h-[300px] lg:w-[260px] lg:h-[320px] rounded-xl overflow-hidden shadow-2xl ">
                       <Image
                         src={image.url}
                         alt={image.alt}
                         fill
-                        className="object-cover transition-transform duration-700 hover:scale-105"
+                        className="object-contain transition-transform duration-700"
                         priority={Math.abs(offset) <= 1}
                       />
                     </div>
