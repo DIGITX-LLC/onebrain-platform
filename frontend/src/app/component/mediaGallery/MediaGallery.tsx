@@ -165,14 +165,14 @@ const MediaGallery: React.FC = () => {
           </div>
 
           {/* Loading State */}
-          <div className="relative flex items-center justify-center min-h-[400px] md:min-h-[500px]">
+          <div className="relative flex items-center justify-center min-h-[500px] md:min-h-[600px] lg:min-h-[700px]">
             <div className="relative">
               {/* Main loading placeholder */}
-              <LoadingPlaceholder className="w-[200px] h-[250px] md:w-[240px] md:h-[300px] lg:w-[260px] lg:h-[320px] shadow-2xl" />
+              <LoadingPlaceholder className="w-[280px] h-[350px] md:w-[320px] md:h-[400px] lg:w-[360px] lg:h-[450px] shadow-2xl" />
               
               {/* Side loading placeholders */}
-              <LoadingPlaceholder className="absolute top-2 -left-24 w-[180px] h-[230px] md:w-[200px] md:h-[260px] opacity-50 blur-sm" />
-              <LoadingPlaceholder className="absolute top-2 -right-24 w-[180px] h-[230px] md:w-[200px] md:h-[260px] opacity-50 blur-sm" />
+              <LoadingPlaceholder className="absolute top-2 -left-32 w-[240px] h-[300px] md:w-[280px] md:h-[350px] lg:w-[300px] lg:h-[380px] opacity-50 blur-sm" />
+              <LoadingPlaceholder className="absolute top-2 -right-32 w-[240px] h-[300px] md:w-[280px] md:h-[350px] lg:w-[300px] lg:h-[380px] opacity-50 blur-sm" />
             </div>
           </div>
         </div>
@@ -197,7 +197,7 @@ const MediaGallery: React.FC = () => {
         {/* Carousel Section */}
         <div className="relative">
           {/* Main Carousel Container with overlapping cards effect */}
-          <div className="relative flex items-center justify-center min-h-[400px] md:min-h-[500px]">
+          <div className="relative flex items-center justify-center min-h-[500px] md:min-h-[600px] lg:min-h-[700px]">
             {/* Background cards for depth effect */}
             <div className="absolute inset-0 flex items-center justify-center">
               {extendedImages.map((image, index) => {
@@ -222,28 +222,28 @@ const MediaGallery: React.FC = () => {
                   blur = '';
                 } else if (offset === 1) {
                   // Next card (right)
-                  transform = 'translateX(120px) translateY(10px) rotateY(-15deg)';
+                  transform = 'translateX(150px) translateY(15px) rotateY(-15deg)';
                   zIndex = 20;
                   opacity = 0.7;
                   scale = 0.9;
                   blur = 'blur-[1px]';
                 } else if (offset === -1) {
                   // Previous card (left)
-                  transform = 'translateX(-120px) translateY(10px) rotateY(15deg)';
+                  transform = 'translateX(-150px) translateY(15px) rotateY(15deg)';
                   zIndex = 20;
                   opacity = 0.7;
                   scale = 0.9;
                   blur = 'blur-[1px]';
                 } else if (offset === 2) {
                   // Far right card
-                  transform = 'translateX(200px) translateY(20px) rotateY(-25deg)';
+                  transform = 'translateX(250px) translateY(25px) rotateY(-25deg)';
                   zIndex = 10;
                   opacity = 0.4;
                   scale = 0.8;
                   blur = 'blur-sm';
                 } else if (offset === -2) {
                   // Far left card
-                  transform = 'translateX(-200px) translateY(20px) rotateY(25deg)';
+                  transform = 'translateX(-250px) translateY(25px) rotateY(25deg)';
                   zIndex = 10;
                   opacity = 0.4;
                   scale = 0.8;
@@ -264,7 +264,7 @@ const MediaGallery: React.FC = () => {
                       opacity,
                     }}
                   >
-                    <div className="relative w-[200px] h-[250px] md:w-[240px] md:h-[300px] lg:w-[260px] lg:h-[320px] rounded-xl overflow-hidden shadow-2xl">
+                    <div className="relative w-[280px] h-[350px] md:w-[320px] md:h-[400px] lg:w-[360px] lg:h-[450px] rounded-xl overflow-hidden shadow-2xl">
                       {!isImageLoaded ? (
                         <LoadingPlaceholder className="w-full h-full" />
                       ) : (
@@ -275,7 +275,7 @@ const MediaGallery: React.FC = () => {
                           className="object-contain transition-transform duration-700"
                           priority={absOffset === 0} // Only prioritize the current image
                           quality={85} // Optimize quality vs size
-                          sizes="(max-width: 768px) 200px, (max-width: 1024px) 240px, 260px"
+                          sizes="(max-width: 768px) 280px, (max-width: 1024px) 320px, 360px"
                           onLoad={() => {
                             // Ensure image is marked as loaded even if preload didn't work
                             setLoadedImages(prev => new Set([...prev, image.url]));
