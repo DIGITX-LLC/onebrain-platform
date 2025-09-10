@@ -304,21 +304,20 @@ export default function AboutUs() {
 
   const updates = [
     {
-      version: "1.5",
+      version: "1.5.1",
       status: "Released",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released-image.svg",
       features: [
-        "Experience OneBrain Reimagined version: Enhanced UI colors for better visibility.",
-        "Simplified sidenav menu for faster access to AI models & tools.",
-        "Organized categories for Image, Video & Audio models.",
-        "New Canvas view with code & large response preview.",
-        "Upgraded site for smoother, faster performance on all devices.",
+        "Added Google’s latest Image Model – Nano Banana.",
+        "Integrated new Audio Generation Model – ElevenLabs.",
+        "Enhanced Canvas Mode for more accurate response triggers.",
+        "Fixed reimagined version bugs and improved overall performance.",
       ],
     },
     {
-      version: "1.5.1",
+      version: "1.5.2",
       status: "In Progress",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress.svg",
@@ -330,15 +329,15 @@ export default function AboutUs() {
       ],
     },
     {
-      version: "1.5.2",
+      version: "1.5.3",
       status: "Planned",
       statusImage:
-        "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned.svg  ",
+        "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned-image.svg",
       features: [
         "Create, edit & download PDF, XLS & DOC files.",
         "New budget-friendly video model in the Creator package.",
-        "Affordable Google-powered image model added.",
+        "Chart, Diagram, Circuit etc visual support on response.",
       ],
     },
   ];
