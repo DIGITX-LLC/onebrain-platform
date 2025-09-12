@@ -4,9 +4,9 @@ export default function MobileCountdown() {
   // State to track if component is mounted (client-side)
   const [isMounted, setIsMounted] = useState(false);
   
-  // Countdown timer state - calculate time to September 12, 2025 at 6pm
+  // Countdown timer state - calculate time to September 17, 2025 at 6pm
   const calculateTimeLeft = () => {
-    const targetDate = new Date('2025-09-12T18:00:00');
+    const targetDate = new Date('2025-09-17T18:00:00');
     const now = new Date();
     const difference = targetDate.getTime() - now.getTime();
 
