@@ -13,10 +13,6 @@ const mediaImages = [
     alt: "Achievement 2"
   },
   {
-    url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/acchivements/3.png",
-    alt: "Achievement 3"
-  },
-  {
     url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/acchivements/4.png",
     alt: "Achievement 4"
   },

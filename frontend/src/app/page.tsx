@@ -205,7 +205,7 @@ export default function Home() {
       src: "https://digitxevents.com/wp-content/uploads/2025/02/Group-427321352.svg",
     },
     lama: {
-      name: "Lama",
+      name: "Meta",
       src: "https://digitxevents.com/wp-content/uploads/2025/02/Group-427321351.svg",
     },
   };
@@ -869,7 +869,7 @@ export default function Home() {
 
 
         {/* Hero Section */}
-        <section className="min-h-screen container flex flex-col items-center justify-center text-center bg-cover bg-center relative">
+        <section className="min-h-screen container flex flex-col items-center justify-center text-center bg-cover bg-center relative md:pt-24">
           <div className="relative w-full h-[320px] xs:h-[350px] sm:h-[400px] md:h-[450px] lg:h-[500px] xl:h-[550px] flex flex-col-reverse md:flex-row items-center justify-center px-4 md:gap-8 ">
             {/* Left Side - Text Section */}
             <div className="flex-1 flex items-center justify-center mt-8 md:mt-0">
