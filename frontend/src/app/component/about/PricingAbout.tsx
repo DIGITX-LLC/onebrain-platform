@@ -191,8 +191,6 @@ export default function PricingAbout({
         "AI Image Editing & Generations models",
         "• ImageX",
         "• Flux",
-        "• Google Imagen 4",
-        "• ChatGPT 4o",
         "• Kontext Pro",
         "AI Detector",
         "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
