@@ -217,7 +217,7 @@ export default function PricingAbout({
         "• KlingAI V2.1",
         "AI Text to Speech & Music",
         "• UdioAI",
-        "• SpeechAI",
+        "• Elevenlabs",
         "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
       ]
     },
