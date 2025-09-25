@@ -32,7 +32,7 @@ const AIToolsIcons: Record<string, string> = {
   runwayWhite: '/assets/models/runway-white.png',
   humanizerWhite: '/assets/models/Humanizer White.svg',
   restorerWhite: '/assets/models/flux-w.svg',
-  quizMakerWhite: '/assets/models/quiz-maker.svg',
+  quizMakerWhite: '/assets/models/quiz-maker-white.svg',
   elevenlabsWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Elevenlabs%20Logo%20(1).svg' 
 };
 
