@@ -26,13 +26,13 @@ const AIToolsIcons: Record<string, string> = {
   vGenWhite: '/assets/models/vGen-white.svg',
   seedanceWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/seedance-logo.png', // Using vGen icon for Seedance temporarily
   hailou: '/assets/models/hailuo-color.png',
-  wanWhite: '/assets/models/wan-white.svg',
+  wanWhite: '/assets/models/qwen-black.svg',
   voiceWhite: '/assets/models/voice-white.svg',
   udioWhite: '/assets/models/UdioAI White.svg',
   runwayWhite: '/assets/models/runway-white.png',
   humanizerWhite: '/assets/models/Humanizer White.svg',
   restorerWhite: '/assets/models/flux-w.svg',
-  quizMakerWhite: '/assets/models/quiz-maker-white.svg',
+  quizMakerWhite: '/assets/models/quiz-maker.svg',
   elevenlabsWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Elevenlabs%20Logo%20(1).svg' 
 };
 
