@@ -176,7 +176,16 @@ To continue PRO model access, you can top up tokens or wait until your monthly r
               height={32} 
               className="w-6 h-6 sm:w-4 sm:h-4 mr-2 object-contain" 
             />
-            <Image src="/assets/trypro.svg" alt="Pro Icon" width={48} height={48} className="w-10 h-10 sm:w-12 sm:h-12 mr-2" />
+            <div className="flex items-center gap-0">
+              <span className="text-sm">Try</span>
+              <Image 
+                src="/assets/pro.svg" 
+                alt="Try Pro" 
+                width={32} 
+                height={32} 
+                className="w-8 h-8" 
+              />
+            </div>
           </div>
         }
     />

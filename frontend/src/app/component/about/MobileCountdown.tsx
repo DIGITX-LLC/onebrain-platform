@@ -1,153 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function MobileCountdown() {
-  // State to track if component is mounted (client-side)
   const [isMounted, setIsMounted] = useState(false);
-  
-  // Countdown timer state - calculate time to September 17, 2025 at 6pm
-  const calculateTimeLeft = () => {
-    const targetDate = new Date('2025-09-28T18:00:00');
-    const now = new Date();
-    const difference = targetDate.getTime() - now.getTime();
 
-    if (difference > 0) {
-      return {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60)
-      };
-    }
-    return { days: 0, hours: 0, minutes: 0, seconds: 0 };
-  };
-
-  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-  
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
   // Mobile app image loading state
   const [mobileAppImageLoaded, setMobileAppImageLoaded] = useState(false);
   const [mobileAppImageError, setMobileAppImageError] = useState(false);
 
-  // Waitlist form state
-  const [email, setEmail] = useState('');
-  const [emailError, setEmailError] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  
-  // Toast notification state
-  const [toast, setToast] = useState<{
-    show: boolean;
-    variant: 'success' | 'error';
-    title: string;
-    description: string;
-  }>({ show: false, variant: 'success', title: '', description: '' });
-
-  // Show toast notification
-  const showToast = (variant: 'success' | 'error', title: string, description: string) => {
-    setToast({ show: true, variant, title, description });
-    // Auto hide after 5 seconds
-    setTimeout(() => {
-      setToast(prev => ({ ...prev, show: false }));
-    }, 5000);
-  };
-
-  // Mount effect - runs only on client side
+  // Set initial loading state
   useEffect(() => {
-    setIsMounted(true);
-    setTimeLeft(calculateTimeLeft());
+    setMobileAppImageLoaded(false);
   }, []);
-
-  // Countdown timer effect - only runs after mounting
-  useEffect(() => {
-    if (!isMounted) return;
-    
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, [isMounted]);
-
-  // Preload mobile app image
-  useEffect(() => {
-    const img = new Image();
-    img.onload = () => setMobileAppImageLoaded(true);
-    img.onerror = () => setMobileAppImageError(true);
-    img.src = "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/mobile%20app.png";
-  }, []);
-
-  // Email validation function
-  const validateEmail = (email: string): boolean => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  };
-
-  // Handle email input change
-  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    setEmail(value);
-    
-    // Clear error when user starts typing
-    if (emailError) {
-      setEmailError('');
-    }
-  };
-
-  // Submit waitlist form
-  const handleWaitlistSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Validate email
-    if (!email.trim()) {
-      setEmailError('Please enter your email address.');
-      return;
-    }
-    
-    if (!validateEmail(email)) {
-      setEmailError('Please enter a valid email address.');
-      return;
-    }
-
-    setIsSubmitting(true);
-    
-    try {
-      // API call to submit email to waitlist
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL || '/api'}/auth/waitlist`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email: email.trim() }),
-      });
-
-      if (response.ok) {
-        // Success - show success toast and reset form
-        showToast(
-          'success',
-          'Success!',
-          "You've been added to the waitlist! We'll notify you when early access is available."
-        );
-        
-        // Reset form
-        setEmail('');
-        setEmailError('');
-      } else {
-        // API error - show error toast
-        showToast(
-          'error',
-          'Error',
-          'Failed to join the waitlist. Please try again later.'
-        );
-      }
-    } catch (error) {
-      // Network or other error - show error toast
-      showToast(
-        'error',
-        'Error',
-        'Failed to join the waitlist. Please check your connection and try again.'
-      );
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   // Don't render countdown until mounted to prevent hydration mismatch
   if (!isMounted) {
@@ -176,96 +43,33 @@ export default function MobileCountdown() {
               </div>
             </div>
 
-            {/* Left Side - Content */}
-            <div className="flex-1 text-center lg:text-left order-2">
-              {/* New App Store Section */}
-              <div className="mb-8">
-                <h3 className="text-2xl md:text-3xl font-semibold mb-6">
+            {/* App Store Section */}
+            <div className="flex-1 flex items-center justify-center order-2">
+              <div className="w-full text-center">
+                <h3 className="text-2xl md:text-4xl font-semibold mb-8 text-center">
                   <span className="bg-gradient-to-r from-[#6a9cfb] to-[#b2d2ff] text-transparent bg-clip-text">
                     Download Our Mobile App
                   </span>
                 </h3>
-                <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                <div className="flex justify-center w-full mt-4">
                   <a 
-                    href="#" 
-                    className="transition-transform duration-200 hover:scale-105"
-                    aria-label="Download from App Store"
-                  >
-                    <img
-                      src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Store%20.svg"
-                      alt="Download on the App Store"
-                      className="h-12 md:h-14 w-auto object-contain"
-                      loading="lazy"
-                    />
-                  </a>
-                  <a 
-                    href="#" 
-                    className="transition-transform duration-200 hover:scale-105"
+                    href="https://play.google.com/store/apps/details?id=com.onebrain" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-transform duration-200 hover:scale-105 inline-block"
                     aria-label="Get it on Google Play"
                   >
-                    <img
+                    <Image
                       src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/playstore.svg"
                       alt="Get it on Google Play"
-                      className="h-12 md:h-14 w-auto object-contain"
-                      loading="lazy"
+                      width={240}
+                      height={80}
+                      className="h-20 md:h-24 w-auto object-contain"
+                      priority={false}
                     />
                   </a>
                 </div>
               </div>
-
-              {/* Countdown Timer - Placeholder */}
-              <div className="mb-8">
-                <h3 className="text-white text-2xl font-semibold mb-6">Time Remaining</h3>
-                <div className="flex justify-center lg:justify-start gap-6 mb-8">
-                  <div className="text-center">
-                    <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">--</div>
-                    <div className="text-gray-400 text-sm uppercase tracking-wider">DAYS</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">--</div>
-                    <div className="text-gray-400 text-sm uppercase tracking-wider">HOURS</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">--</div>
-                    <div className="text-gray-400 text-sm uppercase tracking-wider">MINUTES</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">--</div>
-                    <div className="text-gray-400 text-sm uppercase tracking-wider">SECONDS</div>
-                  </div>
-                </div>
-              </div>
-
-              <h2 className="text-2xl md:text-3xl font-semibold text-white mb-8">
-                The Future of Creation Is Almost Here
-              </h2>
-
-              {/* Email Signup */}
-              <form onSubmit={handleWaitlistSubmit} className="max-w-2xl mx-auto lg:mx-0">
-                <div className="flex w-full relative">
-                  <input
-                    type="email"
-                    placeholder="Enter your Mail address"
-                    value={email}
-                    onChange={handleEmailChange}
-                    className={`flex-1 px-4 py-3 md:px-6 md:py-4 bg-transparent border-2 ${
-                      emailError ? 'border-red-500' : 'border-white'
-                    } rounded-full text-white placeholder-gray-400 focus:outline-none pr-32 md:pr-48 transition-colors duration-200 text-sm md:text-base`}
-                    disabled={isSubmitting}
-                  />
-                  <button 
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="absolute right-0 top-0 bottom-0 px-4 py-3 md:px-8 md:py-4 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-medium rounded-full transition-colors duration-200 disabled:cursor-not-allowed text-sm md:text-base"
-                  >
-                    {isSubmitting ? 'Joining...' : 'Join the waitlist'}
-                  </button>
-                </div>
-                {/* Error message */}
-                {emailError && (
-                  <p className="text-red-400 text-sm mt-2 text-left">{emailError}</p>
-                )}
-              </form>
             </div>
 
             {/* Right Side - Desktop/Tablet Image */}
@@ -287,30 +91,6 @@ export default function MobileCountdown() {
 
   return (
     <section className="py-16 px-6 mx-auto relative container">
-      {/* Toast Notification */}
-      {toast.show && (
-        <div className="fixed top-4 right-4 z-50 max-w-md w-full">
-          <div className={`p-4 rounded-lg shadow-lg border ${
-            toast.variant === 'success' 
-              ? 'bg-green-900 border-green-700 text-green-100' 
-              : 'bg-red-900 border-red-700 text-red-100'
-          }`}>
-            <div className="flex justify-between items-start">
-              <div>
-                <h4 className="font-semibold">{toast.title}</h4>
-                <p className="text-sm mt-1">{toast.description}</p>
-              </div>
-              <button
-                onClick={() => setToast(prev => ({ ...prev, show: false }))}
-                className="ml-4 text-current opacity-70 hover:opacity-100"
-              >
-                ×
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
-
       <div className="max-w-7xl mx-auto">
         <div className="text-center">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
@@ -321,7 +101,7 @@ export default function MobileCountdown() {
             We&apos;re counting down to the Early Access launch. Be the first to experience it.
           </p>
         </div>
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           {/* Mobile Image - Only visible on mobile, positioned above content */}
           <div className="flex-1 flex justify-center lg:hidden order-1">
             <div className="relative max-w-sm w-full">
@@ -347,111 +127,49 @@ export default function MobileCountdown() {
               )}
               
               {/* Actual image */}
-              <img
+              <Image
                 src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/mobile%20app.png"
                 alt="OneBrain Mobile App"
+                width={400}
+                height={800}
                 className={`w-full h-auto object-contain transition-opacity duration-500 ${
                   mobileAppImageLoaded ? 'opacity-100' : 'opacity-0 absolute top-0 left-0'
                 }`}
-                loading="eager"
-                fetchPriority="high"
-                onLoad={() => setMobileAppImageLoaded(true)}
+                priority={true}
+                onLoadingComplete={() => setMobileAppImageLoaded(true)}
                 onError={() => setMobileAppImageError(true)}
                 style={{ display: mobileAppImageError ? 'none' : 'block' }}
               />
             </div>
           </div>
 
-          {/* Left Side - Content */}
-          <div className="flex-1 text-center lg:text-left order-2">
-            {/* New App Store Section */}
-            <div className="mb-8">
-              <h3 className="text-2xl md:text-3xl font-semibold mb-6">
+          {/* App Store Section */}
+          <div className="flex-1 flex items-center justify-center order-2 md:ml-5 ml-0">
+            <div className="w-full text-center">
+              <h3 className="text-2xl md:text-4xl font-semibold mb-8 text-center">
                 <span className="bg-gradient-to-r from-[#6a9cfb] to-[#b2d2ff] text-transparent bg-clip-text">
                   Download Our Mobile App
                 </span>
               </h3>
-              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <div className="flex justify-center w-full mt-4">
                 <a 
-                  href="#" 
-                  className="transition-transform duration-200 hover:scale-105"
-                  aria-label="Download from App Store"
-                >
-                  <img
-                    src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Store%20.svg"
-                    alt="Download on the App Store"
-                    className="h-12 md:h-14 w-auto object-contain"
-                    loading="lazy"
-                  />
-                </a>
-                <a 
-                  href="#" 
-                  className="transition-transform duration-200 hover:scale-105"
+                  href="https://play.google.com/store/apps/details?id=com.onebrain" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-transform duration-200 hover:scale-105 inline-block"
                   aria-label="Get it on Google Play"
                 >
-                  <img
+                  <Image
                     src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/playstore.svg"
                     alt="Get it on Google Play"
-                    className="h-12 md:h-14 w-auto object-contain"
-                    loading="lazy"
+                    width={220}
+                    height={60}
+                    className="h-20 md:h-20 w-auto object-contain"
+                    priority={false}
                   />
                 </a>
               </div>
             </div>
-
-            {/* Countdown Timer */}
-            <div className="mb-8">
-              <h3 className="text-white text-2xl font-semibold mb-6">Time Remaining</h3>
-              <div className="flex justify-center lg:justify-start gap-6 mb-8">
-                <div className="text-center">
-                  <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">{timeLeft.days.toString().padStart(2, '0')}</div>
-                  <div className="text-gray-400 text-sm uppercase tracking-wider">DAYS</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">{timeLeft.hours.toString().padStart(2, '0')}</div>
-                  <div className="text-gray-400 text-sm uppercase tracking-wider">HOURS</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">{timeLeft.minutes.toString().padStart(2, '0')}</div>
-                  <div className="text-gray-400 text-sm uppercase tracking-wider">MINUTES</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">{timeLeft.seconds.toString().padStart(2, '0')}</div>
-                  <div className="text-gray-400 text-sm uppercase tracking-wider">SECONDS</div>
-                </div>
-              </div>
-            </div>
-
-            <h2 className="text-2xl md:text-3xl font-semibold text-white mb-8">
-              The Future of Creation Is Almost Here
-            </h2>
-
-            {/* Email Signup */}
-            <form onSubmit={handleWaitlistSubmit} className="max-w-2xl mx-auto lg:mx-0">
-              <div className="flex w-full relative">
-                <input
-                  type="email"
-                  placeholder="Enter your Mail address"
-                  value={email}
-                  onChange={handleEmailChange}
-                  className={`flex-1 px-4 py-3 md:px-6 md:py-4 bg-transparent border-2 ${
-                    emailError ? 'border-red-500' : 'border-white'
-                  } rounded-full text-white placeholder-gray-400 focus:outline-none pr-32 md:pr-48 transition-colors duration-200 text-sm md:text-base`}
-                  disabled={isSubmitting}
-                />
-                <button 
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="absolute right-0 top-0 bottom-0 px-4 py-3 md:px-8 md:py-4 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-medium rounded-full transition-colors duration-200 disabled:cursor-not-allowed text-sm md:text-base"
-                >
-                  {isSubmitting ? 'Joining...' : 'Join the waitlist'}
-                </button>
-              </div>
-              {/* Error message */}
-              {emailError && (
-                <p className="text-red-400 text-sm mt-2 text-left">{emailError}</p>
-              )}
-            </form>
           </div>
 
           {/* Right Side - Desktop/Tablet Image */}
@@ -479,15 +197,16 @@ export default function MobileCountdown() {
               )}
               
               {/* Actual image */}
-              <img
+              <Image
                 src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/mobile%20app.png"
                 alt="OneBrain Mobile App"
+                width={400}
+                height={800}
                 className={`w-full h-auto object-contain transition-opacity duration-500 ${
                   mobileAppImageLoaded ? 'opacity-100' : 'opacity-0 absolute top-0 left-0'
                 }`}
-                loading="eager"
-                fetchPriority="high"
-                onLoad={() => setMobileAppImageLoaded(true)}
+                priority={true}
+                onLoadingComplete={() => setMobileAppImageLoaded(true)}
                 onError={() => setMobileAppImageError(true)}
                 style={{ display: mobileAppImageError ? 'none' : 'block' }}
               />
@@ -497,4 +216,4 @@ export default function MobileCountdown() {
       </div>
     </section>
   );
-} 
+}
