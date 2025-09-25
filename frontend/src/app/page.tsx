@@ -874,9 +874,9 @@ export default function Home() {
           <div className="relative w-full h-[320px] xs:h-[350px] sm:h-[400px] md:h-[450px] lg:h-[500px] xl:h-[550px] flex flex-col-reverse md:flex-row items-center justify-center px-4 md:gap-8 ">
             {/* Left Side - Text Section */}
             <div className="flex-1 flex items-center justify-center mt-8 md:mt-0">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-center md:text-left">
-                <span className="text-white">Multiverse of</span>
-                <span className="bg-gradient-to-r from-[#6a9cfb] to-[#b2d2ff] text-transparent bg-clip-text ml-[20px]">AI</span>
+              <h1 className="text-3xl  md:text-4xl lg:text-5xl font-bold leading-tight text-center md:text-left">
+                <span className="text-white">OneBrain | Best <span className="bg-gradient-to-r from-[#6a9cfb] to-[#b2d2ff] text-transparent bg-clip-text ">AI</span> Tools in BD with ChatGPT, Gemini, Perplexity & More!</span>
+                
               </h1>
             </div>
             {/* Right Side - AI Circle (responsive) - Now appears above on mobile */}
