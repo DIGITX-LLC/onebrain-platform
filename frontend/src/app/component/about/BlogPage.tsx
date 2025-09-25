@@ -59,6 +59,13 @@ export default function BlogPage() {
       image: 'https://digitxevents.com/wp-content/uploads/2025/04/blog3.png',
       link: '/details3'
     },
+    {
+      id: 4,
+      title: ' How to Buy ChatGPT Premium Models in BD?',
+      excerpt: 'Are you looking for the best ChatGPT model to boost productivity, create amazing content, or ...',
+      image: 'https://digitxevents.com/wp-content/uploads/2025/09/Chatgpt-in-Bangladesh-5.png',
+      link: '/details4'
+    },
     // ... other blog objects remain unchanged
   ];
 
