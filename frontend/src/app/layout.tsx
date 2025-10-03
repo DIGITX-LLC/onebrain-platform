@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "OneBrain | Best AI Tools in BD with ChatGPT, Gemini, Perplexity & More!",
+  title: "AI Tools in BD with ChatGPT, Gemini, Perplexity & More!",
   description:
     "OneBrain is Bangladesh’s First Multi-AI Platform. It helps you to generate unlimited chat, unlimited image, videos & audios from AI prompts using ChatGPT, Gemini, Claude, Grok & more!",
   icons: {

@@ -205,7 +205,7 @@ export default function Home() {
       src: "https://digitxevents.com/wp-content/uploads/2025/02/Group-427321352.svg",
     },
     lama: {
-      name: "Lama",
+      name: "Meta",
       src: "https://digitxevents.com/wp-content/uploads/2025/02/Group-427321351.svg",
     },
   };
@@ -295,44 +295,42 @@ export default function Home() {
 
   const updates = [
     {
-      version: "1.5",
+      version: "1.5.2",
       status: "Released",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released-image.svg",
       features: [
-        "Experience OneBrain Reimagined version: Enhanced UI colors for better visibility.",
-        "Simplified sidenav menu for faster access to AI models & tools.",
-        "Organized categories for Image, Video & Audio models.",
-        "New Canvas view with code & large response preview.",
-        "Upgraded site for smoother, faster performance on all devices.",
+        "Bengali Voice Mode added for prompt writing in chatbox",
+        "Study Mode introduced for students to use OneBrain as a teacher",
+        "Improved PDF Parsing for more accurate answers",
+        "Max Model Enhancements for better usability",
       ],
     },
     {
-      version: "1.5.1",
+      version: "1.5.3",
       status: "In Progress",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress-image.svg",
       features: [
-        "Advanced Web Search for real-time data scrap from the internet.",
-        "New Thinking Mode to display the model's reasoning process.",
-        "Memory capability added to all models for long-term response recall.",
+        "Advanced Web Search for real-time data scrap from the internet",
+        "New Thinking Mode to display the model's reasoning process",
       ],
     },
     {
-      version: "1.5.2",
+      version: "1.5.4",
       status: "Planned",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned-image.svg",
       features: [
-        "Create, edit & download PDF, XLS & DOC files.",
-        "New budget-friendly video model in the Creator package.",
-        "Affordable Google-powered image model added.",
+        "Create, edit & download PDF, XLS & DOC files",
+        "New budget-friendly video model in the Creator package",
       ],
     },
   ];
+
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -870,13 +868,13 @@ export default function Home() {
 
 
         {/* Hero Section */}
-        <section className="min-h-screen container flex flex-col items-center justify-center text-center bg-cover bg-center relative">
+        <section className="min-h-screen container flex flex-col items-center justify-center text-center bg-cover bg-center relative md:pt-24">
           <div className="relative w-full h-[320px] xs:h-[350px] sm:h-[400px] md:h-[450px] lg:h-[500px] xl:h-[550px] flex flex-col-reverse md:flex-row items-center justify-center px-4 md:gap-8 ">
             {/* Left Side - Text Section */}
             <div className="flex-1 flex items-center justify-center mt-8 md:mt-0">
-              <h1 className="text-3xl  md:text-4xl lg:text-5xl font-bold leading-tight text-center md:text-left">
-                <span className="text-white">OneBrain | Best <span className="bg-gradient-to-r from-[#6a9cfb] to-[#b2d2ff] text-transparent bg-clip-text ">AI</span> Tools in BD with ChatGPT, Gemini, Perplexity & More!</span>
-                
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-center md:text-left">
+                <span className="text-white">Multiverse of</span>
+                <span className="bg-gradient-to-r from-[#6a9cfb] to-[#b2d2ff] text-transparent bg-clip-text ml-[20px]">AI</span>
               </h1>
             </div>
             {/* Right Side - AI Circle (responsive) - Now appears above on mobile */}

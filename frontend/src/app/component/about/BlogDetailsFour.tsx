@@ -181,11 +181,21 @@ export default function BlogDetailsFour() {
             </h1>
 
             <section className="mb-8">
-              <p className="text-gray-700 leading-relaxed">
-                Are you looking for the best ChatGPT model to boost productivity, create amazing content, or power your business in Bangladesh?
-                You’re in the right place. At OneBrain, we make it simple for anyone in Bangladesh to access the world’s most advanced AI—ChatGPT and its many models—without complicated setups or international payments.
-              </p>
-            </section>
+  <p className="text-gray-700 leading-relaxed">
+    Are you looking for the best ChatGPT model to boost productivity, create amazing content, or power your business in Bangladesh?
+    You’re in the right place. At{' '}
+    <a
+      href="https://www.onebrain.app"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-600 hover:underline font-semibold"
+    >
+      OneBrain
+    </a>
+    , we make it simple for anyone in Bangladesh to access the world’s most advanced AI—ChatGPT and its many models—without complicated setups or international payments.
+  </p>
+</section>
+
 
             <section className="mb-8 text-gray-800">
               <h2 className="text-2xl font-semibold mb-4">Why Choose OneBrain for ChatGPT in Bangladesh?</h2>
