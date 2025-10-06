@@ -314,8 +314,14 @@ export default function Home() {
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress-image.svg",
       features: [
-        "Advanced Web Search for real-time data scrap from the internet",
-        "New Thinking Mode to display the model's reasoning process",
+        "xAI: Grok Code Fast 1 for rapid coding tasks.",
+        "Qwen: Qwen3 Coder 30B A3B Instruct for advanced code generation.",
+        "Anthropic: Claude Opus 4.1 for deeper reasoning and comprehension.",
+        "DeepSeek: DeepSeek V3.1 for high-performance AI responses.",
+        "Quiz Maker: Create quizzes from any PDF for study and self-assessment.",
+        "Context Memory Indicator: View memory usage percentage directly in the chatbox.",
+        "Quick Model Switcher: Added a dedicated button for faster model selection.",
+        "GPT-5 Series Fixes: Resolved response issues for improved reliability.",
       ],
     },
     {
