@@ -261,7 +261,7 @@ export default function PricingAbout({
       ]
     },
     {
-      name: "Peformance",
+      name: "Performance",
       price: 1999,
       tokens: 4500000,
       bestFor: "For heavy AI creators",
@@ -277,7 +277,7 @@ export default function PricingAbout({
     {
       name: "Legend of AI",
       price: 4999,
-      tokens: 1000000,
+      tokens: 10000000,
       bestFor: "Ultimate AI powerhouse",
       icon: <Crown className="h-4 w-4 text-yellow-400" />,
       badge: "VEO3",
