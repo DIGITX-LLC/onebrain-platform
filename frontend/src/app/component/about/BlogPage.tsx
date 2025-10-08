@@ -210,7 +210,7 @@ export default function BlogPage() {
                   <img
                     src={blog.image}
                     alt={blog.title}
-                    className="w-full h-56 object-cover"
+                    className="w-full h-[150px] sm:h-[180px] md:h-56 object-contain sm:object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-white-900/60 to-transparent"></div>
                 </div>

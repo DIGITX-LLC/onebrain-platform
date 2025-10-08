@@ -41,7 +41,7 @@ export default function Details4() {
             <img
               src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Chatgpt-in-Bangladesh-5.png"
               alt="ChatGPT Premium Models in Bangladesh"
-              className="w-full h-[400px] object-cover rounded-2xl"
+              className="w-full h-[150px] sm:h-[100px] md:h-[300px] object-contain sm:object-cover rounded-2xl"
             />
           </div>
 
