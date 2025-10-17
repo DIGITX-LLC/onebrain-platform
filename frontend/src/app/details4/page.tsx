@@ -38,11 +38,19 @@ export default function Details4() {
           </h1>
 
           <div className="mb-12">
-            <img
-              src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Chatgpt-in-Bangladesh-5.png"
-              alt="ChatGPT Premium Models in Bangladesh"
-              className="w-full h-[150px] sm:h-[100px] md:h-[300px] object-contain sm:object-cover rounded-2xl"
-            />
+            <div className="details4-hero-wrapper" style={{ height: '200px' }}>
+              <img
+                src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Chatgpt-in-Bangladesh-5.png"
+                alt="ChatGPT Premium Models in Bangladesh"
+                className="details4-hero-image w-full h-full rounded-2xl"
+                style={{
+                  height: '200px',
+                  maxHeight: '200px',
+                  width: '100%',
+                  borderRadius: '1rem'
+                }}
+              />
+            </div>
           </div>
 
           <div className="space-y-6">
