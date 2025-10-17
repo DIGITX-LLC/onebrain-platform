@@ -33,7 +33,8 @@ const AIToolsIcons: Record<string, string> = {
   humanizerWhite: '/assets/models/Humanizer White.svg',
   restorerWhite: '/assets/models/flux-w.svg',
   quizMakerWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/quiz-maker.svg',
-  elevenlabsWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Elevenlabs%20Logo%20(1).svg' 
+  elevenlabsWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Elevenlabs%20Logo%20(1).svg',
+  soraWhite:'/assets/models/sora-white-logo.svg'
 };
 
 interface GenerateImageUpTo {
@@ -150,6 +151,8 @@ export default function PricingAbout({
       'quiz maker': 'quizMakerWhite',
       'elevenlabsWhite': 'elevenlabsWhite',
       'nano banana': 'veo3',
+      'sora': 'soraWhite',
+      'sora v2': 'soraWhite',
 
       // ===== SPECIAL MODEL MAPPINGS =====
       // Google Imagen 4 -> Gemini logo
@@ -254,6 +257,7 @@ export default function PricingAbout({
         "• Wan 2.2",
         "• RunwayML",
         "• KlingAI V2.1",
+        "• Sora V2",
         "AI Text to Speech & Music",
         "• UdioAI",
         "• Elevenlabs",
@@ -270,7 +274,7 @@ export default function PricingAbout({
       features: [
         "Everything on the Creator Plan",
         "AI Video Generation",
-        "• KlingAI All Models",
+        "• Sora V2",
         "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
       ]
     },
