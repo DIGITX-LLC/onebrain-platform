@@ -295,43 +295,46 @@ export default function Home() {
 
   const updates = [
     {
-      version: "1.5.3",
+      version: "1.5.4",
       status: "Released",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released-image.svg",
       features: [
-        "4 new chat models: Grok Code Fast 1, Qwen3 Coder 30B A3B Instruct, Claude Opus 4.1, DeepSeek V3.1",
-        "Quiz Maker for study and self-assessment from PDF",
-        "Context memory usage percentage shown in chatbox",
-        "Fixed GPT-5 series response issues",
-        "Quick model selection button and model switcher added for easier use",
+        "New AI Video Generation model Kling v2.5 Turbo pro added.",
+        "OpenAI New Video model Sora 2 and Sora 2.5 pro added.",
+        "ElevenLabs officially has all available functions added with the new UI.",
+        "Claude new updated model 4.5 Sonnet added.",
+        "Advanced web search with browser-style results.",
+        "Fixed VGen video generation issue.",
+        "Beautify GPT all models' responses.",
+        "Fixed Attachment issue of Max Model.",
 
       ],
     },
     {
-      version: "1.5.4",
+      version: "1.5.5",
       status: "In Progress",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress-image.svg",
       features: [
-        "New AI Video Generation model Kling v2.5 Turbo pro added.",
-        "Claude new updated model 4.5 Sonnet added.",
-        "Advanced web search with browser-style results.",
-        "Fixed VGen video generation issue. ",
+        "OpenAI new cheapest Image mini model added.",
+        "Attachment parsing load time reduced & enhanced responses.",
+        "Image generation is implemented on the Conversation chat screen.",
+        "Context Memory management dashboard implemented for control.",
       ],
     },
     {
-      version: "1.5.5",
+      version: "1.5.6",
       status: "Planned",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned-image.svg",
       features: [
-        "OpenAI New Video model Sora 2 and Sora 2.5 pro added.",
-        "OpenAI new cheapest Image mini model added on ImageX.",
-        "ChatGPT latest model 5 Pro version added.",
+        "Canvas mode implementation with edit Preview and download feature.",
+        "Create, edit & download PDF, XLS & DOC files.",
+        "New budget-friendly video model in the Creator package.",
       ],
     },
   ];
