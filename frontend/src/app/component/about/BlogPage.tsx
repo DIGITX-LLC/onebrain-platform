@@ -127,11 +127,11 @@ export default function BlogPage() {
             }`}
         >
           {/* Menu items with unique paths */}
-          <li><Link href="/models" className="hover:text-gray-600 cursor-pointer px-2 py-2 block" onClick={showBurgerMenu ? closeMenu : undefined}>AI Models</Link></li>
-          <li><Link href="/pricing" className="hover:text-gray-600 cursor-pointer px-2 py-2 block" onClick={showBurgerMenu ? closeMenu : undefined}>Pricing</Link></li>
-          <li><Link href="/changelog" className="hover:text-gray-600 cursor-pointer px-2 py-2 block" onClick={showBurgerMenu ? closeMenu : undefined}>Brain Upgrading Log</Link></li>
+          <li><Link href="/" className="hover:text-gray-600 cursor-pointer px-2 py-2 block" onClick={showBurgerMenu ? closeMenu : undefined}>AI Models</Link></li>
+          <li><Link href="/" className="hover:text-gray-600 cursor-pointer px-2 py-2 block" onClick={showBurgerMenu ? closeMenu : undefined}>Pricing</Link></li>
+          <li><Link href="/" className="hover:text-gray-600 cursor-pointer px-2 py-2 block" onClick={showBurgerMenu ? closeMenu : undefined}>Brain Upgrading Log</Link></li>
           <li><Link href="/blog" className="hover:text-gray-600 cursor-pointer px-2 py-2 block" onClick={showBurgerMenu ? closeMenu : undefined}>Blog</Link></li>
-          <li><Link href="/contact" className="hover:text-gray-600 cursor-pointer px-2 py-2 block" onClick={showBurgerMenu ? closeMenu : undefined}>Contact Us</Link></li>
+          <li><Link href="/" className="hover:text-gray-600 cursor-pointer px-2 py-2 block" onClick={showBurgerMenu ? closeMenu : undefined}>Contact Us</Link></li>
           {!showBurgerMenu && (
             <li>
               <Link href="/login">
