@@ -274,7 +274,7 @@ export default function PricingAbout({
       features: [
         "Everything on the Creator Plan",
         "AI Video Generation",
-        "• Sora V2",
+        "• Sora V2 Pro",
         "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
       ]
     },
