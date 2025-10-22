@@ -28,41 +28,56 @@ export default function FaqSection() {
     },
     { question: "Can OneBrain Allows Free Use?", answer: "Yes, OneBrain Allows user to use free by signing up." },
     {
-      question: "What is included in the BDT 299/ month plan?",
+      question: "What is included in the BDT 699/month plan?",
       answer: `
-      For just BDT 299/ month, you get:
+        The 699tk plan unlocks all premium features:
         <ul class="list-disc space-y-2 pl-5">
-          <li>Unlimited text-only chats with OneBrain PRO (ChatGPT, Gemini, LLama, DeepSeek, Mistral)</li>
-          <li>Unlimited DeepSearch (smarter search within conversations)</li>
-          <li>Unlimited Attachment Uploads (PDFs, DOCX, TXT for AI assistance)</li>
-          <li>Unlimited Thinking (advanced AI reasoning for deeper responses)</li>
+          <li>Unlimited chat with every model (ChatGPT 5, Grok 4, Claude Opus, etc.)</li>
+          <li>Advanced image generators</li>
+          <li>Video AI tools</li>
+          <li>Audio AI</li>
+          <li>The Humanizer</li>
         </ul>
       `
     },
     {
-      question: "Do I get access to PRO models under the BDT 299 plan?",
+      question: "How is the 699tk plan different from the 299tk plan?",
       answer: `
-        Yes! You also receive 600,000 PRO tokens every month, allowing you to use the latest PRO models, including features for image, video, and audio generation and analysis.
+        <ul class="list-disc space-y-2 pl-5">
+          <li>299tk plan → Limited to chat models only, no video/audio AI, no Humanizer, fewer image tools</li>
+          <li>699tk plan → Includes everything in the 299tk plan plus advanced image, video, audio, and humanizer tools with no lock or extra token cost</li>
+        </ul>
       `
     },
-    { question: "What happens when I finish my 600,000 PRO tokens?", answer: `
-      After using all your PRO tokens: </br>
-        You still enjoy unlimited text chatting, DeepSearch, Attachment uploads, and Thinking features using our standard AI models, including ChatGPT, Gemini, LLama, DeepSeek, and Mistral.
-To continue PRO model access, you can top up tokens or wait until your monthly reset.
-      `},
-    { question: "What is the difference between regular chat and PRO chat?", answer:  ` <ul class="list-disc space-y-2 pl-5">
-      <li>Regular chat = Fast and smart standard models.</li>
-      <li>PRO chat = Top-tier premium AI models offering richer, deeper, and even more accurate responses</li>
-    </ul> 
-    `},
-    { question: "How do I know how many PRO tokens I have left?", answer: "Your remaining PRO tokens are clearly shown on your OneBrain Account Billing page, beside to your current package." },
-    { question: "Will unused PRO tokens carry over to the next month?", answer: "No, PRO tokens reset monthly. Use them before your billing cycle renews!" },
-    { question: "Can I upgrade to more PRO tokens if I need?", answer: "Definitely! You can buy extra PRO tokens by top-up anytime from your billing page." },
-    { question: "Does unlimited chat include voice or image chat?", answer:  `<ul class="list-disc space-y-2 pl-5">
-      <li class="pl-1">Yes, BDT 299 covers Image Generation but limited by pro tokens.</li>
-      <li class="pl-1">Voice chat, image generation, or vision-based AI may require a separate upgrade or future plan.</li>
-    </ul>
-  ` },
+    { 
+      question: "Do I get ChatGPT 5 and Grok 4 in the 299tk plan?",
+      answer: "No. These advanced models are exclusive to the 699tk plan."
+    },
+    { 
+      question: "Does the 699tk plan include video generation?",
+      answer: `Yes ✅. The 699tk plan includes KlingAI, RumwayML, Hailuo AI, and Wan 2.2 for video generation. The 299tk plan does not support video at all.`
+    },
+    { 
+      question: "Does the 699tk plan include audio generation?",
+      answer: `Yes ✅. You get Elevenlabs for realistic voices and Udio AI for music/voice creation. The 299tk plan has no audio support.`
+    },
+    {
+      question: "What image tools do I get in 699tk vs 299tk?",
+      answer: `
+        <ul class="list-disc space-y-2 pl-5">
+          <li>299tk → GPT's Image, Flux</li>
+          <li>699tk → GPT's Image, Flux, Google Nano Banana, Kontext Pro, Kontext Upscaler (better quality + HD upscaling)</li>
+        </ul>
+      `
+    },
+    { 
+      question: "What is the Humanizer and is it included in the 299tk plan?",
+      answer: "The Humanizer makes AI output more natural and human-like. It is only available in the 699tk plan."
+    },
+    { 
+      question: "Who should choose the 699tk plan?",
+      answer: "If you are a content creator, professional, or business needing advanced chat models, video, image, and audio tools without restrictions, the 699tk plan is the best choice. The 299tk plan is better suited for basic chat-only use."
+    }
   ];
 
   return (
@@ -169,8 +184,23 @@ To continue PRO model access, you can top up tokens or wait until your monthly r
       size="w-full h-[45px] rounded-full font-medium px-8  p-0 text-sm flex items-center justify-center"
               icon={
           <div className="flex items-center">
-            <Image src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Pro%20Star%20(1).svg" alt="Star Icon" width={40} height={40} className="w-8 h-8 sm:w-5 sm:h-5 mr-2" />
-            <Image src="/assets/trypro.svg" alt="Pro Icon" width={48} height={48} className="w-10 h-10 sm:w-12 sm:h-12 mr-2" />
+            <Image 
+              src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/images-removebg-preview.png" 
+              alt="Star Icon" 
+              width={32} 
+              height={32} 
+              className="w-6 h-6 sm:w-4 sm:h-4 mr-2 object-contain" 
+            />
+            <div className="flex items-center gap-0">
+              <span className="text-sm">Try</span>
+              <Image 
+                src="/assets/pro.svg" 
+                alt="Try Pro" 
+                width={32} 
+                height={32} 
+                className="w-8 h-8" 
+              />
+            </div>
           </div>
         }
     />

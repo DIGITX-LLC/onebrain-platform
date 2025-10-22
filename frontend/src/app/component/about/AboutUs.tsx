@@ -304,44 +304,42 @@ export default function AboutUs() {
 
   const updates = [
     {
-      version: "1.5",
+      version: "1.5.2",
       status: "Released",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released-image.svg",
       features: [
-        "Experience OneBrain Reimagined version: Enhanced UI colors for better visibility.",
-        "Simplified sidenav menu for faster access to AI models & tools.",
-        "Organized categories for Image, Video & Audio models.",
-        "New Canvas view with code & large response preview.",
-        "Upgraded site for smoother, faster performance on all devices.",
+        "Bengali Voice Mode added for prompt writing in chatbox",
+        "Study Mode introduced for students to use OneBrain as a teacher",
+        "Improved PDF Parsing for more accurate answers",
+        "Max Model Enhancements for better usability",
       ],
     },
     {
-      version: "1.5.1",
+      version: "1.5.3",
       status: "In Progress",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress-image.svg",
       features: [
-        "Advanced Web Search for real-time data scrap from the internet.",
-        "New Thinking Mode to display the model's reasoning process.",
-        "Memory capability added to all models for long-term response recall.",
+        "Advanced Web Search for real-time data scrap from the internet",
+        "New Thinking Mode to display the model's reasoning process",
       ],
     },
     {
-      version: "1.5.2",
+      version: "1.5.4",
       status: "Planned",
       statusImage:
-        "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned.svg  ",
+        "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned-image.svg",
       features: [
-        "Create, edit & download PDF, XLS & DOC files.",
-        "New budget-friendly video model in the Creator package.",
-        "Affordable Google-powered image model added.",
+        "Create, edit & download PDF, XLS & DOC files",
+        "New budget-friendly video model in the Creator package",
       ],
     },
   ];
+
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);

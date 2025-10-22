@@ -295,38 +295,46 @@ export default function Home() {
 
   const updates = [
     {
-      version: "1.5.2",
+      version: "1.5.4",
       status: "Released",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released-image.svg",
       features: [
-        "Bengali Voice Mode added for prompt writing in chatbox",
-        "Study Mode introduced for students to use OneBrain as a teacher",
-        "Improved PDF Parsing for more accurate answers",
-        "Max Model Enhancements for better usability",
+        "New AI Video Generation model Kling v2.5 Turbo pro added.",
+        "OpenAI New Video model Sora 2 and Sora 2.5 pro added.",
+        "ElevenLabs officially has all available functions added with the new UI.",
+        "Claude new updated model 4.5 Sonnet added.",
+        "Advanced web search with browser-style results.",
+        "Fixed VGen video generation issue.",
+        "Beautify GPT all models' responses.",
+        "Fixed Attachment issue of Max Model.",
+
       ],
     },
     {
-      version: "1.5.3",
+      version: "1.5.5",
       status: "In Progress",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress-image.svg",
       features: [
-        "Advanced Web Search for real-time data scrap from the internet",
-        "New Thinking Mode to display the model's reasoning process",
+        "OpenAI new cheapest Image mini model added.",
+        "Attachment parsing load time reduced & enhanced responses.",
+        "Image generation is implemented on the Conversation chat screen.",
+        "Context Memory management dashboard implemented for control.",
       ],
     },
     {
-      version: "1.5.4",
+      version: "1.5.6",
       status: "Planned",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned-image.svg",
       features: [
-        "Create, edit & download PDF, XLS & DOC files",
-        "New budget-friendly video model in the Creator package",
+        "Canvas mode implementation with edit Preview and download feature.",
+        "Create, edit & download PDF, XLS & DOC files.",
+        "New budget-friendly video model in the Creator package.",
       ],
     },
   ];

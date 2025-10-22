@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, animate, useMotionValue, useMotionTemplate } from 'framer-motion';
 import ButtonAnimatedGradient from "./ButtonAnimatedGradient";
 import Link from "next/link";
+import { slugify } from '../../utils/slugify';
 
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
@@ -40,33 +41,32 @@ export default function BlogPage() {
   const blogs = [
     {
       id: 1,
-      title: ' Llama 3.3 Vs. Grok 3',
+      title: 'Llama 3.3 Vs. Grok 3',
       excerpt: 'OneBrain is just launched 3.3 brings faster performance, smarter reach. Llama 3.3 is a smart language model. It can help like chatting, coding...',
       image: 'https://digitxevents.com/wp-content/uploads/2025/04/Blog-Poster.png',
-      link: '/details1'
+      link: `/blog/${slugify('Llama 3.3 Vs. Grok 3')}`
     },
     {
       id: 2,
-      title: 'Llama 3.3 and Chatgpt 4.o',
-      excerpt: 'Introduced in May 2024, GPT-4o represents OpenAI’s most advanced flagship multimodal model to date, engineered to be the fastest and most....',
+      title: 'Llama 3.3 and Chatgpt 4.0',
+      excerpt: 'Introduced in May 2024, GPT-4o represents OpenAI\'s most advanced flagship multimodal model to date, engineered to be the fastest and most...',
       image: 'https://digitxevents.com/wp-content/uploads/2025/04/2-3.png',
-      link: '/details2'
+      link: `/blog/${slugify('Llama 3.3 and Chatgpt 4.0')}`
     },
     {
       id: 3,
-      title: ' DeepSeek VS. ChatGPT',
+      title: 'DeepSeek VS. ChatGPT',
       excerpt: 'AI chatbots have become essential tools in personal and professional settings, transforming how we communicate, create, and solve problems....',
       image: 'https://digitxevents.com/wp-content/uploads/2025/04/blog3.png',
-      link: '/details3'
+      link: `/blog/${slugify('DeepSeek VS. ChatGPT')}`
     },
     {
       id: 4,
-      title: ' How to Buy ChatGPT Premium Models in BD?',
-      excerpt: 'Are you looking for the best ChatGPT model to boost productivity, create amazing content, or ...',
-      image: 'https://digitxevents.com/wp-content/uploads/2025/09/Chatgpt-in-Bangladesh-5.png',
-      link: '/details4'
-    },
-    // ... other blog objects remain unchanged
+      title: 'How to Buy ChatGPT Premium Models in BD?',
+      excerpt: 'Buy ChatGPT-4, 4.1 nano & ChatGPT-5 in Bangladesh with OneBrain. Pay in BDT, start instantly...',
+      image: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Chatgpt-in-Bangladesh-5.png',
+      link: `/blog/${slugify('How to Buy ChatGPT Premium Models in BD?')}`
+    }
   ];
 
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -74,7 +74,6 @@ export default function BlogPage() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      const isScrollingUp = prevScrollPos > currentScrollPos;
       setIsSticky(currentScrollPos > 50);
       setPrevScrollPos(currentScrollPos);
     };
@@ -83,8 +82,8 @@ export default function BlogPage() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [prevScrollPos]);
 
-  const X = ({ size }) => <span style={{ fontSize: size }}>X</span>;
-  const Menu = ({ size }) => <span style={{ fontSize: size }}>☰</span>;
+  const X = ({ size }: { size: number }) => <span style={{ fontSize: size }}>X</span>;
+  const Menu = ({ size }: { size: number }) => <span style={{ fontSize: size }}>☰</span>;
 
   return (
     <div className='bg-[#030205] relative hero-space min-h-screen'>
@@ -100,7 +99,7 @@ export default function BlogPage() {
           transition: "top 0.3s ease-in-out",
         }}
       >
-        <Link href="/about">
+        <Link href="/">
           <img
             src="https://digitxevents.com/wp-content/uploads/2025/03/onebrain_ab_logo.svg"
             alt="OneBrain Logo"
@@ -127,12 +126,12 @@ export default function BlogPage() {
             : "flex gap-2 text-gray-300 items-center"
             }`}
         >
-          {/* Menu items remain unchanged */}
-          <li><Link href="/about" className="hover:text-gray-600 cursor-pointer px-2 py-2 block" onClick={showBurgerMenu ? closeMenu : undefined}>AI Models</Link></li>
-          <li><Link href="/about" className="hover:text-gray-600 cursor-pointer px-2 py-2 block" onClick={showBurgerMenu ? closeMenu : undefined}>Pricing</Link></li>
-          <li><Link href="/about" className="hover:text-gray-600 cursor-pointer px-2 py-2 block" onClick={showBurgerMenu ? closeMenu : undefined}>Brain Upgrading Log</Link></li>
+          {/* Menu items with unique paths */}
+          <li><Link href="/" className="hover:text-gray-600 cursor-pointer px-2 py-2 block" onClick={showBurgerMenu ? closeMenu : undefined}>AI Models</Link></li>
+          <li><Link href="/" className="hover:text-gray-600 cursor-pointer px-2 py-2 block" onClick={showBurgerMenu ? closeMenu : undefined}>Pricing</Link></li>
+          <li><Link href="/" className="hover:text-gray-600 cursor-pointer px-2 py-2 block" onClick={showBurgerMenu ? closeMenu : undefined}>Brain Upgrading Log</Link></li>
           <li><Link href="/blog" className="hover:text-gray-600 cursor-pointer px-2 py-2 block" onClick={showBurgerMenu ? closeMenu : undefined}>Blog</Link></li>
-          <li><Link href="/about" className="hover:text-gray-600 cursor-pointer px-2 py-2 block" onClick={showBurgerMenu ? closeMenu : undefined}>Contact Us</Link></li>
+          <li><Link href="/" className="hover:text-gray-600 cursor-pointer px-2 py-2 block" onClick={showBurgerMenu ? closeMenu : undefined}>Contact Us</Link></li>
           {!showBurgerMenu && (
             <li>
               <Link href="/login">
@@ -211,7 +210,7 @@ export default function BlogPage() {
                   <img
                     src={blog.image}
                     alt={blog.title}
-                    className="w-full h-56 object-cover"
+                    className="w-full h-[150px] sm:h-[180px] md:h-56 object-contain sm:object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-white-900/60 to-transparent"></div>
                 </div>

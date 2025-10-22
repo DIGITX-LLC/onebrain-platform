@@ -2,9 +2,40 @@
 import { Star, Zap, Crown, Sparkles, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 
-// Mock data for icons - these would normally come from data files
-const AIModelIcons: Record<string, any> = {};
-const AIToolsIcons: Record<string, any> = {};
+// Import icons for AI models and tools
+const AIModelIcons: Record<string, string> = {
+  chatgpt: '/assets/models/chatgpt.svg',
+  gemini: '/assets/models/gemini.svg',
+  claudeWhite: '/assets/models/cloude-White.svg',
+  deepseek: '/assets/models/deepseek.svg',
+  grok: '/assets/models/grok.svg',
+  llama: '/assets/models/llama.svg',
+  perplexity: '/assets/models/perplexity.svg',
+  mistral: '/assets/models/mistral.svg',
+  qwenBlack: '/assets/models/qwen-black.svg',
+  alimAiWhite: '/assets/models/AlimAi-w.svg',
+  kontextRestore: '/assets/models/flux-w.svg'
+};
+
+const AIToolsIcons: Record<string, string> = {
+  imageXWhite: '/assets/models/ImageX White.png',
+  fluxWhite: '/assets/models/flux-w.svg',
+  klingWhite: '/assets/models/kling-white.svg',
+  veo3: '/assets/models/veo3-black.png',
+  veo3Black: '/assets/models/veo3-black.png',
+  vGenWhite: '/assets/models/vGen-white.svg',
+  seedanceWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/seedance-logo.png', // Using vGen icon for Seedance temporarily
+  hailou: '/assets/models/hailuo-color.png',
+  wanWhite: '/assets/models/qwen-black.svg',
+  voiceWhite: '/assets/models/voice-white.svg',
+  udioWhite: '/assets/models/UdioAI White.svg',
+  runwayWhite: '/assets/models/runway-white.png',
+  humanizerWhite: '/assets/models/Humanizer White.svg',
+  restorerWhite: '/assets/models/flux-w.svg',
+  quizMakerWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/quiz-maker.svg',
+  elevenlabsWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Elevenlabs%20Logo%20(1).svg',
+  soraWhite:'/assets/models/sora-white-logo.svg'
+};
 
 interface GenerateImageUpTo {
   [key: string]: {
@@ -74,7 +105,9 @@ export default function PricingAbout({
       'mistral': 'mistral',
       'qwen': 'qwenBlack',
       'alimai': 'alimAiWhite',
-      'alim ai': 'alimAiWhite'
+      'alim ai': 'alimAiWhite',
+      'nano banana': 'veo3Black',
+      'kontext restore': 'kontextRestore'
     };
 
     // Find matching model name
@@ -100,19 +133,26 @@ export default function PricingAbout({
       'klingai': 'klingWhite',
       'veo3': 'veo3',
       'vgen': 'vGenWhite',
-      'seedance': 'seedance',
+      'seedance': 'seedanceWhite',
       'hailou': 'hailou',
       'wan': 'wanWhite',
       'speechai': 'voiceWhite',
       'udio': 'udioWhite',
       'udioai': 'udioWhite',
+      'elevenlabs': 'elevenlabsWhite',
       'runway': 'runwayWhite',
       'runwayml': 'runwayWhite',
       'humanizer': 'humanizerWhite',
       'restorer': 'restorerWhite',
       'kontext': 'restorerWhite',
+      'kontext pro': 'fluxWhite',
       'kontext restore': 'restorerWhite',
       'kontext upscaler': 'restorerWhite',
+      'quiz maker': 'quizMakerWhite',
+      'elevenlabsWhite': 'elevenlabsWhite',
+      'nano banana': 'veo3',
+      'sora': 'soraWhite',
+      'sora v2': 'soraWhite',
 
       // ===== SPECIAL MODEL MAPPINGS =====
       // Google Imagen 4 -> Gemini logo
@@ -151,7 +191,7 @@ export default function PricingAbout({
     if (icon) {
       return (
         <div className={`flex items-center gap-2 ${isSubFeature ? 'ml-4' : ''}`}>
-          <img src={icon} alt={feature} className="w-4 h-4 rounded-sm" />
+          <Image src={icon} alt={feature} width={16} height={16} className="w-4 h-4 rounded-sm" />
           <span className="text-sm text-gray-300 flex-1">
             {feature}
           </span>
@@ -181,7 +221,7 @@ export default function PricingAbout({
   // Fixed plan data to match the design exactly
   const fixedPlans = [
     {
-      name: "Basic",
+      name: "Student",
       price: 299,
       tokens: 600000,
       bestFor: "Perfect for trying AI tools",
@@ -191,9 +231,8 @@ export default function PricingAbout({
         "AI Image Editing & Generations models",
         "• ImageX",
         "• Flux",
-        "• Google Imagen 4",
-        "• ChatGPT 4o",
         "• Kontext Pro",
+        "• Quiz Maker",
         "AI Detector",
         "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
       ]
@@ -207,9 +246,10 @@ export default function PricingAbout({
       isPopular: true,
       badge: "Unlimited Image",
       features: [
-        "Everything on the Basic Plan",
+        "Everything on the Student Plan",
         "AI Image Repair Model",
         "• Kontext Restore",
+        "• Nano Banana",
         "AI Video Generation",
         "• Vgen",
         "• Seedance",
@@ -217,14 +257,15 @@ export default function PricingAbout({
         "• Wan 2.2",
         "• RunwayML",
         "• KlingAI V2.1",
+        "• Sora V2",
         "AI Text to Speech & Music",
         "• UdioAI",
-        "• SpeechAI",
+        "• Elevenlabs",
         "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
       ]
     },
     {
-      name: "Pro Creator",
+      name: "Performance",
       price: 1999,
       tokens: 4500000,
       bestFor: "For heavy AI creators",
@@ -233,14 +274,14 @@ export default function PricingAbout({
       features: [
         "Everything on the Creator Plan",
         "AI Video Generation",
-        "• KlingAI All Models",
+        "• Sora V2 Pro",
         "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
       ]
     },
     {
       name: "Legend of AI",
       price: 4999,
-      tokens: 1000000,
+      tokens: 10000000,
       bestFor: "Ultimate AI powerhouse",
       icon: <Crown className="h-4 w-4 text-yellow-400" />,
       badge: "VEO3",
@@ -288,7 +329,7 @@ export default function PricingAbout({
                 <div className="absolute md:-top-2 -top-8 -right-4 md:-right-10 z-10">
                   <div className="flex items-center justify-center gap-2 relative">
 
-                    <img src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/priceClipTag" className="md:w-28 w-24 h-24 md:h-24" alt="coin" />
+                    <Image src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/priceClipTag" width={112} height={96} className="md:w-28 w-24 h-24 md:h-24" alt="coin" />
                     <span className={`text-white text-[8px] md:text-[10px] font-normal absolute md:top-[43px] top-[43px] left-[50px] md:left-[50%] -translate-x-1/2 -translate-y-1/2 ${plan.badge === "Unlimited Chat" || plan.badge === "Unlimited Image" ? "pl-1 md:pl-2" : ""}`}>
                       {plan.badge}
                     </span>
