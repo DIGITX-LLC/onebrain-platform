@@ -1,0 +1,59 @@
+ WARN  Unsupported engine: wanted: {"node":"20.x"} (current: {"node":"v22.20.0","pnpm":"8.15.6"})
+
+> frontend@0.1.0 dev C:\Users\Digitx\Documents\GitHub\onebrain-platform\frontend
+> next dev --turbopack
+
+ ⚠ Warning: Found multiple lockfiles. Selecting C:\Users\Digitx\Documents\GitHub\onebrain-platform\package-lock.json.
+   Consider removing the lockfiles at:
+   * C:\Users\Digitx\Documents\GitHub\onebrain-platform\frontend\pnpm-lock.yaml
+
+   ▲ Next.js 15.4.1 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.50.168:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.7s
+ ○ Compiling / ...
+ ✓ Compiled / in 14.4s
+ GET / 200 in 15491ms
+ GET /blog 200 in 12663ms
+ ○ Compiling /details5 ...
+ ✓ Compiled /details5 in 613ms
+ HEAD /details5 200 in 1209ms
+ ○ Compiling /blog/[slug] ...
+ ✓ Compiled /blog/[slug] in 2.6s
+ GET /blog/llama-33-and-chatgpt-40 200 in 5360ms
+ HEAD /details5 200 in 337ms
+ HEAD /details5 200 in 295ms
+ HEAD /details5 200 in 292ms
+ GET /blog/llama-33-and-chatgpt-40 200 in 1489ms
+ GET / 200 in 206ms
+ GET /blog 200 in 540ms
+ GET /blog/buy-sora-2-sora-2-pro-in-bangladesh 200 in 437ms
+ GET /details5 200 in 544ms
+ GET /details5 200 in 683ms
+ ✓ Compiled in 342ms
+ ✓ Compiled in 1283ms
+ GET /blog/buy-sora-2-sora-2-pro-in-bangladesh 200 in 745ms
+ ✓ Compiled in 1054ms
+ GET /blog/buy-sora-2-sora-2-pro-in-bangladesh 200 in 1244ms
+ GET /blog/buy-sora-2-sora-2-pro-in-bangladesh 200 in 443ms
+ ○ Compiling /favicon.ico ...
+ GET /details5 200 in 950ms
+ ✓ Compiled /favicon.ico in 1514ms
+ GET /details5 200 in 258ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 2142ms
+ GET /blog/buy-sora-2-sora-2-pro-in-bangladesh 200 in 1565ms
+ GET /details5 200 in 1583ms
+ GET /blog/buy-sora-2-sora-2-pro-in-bangladesh 200 in 251ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 683ms
+ GET /details5 200 in 385ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 402ms
+ GET /blog/buy-sora-2-sora-2-pro-in-bangladesh 200 in 1261ms
+ GET /details5 200 in 1206ms
+ GET /blog/buy-sora-2-sora-2-pro-in-bangladesh 200 in 421ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 764ms
+ GET /details5 200 in 514ms
+ GET /blog/buy-sora-2-sora-2-pro-in-bangladesh 200 in 1388ms
+ GET /blog 200 in 333ms
+ GET /blog/how-to-buy-chatgpt-premium-models-in-bd 200 in 2144ms

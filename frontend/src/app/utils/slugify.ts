@@ -152,7 +152,7 @@ export function createBlogData() {
     },
     {
       id: 4,
-      title: 'How to Buy ChatGPT Premium Models in BD?',
+      title: 'How to Buy ChatGPT Premium Models in BD? ',
       excerpt: 'Buy ChatGPT-4, 4.1 nano & ChatGPT-5 in Bangladesh with OneBrain. Pay in BDT, start instantly, and Bangla prompts...',
       image: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Chatgpt-in-Bangladesh-5.png',
       content: `
@@ -205,6 +205,274 @@ export function createBlogData() {
         <h3>Experience Smarter AI Today</h3>
         <p>Your creativity, productivity, and business deserve the best. Get started with OneBrain to unlock easy and affordable ChatGPT buy BD deals, experiment with a ChatGPT image edit prompt, or enjoy the powerful features of ChatGPT-4 and ChatGPT-5 and many more models —all tailored for Bangladesh.</p>
       `
-    }
+    },
+    {
+      id: 5,
+      title: 'Buy Sora 2 & Sora 2 Pro in Bangladesh — Only on OneBrain with 10+ Free AI Tools',
+      excerpt: 'Buy Sora 2 (699 Taka) and Sora 2 Pro (1,999 Taka) exclusively on OneBrain in Bangladesh! Get 10+ premium AI tools free...',
+      image: 'https://digitxevents.com/wp-content/uploads/2025/04/blog3.png',
+      link: `/blog/${slugify('Buy Sora 2 & Sora 2 Pro in Bangladesh')}`,
+      content: `
+        <main className="relative pt-24">
+  {/* Hero Section */}
+  <div className="relative w-full h-[40vh]">
+    <div className="absolute inset-0 bg-gradient-to-r from-blue-900 via-indigo-700 to-purple-700" />
+    <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px]" />
+  </div>
+
+  <div className="relative px-6 py-12">
+    <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-full mx-auto">
+      <h1 className="text-4xl font-bold text-blue-900 mb-4">
+        Buy Sora 2 & Sora 2 Pro in Bangladesh — Only on OneBrain with 10+ Free AI Tools
+      </h1>
+
+      {/* Introduction */}
+      <section className="mb-8">
+        <p className="text-gray-700 leading-relaxed">
+          The future of content creation, Sora 2 and Sora 2 Pro are now available exclusively on
+          <a
+            href="https://www.onebrain.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline font-semibold"
+          >
+            OneBrain
+          </a>
+          in Bangladesh. These advanced AI models, powered by OpenAI, turn your text or images into professional videos in just a few clicks. Whether you’re a content creator, marketer, educator, or business professional, Sora AI gives you the tools to produce high-quality, eye-catching videos without expensive equipment or complex software.
+        </p>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          <strong>Sora AI empowers creators to:</strong>
+        </p>
+        <ul className="list-disc pl-6 text-gray-700 leading-relaxed mt-2 space-y-2">
+          <li>Make engaging explainer videos that simplify complex ideas</li>
+          <li>Create attention-grabbing social media content instantly</li>
+          <li>Produce marketing campaigns with professional visuals and effects</li>
+          <li>Develop educational and training videos that captivate and teach effectively</li>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          With Sora 2 and Sora 2 Pro, professional video creation is accessible, affordable, and hassle-free. Fast, stunning videos are now entirely in your hands — powered by Sora AI.
+        </p>
+      </section>
+
+      {/* What is Sora 2 & Sora 2 Pro */}
+      <section className="mb-8 text-gray-800">
+        <h2 className="text-2xl font-semibold mb-4">What is Sora 2 &amp; Sora 2 Pro?</h2>
+        <p className="text-gray-700 leading-relaxed">
+          Sora AI is OpenAI's video generation model that creates realistic videos from text prompts. It can now also produce synchronized audio, including dialogue, sound effects, and music in minutes. Perfect for bloggers, educators, marketers, and freelancers, Sora 2 simplifies the process of turning ideas into polished content.
+        </p>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          <strong>Sora 2 Pro</strong> builds on this with enhanced rendering, longer video duration, and premium AI features, making it ideal for high-quality campaigns, professional presentations, and large-scale multimedia projects.
+        </p>
+
+        <h3 className="text-xl font-semibold mt-6 mb-2">Key Features</h3>
+        <ul className="list-disc pl-6 text-gray-700 leading-relaxed space-y-2">
+          <li><strong>Text-to-Video:</strong> Instantly convert scripts, articles, or blog posts into dynamic videos</li>
+          <li><strong>AI Image-to-Video:</strong> Turn images into professional videos using intelligent AI prompts</li>
+          <li><strong>High-Quality Output:</strong> Suitable for YouTube, social media, marketing campaigns, and presentations</li>
+          <li><strong>User-Friendly Interface:</strong> Easy for both beginners and professionals</li>
+          <li><strong>OpenAI-Powered Intelligence:</strong> Accurate, creative, and context-aware video generation</li>
+          <li><strong>Fast & Efficient:</strong> Create professional videos much faster than traditional editing methods</li>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          Whether you’re a YouTuber, marketer, teacher, or freelancer, Sora AI makes video creation fast, simple, and visually stunning.
+        </p>
+      </section>
+
+      {/* Comparison Table */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">Sora 2 vs Sora 2 Pro: Feature Comparison</h2>
+        <p className="text-gray-700 leading-relaxed">
+          Not sure which version is right for you? The table below highlights key differences in features, video quality, customization options, and advanced capabilities.
+        </p>
+        <div className="overflow-x-auto mt-4">
+          <table className="min-w-full border border-gray-200 text-sm">
+            <thead className="bg-gray-100">
+              <tr>
+                <th className="px-4 py-3 text-left font-semibold border-b">Feature</th>
+                <th className="px-4 py-3 text-left font-semibold border-b">Sora 2</th>
+                <th className="px-4 py-3 text-left font-semibold border-b">Sora 2 Pro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="odd:bg-white even:bg-gray-50">
+                <td className="px-4 py-3 align-top border-t">Resolution</td>
+                <td className="px-4 py-3 align-top border-t">Up to 1280×720 (HD)</td>
+                <td className="px-4 py-3 align-top border-t">Up to 1792×1024 (HD), higher resolutions</td>
+              </tr>
+              <tr className="odd:bg-white even:bg-gray-50">
+                <td className="px-4 py-3 align-top border-t">Video Quality</td>
+                <td className="px-4 py-3 align-top border-t">Standard quality for most use cases</td>
+                <td className="px-4 py-3 align-top border-t">Professional-grade, cinematic-quality</td>
+              </tr>
+              <tr className="odd:bg-white even:bg-gray-50">
+                <td className="px-4 py-3 align-top border-t">Performance</td>
+                <td className="px-4 py-3 align-top border-t">Great for rapid generation & prototyping</td>
+                <td className="px-4 py-3 align-top border-t">Optimized for stable, commercial use</td>
+              </tr>
+              <tr className="odd:bg-white even:bg-gray-50">
+                <td className="px-4 py-3 align-top border-t">Target Audience</td>
+                <td className="px-4 py-3 align-top border-t">Creators, social media, prototypes, education</td>
+                <td className="px-4 py-3 align-top border-t">Advertisers, filmmakers, marketing professionals</td>
+              </tr>
+              <tr className="odd:bg-white even:bg-gray-50">
+                <td className="px-4 py-3 align-top border-t">Use Cases</td>
+                <td className="px-4 py-3 align-top border-t">Quick production, social content, product demos</td>
+                <td className="px-4 py-3 align-top border-t">High-res commercials, ads, professional films</td>
+              </tr>
+              <tr className="odd:bg-white even:bg-gray-50">
+                <td className="px-4 py-3 align-top border-t">Audio-Visual Sync</td>
+                <td className="px-4 py-3 align-top border-t">Standard synchronization</td>
+                <td className="px-4 py-3 align-top border-t">Enhanced synchronization for pro results</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {/* Buy on OneBrain */}
+      <section className="mb-8 text-gray-800">
+        <h2 className="text-2xl font-semibold mb-4">
+          Buy Sora 2 &amp; Sora 2 Pro in Bangladesh — Affordable, Personal, and All-in-One!
+        </h2>
+        <p className="text-gray-700 leading-relaxed">
+          Looking for Sora 2 or Sora 2 Pro at the best price in Bangladesh? OneBrain is your ultimate destination. Not only do you get access to OpenAI-powered video generation, you also unlock 10+ premium AI tools for text, image, audio, and video — all in one platform.
+        </p>
+        <h3 className="text-xl font-semibold mt-4 mb-2">Why choose OneBrain?</h3>
+        <ul className="list-disc pl-6 text-gray-700 leading-relaxed space-y-2">
+          <li><strong>Affordable Pricing:</strong> Sora 2 for 699 Taka, Sora 2 Pro for 1,999 Taka</li>
+          <li><strong>Exclusive Access:</strong> The only platform in Bangladesh offering Sora 2 &amp; Sora 2 Pro</li>
+          <li><strong>All-in-One Platform:</strong> Create text, image, audio, and video content without multiple subscriptions</li>
+          <li><strong>Fully Personal Accounts:</strong> No sharing, no privacy concerns</li>
+          <li><strong>Privacy Assured:</strong> Your projects and data remain secure</li>
+          <li><strong>Zero Hassle:</strong> Instant access after purchase; no waiting, no complicated setups</li>
+          <li><strong>Experiment Freely:</strong> Thousands of Pro Tokens and unlimited chat & attachments with advanced AI models</li>
+        </ul>
+      </section>
+
+      {/* Plans & Pricing */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">Plans &amp; Pricing</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="border border-gray-200 rounded-lg p-5">
+            <h3 className="text-xl font-semibold">Creator Pack — <span className="font-bold">৳699</span></h3>
+            <ul className="list-disc pl-6 text-gray-700 leading-relaxed mt-2 space-y-2">
+              <li>Includes <strong>Sora 2</strong> — AI text-to-video and image-to-video</li>
+              <li>Access to 10+ premium AI tools</li>
+              <li>Trending tools: Nano Banana, Kontext Restore, Runway ML, Hailuo, Seedance, VGen, ElevenLabs, Udio AI, Humanizer</li>
+              <li><strong>15,00,000 Pro Tokens</strong> usable across all AI models</li>
+              <li>Unlimited chat & attachments even after Pro Tokens are used</li>
+              <li>Ideal for videos, social media content, marketing materials, and multimedia projects</li>
+              <li>All tools accessible from one dashboard</li>
+            </ul>
+          </div>
+          <div className="border border-gray-200 rounded-lg p-5">
+            <h3 className="text-xl font-semibold">Performance Pack — <span className="font-bold">৳1,999</span></h3>
+            <ul className="list-disc pl-6 text-gray-700 leading-relaxed mt-2 space-y-2">
+              <li>Includes <strong>Sora 2 Pro</strong> — faster rendering and up to 4K output</li>
+              <li>Everything in Creator Pack plus additional tools for professionals</li>
+              <li>Additional tools: <strong>KlingAI All Models</strong> for advanced video generation</li>
+              <li><strong>45,00,000 Pro Tokens</strong> usable across all AI models</li>
+              <li>Unlimited chat & attachments even after Pro Tokens are finished</li>
+              <li>Designed for professional creators, agencies, and filmmakers</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* What You Can Do */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">What You Can Do with Sora AI via OneBrain</h2>
+        <ul className="list-disc pl-6 text-gray-700 leading-relaxed space-y-2">
+          <li><strong>Convert Text into Videos:</strong> Turn articles, scripts, or blog posts into engaging videos</li>
+          <li><strong>Generate Videos from Images:</strong> Use images as references for professional video creation</li>
+          <li><strong>Experiment with Premium AI Tools:</strong> Access 10+ AI tools to enhance your workflow</li>
+          <li><strong>Produce Multimedia Projects:</strong> Combine text, video, and audio for social media, presentations, or campaigns</li>
+        </ul>
+      </section>
+
+      {/* Free Tools Included */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">Free AI Tools Included in the Packs</h2>
+        <ul className="list-disc pl-6 text-gray-700 leading-relaxed space-y-2">
+          <li><strong>Text & Chat AI:</strong> ChatGPT, Claude, Gemini, Qwen, Grok, DeepSeek</li>
+          <li><strong>Video AI:</strong> Runway ML, Hailuo, Seedance, VGen, KlingAI</li>
+          <li><strong>Audio & Music AI:</strong> ElevenLabs AI, Udio AI</li>
+          <li><strong>Image & Graphics AI:</strong> Nano Banana, Kontext Restore, Gemini Banana AI</li>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mt-2">
+          All tools come free with the packs, creating a complete multimedia AI studio in one subscription.
+        </p>
+      </section>
+
+      {/* How to Buy */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">Where and How to Buy Sora 2 &amp; Sora 2 Pro in Bangladesh</h2>
+        <ol className="list-decimal pl-6 text-gray-700 leading-relaxed space-y-2">
+          <li>Visit <a className="text-blue-600 hover:underline font-semibold" href="https://onebrain.app" target="_blank" rel="noopener noreferrer">OneBrain</a>.</li>
+           <li>Sign up using your email and phone number</li>
+           <li>Click on Try Pro button on the bottom left corner</li>
+          <li>Select your pack: Creator Pack (৳699) or Performance Pack (৳1,999)</li>
+          <li>Pay securely — local and international options like <strong>bKash</strong>, <strong>Nagad</strong>, and <strong>VISA</strong> are supported</li>
+          <li>Start creating — instant access to Sora AI and the full suite of AI tools</li>
+        </ol>
+      </section>
+
+      {/* FAQs */}
+      <section className="mb-8 text-gray-800">
+        <h2 className="text-2xl font-semibold mb-4">Frequently Asked Questions</h2>
+        <div className="space-y-2">
+          {/* Replace with map for dynamic */}
+          <div className="border border-gray-200 rounded-lg overflow-hidden">
+            <button className="w-full flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 focus:outline-none">
+              <span className="font-medium">What is Sora 2 and Sora 2 Pro?</span>
+              <span>▼</span>
+            </button>
+            <div className="p-4 text-gray-700 border-t border-gray-200">
+              Sora 2 generates videos from text or images, and Sora 2 Pro adds enhanced rendering, longer durations, and premium features for higher-quality outputs.
+            </div>
+          </div>
+          {/* Repeat FAQ items similarly */}
+        </div>
+      </section>
+
+      {/* Final Thought */}
+      <section className="mt-8 text-gray-800">
+        <h2 className="text-2xl font-semibold mb-4">Final Thought</h2>
+        <p className="text-gray-700 leading-relaxed">
+          If you are looking for hassle-free, fully personal, and secure AI tools, OneBrain is your ultimate choice for Sora 2 and Sora 2 Pro in Bangladesh. For professional-quality AI video creation, buying Sora 2 & Sora 2 Pro via OneBrain is the smartest decision:
+        </p>
+        <ul className="list-disc pl-6 text-gray-700 leading-relaxed mt-2 space-y-2">
+          <li><strong>Sora 2 (৳699)</strong> — AI text-to-video and image-to-video generation</li>
+          <li><strong>Sora 2 Pro (৳1,999)</strong> — Advanced features for higher-quality, longer videos</li>
+          <li><strong>10+ premium AI tools</strong> included in each pack</li>
+          <li>OneBrain’s all-in-one platform for text, image, audio, and video creation</li>
+        </ul>
+        <p className="text-gray-700 leading-relaxed mt-4">
+          Start creating today at <a className="text-blue-600 hover:underline font-semibold" href="https://www.onebrain.app" target="_blank" rel="noopener noreferrer">onebrain.app</a> and unlock Sora 2, Sora 2 Pro, and 10+ premium AI tools — all with your chosen plan, fully personal, secure, and hassle-free.
+        </p>
+      </section>
+    </div>
+  </div>
+</main>
+
+      `
+    },
   ];
+}
+
+// Sanitize helper: remove JSX-style comments ({/* ... */}) that were accidentally included inside
+// the HTML template strings, and convert `className=` to `class=` so injected HTML uses valid
+// attributes when rendered with dangerouslySetInnerHTML.
+function sanitizeContent(content: string) {
+  if (!content) return content;
+  // Remove JSX comments like {/* comment */}
+  const withoutJsxComments = content.replace(/\{\/\*[\s\S]*?\*\/\}/g, '');
+  // Replace React's className with class for raw HTML
+  const withClassAttrs = withoutJsxComments.replace(/className=/g, 'class=');
+  return withClassAttrs;
+}
+
+// Export a sanitized copy of the blog data so pages receive clean HTML
+export function createBlogDataSanitized() {
+  return createBlogData().map((b) => ({ ...b, content: sanitizeContent(b.content) }));
 }

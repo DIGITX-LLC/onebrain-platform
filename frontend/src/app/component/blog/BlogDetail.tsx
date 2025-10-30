@@ -37,25 +37,32 @@ export default function BlogDetail({ title, image, content }: BlogDetailProps) {
       </nav>
 
       {/* Main Content */}
-      <div className="container mx-auto px-6 pt-24 pb-16">
-        <article className="prose prose-lg prose-invert mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">
-            {title}
-          </h1>
-
-          <div className="mb-12">
-            <img
-              src={image}
-              alt={title}
-              className="w-full h-[400px] object-cover rounded-2xl"
-            />
-          </div>
-
-          <div 
-            className="space-y-6"
-            dangerouslySetInnerHTML={{ __html: content }}
+      <div className="w-full pt-24 pb-16">
+        {/* Full-bleed hero image section (ignores page container) */}
+        <div className="w-full">
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-[400px] object-cover"
           />
-        </article>
+        </div>
+
+        {/* Centered readable content area: keep padding but constrain text width for good readability */}
+        <div className="px-6">
+          {/* Avoid Tailwind Typography (`prose`) styles so the injected blog HTML renders as authored */}
+          <article className="max-w-none mt-10 w-full not-prose">
+            <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">
+              {title}
+            </h1>
+
+            {/* Ensure injected HTML uses a dark text color (overrides page-level text-white)
+                so content authored for a light card remains readable. */}
+            <div
+              className="w-full not-prose text-slate-800 leading-relaxed"
+              dangerouslySetInnerHTML={{ __html: content }}
+            />
+          </article>
+        </div>
       </div>
     </div>
   );

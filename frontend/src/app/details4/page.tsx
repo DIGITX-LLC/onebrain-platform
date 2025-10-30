@@ -34,7 +34,7 @@ export default function Details4() {
       <div className="container mx-auto px-6 pt-24 pb-16">
         <article className="prose prose-lg prose-invert mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">
-            How to Buy ChatGPT Premium Models in BD?
+            How to Buy ChatGPT Premium Models in BD? 
           </h1>
 
           <div className="mb-12">

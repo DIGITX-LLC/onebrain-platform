@@ -25,6 +25,12 @@ body {
   overflow-x: hidden;
 }
 
+/* Ensure the root containers fill the viewport and use the page scrollbar only. */
+html, body, #__next {
+  height: 100%;
+  overflow-y: auto;
+}
+
 /* Infinite scroll animation for logo slider */
 @keyframes infinite-scroll {
   0% {
@@ -95,4 +101,21 @@ body {
   .container {
     max-width: 1536px;
   }
+}
+
+/* Utility to hide scrollbars only on elements that explicitly opt in.
+   Avoid applying this globally (body *) because it can cause layout
+   and accessibility issues and may lead to confusing double-scrollbar
+   behavior in some browsers. Use the class `hide-scrollbar` where
+   needed on scrollable elements. */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* WebKit-based browsers */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
 }
