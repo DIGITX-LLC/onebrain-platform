@@ -67,6 +67,7 @@ export default function BlogPage() {
       image: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Chatgpt-in-Bangladesh-5.png',
       link: `/blog/${slugify('How to Buy ChatGPT Premium Models in BD?')}`
     }
+    
   ];
 
   const [prevScrollPos, setPrevScrollPos] = useState(0);
