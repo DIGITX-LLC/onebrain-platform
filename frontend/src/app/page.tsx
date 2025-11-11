@@ -295,38 +295,36 @@ export default function Home() {
 
   const updates = [
     {
-      version: "1.5.4",
+      version: "v1.5.5",
       status: "Released",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released-image.svg",
       features: [
-        "New AI Video Generation model Kling v2.5 Turbo pro added.",
-        "OpenAI New Video model Sora 2 and Sora 2.5 pro added.",
-        "ElevenLabs officially has all available functions added with the new UI.",
-        "Claude new updated model 4.5 Sonnet added.",
-        "Advanced web search with browser-style results.",
-        "Fixed VGen video generation issue.",
-        "Beautify GPT all models' responses.",
-        "Fixed Attachment issue of Max Model.",
+        "Added daily token limit with auto-switch to unlimited default model after cap is reached.",
+        "Added “Usage History” under Profile to track token usage for any models.",
+        "Faster attachment uploads with support for files up to 30MB.",
+        "Resolved chart, diagram, and math rendering issues on GPT-5 series.",
+        "Resolved 10-second video generation problem on Kling 2.5 Turbo.",
+        "Fixed attachment upload issues on Seedance & VGen.",
+        "Fixed streaming issue when sending new messages in old chat history.",
+        "Latest AI Video generation model Veo3.1 added.",
+        "New AI Video generation model Pixverse 5 Model added.",
+
 
       ],
     },
     {
-      version: "1.5.5",
+      version: "v1.5.6",
       status: "In Progress",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress-image.svg",
       features: [
-        "OpenAI new cheapest Image mini model added.",
-        "Attachment parsing load time reduced & enhanced responses.",
-        "Image generation is implemented on the Conversation chat screen.",
-        "Context Memory management dashboard implemented for control.",
-      ],
+        "Image generation is implemented on the Conversation chat screen.",      ],
     },
     {
-      version: "1.5.6",
+      version: "1.5.7",
       status: "Planned",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned.svg",
@@ -335,6 +333,7 @@ export default function Home() {
         "Canvas mode implementation with edit Preview and download feature.",
         "Create, edit & download PDF, XLS & DOC files.",
         "New budget-friendly video model in the Creator package.",
+        "Context Memory management dashboard implemented for control.",
       ],
     },
   ];
