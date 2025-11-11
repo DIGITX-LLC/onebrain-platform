@@ -3,17 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "engines": {
-    "node": "20.x",
-    "pnpm": ">=8.0.0"
+    "node": "20.x"
   },
   "packageManager": "pnpm@8.15.6",
   "scripts": {
     "dev": "cd frontend && pnpm run dev",
-    "build": "cd frontend && pnpm run build",
+    "build": "npx -y pnpm@8.15.6 --dir frontend run build",
     "start": "cd frontend && pnpm run start",
     "lint": "cd frontend && pnpm run lint",
-    "install:frontend": "cd frontend && pnpm install",
-    "heroku-postbuild": "cd frontend && pnpm install --frozen-lockfile && pnpm run build"
+    "install:frontend": "npx -y pnpm@8.15.6 --dir frontend install",
+    "heroku-postbuild": "npx -y pnpm@8.15.6 --dir frontend install --frozen-lockfile && npx -y pnpm@8.15.6 --dir frontend run build"
   },
   "devDependencies": {}
 } 
