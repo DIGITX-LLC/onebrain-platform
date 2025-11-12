@@ -295,7 +295,7 @@ export default function Home() {
 
   const updates = [
     {
-      version: "v1.5.5",
+      version: "1.5.5",
       status: "Released",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released.svg",
@@ -308,20 +308,19 @@ export default function Home() {
         "Resolved 10-second video generation problem on Kling 2.5 Turbo.",
         "Fixed attachment upload issues on Seedance & VGen.",
         "Fixed streaming issue when sending new messages in old chat history.",
-        "Latest AI Video generation model Veo3.1 added.",
-        "New AI Video generation model Pixverse 5 Model added.",
-
-
       ],
     },
     {
-      version: "v1.5.6",
+      version: "1.5.6",
       status: "In Progress",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress-image.svg",
       features: [
-        "Image generation is implemented on the Conversation chat screen.",      ],
+        "Image generation is implemented on the Conversation chat screen.", 
+        "Latest AI Video generation model Veo3.1 added.",
+        "New AI Video generation model Pixverse 5 Model added.",
+      ],
     },
     {
       version: "1.5.7",
