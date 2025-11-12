@@ -295,19 +295,18 @@ export default function Home() {
 
   const updates = [
     {
-      version: "1.5.5",
+      version: "1.5.5.1",
       status: "Released",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released-image.svg",
       features: [
-        "Added daily token limit with auto-switch to unlimited default model after cap is reached.",
-        "Added “Usage History” under Profile to track token usage for any models.",
-        "Faster attachment uploads with support for files up to 30MB.",
-        "Resolved chart, diagram, and math rendering issues on GPT-5 series.",
-        "Resolved 10-second video generation problem on Kling 2.5 Turbo.",
-        "Fixed attachment upload issues on Seedance & VGen.",
-        "Fixed streaming issue when sending new messages in old chat history.",
+        "Added Google’s latest AI video generation model Veo3.1.",
+        "Added Google’s low-cost video + audio generation model Veo3.1 Fast.",
+        "Introduced new text-to-video and image-to-video model Pixverse 5.",
+        "Integrated fastest and cheapest image generation model Flux.",
+        "Added a new 4K-quality image generation model Seedream-4.",
+        "Enhanced color accuracy across the platform based on user feedback.",
       ],
     },
     {
@@ -318,8 +317,8 @@ export default function Home() {
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress-image.svg",
       features: [
         "Image generation is implemented on the Conversation chat screen.", 
-        "Latest AI Video generation model Veo3.1 added.",
-        "New AI Video generation model Pixverse 5 Model added.",
+        "Improve Overall Chat Response across all the LLM models.",
+        "Changed New Capsule chat bar style matching latest UI in the market.",
       ],
     },
     {
@@ -331,7 +330,6 @@ export default function Home() {
       features: [
         "Canvas mode implementation with edit Preview and download feature.",
         "Create, edit & download PDF, XLS & DOC files.",
-        "New budget-friendly video model in the Creator package.",
         "Context Memory management dashboard implemented for control.",
       ],
     },
