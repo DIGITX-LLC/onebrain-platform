@@ -679,12 +679,12 @@ export default function Home() {
 
                 {/* Sign In */}
                 <li className="px-1 py-1 ml-2">
-                  <Link href="https://ai.onebrain.app/login">
+                  <a href="https://ai.onebrain.app/login" rel="noopener noreferrer">
                     <DynamicButton
                       label="Sign-In"
                       size="w-auto px-3 xl:px-4 h-[35px] rounded-full font-normal block text-sm"
                     />
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -849,8 +849,9 @@ export default function Home() {
 
                 {/* Sign In */}
                 <li className="px-5 py-1">
-                  <Link
+                  <a
                     href="https://ai.onebrain.app/login"
+                    rel="noopener noreferrer"
                     onClick={(e) => {
                       console.log("Sign-in clicked");
                       setIsOpen(false);
@@ -861,7 +862,7 @@ export default function Home() {
                       label="Sign-In"
                       size="w-full px-4 h-[45px] rounded-xl font-medium block text-sm"
                     />
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -951,8 +952,9 @@ export default function Home() {
             </div>
           </div>
           <div className="pointer-events-auto mt-10 md:mt-0 mb-8 xs:mb-10 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24">
-            <Link
+            <a
               href="https://ai.onebrain.app/login"
+              rel="noopener noreferrer"
               className="inline-block  cursor-pointer touch-manipulation select-none"
               style={{
                 position: "relative",
@@ -968,7 +970,7 @@ export default function Home() {
                 label="Get Started"
                 size="w-[120px] h-[45px] rounded-full font-normal block"
               />
-            </Link>
+            </a>
           </div>
         </section>
 
