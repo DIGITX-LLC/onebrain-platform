@@ -66,6 +66,13 @@ export default function BlogPage() {
       excerpt: 'Buy ChatGPT-4, 4.1 nano & ChatGPT-5 in Bangladesh with OneBrain. Pay in BDT, start instantly...',
       image: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Chatgpt-in-Bangladesh-5.png',
       link: `/blog/${slugify('How to Buy ChatGPT Premium Models in BD?')}`
+    },
+    {
+      id: 5,
+      title: 'Buy Sora 2 & Sora 2 Pro in Bangladesh — Only on OneBrain with 10+ Free AI Tools',
+      excerpt: 'Buy Sora 2 (699 Taka) and Sora 2 Pro (1,999 Taka) exclusively on OneBrain in Bangladesh! Get 10+ premium AI...',
+      image: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Chatgpt-in-Bangladesh-5.png',
+      link: `/blog/${slugify('Buy Sora 2 & Sora 2 Pro in Bangladesh — Only on OneBrain with 10+ Free AI Tools')}`
     }
     
   ];
