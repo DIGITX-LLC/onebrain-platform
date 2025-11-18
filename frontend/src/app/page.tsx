@@ -14,6 +14,7 @@ import Vo3TrendingSection from './component/about/Vo3TrendingSection';
 import DynamicButton from './component/about/DynamicButton';
 import MobileCountdown from './component/about/MobileCountdown';
 import MediaGallery from './component/mediaGallery/MediaGallery';
+import UploadImage from "./component/uploadImage/uploadImage";
 
 // Update Card Component with optimized image loading
 interface UpdateData {
@@ -978,9 +979,17 @@ export default function Home() {
         <MobileCountdown />
 
         {/* Trending Section */}
-        <div className="container" id="vo3TrendingSection">
+        <div className="container " id="vo3TrendingSection">
           <Vo3TrendingSection />
         </div>
+        
+
+        {/*  sora upload image ection*/}
+        <div className="container ">
+             <UploadImage />
+          
+        </div>
+        
         {/* Features Section */}
         <section
           id="featuresSection"
