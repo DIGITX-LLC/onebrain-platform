@@ -41,12 +41,14 @@ export default function uploadImage() {
           autoPlay
           loop
           muted
+          controls={false}
           playsInline></video>
 
           <video src="/videos/video2.mp4 " className="w-full h-[280px] rounded-lg object-cover" 
           autoPlay
           loop
           muted
+          controls={false}
           playsInline></video>
         </div>
 
@@ -56,12 +58,14 @@ export default function uploadImage() {
           autoPlay
           loop
           muted
+          controls={false}
           playsInline></video>
 
           <video src="/videos/video4.mp4 " className="w-full h-[154px] rounded-lg object-cover" 
           autoPlay
           loop
           muted
+          controls={false}
           playsInline></video>
         </div>
       </div>

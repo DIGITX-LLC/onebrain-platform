@@ -32,7 +32,13 @@ export default function Vo3TrendingSection() {
                     {/* Right card */}
                     <div className="flex justify-center mt-4 ">
                         <div className="w-full max-w-md">
-                            <Image src="/chatGpt section/chatGpt.png" alt="Description" width={500} height={300} />
+                            {/* <Image src="/chatGpt section/chatGpt.png" alt="Description" width={500} height={300} /> */}
+                            <video src="/videos/chatgpt.mp4" className="w-full h-[350px] rounded-lg object-cover" 
+                             autoPlay
+                             loop
+                             muted
+                             controls={false}
+                             playsInline></video>
                         </div>
                     </div>
                 </div>
