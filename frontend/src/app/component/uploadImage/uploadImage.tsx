@@ -10,7 +10,7 @@ export default function uploadImage() {
         {/* left section */}
         <div className=" space-y-10 ">
            <div className="flex gap-2">
-            <Image src="/soraIcon/vector.png" alt="Icon" width={40} height={40} /> 
+            <Image src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Vector.png" alt="Icon" width={40} height={40} /> 
             <h2 className="text-2xl lg:text-4xl font-medium">Sora</h2>
            </div>
 
@@ -37,14 +37,14 @@ export default function uploadImage() {
     
         <div className="flex flex-col gap-2">
          
-          <video src="/videos/video1.mp4 " className="w-full h-[153px] rounded-lg object-cover" 
+          <video src=" https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/video1.mp4" className="w-full h-[153px] rounded-lg object-cover" 
           autoPlay
           loop
           muted
           controls={false}
           playsInline></video>
 
-          <video src="/videos/video2.mp4 " className="w-full h-[280px] rounded-lg object-cover" 
+          <video src=" https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/video2.mp4" className="w-full h-[280px] rounded-lg object-cover" 
           autoPlay
           loop
           muted
@@ -54,14 +54,14 @@ export default function uploadImage() {
 
         <div className="flex flex-col gap-2">
           
-          <video src="/videos/video3.mp4 " className="w-full h-[280px] rounded-lg object-cover" 
+          <video src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/video3.mp4" className="w-full h-[280px] rounded-lg object-cover" 
           autoPlay
           loop
           muted
           controls={false}
           playsInline></video>
 
-          <video src="/videos/video4.mp4 " className="w-full h-[154px] rounded-lg object-cover" 
+          <video src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/video4.mp4" className="w-full h-[154px] rounded-lg object-cover" 
           autoPlay
           loop
           muted

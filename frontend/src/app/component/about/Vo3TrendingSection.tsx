@@ -33,7 +33,7 @@ export default function Vo3TrendingSection() {
                     <div className="flex justify-center mt-4 ">
                         <div className="w-full max-w-md">
                             
-                            <video src="/videos/chatgpt.mp4" className="w-full h-[350px] rounded-lg object-cover" 
+                            <video src=" https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Chatgpt%20Home%20page%20.mp4" className="w-full h-[350px] rounded-lg object-cover" 
                              autoPlay
                              loop
                              muted
