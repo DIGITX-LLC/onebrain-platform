@@ -80,12 +80,9 @@ export default function BlogDetailsFive() {
             <div>
                 <h1>What Is Sora AI?</h1>
 
-<<<<<<< Updated upstream
                 <p>Sora is an AI-powered text-to-video generator developed to make storytelling easier for everyone — from individual creators to marketing teams.
                 You simply type a scene description or script, and Sora automatically generates a full video — complete with visuals, movements, and cinematic effects</p>
 
-=======
->>>>>>> Stashed changes
                 <p><span>Sora</span> is an <span>AI-powered text-to-video generator</span> developed to make storytelling easier for everyone — from individual creators to marketing teams. <br />
                 You simply type a scene description or script, and Sora automatically generates a full video — complete with visuals, movements, and cinematic effects</p>
 
