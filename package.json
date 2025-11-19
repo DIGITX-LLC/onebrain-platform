@@ -12,7 +12,7 @@
     "start": "cd frontend && pnpm run start",
     "lint": "cd frontend && pnpm run lint",
     "install:frontend": "npx -y pnpm@8.15.6 --dir frontend install",
-    "heroku-postbuild": "npx -y pnpm@8.15.6 --dir frontend install --frozen-lockfile && npx -y pnpm@8.15.6 --dir frontend run build"
+    "heroku-postbuild": "npx -y pnpm@8.15.6 --dir frontend install --no-frozen-lockfile && npx -y pnpm@8.15.6 --dir frontend run build"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0"
