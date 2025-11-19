@@ -212,9 +212,9 @@ export function createBlogData() {
       excerpt: 'Buy Sora 2 (699 Taka) and Sora 2 Pro (1,999 Taka) exclusively on OneBrain in Bangladesh! Get 10+ premium AI...',
       image: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Blog%20poster.png',
       content: `
-
-     <h2>Buy Sora 2 & Sora 2 Pro in Bangladesh — Only on OneBrain with 10+ Free AI Tools</h2>
-     <p>Buy Sora 2 (699 Taka) and Sora 2 Pro (1,999 Taka) exclusively on OneBrain in Bangladesh! Get 10+ premium AI tools free for text, image, audio, and video generation.</p>
+        <h1>Meta Description:</h1>
+         <h2>Buy Sora 2 & Sora 2 Pro in Bangladesh — Only on OneBrain with 10+ Free AI Tools</h2>
+         <p>Buy Sora 2 (699 Taka) and Sora 2 Pro (1,999 Taka) exclusively on OneBrain in Bangladesh! Get 10+ premium AI tools free for text, image, audio, and video generation.</p>
     
      <p>The future of content creation, Sora 2 and Sora 2 Pro are now available exclusively on OneBrain in Bangladesh. These advanced AI models, powered by OpenAI, turn your text or images into professional videos in just a few clicks.</p>
     
