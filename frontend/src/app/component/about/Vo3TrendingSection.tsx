@@ -21,7 +21,7 @@ export default function Vo3TrendingSection() {
                 {/* Content Layout */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 mb-16">
                     {/* Left Content */}
-                    <div className="mt-12">
+                    <div className="md:mt-12 mt-4 mb-4 md:mb-0">
                         <p className="text-[#D1D5DB] text-base font-normal ">
                            Discover the best ChatGPT models—including ChatGPT-4, the newest ChatGPT-5 and more—and see how people in Bangladesh use them for study, work, and creativity. From crafting perfect Bangla blogging content to ChatGPT prompt for photo editing, grammar check, and detailed Bangla tutorial, ChatGPT delivers smart answers in seconds. Learn about ChatGPT pricing, how to use ChatGPT in Bangladesh, and subscribe to a ChatGPT Premium subscription easily with OneBrain to access all features in Bangla or English.
                         </p>

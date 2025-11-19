@@ -15,8 +15,8 @@ export default function uploadImage() {
            </div>
 
            <div className=" space-y-4">
-            <h1 className="font-bold text-2xl lg:text-5xl">From words to words </h1>
-            <p className="font-normal  text-xl">Start with a prompt or upload an image to create videos <br /> with unprecedented realism in any style: cinematic, <br /> animated, photorealistic, or surreal.</p>
+            <h1 className="font-bold text-base lg:text-5xl">From words to words </h1>
+            <p className="font-normal  text-base">Start with a prompt or upload an image to create videos <br /> with unprecedented realism in any style: cinematic, <br /> animated, photorealistic, or surreal.</p>
            </div>
 
            <div className="rounded-lg bg-[#111118] flex gap-2 mt-15 border border-gray-500 ">
