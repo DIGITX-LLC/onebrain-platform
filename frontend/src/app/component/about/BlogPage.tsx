@@ -71,9 +71,23 @@ export default function BlogPage() {
       id: 5,
       title: 'Buy Sora 2 & Sora 2 Pro in Bangladesh — Only on OneBrain with 10+ Free AI Tools',
       excerpt: 'Buy Sora 2 (699 Taka) and Sora 2 Pro (1,999 Taka) exclusively on OneBrain in Bangladesh! Get 10+ premium AI...',
-      image: '',
+      image: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Blog%20poster.png',
       link: `/blog/${slugify('Buy Sora 2 & Sora 2 Pro in Bangladesh — Only on OneBrain with 10+ Free AI Tools')}`
-    }
+    },
+    {
+      id: 6,
+      title: 'What is Nano Banana AI?',
+      excerpt: 'The future of smart content creation is here — and it’s powered by Nano Banana AI.Whether you’re a student...',
+      image: ' https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Nano%20Banana%20in%20Bangladesh%20(4).jpg',
+      link: `/blog/${slugify('What is Nano Banana AI?')}`
+    },
+    {
+      id: 7,
+      title: 'ElevenLabs AI: Text-to-Speech, Voice Clone & Pricing in BD',
+      excerpt: 'Meta : Buy ElevenLabs AI in Bangladesh – clone voices, convert text-to-speech, and access 10+ free AI tools for video...',
+      image: ' https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Elevenlab%20in%20Bangladesh%20(2).jpg',
+      link: `/blog/${slugify('ElevenLabs AI: Text-to-Speech, Voice Clone & Pricing in BD')}`
+    },
     
   ];
 
