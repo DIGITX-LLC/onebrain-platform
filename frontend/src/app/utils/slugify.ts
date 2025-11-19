@@ -205,6 +205,63 @@ export function createBlogData() {
         <h3>Experience Smarter AI Today</h3>
         <p>Your creativity, productivity, and business deserve the best. Get started with OneBrain to unlock easy and affordable ChatGPT buy BD deals, experiment with a ChatGPT image edit prompt, or enjoy the powerful features of ChatGPT-4 and ChatGPT-5 and many more models —all tailored for Bangladesh.</p>
       `
-    }
+    },
+    {
+      id: 5,
+      title: 'Buy Sora 2 & Sora 2 Pro in Bangladesh — Only on OneBrain with 10+ Free AI Tools',
+      excerpt: 'Buy Sora 2 (699 Taka) and Sora 2 Pro (1,999 Taka) exclusively on OneBrain in Bangladesh! Get 10+ premium AI...',
+      image: '',
+      content: `
+        <h2>How to Buy ChatGPT Premium Models in Bangladesh</h2>
+        <p>Buy ChatGPT-4, 4.1 nano & ChatGPT-5 in Bangladesh with OneBrain. Pay in BDT, start instantly, and use Bangla prompts—compare plans and buy today.</p>
+        
+        <h3>Why Choose OneBrain for ChatGPT in Bangladesh?</h3>
+        <p>Your time is valuable, and the right platform matters. Here\'s why Bangladeshi users trust OneBrain:</p>
+        
+        <ul>
+          <li><strong>Premium Models at Your Fingertips</strong> – Get instant access to ChatGPT-4o, ChatGPT-4.1 nano, mini, and the latest ChatGPT-5 with updates as future models arrive.</li>
+          <li><strong>Local Convenience</strong> – No VPNs or foreign cards. Use ChatGPT directly in Bangladesh.</li>
+          <li><strong>Bangla-Friendly Features</strong> – From ChatGPT prompts in Bangla to a complete ChatGPT Bangla tutorial, OneBrain supports your language and workflow.</li>
+          <li><strong>Affordable Plans</strong> – Compare ChatGPT pricing, including the newest ChatGPT 4 price, ChatGPT Plus price, ChatGPT yearly subscription, and ChatGPT Pro subscription—all shown in BDT.</li>
+          <li><strong>Guided Upgrades</strong> – Looking to buy ChatGPT Plus in Bangladesh, manage your subscription, or grab the best ChatGPT deals? OneBrain makes the process simple and walks you through each step.</li>
+        </ul>
+
+        <h3>What You Can Do with ChatGPT on OneBrain</h3>
+        <p>OneBrain isn\'t just about access—it\'s about possibilities. Here are some of the most popular ways people in Bangladesh use ChatGPT every day:</p>
+
+        <ul>
+          <li><strong>Create and Edit Content</strong> – Craft perfect Bangla blog posts, polish writing with a quick grammar check, or generate unique ChatGPT prompts for photo editing and other creative projects.</li>
+          <li><strong>Teach and Learn</strong> – Teachers prepare lessons and assignments, while students use ChatGPT for research, study guides, grammar checks, and practice exercises to improve their learning.</li>
+          <li><strong>Grow Your Business</strong> – Entrepreneurs write ads, plan marketing campaigns, and brainstorm new ideas.</li>
+          <li><strong>Explore Advanced AI</strong> – Experiment with tools like the ChatGPT agent for automation, try fun prompts such as ChatGPT Ghibli AI, or test exciting new features like ChatGPT 4.1 nano, available free as they roll out.</li>
+        </ul>
+
+        <h3>Creative ChatGPT Prompts You Should Try</h3>
+        <p>Here are some trending ChatGPT prompts Bangladesh users love:</p>
+
+        <ul>
+          <li><strong>ChatGPT Prompt for Photo Editing:</strong> "Suggest 10 unique Photoshop photo editing ideas for Instagram."</li>
+          <li><strong>ChatGPT Grammar Check:</strong> "Check grammar and improve this paragraph for a Bangla blog."</li>
+          <li><strong>ChatGPT Image Edit Prompt:</strong> "Create a Ghibli-style AI art description for a Dhaka street view."</li>
+          <li><strong>ChatGPT Ghibli AI Prompt:</strong> "Generate a dreamy Studio Ghibli-inspired village scene description."</li>
+        </ul>
+
+        <h3>How to Buy ChatGPT in Bangladesh (Step-by-Step)</h3>
+        <p>Getting started with OneBrain is fast and easy:</p>
+
+        <ol>
+          <li>Sign up at OneBrain</li>
+          <li>Choose the plan you want</li>
+          <li>Pay securely in BDT using local payment methods (no VPN or foreign card)</li>
+          <li>Get instant access to ChatGPT-4, ChatGPT-4.1, ChatGPT-5 and other models</li>
+        </ol>
+
+        <p>No technical headaches, no confusing payment steps—just smarter AI whenever you need it.</p>
+
+        <h3>Experience Smarter AI Today</h3>
+        <p>Your creativity, productivity, and business deserve the best. Get started with OneBrain to unlock easy and affordable ChatGPT buy BD deals, experiment with a ChatGPT image edit prompt, or enjoy the powerful features of ChatGPT-4 and ChatGPT-5 and many more models —all tailored for Bangladesh.</p>
+      `
+    },
+
   ];
 }

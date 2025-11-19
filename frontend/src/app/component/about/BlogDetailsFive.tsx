@@ -83,6 +83,13 @@ export default function BlogDetailsFive() {
                 <p>Sora is an AI-powered text-to-video generator developed to make storytelling easier for everyone — from individual creators to marketing teams.
                 You simply type a scene description or script, and Sora automatically generates a full video — complete with visuals, movements, and cinematic effects</p>
 
+                <p><span>Sora</span> is an <span>AI-powered text-to-video generator</span> developed to make storytelling easier for everyone — from individual creators to marketing teams. <br />
+                You simply type a scene description or script, and Sora automatically generates a full video — complete with visuals, movements, and cinematic effects</p>
+
+                <p>Whether you’re creating educational content, social media clips, or promo videos, Sora gives you the tools to bring your ideas to life — no camera, no editing software, and no experience needed.</p>
+
+                <p>On OneBrain, you can access Sora 2 and Sora 2 Pro, two of the most advanced versions available for Bangladeshi users.</p>
+
                 
             </div>
           </div>
