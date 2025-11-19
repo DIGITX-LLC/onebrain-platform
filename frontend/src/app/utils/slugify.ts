@@ -216,39 +216,40 @@ export function createBlogData() {
          <h2>Buy Sora 2 & Sora 2 Pro in Bangladesh — Only on OneBrain with 10+ Free AI Tools</h2>
          <p>Buy Sora 2 (699 Taka) and Sora 2 Pro (1,999 Taka) exclusively on OneBrain in Bangladesh! Get 10+ premium AI tools free for text, image, audio, and video generation.</p>
     
-     <p>The future of content creation, Sora 2 and Sora 2 Pro are now available exclusively on OneBrain in Bangladesh. These advanced AI models, powered by OpenAI, turn your text or images into professional videos in just a few clicks.</p>
+        <p>The future of content creation, <strong>Sora 2 and Sora 2 Pro are now available exclusively on OneBrain in Bangladesh.</strong> These advanced AI models, powered by OpenAI, turn your text or images into professional videos in just a few clicks.</p>
     
-     <p>In 2025, AI video generation is the next big thing. From YouTube Shorts to TikTok and Instagram Reels, videos are now the language of the internet. But for most Bangladeshi creators, producing high-quality videos can be expensive, time-consuming, and technically challenging.</p>
+        <p>In 2025, <strong>AI video generation</strong> is the next big thing. From YouTube Shorts to TikTok and Instagram Reels, videos are now the language of the internet. But for most Bangladeshi creators, producing high-quality videos can be expensive, time-consuming, and technically challenging.</p>
     
-     <p>That’s why the arrival of Sora AI — available exclusively on OneBrain — is a total game changer. This powerful AI video generator lets you turn text prompts into professional-grade videos in just minutes.</p>
-     <p>Let’s explore why Sora is creating so much buzz — and how Bangladeshi creators can use it to create smarter, faster, and cheaper.</p>
+        <p>That’s why the arrival of <strong>Sora AI</strong> — available exclusively on OneBrain — is a total game changer. This powerful AI video generator lets you turn <strong>text prompts into professional-grade videos</strong> in just minutes.</p>
+        <p>Let’s explore why Sora is creating so much buzz — and how Bangladeshi creators can use it to create smarter, faster, and cheaper.</p>
 
 
-     <h3>What Is Sora AI?</h3>
-     <p>Sora is an AI-powered text-to-video generator that makes storytelling easy for everyone — from individual creators to marketing teams. Just type a scene description or script, and Sora automatically generates a full video complete with visuals, movements, and cinematic effects.</p>
-    <p>Whether you’re creating educational content, social media clips, or promo videos, Sora gives you the tools to bring your ideas to life — no camera, no editing software, and no experience needed.
-     On OneBrain, you can access Sora 2 and Sora 2 Pro, two of the most advanced versions available for Bangladeshi users.
-    </P>
-     <p>On OneBrain, you can access Sora 2 and Sora 2 Pro, two of the most advanced versions available for Bangladeshi users.</p>
+        <h3>What Is Sora AI?</h3>
+        <p><strong>Sora</strong> is an <strong>AI-powered text-to-video generator</strong> that makes storytelling easy for everyone — from individual creators to marketing teams. <br> Just type a scene description or script, and Sora automatically generates a full video complete with visuals, movements, and cinematic effects.</p>
+        <p>Whether you’re creating educational content, social media clips, or promo videos, Sora gives you the tools to bring your ideas to life — no camera, no editing software, and no experience needed.
+         <br> On OneBrain, you can access Sora 2 and Sora 2 Pro, two of the most advanced versions available for Bangladeshi users.
+        </P>
+        <p>On OneBrain, you can access Sora 2 and Sora 2 Pro, two of the most advanced versions available for Bangladeshi users.</p>
      
 
-     <h3>Why Sora Is a Game Changer for Bangladeshi Creators</h3>
-     <ul>
-      <li><strong>Text-to-Video in Minutes:</strong> Simply type your idea and Sora instantly creates it. Tweak angles, lighting, and camera motion with ease.</li>
-      <li><strong>No Expensive Gear or Editing Skills Needed:</strong> All you need is imagination and internet connection.</li>
-      <li><strong>Bangladesh-Friendly Pricing and Access:</strong> Buy Sora 2 (৳699) or Sora 2 Pro (৳1,999) directly in Taka using bKash, Nagad, or Rocket.</li>
-      <li><strong>Professional-Quality Output:</strong> Smooth motion, realistic visuals, and cinematic scenes, perfect for social media, marketing, and education.</li>
-     </ul>
+         <h3><strong>Why Sora Is a Game Changer for Bangladeshi Creators</strong></h3>
 
-     <h3>Key Features</h3>
-     <ul>
-      <li>Text-to-Video: Convert scripts, articles, or blog posts into dynamic videos</li>
-      <li>AI Image-to-Video: Turn images into professional videos using intelligent AI prompts</li>
-      <li>High-Quality Output: Suitable for YouTube, social media, marketing campaigns, and presentations</li>
-      <li>User-Friendly Interface: Easy for both beginners and professionals</li>
-      <li>OpenAI-Powered Intelligence: Creative and context-aware video generation</li>
-      <li>Fast & Efficient: Produce professional videos faster than traditional editing</li>
-     </ul>
+         <ul>
+           <li><strong>Text-to-Video in Minutes</strong> Simply type your idea and Sora instantly creates it. Tweak angles, lighting, and camera motion with ease.</li>
+           <li><strong>No Expensive Gear or Editing Skills Needed:</strong> All you need is imagination and internet connection.</li>
+           <li><strong>Bangladesh-Friendly Pricing and Access:</strong> Buy Sora 2 (৳699) or Sora 2 Pro (৳1,999) directly in Taka using bKash, Nagad, or Rocket.</li>
+           <li><strong>Professional-Quality Output:</strong> Smooth motion, realistic visuals, and cinematic scenes, perfect for social media, marketing, and education.</li>
+         </ul>
+
+        <h3>Key Features</h3>
+         <ul>
+           <li>Text-to-Video: Convert scripts, articles, or blog posts into dynamic videos</li>
+           <li>AI Image-to-Video: Turn images into professional videos using intelligent AI prompts</li>
+           <li>High-Quality Output: Suitable for YouTube, social media, marketing campaigns, and presentations</li>
+           <li>User-Friendly Interface: Easy for both beginners and professionals</li>
+           <li>OpenAI-Powered Intelligence: Creative and context-aware video generation</li>
+           <li>Fast & Efficient: Produce professional videos faster than traditional editing</li>
+         </ul>
 
      <h3>Sora 2 vs Sora 2 Pro: Feature Comparison</h3>
      <table>
@@ -317,14 +318,15 @@ export function createBlogData() {
       excerpt: 'The future of smart content creation is here — and it’s powered by Nano Banana AI.Whether you’re a student...',
       image: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Nano%20Banana%20in%20Bangladesh%20(4).jpg',
       content: `
-      <h2>The Future of Smart Content Creation with Nano Banana AI</h2>
-      <p>Whether you're a student, marketer, designer, or content creator, Nano Banana AI helps you write, design, and create visually stunning content using advanced AI.</p>
-
-      <h3>Why Buy Nano Banana AI via OneBrain?</h3>
-      <p>Unlock the Creator Pack for just ৳699, which includes Nano Banana AI, 15,00,000 Pro Tokens, and full access to dozens of premium AI tools for text, image, video, and audio — all bundled together for free. This makes it one of the most powerful and affordable AI solutions in Bangladesh.</p>
+      <h1>What is Nano Banana AI?</h1>
+      <p>The future of smart content creation is here — and it’s powered by Nano Banana AI.
+      Whether you’re a student, marketer, designer, or content creator, Nano Banana helps you write, design, and create visually stunning content with the help of advanced artificial intelligence.
+      </p>
+      <p>And when you buy Nano Banana AI via OneBrain in Bangladesh, you unlock the Creator Pack for just ৳699, which includes Nano Banana AI, 15,00,000 Pro Tokens, and full access to dozens of premium AI tools for text, image, video, and audio — all bundled together for free.</p>
+      <p>This makes it one of the most powerful and affordable AI solutions in Bangladesh, designed for creators who want to generate complete multimedia content from a single platform.</p>
 
       <h3>What is Nano Banana AI?</h3>
-      <p>Nano Banana AI is an advanced generative AI tool that allows you to create engaging content, visuals, and ideas instantly. It’s built for creators who need fast, accurate, and creative results without spending hours editing or designing.</p>
+      <p><strong>Nano Banana AI</strong> is an advanced generative AI tool that allows you to create engaging content, visuals, and ideas instantly. It’s built for creators who need fast, accurate, and creative results without spending hours editing or designing.</p>
 
       <h3>Key Features:</h3>
       <ul>
