@@ -14,5 +14,7 @@
     "install:frontend": "npx -y pnpm@8.15.6 --dir frontend install",
     "heroku-postbuild": "npx -y pnpm@8.15.6 --dir frontend install --frozen-lockfile && npx -y pnpm@8.15.6 --dir frontend run build"
   },
-  "devDependencies": {}
-} 
+  "dependencies": {
+    "@heroicons/react": "^2.2.0"
+  }
+}
