@@ -1,6 +1,6 @@
-// import BlogDetailsFive from "../component/about/BlogDetailsFive";
+import BlogDetailsFive from "../component/about/BlogDetailsFive";
 
 
-// export default function details5() {
-//   return <BlogDetailsFive />;
-// } 
+export default function details5() {
+  return <BlogDetailsFive />;
+} 

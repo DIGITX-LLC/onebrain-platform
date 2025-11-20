@@ -52,7 +52,8 @@ export function createBlogData() {
 
         <h3>Future Implications</h3>
         <p>The development of these models represents a significant step forward in AI technology, promising even more advanced capabilities in future iterations.</p>
-      `
+      `,
+     
     },
     {
       id: 2,
@@ -370,7 +371,8 @@ export function createBlogData() {
 </ul>
 
 <p>Start creating today at <a href="https://onebrain.app/">onebrain.app</a> and unlock Sora 2, Sora 2 Pro, and 10+ premium AI tools — all with your chosen plan, fully personal, secure, and hassle-free.</p>
-`},
+`,
+ component:"details5"},
     {
       id: 6,
       title: ' What is Nano Banana AI?',

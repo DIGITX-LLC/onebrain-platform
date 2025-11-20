@@ -1,5 +1,5 @@
-// import BlogDetailsOne from '../component/about/BlogDetailsOne';
+import BlogDetailsOne from '../component/about/BlogDetailsOne';
 
-// export default function BlogDetails2() {
-//   return <BlogDetailsOne />;
-// } 
+export default function BlogDetails2() {
+  return <BlogDetailsOne />;
+} 
