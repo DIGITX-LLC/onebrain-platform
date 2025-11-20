@@ -34,7 +34,7 @@ const AIToolsIcons: Record<string, string> = {
   restorerWhite: '/assets/models/flux-w.svg',
   quizMakerWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/quiz-maker.svg',
   elevenlabsWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Elevenlabs%20Logo%20(1).svg',
-  soraWhite:'/assets/models/sora-white-logo.svg'
+  soraWhite:'/assets/models/runway-white.png'
 };
 
 interface GenerateImageUpTo {
