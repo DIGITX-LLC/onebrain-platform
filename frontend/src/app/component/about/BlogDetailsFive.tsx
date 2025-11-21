@@ -52,7 +52,7 @@ export default function BlogDetailsFive() {
             </div>
           </div>
 
-          {/* Full Content */}
+          
           <div className="space-y-6 text-gray-300">
 
             <p>
@@ -146,14 +146,14 @@ export default function BlogDetailsFive() {
               </tbody>
             </table>
 
-            {/* Pricing & Packs */}
+            
             <h2 className="text-2xl font-bold mt-8 mb-4">💰 Pricing & Packs</h2>
             <ul className="list-disc pl-6 space-y-3">
               <li><strong>Creator Pack (৳699):</strong> Sora 2 + 10+ premium AI tools + 15,00,000 Pro Tokens</li>
               <li><strong>Performance Pack (৳1,999):</strong> Sora 2 Pro + all Creator Pack tools + 45,00,000 Pro Tokens</li>
             </ul>
 
-            {/* FAQs */}
+            
             <h2 className="text-2xl font-bold mt-8 mb-4">❓ Frequently Asked Questions (FAQs)</h2>
             <ul className="list-disc pl-6 space-y-3">
               <li>Q: What is Sora 2 and Sora 2 Pro? <br/>A: Sora 2 generates videos from text or images, Sora 2 Pro has advanced features for longer, higher-quality videos.</li>
@@ -165,7 +165,7 @@ export default function BlogDetailsFive() {
               <li>Q: How quickly can I start using Sora 2 & Sora 2 Pro? <br/>A: You get instant access after signing up and paying.</li>
             </ul>
 
-            {/* Final Thought */}
+           
              <h2 className="text-2xl font-bold mt-8 mb-4">✅ Final Thought</h2>
              <p>
              If you are looking for hassle-free, fully personal, and secure AI tools, <strong>OneBrain</strong> is your ultimate choice for Sora 2 and Sora 2 Pro in Bangladesh.

@@ -1,68 +1,4 @@
-// "use client";
-// import React from "react";
-// import Link from "next/link";
-// import ButtonAnimatedGradient from "./ButtonAnimatedGradient";
 
-// interface BlogDetailsSixProps {
-//   title: string;
-//   image: string;
-//   content: string; 
-// }
-
-// export default function BlogDetailsSix({ title, image, content }: BlogDetailsSixProps) {
-//   return (
-//     <div className="min-h-screen bg-[#030205] text-white">
-//       {/* Navigation */}
-//       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#030205]/80 backdrop-blur-lg">
-//         <div className="container mx-auto px-6 py-4">
-//           <div className="flex items-center justify-between">
-//             <Link href="/">
-//               <img
-//                 src="https://digitxevents.com/wp-content/uploads/2025/03/onebrain_ab_logo.svg"
-//                 alt="OneBrain Logo"
-//                 className="h-8"
-//               />
-//             </Link>
-//             <Link href="/blog">
-//               <ButtonAnimatedGradient
-//                 text="Back to Blog"
-//                 gradientFrom="#0f1747"
-//                 gradientTo="#0f1747"
-//                 borderColor="#b2b8f6"
-//                 className="w-[135px] h-[40px] rounded-full font-normal"
-//               />
-//             </Link>
-//           </div>
-//         </div>
-//       </nav>
-
-//       {/* Main Content */}
-//       <div className="container mx-auto px-6 pt-24 pb-16">
-//         <article className="prose prose-lg prose-invert mx-auto">
-//           {/* Title */}
-//           <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">
-//             {title}
-//           </h1>
-
-
-//           <div className="mb-12">
-//             <img
-//               src={image}
-//               alt={title}
-//               className="w-full h-[400px] object-cover rounded-2xl"
-//             />
-//           </div>
-
-//           {/* Blog Content */}
-//           <div
-//             className="space-y-6 text-gray-300"
-//             dangerouslySetInnerHTML={{ __html: content }}
-//           />
-//         </article>
-//       </div>
-//     </div>
-//   );
-// }
 "use client";
 import React from 'react';
 import Link from 'next/link';
@@ -101,7 +37,7 @@ export default function BlogDetailsSix() {
       <div className="container mx-auto px-6 pt-24 pb-16">
         <article className="prose prose-lg prose-invert mx-auto">
 
-          {/* TITLE */}
+          
           <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">
             Nano Banana AI: Text-to-Speech, Voice Clone & Pricing in Bangladesh
           </h1>
@@ -123,7 +59,7 @@ export default function BlogDetailsSix() {
             </div>
           </div>
 
-          {/* Meta Description */}
+          
           <div className="mb-10">
             <h2 className="text-xl font-bold">Meta Description:</h2>
             <p className="text-gray-300">
@@ -132,7 +68,7 @@ export default function BlogDetailsSix() {
             </p>
           </div>
 
-          {/* CONTENT START */}
+         
           <div className="space-y-6">
 
             <p className="text-gray-300">
@@ -148,7 +84,7 @@ export default function BlogDetailsSix() {
               This makes it the most powerful and cost-effective AI solution in Bangladesh, allowing creators to produce complete multimedia content from one platform.
             </p>
 
-            {/* WHAT IS NANO BANANA AI */}
+            
             <h2 className="text-2xl font-bold mt-8 mb-4">What is Nano Banana AI?</h2>
 
             <p className="text-gray-300">
@@ -169,7 +105,7 @@ export default function BlogDetailsSix() {
               Whether you’re a YouTuber, podcaster, teacher, or freelancer, Nano Banana lets you produce studio-quality audio without expensive recording equipment.
             </p>
 
-            {/* WHY BUY FROM ONEBRAIN */}
+            
             <h2 className="text-2xl font-bold mt-8 mb-4">Why Choose Nano Banana from OneBrain?</h2>
 
             <ul className="list-disc pl-6 space-y-3 text-gray-300">
@@ -179,7 +115,7 @@ export default function BlogDetailsSix() {
               <li><span role="img" aria-label="all-in-one">📦</span> <strong>All-in-One Platform:</strong> No need for multiple costly subscriptions.</li>
             </ul>
 
-            {/* WHAT YOU CAN DO */}
+            
             <h2 className="text-2xl font-bold mt-8 mb-4">
               What You Can Do with Nano Banana via OneBrain
             </h2>
@@ -193,30 +129,30 @@ export default function BlogDetailsSix() {
               <li><span role="img" aria-label="tokens">🎟️</span> Use 15,00,000 Pro Tokens for massive creative workflows</li>
             </ul>
 
-            {/* ALL-INCLUSIVE AI SUITE */}
+            
             <h2 className="text-2xl font-bold mt-8 mb-4">
               All-Inclusive AI Suite Included in the Creator Pack
             </h2>
 
-            {/* TEXT TOOLS */}
+           
             <h3 className="text-xl font-semibold">📝 Text & Chat AI Tools</h3>
             <p className="text-gray-300">
               ChatGPT, Claude, Gemini, Qwen, Grok, DeepSeek, Perplexity AI — perfect for writing, coding, research, essays & summarization.
             </p>
 
-            {/* IMAGE TOOLS */}
+            
             <h3 className="text-xl font-semibold mt-6">🖼️ Image AI Tools</h3>
             <p className="text-gray-300">
               Nano Banana, Kontext Restore, Gemini Image AI & Grok AI for enhancing, repairing & generating visuals.
             </p>
 
-            {/* VIDEO TOOLS */}
+           
             <h3 className="text-xl font-semibold mt-6">🎬 Video AI Tools</h3>
             <p className="text-gray-300">
               Runway ML, Hailuo AI, VEO3, Sedance, Wan AI — create cinematic-quality videos instantly.
             </p>
 
-            {/* AUDIO TOOLS */}
+           
             <h3 className="text-xl font-semibold mt-6">🎧 Audio & Music Tools</h3>
             <p className="text-gray-300">
               Nano Banana, Udio AI, voice humanizers & sound enhancers for professional audio.
@@ -226,13 +162,13 @@ export default function BlogDetailsSix() {
               Unlimited chat & file attachments remain available even after token usage.
             </p>
 
-            {/* UNLIMITED CHAT & ATTACHMENTS */}
+            
             <h2 className="text-2xl font-bold mt-8 mb-4">Unlimited Chat & Attachments</h2>
             <p className="text-gray-300">
               Even after using your Pro Tokens, OneBrain provides unlimited chat and file attachments with advanced AI models, allowing you to continue creating without limits.
             </p>
 
-            {/* EXTENDED BENEFITS OF THE CREATOR PACK */}
+            
             <h2 className="text-2xl font-bold mt-8 mb-4">Extended Benefits of the Creator Pack</h2>
             <ul className="list-disc pl-6 space-y-3 text-gray-300">
               <li><span role="img" aria-label="complete-suite">🛠️</span> <strong>Complete Multimedia AI Suite:</strong> Tools for text, audio, image, video, and music creation.</li>
@@ -242,7 +178,7 @@ export default function BlogDetailsSix() {
               <li><span role="img" aria-label="convenient">🔄</span> <strong>All-in-One Convenience:</strong> No need for multiple subscriptions — everything in one place.</li>
             </ul>
 
-            {/* HOW TO BUY NANO BANANA & PRICE IN BANGLADESH */}
+    
             <h2 className="text-2xl font-bold mt-8 mb-4">How to Buy Nano Banana & Pricing in Bangladesh</h2>
             <ol className="list-decimal pl-6 space-y-3 text-gray-300">
               <li>Visit <Link href="https://onebrain.app" className="text-blue-400 underline">onebrain.app</Link></li>
