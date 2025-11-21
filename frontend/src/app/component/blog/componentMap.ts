@@ -12,6 +12,10 @@ export const componentMap: any = {
     ssr: false,
   }),
 
+   details4: dynamic(() => import("@/app/component/about/BlogDetailsFour"), {
+    ssr: false,
+  }),
+
   details5: dynamic(() => import("@/app/component/about/BlogDetailsFive"), {
     ssr: false,
   }),

@@ -1,15 +1,11 @@
+
 "use client";
 import React from "react";
 import Link from "next/link";
 import ButtonAnimatedGradient from "./ButtonAnimatedGradient";
 
-interface BlogDetailsFiveProps {
-  title: string;
-  image: string;
-  content: string; // HTML content
-}
 
-export default function BlogDetailsFive({ title, image, content }: BlogDetailsFiveProps) {
+export default function BlogDetailsFive() {
   return (
     <div className="min-h-screen bg-[#030205] text-white">
       {/* Navigation */}
@@ -23,7 +19,6 @@ export default function BlogDetailsFive({ title, image, content }: BlogDetailsFi
                 className="h-8"
               />
             </Link>
-
             <Link href="/blog">
               <ButtonAnimatedGradient
                 text="Back to Blog"
@@ -37,36 +32,155 @@ export default function BlogDetailsFive({ title, image, content }: BlogDetailsFi
         </div>
       </nav>
 
-      {/* Main Content */}
+      
       <div className="container mx-auto px-6 pt-24 pb-16">
         <article className="prose prose-lg prose-invert mx-auto">
-          {/* Dynamic Title */}
+          
           <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">
-            {title}
+            Buy Sora 2 & Sora 2 Pro in Bangladesh — Only on OneBrain with 10+ Free AI Tools
           </h1>
 
-          {/* Dynamic Image */}
           <div className="mb-12">
-            <div className="details5-hero-wrapper" style={{ height: "200px" }}>
-              {/* <img
-                src={image}
-                alt={title}
-                className="details5-hero-image w-full h-full rounded-2xl"
-                style={{
-                  height: "200px",
-                  maxHeight: "200px",
-                  width: "100%",
-                  borderRadius: "1rem",
-                }}
-              /> */}
+            <div className="details-hero-wrapper" style={{ height: "200px" }}>
+              
+              <img
+                src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Blog%20poster.png"
+                alt="Sora 2 & Sora 2 Pro"
+                className="details-hero-image w-full h-full rounded-2xl"
+                style={{ height: "200px", maxHeight: "200px", width: "100%", borderRadius: "1rem" }}
+              />
             </div>
           </div>
 
-          {/* Dynamic Content (HTML) */}
-          <div
-            className="space-y-6"
-            dangerouslySetInnerHTML={{ __html: content }}
-          />
+          {/* Full Content */}
+          <div className="space-y-6 text-gray-300">
+
+            <p>
+              The future of content creation, <strong>Sora 2</strong> and <strong>Sora 2 Pro</strong> are now available exclusively on OneBrain in Bangladesh. These advanced AI models, powered by OpenAI, turn your text or images into professional videos in just a few clicks.
+            </p>
+
+            <p>
+              In 2025, one thing is clear — AI video generation is the next big thing in content creation. From YouTube Shorts to TikTok and Instagram Reels, videos are now the language of the internet. But for most Bangladeshi creators, producing high-quality videos can be expensive, time-consuming, and technically challenging.
+            </p>
+
+            <p>
+              That’s why the arrival of <strong>Sora AI</strong> — available exclusively on OneBrain — is a total game changer. This powerful AI video generator lets you turn text prompts into professional-grade videos in just minutes.
+            </p>
+
+            
+            <h2 className="text-2xl font-bold mt-8 mb-4">🚀 What Is Sora AI?</h2>
+            <p>
+              Sora is an AI-powered text-to-video generator developed to make storytelling easier for everyone — from individual creators to marketing teams.
+            </p>
+            <p>
+              You simply type a scene description or script, and Sora automatically generates a full video — complete with visuals, movements, and cinematic effects.
+            </p>
+            <p>
+              Whether you’re creating educational content, social media clips, or promo videos, Sora gives you the tools to bring your ideas to life — no camera, no editing software, and no experience needed.
+            </p>
+            <p>
+              On OneBrain, you can access Sora 2 and Sora 2 Pro, two of the most advanced versions available for Bangladeshi users.
+            </p>
+
+          
+            <h2 className="text-2xl font-bold mt-8 mb-4">💡 Why Sora Is a Game Changer for Bangladeshi Creators</h2>
+            <ol className="list-decimal pl-6 space-y-3">
+              <li><strong>Text-to-Video in Minutes:</strong> Instead of spending hours shooting and editing, just type your idea and Sora instantly creates it. You can tweak angles, lighting, and camera motion, making it ideal for content creators who want speed without sacrificing quality.</li>
+              <li><strong>No Expensive Gear or Editing Skills Needed:</strong> Cameras, mics, and editing software can cost a fortune. Sora eliminates all that. All you need is your imagination and internet connection.</li>
+              <li><strong>Bangladesh-Friendly Pricing and Access:</strong> Buy Sora 2 or Sora 2 Pro directly in Taka, using bKash, Nagad, or Rocket, starting at just ৳699. No VPNs, no dollar cards, only pure creativity.</li>
+              <li><strong>Professional-Quality Output:</strong> Sora produces smooth motion, realistic visuals, and cinematic scenes. Sora 2 Pro offers longer video durations and advanced customization options.</li>
+              <li><strong>Perfect for Social Media, Ads & Education:</strong> From Instagram Reels to YouTube explainers, Sora adapts to your needs.</li>
+            </ol>
+
+           
+            <h2 className="text-2xl font-bold mt-8 mb-4">📝 Key Features</h2>
+            <ul className="list-disc pl-6 space-y-3">
+              <li>Text-to-Video: Instantly convert scripts, articles, or blog posts into dynamic videos</li>
+              <li>AI Image-to-Video: Turn images into professional videos using intelligent AI prompts</li>
+              <li>High-Quality Output: Suitable for YouTube, social media, marketing campaigns, and presentations</li>
+              <li>User-Friendly Interface: Easy for both beginners and professionals</li>
+              <li>OpenAI-Powered Intelligence: Advanced AI ensures accurate, creative, and context-aware video generation</li>
+              <li>Fast & Efficient: Create professional videos much faster than traditional editing methods</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold mt-8 mb-4">📊 Sora 2 vs Sora 2 Pro</h2>
+            <table className="table-auto border border-gray-700 w-full text-gray-300">
+              <thead>
+                <tr className="bg-gray-800">
+                  <th className="border px-4 py-2">Feature</th>
+                  <th className="border px-4 py-2">Sora 2</th>
+                  <th className="border px-4 py-2">Sora 2 Pro</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border px-4 py-2">Resolution</td>
+                  <td className="border px-4 py-2">Up to 1280×720 (HD)</td>
+                  <td className="border px-4 py-2">Up to 1792×1024 (HD), higher resolutions</td>
+                </tr>
+                <tr>
+                  <td className="border px-4 py-2">Video Quality</td>
+                  <td className="border px-4 py-2">Standard video quality suitable for most use cases</td>
+                  <td className="border px-4 py-2">Professional-grade, cinematic-quality video</td>
+                </tr>
+                <tr>
+                  <td className="border px-4 py-2">Performance</td>
+                  <td className="border px-4 py-2">Ideal for rapid video generation and prototyping</td>
+                  <td className="border px-4 py-2">Optimized for high-quality, stable generation for commercial use</td>
+                </tr>
+                <tr>
+                  <td className="border px-4 py-2">Target Audience</td>
+                  <td className="border px-4 py-2">Content creators, social media, prototypes, educational content</td>
+                  <td className="border px-4 py-2">Advertisers, filmmakers, marketing professionals</td>
+                </tr>
+                <tr>
+                  <td className="border px-4 py-2">Use Cases</td>
+                  <td className="border px-4 py-2">Quick video production, social media content, product demos</td>
+                  <td className="border px-4 py-2">High-resolution commercial videos, advertisements, professional films</td>
+                </tr>
+                <tr>
+                  <td className="border px-4 py-2">Audio-Visual Sync</td>
+                  <td className="border px-4 py-2">Standard audio synchronization</td>
+                  <td className="border px-4 py-2">Enhanced synchronization for high-quality, professional content</td>
+                </tr>
+              </tbody>
+            </table>
+
+            {/* Pricing & Packs */}
+            <h2 className="text-2xl font-bold mt-8 mb-4">💰 Pricing & Packs</h2>
+            <ul className="list-disc pl-6 space-y-3">
+              <li><strong>Creator Pack (৳699):</strong> Sora 2 + 10+ premium AI tools + 15,00,000 Pro Tokens</li>
+              <li><strong>Performance Pack (৳1,999):</strong> Sora 2 Pro + all Creator Pack tools + 45,00,000 Pro Tokens</li>
+            </ul>
+
+            {/* FAQs */}
+            <h2 className="text-2xl font-bold mt-8 mb-4">❓ Frequently Asked Questions (FAQs)</h2>
+            <ul className="list-disc pl-6 space-y-3">
+              <li>Q: What is Sora 2 and Sora 2 Pro? <br/>A: Sora 2 generates videos from text or images, Sora 2 Pro has advanced features for longer, higher-quality videos.</li>
+              <li>Q: How does Sora 2 help content creators? <br/>A: It turns text and images into professional videos quickly and easily.</li>
+              <li>Q: How do I create a video using Sora AI? <br/>A: Enter your text or upload an image, click generate, and download the video.</li>
+              <li>Q: Where can I buy Sora 2 & Sora 2 Pro in Bangladesh? <br/>A: They are only available on OneBrain in Bangladesh.</li>
+              <li>Q: What is included in the Creator Pack? <br/>A: Sora 2 and 10+ free premium AI tools for text, video, audio, and images.</li>
+              <li>Q: How much does the Creator Pack cost? <br/>A: Just ৳699 for all tools in one plan.</li>
+              <li>Q: How quickly can I start using Sora 2 & Sora 2 Pro? <br/>A: You get instant access after signing up and paying.</li>
+            </ul>
+
+            {/* Final Thought */}
+             <h2 className="text-2xl font-bold mt-8 mb-4">✅ Final Thought</h2>
+             <p>
+             If you are looking for hassle-free, fully personal, and secure AI tools, <strong>OneBrain</strong> is your ultimate choice for Sora 2 and Sora 2 Pro in Bangladesh.
+            </p>
+             <ul className="list-disc pl-6 space-y-3">
+               <li><strong>Sora 2 (৳699)</strong> — AI text-to-video and image-to-video generation</li>
+               <li><strong>Sora 2 Pro (৳1,999)</strong> — Advanced features for high-quality, longer videos</li>
+               <li>10+ premium AI tools included in each pack</li>
+               <li>OneBrain’s all-in-one platform for text, image, audio, and video creation</li>
+              </ul>
+             <p>
+               Start creating today at <strong>onebrain.app</strong> and unlock Sora 2, Sora 2 Pro, and 10+ premium AI tools — all with your chosen plan, fully personal, secure, and hassle-free.
+             </p>
+
+          </div>
         </article>
       </div>
     </div>

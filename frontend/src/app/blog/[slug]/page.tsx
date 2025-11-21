@@ -16,7 +16,7 @@ export default function BlogPost() {
     notFound();
   }
 
-  // get component name or use default
+  
   const Component = componentMap[blog.component] || componentMap["default"];
 
   return (

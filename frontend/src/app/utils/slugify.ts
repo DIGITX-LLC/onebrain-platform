@@ -53,7 +53,7 @@ export function createBlogData() {
         <h3>Future Implications</h3>
         <p>The development of these models represents a significant step forward in AI technology, promising even more advanced capabilities in future iterations.</p>
       `,
-     
+      component:"details1"
     },
     {
       id: 2,
@@ -101,7 +101,8 @@ export function createBlogData() {
           <li>Resource Optimization</li>
           <li>User Experience</li>
         </ul>
-      `
+      `,
+      component:"details2"
     },
     {
       id: 3,
@@ -149,7 +150,8 @@ export function createBlogData() {
           <li>User Interface Design</li>
           <li>Integration Capabilities</li>
         </ul>
-      `
+      `,
+      component:"details3"
     },
     {
       id: 4,
@@ -205,7 +207,8 @@ export function createBlogData() {
 
         <h3>Experience Smarter AI Today</h3>
         <p>Your creativity, productivity, and business deserve the best. Get started with OneBrain to unlock easy and affordable ChatGPT buy BD deals, experiment with a ChatGPT image edit prompt, or enjoy the powerful features of ChatGPT-4 and ChatGPT-5 and many more models —all tailored for Bangladesh.</p>
-      `
+      `,
+        component:"details4"
     },
     {
       id: 5,
@@ -481,7 +484,8 @@ export function createBlogData() {
       <h3>Final Thought</h3>
       <p>For creators, marketers, and students in Bangladesh, Nano Banana AI via OneBrain is the smartest and most affordable AI choice. Start today at <a href="https://onebrain.app">onebrain.app</a> and unlock your all-in-one AI creative studio with Nano Banana AI — Your ideas, your visuals, your creativity — powered by AI.</p>
     `
-    },
+    ,
+      component:"details6"},
     {
       id: 7,
       title: 'ElevenLabs AI: Text-to-Speech, Voice Clone & Pricing in BD',
@@ -574,50 +578,10 @@ export function createBlogData() {
 
       <h3>Final Thought</h3>
       <p>For professional AI voiceovers and complete multimedia content in Bangladesh, ElevenLabs via OneBrain is the smartest choice. For just ৳699, get ElevenLabs AI, 15,00,000 Pro Tokens, and full access to AI tools — all in one subscription. Start creating today at <a href="https://onebrain.app">onebrain.app</a>.</p>
-    `
+    `,
+    component:"details7"
   },
-  {
-      id: 8,
-      title: 'Llama 3.3 Vs. Grok 3',
-      excerpt: 'OneBrain is just launched 3.3 brings faster performance, smarter reach. Llama 3.3 is a smart language model. It can help like chatting, coding...',
-      image: 'https://digitxevents.com/wp-content/uploads/2025/04/Blog-Poster.png',
-      content: `
-        <h2>Llama 3.3 vs Grok 3: A Comprehensive Comparison</h2>
-        <p>In the rapidly evolving landscape of artificial intelligence, two powerful language models have emerged as frontrunners: Llama 3.3 and Grok 3. This comprehensive comparison explores their capabilities, strengths, and use cases.</p>
-        
-        <h3>Performance and Capabilities</h3>
-        <p>Llama 3.3 brings significant improvements in performance and efficiency. The model demonstrates enhanced understanding of context, better code generation, and more accurate responses across various domains.</p>
-        
-        <h3>Key Features</h3>
-        <ul>
-          <li>Advanced natural language processing</li>
-          <li>Improved context retention</li>
-          <li>Enhanced coding capabilities</li>
-          <li>Better multilingual support</li>
-        </ul>
-
-        <h3>Real-World Applications</h3>
-        <p>Both models excel in different scenarios:</p>
-        <ul>
-          <li>Content Creation and Editing</li>
-          <li>Code Generation and Review</li>
-          <li>Data Analysis and Insights</li>
-          <li>Educational Support</li>
-        </ul>
-
-        <h3>Technical Specifications</h3>
-        <p>Llama 3.3 features:</p>
-        <ul>
-          <li>Improved token processing speed</li>
-          <li>Enhanced memory efficiency</li>
-          <li>Better context window management</li>
-          <li>Advanced reasoning capabilities</li>
-        </ul>
-
-        <h3>Future Implications</h3>
-        <p>The development of these models represents a significant step forward in AI technology, promising even more advanced capabilities in future iterations.</p>
-      `
-    },
+  
 
   ];
 }

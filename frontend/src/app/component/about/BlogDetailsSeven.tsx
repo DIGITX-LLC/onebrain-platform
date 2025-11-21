@@ -3,10 +3,10 @@ import React from 'react';
 import Link from 'next/link';
 import ButtonAnimatedGradient from './ButtonAnimatedGradient';
 
-
 export default function BlogDetailsSeven() {
   return (
     <div className="min-h-screen bg-[#030205] text-white">
+      
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#030205]/80 backdrop-blur-lg">
         <div className="container mx-auto px-6 py-4">
@@ -18,6 +18,7 @@ export default function BlogDetailsSeven() {
                 className="h-8"
               />
             </Link>
+
             <Link href="/blog">
               <ButtonAnimatedGradient
                 text="Back to Blog"
@@ -34,64 +35,172 @@ export default function BlogDetailsSeven() {
       {/* Main Content */}
       <div className="container mx-auto px-6 pt-24 pb-16">
         <article className="prose prose-lg prose-invert mx-auto">
+
+          {/* TITLE */}
           <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">
-            Buy Sora 2 & Sora 2 Pro in Bangladesh — Only on OneBrain with 10+ Free AI Tools
+            ElevenLabs AI: Text-to-Speech, Voice Clone & Pricing in Bangladesh
           </h1>
 
+          {/* Hero Image */}
           <div className="mb-12">
-            <div className="details5-hero-wrapper" style={{ height: '200px' }}>
+            <div className="details5-hero-wrapper" style={{ height: "200px" }}>
               <img
-                src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Chatgpt-in-Bangladesh-5.png"
-                alt="ChatGPT Premium Models in Bangladesh"
+                src=" https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Elevenlab%20in%20Bangladesh%20(2).jpg"
+                alt="ElevenLabs AI Bangladesh"
                 className="details5-hero-image w-full h-full rounded-2xl"
                 style={{
-                  height: '200px',
-                  maxHeight: '200px',
-                  width: '100%',
-                  borderRadius: '1rem'
+                  height: "200px",
+                  maxHeight: "200px",
+                  width: "100%",
+                  borderRadius: "1rem",
                 }}
               />
             </div>
           </div>
 
-          <div className="space-y-6">
+          {/* Meta Description */}
+          <div className="mb-10">
+            <h2 className="text-xl font-bold">Meta Description:</h2>
             <p className="text-gray-300">
-            Buy Sora 2 & Sora 2 Pro in Bangladesh — Only on OneBrain with 10+ Free AI Tools.
+              Buy ElevenLabs AI in Bangladesh – clone voices, convert text-to-speech, and access 10+ free AI tools for video, music, and image creation via{" "}
+              <Link href="https://onebrain.app" className="text-blue-400 underline">OneBrain</Link>.
+            </p>
+          </div>
+
+          {/* CONTENT START */}
+          <div className="space-y-6">
+
+            <p className="text-gray-300">
+              The future of content creation is here, and it sounds human. ElevenLabs AI is the ultimate tool for creators, educators, marketers, and businesses who want high-quality, human-like voiceovers, voice cloning, and studio-level text-to-speech — all in one platform.
             </p>
 
-           <div>
-            <h1 className='font-bold'>Meta Description:</h1>
-             <p className="text-gray-300">
-              Buy Sora 2 (699 Taka) and Sora 2 Pro (1,999 Taka) exclusively on OneBrain in Bangladesh! Get 10+ premium AI tools free for text, image, audio, and video generation.
-            </p>
-           </div>
-
-
-            <p className="text-gray-300">The future of content creation, Sora 2 and <span>Sora 2 Pro are now available exclusively on OneBrain in Bangladesh.</span> These advanced AI models, powered by OpenAI, turn your text or images into professional videos in just a few clicks.</p>
-            <p>In 2025, one thing is clear — <span>AI video generation</span> is the next big thing in content creation. From YouTube Shorts to TikTok and Instagram Reels, videos are now the language of the internet. But for most Bangladeshi creators, producing high-quality videos can be expensive, time-consuming, and technically challenging.</p>
-            
-            <p>
-               That’s why the arrival of <span>Sora AI</span> — available exclusively on OneBrain — is a total game changer. This powerful AI video generator lets <span>you turn text prompts into professional-grade videos</span> in just minutes.
- 
+            <p className="text-gray-300">
+              The game-changer? When you buy ElevenLabs AI via{" "}
+              <Link href="https://onebrain.app" className="text-blue-400 underline">OneBrain</Link> in Bangladesh, you unlock the Creator Pack for just <strong>৳699</strong>, which includes ElevenLabs AI, <strong>15,00,000 Pro Tokens</strong>, and full access to dozens of premium AI tools for text, image, video, and audio — all included for free.
             </p>
 
-            <p>Let’s explore why Sora is creating so much buzz — and how Bangladeshi creators can use it to create smarter, faster, and cheaper.</p>
+            <p className="text-gray-300">
+              This makes it the most powerful and cost-effective AI solution in Bangladesh, allowing creators to produce complete multimedia content from one platform.
+            </p>
 
-            <div>
-                <h1>What Is Sora AI?</h1>
+            {/* WHAT IS ELEVENLABS AI */}
+            <h2 className="text-2xl font-bold mt-8 mb-4">What is ElevenLabs AI?</h2>
 
-                <p>Sora is an AI-powered text-to-video generator developed to make storytelling easier for everyone — from individual creators to marketing teams.
-                You simply type a scene description or script, and Sora automatically generates a full video — complete with visuals, movements, and cinematic effects</p>
+            <p className="text-gray-300">
+              ElevenLabs AI is a cutting-edge voice generation platform designed for creators who need professional-quality audio quickly and efficiently.
+            </p>
 
-                <p><span>Sora</span> is an <span>AI-powered text-to-video generator</span> developed to make storytelling easier for everyone — from individual creators to marketing teams. <br />
-                You simply type a scene description or script, and Sora automatically generates a full video — complete with visuals, movements, and cinematic effects</p>
+            <h3 className="text-xl font-semibold">Key features include:</h3>
 
-                <p>Whether you’re creating educational content, social media clips, or promo videos, Sora gives you the tools to bring your ideas to life — no camera, no editing software, and no experience needed.</p>
+            <ul className="list-disc pl-6 space-y-3 text-gray-300">
+              <li><span role="img" aria-label="text-to-speech">📝</span> <strong>Text-to-Speech Conversion:</strong> Turn any text into natural, expressive, human-like speech instantly.</li>
+              <li><span role="img" aria-label="voice-cloning">🎙️</span> <strong>Voice Cloning:</strong> Clone existing voices or create custom AI voices for storytelling, content, or branding.</li>
+              <li><span role="img" aria-label="multi-language">🌍</span> <strong>Multi-Language Support:</strong> Work in Bangla, Hindi, Urdu, and English seamlessly.</li>
+              <li><span role="img" aria-label="custom-voice">🎤</span> <strong>Popular Voices & Customization:</strong> Use pre-built voices like Adam, or craft your own signature AI voice.</li>
+              <li><span role="img" aria-label="accent">🎯</span> <strong>Accent Flexibility:</strong> Add British, American, or other accents to make your content sound professional.</li>
+            </ul>
 
-                <p>On OneBrain, you can access Sora 2 and Sora 2 Pro, two of the most advanced versions available for Bangladeshi users.</p>
+            <p className="text-gray-300">
+              Whether you’re a YouTuber, podcaster, teacher, or freelancer, ElevenLabs lets you produce studio-quality audio without expensive recording equipment.
+            </p>
 
-                
-            </div>
+            {/* WHY BUY FROM ONEBRAIN */}
+            <h2 className="text-2xl font-bold mt-8 mb-4">Why Choose ElevenLabs from OneBrain?</h2>
+
+            <ul className="list-disc pl-6 space-y-3 text-gray-300">
+              <li><span role="img" aria-label="affordable">💸</span> <strong>Affordable Pricing:</strong> The Creator Pack is only ৳699, giving you full access to ElevenLabs’ world-class features.</li>
+              <li><span role="img" aria-label="tools">🔧</span> <strong>Full AI Suite for Free:</strong> Beyond ElevenLabs, you get access to dozens of premium AI tools, including text, image, video, and audio models.</li>
+              <li><span role="img" aria-label="tokens">🎟️</span> <strong>15,00,000 Pro Tokens:</strong> Experiment freely with a massive number of AI tasks without worrying about limitations.</li>
+              <li><span role="img" aria-label="all-in-one">📦</span> <strong>All-in-One Platform:</strong> No need for multiple subscriptions — OneBrain consolidates voice, text, image, video, and music AI tools in one plan.</li>
+            </ul>
+
+            {/* WHAT YOU CAN DO */}
+            <h2 className="text-2xl font-bold mt-8 mb-4">
+              What You Can Do with ElevenLabs via OneBrain
+            </h2>
+
+            <ul className="list-disc pl-6 space-y-3 text-gray-300">
+              <li><span role="img" aria-label="voice-cloning">🎙️</span> Clone Voices or Create Custom AI Voices</li>
+              <li><span role="img" aria-label="convert-text">📝</span> Convert Text into Speech</li>
+              <li><span role="img" aria-label="generate-voiceovers">🎧</span> Generate Voiceovers for Multimedia</li>
+              <li><span role="img" aria-label="languages">🌐</span> Use Bangla, Hindi, Urdu & English Voices</li>
+              <li><span role="img" aria-label="integrate-ai">🔗</span> Integrate AI Voice with Video, Image & Music Creation Tools</li>
+              <li><span role="img" aria-label="tokens">🎟️</span> Use 15,00,000 Pro Tokens for Creative Workflows</li>
+            </ul>
+
+            {/* ALL-INCLUSIVE AI SUITE */}
+            <h2 className="text-2xl font-bold mt-8 mb-4">
+              All-Inclusive AI Suite Included in the Creator Pack
+            </h2>
+
+            {/* TEXT TOOLS */}
+            <h3 className="text-xl font-semibold">📝 Text & Chat AI Tools</h3>
+            <p className="text-gray-300">
+              ChatGPT, Claude, Gemini, Qwen, Grok, DeepSeek, Perplexity AI — perfect for writing, coding, research, essays & summarization.
+            </p>
+
+            {/* IMAGE TOOLS */}
+            <h3 className="text-xl font-semibold mt-6">🖼️ Image AI Tools</h3>
+            <p className="text-gray-300">
+              Nano Banana, Kontext Restore, Gemini Image AI & Grok AI for enhancing, repairing & generating visuals.
+            </p>
+
+            {/* VIDEO TOOLS */}
+            <h3 className="text-xl font-semibold mt-6">🎬 Video AI Tools</h3>
+            <p className="text-gray-300">
+              Runway ML, Hailuo AI, VEO3, Sedance, Wan AI — create cinematic-quality videos instantly.
+            </p>
+
+            {/* AUDIO TOOLS */}
+            <h3 className="text-xl font-semibold mt-6">🎧 Audio & Music Tools</h3>
+            <p className="text-gray-300">
+              ElevenLabs AI, Udio AI, voice humanizers & sound enhancers for professional audio.
+            </p>
+
+            <p className="text-gray-300">
+              Unlimited chat & file attachments remain available even after token usage.
+            </p>
+
+            {/* UNLIMITED CHAT & ATTACHMENTS */}
+            <h2 className="text-2xl font-bold mt-8 mb-4">Unlimited Chat & Attachments</h2>
+            <p className="text-gray-300">
+              Even after using your Pro Tokens, OneBrain provides unlimited chat and file attachments with advanced AI models, allowing you to continue creating without limits.
+            </p>
+
+            {/* EXTENDED BENEFITS OF THE CREATOR PACK */}
+            <h2 className="text-2xl font-bold mt-8 mb-4">Extended Benefits of the Creator Pack</h2>
+            <ul className="list-disc pl-6 space-y-3 text-gray-300">
+              <li><span role="img" aria-label="complete-suite">🛠️</span> <strong>Complete Multimedia AI Suite:</strong> Tools for text, audio, image, video, and music creation.</li>
+              <li><span role="img" aria-label="affordable">💸</span> <strong>Affordable Access:</strong> All premium AI tools bundled in one plan for just ৳699.</li>
+              <li><span role="img" aria-label="time-saving">⏱️</span> <strong>Time-Saving:</strong> Produce professional content quickly and efficiently.</li>
+              <li><span role="img" aria-label="scalable">📈</span> <strong>Scalable Projects:</strong> Work on multiple tasks and media types simultaneously.</li>
+              <li><span role="img" aria-label="convenient">🔄</span> <strong>All-in-One Convenience:</strong> No need for multiple subscriptions — everything in one place.</li>
+            </ul>
+
+            {/* HOW TO BUY ELEVENLABS & PRICE IN BANGLADESH */}
+            <h2 className="text-2xl font-bold mt-8 mb-4">How to Buy ElevenLabs & Pricing in Bangladesh</h2>
+            <ol className="list-decimal pl-6 space-y-3 text-gray-300">
+              <li>Visit <Link href="https://onebrain.app" className="text-blue-400 underline">onebrain.app</Link></li>
+              <li>Sign Up with email & phone number</li>
+              <li>Select the Creator Pack (৳699)</li>
+              <li>Pay using bKash/Nagad/card</li>
+              <li>Start creating instantly</li>
+            </ol>
+
+            <h2 className="text-2xl font-bold mt-8 mb-4">Final Thought</h2>
+
+            <p className="text-gray-300">
+              For professional-quality AI voiceovers and complete multimedia content in Bangladesh, buying ElevenLabs via{" "}
+              <Link href="https://onebrain.app" className="text-blue-400 underline">OneBrain</Link> is the smartest choice.
+            </p>
+
+            <p className="text-gray-300">
+              For just ৳699, you get: ElevenLabs AI + 15,00,000 Tokens + Max AI Unlimited with dozens of text, image, video & audio tools — all free.
+            </p>
+
+            <p className="text-gray-300 font-semibold">
+              Start today at <Link href="https://onebrain.app" className="text-blue-400 underline">onebrain.app</Link> and unlock everything in one subscription.
+            </p>
           </div>
         </article>
       </div>
