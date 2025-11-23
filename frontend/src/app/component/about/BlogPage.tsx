@@ -143,9 +143,11 @@ export default function BlogPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-white-900/60 to-transparent"></div>
                 </div>
                 <div className="border-none bg-transparent">
-                  <div className="p-6">
-                    <h2 className="text-lg font-bold text-white mb-2">{blog.title}</h2>
-                    <p className="text-gray-300 text-sm mb-4">{blog.excerpt}</p>
+                  <div className="p-6 flex flex-col justify-between h-full min-h-[250px]">
+                    <div className=''>
+                      <h2 className="text-lg font-bold text-white mb-2 line-clamp-2 min-h-[48px]">{blog.title}</h2>
+                    <p className="text-gray-300 text-sm mb-4 line-clamp-3 min-h-[60px]">{blog.excerpt}</p>
+                    </div>
                     <Link href={`/blog/${slugify(blog.title)}`} >
                     
                      <ButtonAnimatedGradient
@@ -153,7 +155,7 @@ export default function BlogPage() {
                      gradientFrom="#0f1747"
                      gradientTo="#0f1747"
                      borderColor="#b2b8f6"
-                     className="w-full h-[40px] rounded-xl font-normal block"
+                     className="w-full h-[40px] mb-6  rounded-xl font-normal block"
                      />
                    </Link>
                   </div>
