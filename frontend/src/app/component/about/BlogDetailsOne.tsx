@@ -79,7 +79,7 @@ export default function BlogDetailsOne() {
             : 'top-6 bg-transparent'
           }`}
       >
- <Link href="/about">
+        <Link href="/about">
           <img
             src="https://digitxevents.com/wp-content/uploads/2025/03/onebrain_ab_logo.svg"
             alt="OneBrain Logo"

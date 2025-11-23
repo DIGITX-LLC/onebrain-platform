@@ -41,13 +41,13 @@ export default function BlogDetailsFive() {
           </h1>
 
           <div className="mb-12">
-            <div className="details-hero-wrapper" style={{ height: "200px" }}>
+            <div className="details-hero-wrapper" style={{ height: "380px" }}>
               
               <img
                 src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Blog%20poster.png"
                 alt="Sora 2 & Sora 2 Pro"
                 className="details-hero-image w-full h-full rounded-2xl"
-                style={{ height: "200px", maxHeight: "200px", width: "100%", borderRadius: "1rem" }}
+                style={{ height: "380px", maxHeight: "380px", width: "100%", borderRadius: "1rem" }}
               />
             </div>
           </div>

@@ -44,14 +44,14 @@ export default function BlogDetailsSix() {
 
         
           <div className="mb-12">
-            <div className="details5-hero-wrapper" style={{ height: "200px" }}>
+            <div className="details5-hero-wrapper" style={{ height: "380px" }}>
               <img
                 src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Nano%20Banana%20in%20Bangladesh%20(4).jpg"
                 alt="Nano Banana AI Bangladesh"
                 className="details5-hero-image w-full h-full rounded-2xl"
                 style={{
-                  height: "200px",
-                  maxHeight: "200px",
+                  height: "380px",
+                  maxHeight: "380px",
                   width: "100%",
                   borderRadius: "1rem",
                 }}
