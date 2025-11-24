@@ -36,18 +36,18 @@ export default function BlogDetailsFive() {
       <div className="container mx-auto px-6 pt-24 pb-16">
         <article className="prose prose-lg prose-invert mx-auto">
           
-          <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-8 text-center">
             Buy Sora 2 & Sora 2 Pro in Bangladesh — Only on OneBrain with 10+ Free AI Tools
           </h1>
 
           <div className="mb-12">
-            <div className="details-hero-wrapper" style={{ height: "380px" }}>
+            <div className="details-hero-wrapper" style={{ height: "450px" }}>
               
               <img
                 src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Blog%20poster.png"
                 alt="Sora 2 & Sora 2 Pro"
                 className="details-hero-image w-full h-full rounded-2xl"
-                style={{ height: "380px", maxHeight: "380px", width: "100%", borderRadius: "1rem" }}
+                style={{ height: "450px", maxHeight: "450px", width: "100%", borderRadius: "1rem" }}
               />
             </div>
           </div>
@@ -55,7 +55,7 @@ export default function BlogDetailsFive() {
           
           <div className="space-y-6 text-gray-300">
             <div>
-              <h1 className="font-bold text-2xl">Meta Description:</h1>
+              <h1 className="font-bold text-xl lg:text-2xl">Meta Description:</h1>
               <p>Buy Sora 2 (699 Taka) and Sora 2 Pro (1,999 Taka) exclusively on OneBrain in Bangladesh! Get 10+ premium AI tools free for text, image, audio, and video generation.</p>
             </div>
 
@@ -74,7 +74,7 @@ export default function BlogDetailsFive() {
             <p>Let’s explore why Sora is creating so much buzz — and how Bangladeshi creators can use it to create smarter, faster, and cheaper.</p>
 
             
-            <h2 className="text-2xl font-bold mt-8 mb-4">What Is Sora AI?</h2>
+            <h2 className="text-xl lg:text-2xl font-bold mt-8 mb-4">What Is Sora AI?</h2>
             <p>
               <strong>Sora</strong> is an <strong>AI-powered text-to-video generator</strong> developed to make storytelling easier for everyone — from individual creators to marketing teams.
             </p>
@@ -89,7 +89,7 @@ export default function BlogDetailsFive() {
             </p>
 
           
-            <h2 className="text-2xl font-bold mt-8 mb-4">🚀 Why Sora Is a Game Changer for Bangladeshi Creators</h2>
+            <h2 className="text-xl lg:text-2xl font-bold mt-8 mb-4">🚀 Why Sora Is a Game Changer for Bangladeshi Creators</h2>
             <ol className="list-decimal pl-6 space-y-3">
               <li className="text-xl"><strong>Text-to-Video in Minutes <br /> <br /> </strong> Instead of spending hours shooting and editing, just type your idea— <br /> “A girl walking through a rainy street in Dhaka, cinematic style.” <br /> and Sora instantly creates it. <br /> You can tweak angles, lighting, and camera motion, making it ideal for content creators who want speed without sacrificing quality.</li>
               <li className="text-xl"><strong>No Expensive Gear or Editing Skills Needed <br /> <br /> </strong> Cameras, mics, and editing software can cost a fortune. Sora eliminates all that. All you need is your imagination and internet connection. <br /> <br /> This is especially powerful for <strong>students, freelancers, and small businesses</strong> in Bangladesh who want to create professional content without heavy investment.</li>
@@ -114,7 +114,7 @@ export default function BlogDetailsFive() {
             </ol>
 
            
-            <h2 className="text-2xl font-bold mt-8 mb-4"> Key Features</h2>
+            <h2 className="text-xl lg:text-2xl font-bold mt-8 mb-4"> Key Features</h2>
             <ul className="list-disc pl-6 space-y-3">
               <li><strong>Text-to-Video:</strong> Instantly convert scripts, articles, or blog posts into dynamic videos</li>
               <li><strong>AI Image-to-Video:</strong> Turn images into professional videos using intelligent AI prompts</li>
@@ -126,7 +126,7 @@ export default function BlogDetailsFive() {
 
             <p>Whether you’re a <strong>YouTuber, marketer, teacher, or freelancer,</strong> Sora AI makes video creation <strong>fast, simple, and visually stunning.</strong></p>
 
-            <h2 className="text-2xl font-bold mt-8 mb-4">Sora 2 vs Sora 2 Pro;Sora 2 vs Sora 2 Pro: Feature Comparison</h2> <br />
+            <h2 className="text-xl lg:text-2xl font-bold mt-8 mb-4">Sora 2 vs Sora 2 Pro;Sora 2 vs Sora 2 Pro: Feature Comparison</h2> <br />
             <p>Not sure which version of Sora AI is right for you? Here’s a quick comparison of <strong>Sora 2</strong> and <strong>Sora 2 Pro</strong> to help you choose the perfect plan for your creative needs. The table below highlights key differences in features, video quality, customization options, and advanced capabilities, so you can see at a glance which version suits your projects best.</p> <br />
             <p>Whether you’re creating social media videos, marketing content, or professional presentations, this comparison makes it easy to pick the right tool for your workflow.</p>
             <table className="table-auto border border-gray-700 w-full text-gray-300">
@@ -172,7 +172,7 @@ export default function BlogDetailsFive() {
             </table>
 
 
-            <h2 className="text-2xl font-bold mt-12 mb-4">
+            <h2 className="text-xl lg:text-2xl font-bold mt-12 mb-4">
               Buy Sora 2 & Sora 2 Pro in Bangladesh — Affordable, Personal, and All-in-One!
             </h2>
 
@@ -225,7 +225,7 @@ export default function BlogDetailsFive() {
               <li>Designed for professional content creators, agencies, and filmmakers who need advanced AI capabilities</li>
             </ul>
 
-            <h2 className="text-2xl font-bold mt-10 mb-4">What You Can Do with Sora AI via OneBrain</h2>
+            <h2 className="text-xl lg:text-2xlfont-bold mt-10 mb-4">What You Can Do with Sora AI via OneBrain</h2>
             <ul className="list-disc pl-6 space-y-3">
               <li className="font-bold">Convert text into videos: Turn articles, scripts, or blog posts into engaging AI-generated videos</li>
               <li className="font-bold">Generate videos from images: Use images as references for professional video creation</li>
@@ -235,7 +235,7 @@ export default function BlogDetailsFive() {
             </li>
             </ul>
 
-            <h2 className="text-2xl font-bold mt-10 mb-4">Free AI Tools Included in the Creator and Performance Packs</h2>
+            <h2 className="text-xl lg:text-2xl font-bold mt-10 mb-4">Free AI Tools Included in the Creator and Performance Packs</h2>
             <p>The Creator and Performance Packs include <strong>10+ premium AI tools</strong>, covering:</p>
             <ul className="list-disc pl-6 space-y-3">
               <li><strong>Text AI:</strong> ChatGPT, Claude, Gemini, Qwen, Grok, DeepSeek for content creation, summaries, coding, and AI chatbots
@@ -247,7 +247,7 @@ export default function BlogDetailsFive() {
             </ul>
             <p>All tools come free <strong>with the packs,</strong> creating a <strong>complete multimedia AI studio in one subscription.</strong></p>
 
-             <h2 className="text-2xl font-bold mt-10 mb-4">Where and How to Buy Sora 2 & Sora 2 Pro in Bangladesh</h2>
+             <h2 className="text-xl lg:text-2xl font-bold mt-10 mb-4">Where and How to Buy Sora 2 & Sora 2 Pro in Bangladesh</h2>
 
             <ol className="list-decimal pl-6 space-y-3">
               <li>Visit <Link href="https://onebrain.app" className="text-blue-400 underline">OneBrain</Link></li>
@@ -259,7 +259,7 @@ export default function BlogDetailsFive() {
             </ol>
 
             
-            <h2 className="text-2xl font-bold mt-8 mb-4"> Frequently Asked Questions (FAQs) about Sora 2 & Sora 2 Pro on OneBrain</h2>
+            <h2 className="text-xl lg:text-2xl font-bold mt-8 mb-4"> Frequently Asked Questions (FAQs) about Sora 2 & Sora 2 Pro on OneBrain</h2>
             <div className=" pl-6 space-y-3">
               <p>Q1: What is Sora 2 and Sora 2 Pro? <br/>A: Sora 2 generates videos from text or images, Sora 2 Pro has advanced features for longer, higher-quality videos.</p>
               <p>Q2: How does Sora 2 help content creators? <br/>A: It turns text and images into professional videos quickly and easily.</p>
@@ -274,7 +274,7 @@ export default function BlogDetailsFive() {
             </div>
 
            
-             <h2 className="text-2xl font-bold mt-8 mb-4"> Final Thought</h2>
+             <h2 className="text-xl lg:text-2xl font-bold mt-8 mb-4"> Final Thought</h2>
              <p>
              If you are looking for <strong>hassle-free, fully personal, and secure AI tools,</strong> OneBrain is your ultimate choice for Sora 2 and Sora 2 Pro in Bangladesh.
             </p>

@@ -37,7 +37,7 @@ export default function BlogDetailsSeven() {
         <article className="prose prose-lg prose-invert mx-auto">
 
         
-          <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-8 text-gray-300 text-center">
             ElevenLabs AI: Text-to-Speech, Voice Clone & Pricing in BD
           </h1>
 
@@ -47,7 +47,7 @@ export default function BlogDetailsSeven() {
               src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Elevenlab%20in%20Bangladesh%20(2).jpg"
               alt="ElevenLabs Bangladesh"
               className="w-full rounded-2xl"
-              style={{ maxHeight: "380px", objectFit: "cover" }}
+              style={{ maxHeight: "450px", objectFit: "cover" }}
             />
           </div>
 
@@ -84,7 +84,7 @@ export default function BlogDetailsSeven() {
               platform.
             </p>
 
-            <h2 className="text-2xl font-bold">What is ElevenLabs AI?</h2>
+            <h2 className="text-xl lg:text-2xl text-gray-300 font-bold">What is ElevenLabs AI?</h2>
 
             <p className="text-gray-300">
               ElevenLabs AI is a cutting-edge voice generation platform designed for
@@ -100,7 +100,7 @@ export default function BlogDetailsSeven() {
             </ul>
             <p>Whether you’re a YouTuber, podcaster, teacher, or freelancer, ElevenLabs lets you produce studio-quality audio without expensive recording equipment.</p>
 
-            <h2 className="text-2xl font-bold">Why Choose ElevenLabs from OneBrain?</h2>
+            <h2 className="text-xl lg:text-2xl text-gray-300 font-bold">Why Choose ElevenLabs from OneBrain?</h2>
               <p>Subscribing to ElevenLabs via OneBrain is the smartest choice in Bangladesh:</p>
             <ul className="list-disc pl-6 text-gray-300 space-y-2">
               <li>Affordable Pricing:The Creator Pack is only ৳699, giving you full access to ElevenLabs’ world-class features.</li>
@@ -114,7 +114,7 @@ export default function BlogDetailsSeven() {
            </p>
 
             
-            <h2 className="text-2xl font-bold">What You Can Do with ElevenLabs via OneBrain</h2>
+            <h2 className="text-xl lg:text-2xl text-gray-300 font-bold">What You Can Do with ElevenLabs via OneBrain</h2>
               <p>With the Creator Pack at just ৳699, you can:</p>
             <ul className="list-disc pl-6 text-gray-300 space-y-2">
               <li>Clone Voices or Create Custom AI Voices: Produce content in Bangla, Hindi, Urdu, or British accent with natural, human-like tones.
@@ -134,9 +134,9 @@ export default function BlogDetailsSeven() {
             </ul>
 
           
-            <h2 className="text-2xl font-bold">All-Inclusive AI Suite Included in the Creator Pack</h2>
+            <h2 className="text-xl lg:text-2xl text-gray-300 font-bold">All-Inclusive AI Suite Included in the Creator Pack</h2>
             <p>Beyond ElevenLabs, the Creator Pack gives you access to a full range of AI tools across categories. Here’s what you can do with them:</p>
-            <h3 className="text-xl font-semibold">Text & Chat AI Tools</h3>
+            <h3 className="text-xl font-semibold text-gray-300">Text & Chat AI Tools</h3>
             <p className="text-gray-300">
              <ul className="list-disc pl-6 space-y-2">
                 <li>ChatGPT, Claude, Gemini, Qwen, Grok, DeepSeek, Perplexity — writing, coding,
@@ -147,7 +147,7 @@ export default function BlogDetailsSeven() {
               </ul>
             </p>
 
-            <h3 className="text-xl font-semibold">Image AI Tools</h3>
+            <h3 className="text-xl font-semibold text-gray-300">Image AI Tools</h3>
             <p className="text-gray-300">
               <ul className="list-disc pl-6 space-y-2">
                 <li>Nano Banana & Kontext Restore: Repair blurry or damaged images, enhance photos, and restore old images.</li>
@@ -158,7 +158,7 @@ export default function BlogDetailsSeven() {
               </ul>
             </p>
 
-            <h3 className="text-xl font-semibold">Video AI Tools</h3>
+            <h3 className="text-xl font-semibold text-gray-300">Video AI Tools</h3>
             <p className="text-gray-300">
                <ul className="list-disc pl-6 space-y-2">
                 <li>Runway ML, Hailuo AI, VEO3, Sedance, Wan AI: Convert text to video, create animations, and produce professional-quality video content.
@@ -170,7 +170,7 @@ export default function BlogDetailsSeven() {
               </ul>
             </p>
 
-            <h3 className="text-xl font-semibold">Audio & Music AI Tools</h3>
+            <h3 className="text-xl font-semibold text-gray-300">Audio & Music AI Tools</h3>
             <p className="text-gray-300">
               <ul className="list-disc pl-6 space-y-2">
                 <li>ElevenLabs AI: Generate human-like voiceovers, clone voices, or create custom AI voices.
@@ -187,13 +187,13 @@ export default function BlogDetailsSeven() {
             <p>All of these AI tools are included for free with the Creator Pack, giving you a complete AI creative studio under one subscription.</p>
 
            
-            <h2 className="text-2xl font-bold">Unlimited Chat & Attachments</h2>
+            <h2 className="text-xl lg:text-2xl text-gray-300 font-bold">Unlimited Chat & Attachments</h2>
             <p className="text-gray-300">
               Even after using your Pro Tokens, OneBrain provides unlimited chat and file attachments with advanced AI models, allowing you to continue creating without limits.
             </p>
 
          
-            <h2 className="text-2xl font-bold">Extended Benefits of the Creator Pack</h2>
+            <h2 className="text-xl lg:text-2xl text-gray-300 font-bold">Extended Benefits of the Creator Pack</h2>
 
             <ul className="list-disc pl-6 text-gray-300 space-y-2">
               <li>Complete Multimedia AI Suite: Tools for text, audio, image, video, and music creation.</li>
@@ -204,7 +204,7 @@ export default function BlogDetailsSeven() {
             </ul>
 
             
-            <h2 className="text-2xl font-bold">How to Buy ElevenLabs and Price in Bangladesh</h2>
+            <h2 className="text-xl  lg:text-2xl text-gray-300 font-bold">How to Buy ElevenLabs and Price in Bangladesh</h2>
 
             <ol className="list-decimal pl-6 text-gray-300 space-y-2">
               <li>Visit OneBrain: Go to <Link href="https://onebrain.app" className="text-blue-400 underline">onebrain.app</Link></li>
@@ -215,7 +215,7 @@ export default function BlogDetailsSeven() {
             </ol>
 
             
-            <h2 className="text-2xl font-bold">Final Thought</h2>
+            <h2 className="text-xl lg:text-2xl text-gray-300 font-bold">Final Thought</h2>
 
             <p className="text-gray-300">
              For professional-quality AI voiceovers and complete multimedia content in Bangladesh, buying ElevenLabs via OneBrain is the smartest choice.
