@@ -59,25 +59,25 @@ export default function BlogDetailsSix() {
             </div>
           </div>
 
-          
+{/*           
           <div className="mb-10">
             <h2 className="text-xl font-bold">Meta Description:</h2>
             <p className="text-gray-300">
               Buy Nano Banana AI in Bangladesh – clone voices, convert text-to-speech, and access 10+ free AI tools for video, music, and image creation via{" "}
               <Link href="https://onebrain.app" className="text-blue-400 underline">OneBrain</Link>.
             </p>
-          </div>
+          </div> */}
 
          
           <div className="space-y-6">
 
             <p className="text-gray-300">
-              The future of content creation is here, and it sounds human. Nano Banana AI is the ultimate tool for creators, educators, marketers, and businesses who want high-quality, human-like voiceovers, voice cloning, and studio-level text-to-speech — all in one platform.
+              The future of smart content creation is here — and it’s powered by Nano Banana AI.
+              Whether you’re a student, marketer, designer, or content creator, Nano Banana helps you write, design, and create visually stunning content with the help of advanced artificial intelligence.
             </p>
 
             <p className="text-gray-300">
-              The game-changer? When you buy Nano Banana AI via{" "}
-              <Link href="https://onebrain.app" className="text-blue-400 underline">OneBrain</Link> in Bangladesh, you unlock the Creator Pack for just <strong>৳699</strong>, which includes Nano Banana AI, <strong>15,00,000 Pro Tokens</strong>, and full access to dozens of premium AI tools for text, image, video, and audio — all included for free.
+              And when you buy Nano Banana AI via OneBrain in Bangladesh, you unlock the Creator Pack for just ৳699, which includes Nano Banana AI, 15,00,000 Pro Tokens, and full access to dozens of premium AI tools for text, image, video, and audio — all bundled together for free.
             </p>
 
             <p className="text-gray-300">
@@ -85,123 +85,174 @@ export default function BlogDetailsSix() {
             </p>
 
             
-            <h2 className="text-2xl font-bold mt-8 mb-4">What is Nano Banana AI?</h2>
+            <h2 className="text-2xl font-bold mt-8 mb-4"><span className='bg-yellow-500'>🚀What is Nano Banana AI?</span></h2>
 
             <p className="text-gray-300">
-              Nano Banana AI is an advanced generative AI tool designed for creators who need fast, accurate, and creative results without spending hours editing or designing.
+              <strong>Nano Banana AI</strong> is an advanced generative AI tool that allows you to create engaging content, visuals, and ideas instantly. <br />
+              It’s built for creators who need fast, accurate, and creative results without spending hours editing or designing.
+
             </p>
 
-            <h3 className="text-xl font-semibold">Key Features Include:</h3>
-
-            <ul className="list-disc pl-6 space-y-3 text-gray-300">
-              <li><span role="img" aria-label="text-to-speech">📝</span> <strong>Text-to-Speech Conversion:</strong> Turn any text into natural, expressive, human-like speech instantly.</li>
-              <li><span role="img" aria-label="voice-cloning">🎙️</span> <strong>Voice Cloning:</strong> Clone existing voices or create custom AI voices for storytelling, content, or branding.</li>
-              <li><span role="img" aria-label="multi-language">🌍</span> <strong>Multi-Language Support:</strong> Work in Bangla, Hindi, Urdu, and English seamlessly.</li>
-              <li><span role="img" aria-label="custom-voice">🎤</span> <strong>Popular Voices & Customization:</strong> Use pre-built voices or craft your own signature AI voice.</li>
-              <li><span role="img" aria-label="accent">🎯</span> <strong>Accent Flexibility:</strong> Apply British, American, or other global accents for professional output.</li>
+             <h3 className="text-xl font-semibold">🔑 Key Features:</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li> <strong>AI Writing Assistant:</strong>Generate blog posts, captions, ad copy, and ideas within seconds</li>
+              <li> <strong>Image Enhancement:</strong>  Restore, edit, or generate high-quality images from text.</li>
+              <li> <strong>Creative Prompt :</strong> Get unique and ready-to-use prompts for social media or branding.</li>
+              <li> <strong>Bangla & English :</strong>Works fluently in both Bangla and English.</li>
+              <li> <strong>Integration with Other AI Tools:</strong> Combine Nano Banana outputs with video, audio, and chat models.
+              </li>
             </ul>
 
             <p className="text-gray-300">
-              Whether you’re a YouTuber, podcaster, teacher, or freelancer, Nano Banana lets you produce studio-quality audio without expensive recording equipment.
+              From bloggers to agencies, everyone can use Nano Banana to create professional-quality digital content with minimal effort.
             </p>
 
             
-            <h2 className="text-2xl font-bold mt-8 mb-4">Why Choose Nano Banana from OneBrain?</h2>
+            <h2 className="text-2xl font-bold mt-8 mb-4">💡 Why Choose Nano Banana from OneBrain?</h2>
 
-            <ul className="list-disc pl-6 space-y-3 text-gray-300">
-              <li><span role="img" aria-label="affordable">💸</span> <strong>Affordable Pricing:</strong> The Creator Pack is only ৳699, giving you full access to Nano Banana’s world-class features.</li>
-              <li><span role="img" aria-label="tools">🔧</span> <strong>10+ Free Premium AI Tools:</strong> Get text, image, video & music generators for free.</li>
-              <li><span role="img" aria-label="tokens">🎟️</span> <strong>15,00,000 Free Pro Tokens:</strong> Gives you enough freedom to experiment without limitations.</li>
-              <li><span role="img" aria-label="all-in-one">📦</span> <strong>All-in-One Platform:</strong> No need for multiple costly subscriptions.</li>
+            <p>
+              Subscribing to <strong>Nano Banana AI via OneBrain</strong> gives you much more than just one AI tool — you get a complete creative studio.
+            </p>
+            
+            <h1 className='font-bold text-xl'>🔹 Key Benefits:</h1>
+            <ul className="list-disc pl-6 space-y-2">
+              <li> <strong>Affordable pricing:</strong>The Creator Pack is only ৳699, offering full Nano Banana access and more.
+             </li>
+              <li> <strong>All-in-one AI access:</strong>  Includes text, image, video, and audio tools — all in one subscription.
+               </li>
+              <li> <strong>15,00,000 Pro Tokens:</strong>  Freedom to explore and experiment without usage limits.</li>
+              <li> <strong>Bangladesh-Friendly Payments:</strong>  Pay using <strong>bKash, Nagad, or international cards.</strong></li>
+              <li> <strong>Instant access:</strong> Start creating right after payment — no complicated setup needed.
+              </li>
+            </ul>
+            <p>This makes <strong>OneBrain</strong> the most affordable and complete AI content platform in Bangladesh.</p>
+
+            
+             <h2 className="text-2xl font-bold mt-8 mb-4">🎨 What You Can Do with Nano Banana via OneBrain</h2>
+              <p>With your Creator Pack (৳699), you can:</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>✍️ <strong>Generate Blogs & Captions:</strong> Instantly produce professional writing for websites or marketing.</li>
+              <li>🧠  <strong>Create AI Prompts:</strong> Get optimized prompts for design, coding, or creative writing.</li>
+              <li>🖼️  <strong>Enhance or Restore Images: </strong>Fix blurry, damaged, or low-resolution photos automatically.</li>
+              <li>🎬 <strong>Combine Multimedia Content:</strong> Integrate visuals with voice, video, and music using other included AI tools.</li>
+              <li>🚀 <strong>Experiment Freely: </strong>Use 15,00,000 Pro Tokens to test and explore every model inside OneBrain.
+             </li>
+            </ul>
+            <p>Every Nano Banana user automatically gains access to dozens of free AI tools that make complete content creation easier than ever</p>
+
+            
+            <h2 className="text-2xl font-bold mt-8 mb-4">🧠 AI Tools Included in the Creator Pack</h2>
+             <p>Buying Nano Banana AI via OneBrain gives you access to a full range of AI models across multiple categories — <strong>text, image, video, and audio.</strong></p>
+            <h3 className="text-xl font-semibold">📝 Text & Chat Models</h3>
+            <p>,<strong>ChatGPT, Claude, Gemini, Qwen, DeepSeek, Perplexity AI</strong> — write blogs, code faster, summarize text, generate essays, or optimize SEO content.
+            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>AI research & comparison between models (e.g., ChatGPT vs DeepSeek).</li>
+            <li>Smart prompts for writing, editing, and translation.</li>
+            <li>AI chatbot builder for Bangla & English support.</li>
             </ul>
 
-            
-            <h2 className="text-2xl font-bold mt-8 mb-4">
-              What You Can Do with Nano Banana via OneBrain
-            </h2>
+            <h3 className="text-xl font-semibold mt-6">🖼️ Image Tools</h3>
+            <p><strong>Nano Banana & Kontext Restore:</strong> Enhance, repair, and generate new visuals instantly.
+            <strong>Grok AI & Gemini Banana AI:</strong> Create marketing visuals, thumbnails, or social media designs.
+            <strong>Editing Tools:</strong> Auto-color correction, restoration, and creative enhancement for digital use. <br /> <br />
+            Perfect for vlog editing workflows, brand visuals, and personal content creation</p>
 
-            <ul className="list-disc pl-6 space-y-3 text-gray-300">
-              <li><span role="img" aria-label="voice-cloning">🎙️</span> Clone voices or create custom AI voices</li>
-              <li><span role="img" aria-label="convert-text">📝</span> Convert text into studio-quality speech</li>
-              <li><span role="img" aria-label="generate-voiceovers">🎧</span> Generate voiceovers for videos, reels & podcasts</li>
-              <li><span role="img" aria-label="languages">🌐</span> Use Bangla, Hindi, Urdu & English voices</li>
-              <li><span role="img" aria-label="integrate-ai">🔗</span> Integrate AI voice with video, image & music creation tools</li>
-              <li><span role="img" aria-label="tokens">🎟️</span> Use 15,00,000 Pro Tokens for massive creative workflows</li>
+            <h3 className="text-xl font-semibold mt-6">🎬 Video Tools</h3>
+            <p><strong>Runway ML, Hailuo AI, VEO3, Sedance, Wan AI:</strong> Convert text to video or animation without expensive software.
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Add motion effects and transitions.</li>
+              <li>Create YouTube videos, explainers, or reels effortlessly.</li>
+              <li>Produce watermark-free professional videos.</li>
             </ul>
+             </p>
 
-            
-            <h2 className="text-2xl font-bold mt-8 mb-4">
-              All-Inclusive AI Suite Included in the Creator Pack
-            </h2>
-
-           
-            <h3 className="text-xl font-semibold">📝 Text & Chat AI Tools</h3>
-            <p className="text-gray-300">
-              ChatGPT, Claude, Gemini, Qwen, Grok, DeepSeek, Perplexity AI — perfect for writing, coding, research, essays & summarization.
-            </p>
-
-            
-            <h3 className="text-xl font-semibold mt-6">🖼️ Image AI Tools</h3>
-            <p className="text-gray-300">
-              Nano Banana, Kontext Restore, Gemini Image AI & Grok AI for enhancing, repairing & generating visuals.
-            </p>
-
-           
-            <h3 className="text-xl font-semibold mt-6">🎬 Video AI Tools</h3>
-            <p className="text-gray-300">
-              Runway ML, Hailuo AI, VEO3, Sedance, Wan AI — create cinematic-quality videos instantly.
-            </p>
-
-           
             <h3 className="text-xl font-semibold mt-6">🎧 Audio & Music Tools</h3>
-            <p className="text-gray-300">
-              Nano Banana, Udio AI, voice humanizers & sound enhancers for professional audio.
-            </p>
+            <p><strong>ElevenLabs AI:</strong> Clone voices or generate studio-quality text-to-speech. <br />
+            <strong>Audio AI:</strong> Create AI-generated background music, songs, or jingles. <br />
+            <strong>Audio Enhancers:</strong> Improve sound clarity for podcasts and presentations. <br />
+             Integrate your Nano Banana text and visuals with AI voice and music tools for complete multimedia projects. <br />
+              </p>
 
-            <p className="text-gray-300">
-              Unlimited chat & file attachments remain available even after token usage.
-            </p>
+            <h2 className="text-2xl font-bold mt-8 mb-4">🔄 Unlimited Chat & Attachments</h2>
+            <p>Even after using your Pro Tokens, <strong>OneBrain</strong> continues to offer <strong>unlimited chat access</strong> with AI models and file attachments — ensuring you can keep creating without restrictions.</p>
+             
+           <h2 className="text-2xl font-bold mt-8 mb-4">🏆 Extended Benefits of the Creator Pack</h2>
+           <ul className="list-disc pl-6 space-y-2">
+            <li>💼 Complete multimedia AI suite under one subscription</li>
+            <li>💸 Affordable price — only ৳699 for all premium tools</li>
+            <li>⚡ Fast and scalable content production</li>
+            <li>🎓 Ideal for students, freelancers, and businesses</li>
+            <li>🌐 All-in-one creative convenience via OneBrain</li>
+           </ul>
 
+           <h2 className="text-2xl font-bold mt-8 mb-4">💳 How to Buy Nano Banana AI in Bangladesh</h2>
+           <p className='text-bold'>Step-by-Step Guide:</p>
+           <ol className="list-decimal pl-6 space-y-2">
+            <li><strong>Visit:</strong><Link href="https://onebrain.app" className="text-blue-400 underline">OneBrain.app</Link></li>
+            <li><strong>Sign Up:</strong>Create your OneBrain account using email or phone.</li>
+            <li><strong>Select:</strong>The <strong>Creator Pack (৳699)</strong> — includes Nano Banana + 15,00,000 Pro Tokens</li>
+            <li><strong>Pay Securely:</strong>via <strong>bKash, Nagad, or international</strong> cards.</li>
+            <li><strong>Start Creating:</strong> Get instant access to <strong>Nano Banana AI</strong> and all other included tools.
+           </li>
+           </ol>
+
+            <h2 className="text-2xl font-bold mt-8 mb-4">🧾 Nano Banana Price in Bangladesh</h2>
+
+            <table className="table-auto w-full text-gray-300 border border-gray-700">
+              <thead>
+                <tr className="bg-gray-800">
+                  <th className="p-3 border border-gray-700">Plan</th>
+                  <th className="p-3 border border-gray-700">Duration</th>
+                  <th className="p-3 border border-gray-700">Features</th>
+                  <th className="p-3 border border-gray-700">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="p-3 border border-gray-700">Free Plan</td>
+                  <td className="p-3 border border-gray-700">Lifetime</td>
+                  <td className="p-3 border border-gray-700">Basic Access</td>
+                  <td className="p-3 border border-gray-700">৳0</td>
+                </tr>
+                <tr>
+                  <td className="p-3 border border-gray-700">Creator(Premium) Pack</td>
+                  <td className="p-3 border border-gray-700">Monthly</td>
+                  <td className="p-3 border border-gray-700">All tools + 15,00,000 tokens</td>
+                  <td className="p-3 border border-gray-700">৳699</td>
+                </tr>
+                <tr>
+                  <td className="p-3 border border-gray-700">Pro Plan</td>
+                  <td className="p-3 border border-gray-700">Yearly</td>
+                  <td className="p-3 border border-gray-700">Exclusive updates</td>
+                  <td className="p-3 border border-gray-700">৳3000–৳3500</td>
+                </tr>
+              </tbody>
+            </table>
             
-            <h2 className="text-2xl font-bold mt-8 mb-4">Unlimited Chat & Attachments</h2>
-            <p className="text-gray-300">
-              Even after using your Pro Tokens, OneBrain provides unlimited chat and file attachments with advanced AI models, allowing you to continue creating without limits.
+             
+
+           
+            <h2 className="text-2xl font-bold mt-8 mb-4">✅ Final Thought</h2>
+
+            <p>
+              For creators, marketers, and students in Bangladesh, <strong>Nano Banana AI via OneBrain</strong> is the <strong>smartest and most affordable AI choice.</strong>
             </p>
 
-            
-            <h2 className="text-2xl font-bold mt-8 mb-4">Extended Benefits of the Creator Pack</h2>
-            <ul className="list-disc pl-6 space-y-3 text-gray-300">
-              <li><span role="img" aria-label="complete-suite">🛠️</span> <strong>Complete Multimedia AI Suite:</strong> Tools for text, audio, image, video, and music creation.</li>
-              <li><span role="img" aria-label="affordable">💸</span> <strong>Affordable Access:</strong> All premium AI tools bundled in one plan for just ৳699.</li>
-              <li><span role="img" aria-label="time-saving">⏱️</span> <strong>Time-Saving:</strong> Produce professional content quickly and efficiently.</li>
-              <li><span role="img" aria-label="scalable">📈</span> <strong>Scalable Projects:</strong> Work on multiple tasks and media types simultaneously.</li>
-              <li><span role="img" aria-label="convenient">🔄</span> <strong>All-in-One Convenience:</strong> No need for multiple subscriptions — everything in one place.</li>
-            </ul>
-
-    
-            <h2 className="text-2xl font-bold mt-8 mb-4">How to Buy Nano Banana & Pricing in Bangladesh</h2>
-            <ol className="list-decimal pl-6 space-y-3 text-gray-300">
-              <li>Visit <Link href="https://onebrain.app" className="text-blue-400 underline">onebrain.app</Link></li>
-              <li>Sign Up with email & phone number</li>
-              <li>Select the Creator Pack (৳699)</li>
-              <li>Pay using bKash/Nagad/card</li>
-              <li>Start creating instantly</li>
-            </ol>
-
-            <h2 className="text-2xl font-bold mt-8 mb-4">Final Thought</h2>
-
-            <p className="text-gray-300">
-              For professional-quality AI voiceovers and complete multimedia content in Bangladesh, buying Nano Banana via{" "}
-              <Link href="https://onebrain.app" className="text-blue-400 underline">OneBrain</Link> is the smartest choice.
+            <p>
+              You get <strong>Nano Banana AI , 15,00,000 Pro Tokens</strong>, and <strong>10+ premium AI tools</strong> for text, image, video & audio — all in one plan.
             </p>
 
-            <p className="text-gray-300">
-              For just ৳699, you get: Nano Banana AI + 15,00,000 Tokens + Max AI Unlimited with dozens of text, image, video & audio tools — all free.
+            <p className="font-semibold">
+              Start today at 👉{" "}
+              <Link href="https://onebrain.app" className="text-blue-400 underline">
+                onebrain.app
+              </Link>{" "}
+             <br /> and unlock your all-in-one AI creative studio with <strong>Nano Banana AI —</strong>
+             <strong> Your ideas, your visuals, your creativity — powered by AI.</strong>
+
             </p>
 
-            <p className="text-gray-300 font-semibold">
-              Start today at <Link href="https://onebrain.app" className="text-blue-400 underline">onebrain.app</Link> and unlock everything in one subscription.
-            </p>
           </div>
         </article>
       </div>
