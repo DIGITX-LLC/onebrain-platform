@@ -13,7 +13,7 @@ export default function Vo3TrendingSection() {
                 {/* Main Title */}
                 <div className="text-center  mb-12">
                     <h1 className="text-4xl lg:text-5xl  font-semibold">
-                        Explore the Power of ChatGPT with OneBr<span className='text-[#69aafa]'>ai</span>
+                        Explore the Power of ChatGPT with OneBrain<span className='text-[#69aafa]'>ai</span>
                     </h1>
                     <h3 className='text-2xl text-[#D1D5DB] font-semibold mt-2'>ChatGPT in Bangladesh is Now Smarter Than Ever </h3>
                 </div>
