@@ -5,7 +5,7 @@ import ButtonAnimatedGradient from "./ButtonAnimatedGradient";
 
 export default function BlogDetailsSeven() {
   return (
-    <div className="min-h-screen bg-[#030205] text-white">
+    <div className="min-h-screen bg-[#030205] text-gray-300">
 
      
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#030205]/80 backdrop-blur-lg">
@@ -25,7 +25,7 @@ export default function BlogDetailsSeven() {
                 gradientFrom="#0f1747"
                 gradientTo="#0f1747"
                 borderColor="#b2b8f6"
-                className="w-[135px] h-[40px] rounded-full font-normal"
+                className="w-[135px] h-[40px] rounded-full  font-normal"
               />
             </Link>
           </div>
@@ -33,7 +33,7 @@ export default function BlogDetailsSeven() {
       </nav>
 
       
-      <div className="container mx-auto px-6 pt-24 pb-16">
+      <div className="container mx-auto px-6  text-gray-300 pt-24 pb-16">
         <article className="prose prose-lg prose-invert mx-auto">
 
         
@@ -137,7 +137,7 @@ export default function BlogDetailsSeven() {
             <h2 className="text-xl lg:text-2xl text-gray-300 font-bold">All-Inclusive AI Suite Included in the Creator Pack</h2>
             <p>Beyond ElevenLabs, the Creator Pack gives you access to a full range of AI tools across categories. Here’s what you can do with them:</p>
             <h3 className="text-xl font-semibold text-gray-300">Text & Chat AI Tools</h3>
-            <p className="text-gray-300">
+            
              <ul className="list-disc pl-6 space-y-2">
                 <li>ChatGPT, Claude, Gemini, Qwen, Grok, DeepSeek, Perplexity — writing, coding,
               essays, research.</li>
@@ -145,7 +145,7 @@ export default function BlogDetailsSeven() {
               <li>Prompt-Based Tools: Use ready-made prompts for photo editing, coding, creative writing, or content enhancement.</li>
               <li>AI Research & Comparison: Compare AI models to select the best AI for specific needs, like ChatGPT vs DeepSeek vs Perplexity.</li>
               </ul>
-            </p>
+            
 
             <h3 className="text-xl font-semibold text-gray-300">Image AI Tools</h3>
             <p className="text-gray-300">

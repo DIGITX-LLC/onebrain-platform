@@ -178,68 +178,68 @@ export default function BlogDetails() {
             <h1 className="text-4xl font-bold text-blue-900 mb-4">
               OneBrain Launches Llama 3.3: Comparing with Grok 3
             </h1>
-            <div className="flex space-x-4 text-gray-400 text-sm mb-6">
+            <div className="flex space-x-4 text-gray-300 text-sm mb-6">
               <span>AUTHOR: admin</span>
               <span>PUBLISHED ON: April 10, 2025</span>
               <span>PUBLISHED IN: Events</span>
             </div>
             <section className="mb-8">
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 OneBrain has just launched Llama 3.3, bringing faster performance and smarter reach. Llama 3.3 is a smart language model capable of assisting with tasks like chatting, coding, and creating synthetic data. Meanwhile, Grok 3 has made significant improvements in reasoning, math, coding, and world knowledge. Let’s compare these two models to determine which one is the best.
               </p>
-              <p className="text-gray-400 leading-relaxed mt-4">
+              <p className="text-gray-300 leading-relaxed mt-4">
                 Llama 3.3 is a new language model. Although smaller than its predecessors, it still delivers strong performance, making it an excellent choice for a wide range of projects. It also supports multiple languages, such as English, Spanish, Hindi, and German, making it adaptable for global use. On the other hand, Grok 3 is a large language model offering features like advanced reasoning, knowledge retrieval, and text summarization.
               </p>
             </section>
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-400 mb-4">Brief on Llama 3.3</h2>
-              <p className="text-gray-400 leading-relaxed">
+              <h2 className="text-2xl font-semibold text-gray-300 mb-4">Brief on Llama 3.3</h2>
+              <p className="text-gray-300 leading-relaxed">
                 This is an open-source model, which means it's free for anyone to use, modify, or improve. It's perfect for a wide range of tasks, like general text generation, chatbots, or content creation. Since it's open-source, you can also adjust it to your specific needs if you have the technical ability. Llama 3.3 is highly flexible and can be used for many different applications, but it may not be as specialized in handling complex problems or analyzing large amounts of real-time data. The latest update of Llama 3.3 was released on Dec 6, 2024.
               </p>
             </section>
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-400 mb-4">Brief on Grok 3</h2>
-              <p className="text-gray-400 leading-relaxed">
+              <h2 className="text-2xl font-semibold text-gray-300 mb-4">Brief on Grok 3</h2>
+              <p className="text-gray-300 leading-relaxed">
                 Grok 3 is a sophisticated tool designed to handle challenging and intricate tasks, making it ideal for solving problems that demand a deep understanding or involve large datasets. In financial analysis, Grok 3 can quickly process numbers, spot patterns, and generate predictions, enabling businesses to make quick, informed choices. On the other hand, it doesn’t offer as much customization as some other tools, such as Llama 3.3, which may be important for tasks that require a high degree of personalization. Nevertheless, Grok 3 is exceptionally effective in situations that prioritize quick, reliable problem-solving.
               </p>
-              <p className="text-gray-400 leading-relaxed mt-4">
+              <p className="text-gray-300 leading-relaxed mt-4">
                 In short, Grok 3 is a powerful, fast, and dependable solution for tackling complex challenges that need rapid analysis and decision-making, though it may not be as customizable as some other options.
               </p>
             </section>
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-400 mb-4">Comparing Llama 3.3 and Grok 3</h2>
-              <p className="text-gray-400 leading-relaxed">
+              <h2 className="text-2xl font-semibold text-gray-300 mb-4">Comparing Llama 3.3 and Grok 3</h2>
+              <p className="text-gray-300 leading-relaxed">
                 When comparing Llama 3.3 and Grok 3, both are powerful AI models with distinct strengths. The best choice depends on your specific needs and use case. Here's a quick breakdown:
               </p>
-              <h3 className="text-xl font-semibold text-gray-400 mt-6 mb-2">Llama 3.3 Capabilities</h3>
-              <p className="text-gray-400 leading-relaxed">
+              <h3 className="text-xl font-semibold text-gray-300 mt-6 mb-2">Llama 3.3 Capabilities</h3>
+              <p className="text-gray-300 leading-relaxed">
                 Llama 3.3 is designed to tackle a variety of tasks involving text generation, language translation, content summarization, multilingual research, and applications that require contextually accurate text in different languages. It can also support coding and software development. Here's a more detailed breakdown of the areas where Llama 3.3 can be applied:
               </p>
-              <h4 className="text-lg font-semibold text-gray-400 mt-4 mb-2">Content Creation & Communication</h4>
-              <ul className="list-disc pl-6 text-gray-400 leading-relaxed">
+              <h4 className="text-lg font-semibold text-gray-300 mt-4 mb-2">Content Creation & Communication</h4>
+              <ul className="list-disc pl-6 text-gray-300 leading-relaxed">
                 <li>Llama 3.3 can be utilized to create chatbots and virtual assistants that handle customer queries and offer assistance in several languages.</li>
                 <li>It helps in generating articles, blog posts, marketing copy, and other written content.</li>
                 <li>The model can summarize lengthy articles, reports, or research papers into clear and concise versions.</li>
                 <li>Thanks to its multilingual capabilities, Llama 3.3 is ideal for translating text between languages.</li>
               </ul>
-              <h4 className="text-lg font-semibold text-gray-400 mt-4 mb-2">Coding & Software Development</h4>
-              <ul className="list-disc pl-6 text-gray-400 leading-relaxed">
+              <h4 className="text-lg font-semibold text-gray-300 mt-4 mb-2">Coding & Software Development</h4>
+              <ul className="list-disc pl-6 text-gray-300 leading-relaxed">
                 <li>Llama 3.3 can assist developers with tasks such as generating code, debugging issues, and comprehending complex codebases.</li>
                 <li>The model can automate specific software development processes, enhancing overall productivity.</li>
               </ul>
-              <h4 className="text-lg font-semibold text-gray-400 mt-4 mb-2">Research & Education</h4>
-              <ul className="list-disc pl-6 text-gray-400 leading-relaxed">
+              <h4 className="text-lg font-semibold text-gray-300 mt-4 mb-2">Research & Education</h4>
+              <ul className="list-disc pl-6 text-gray-300 leading-relaxed">
                 <li>Researchers can use Llama 3.3 to analyze large datasets and generate insights across various languages and fields.</li>
                 <li>Educational platforms can integrate Llama 3.3 to create personalized learning experiences for students around the world.</li>
                 <li>Llama 3.3 can generate synthetic data to train and test AI models.</li>
                 <li>The model can be used to build applications that provide answers to questions and deliver valuable information.</li>
               </ul>
-              <h3 className="text-xl font-semibold text-gray-400 mt-6 mb-2">Grok 3 Capabilities</h3>
-              <p className="text-gray-400 leading-relaxed">
+              <h3 className="text-xl font-semibold text-gray-300 mt-6 mb-2">Grok 3 Capabilities</h3>
+              <p className="text-gray-300 leading-relaxed">
                 Grok 3, with its advanced reasoning and DeepSearch capabilities, is designed to tackle a wide range of challenges across various domains, including complex coding, scientific research, and real-time data analysis. It can also assist with tasks such as debugging code and analyzing market trends. Here’s a closer look at the types of problems Grok 3 can address:
               </p>
-              <h4 className="text-lg font-semibold text-gray-400 mt-4 mb-2">Technical and Research-Driven Tasks</h4>
-              <ul className="list-disc pl-6 text-gray-400 leading-relaxed">
+              <h4 className="text-lg font-semibold text-gray-300 mt-4 mb-2">Technical and Research-Driven Tasks</h4>
+              <ul className="list-disc pl-6 text-gray-300 leading-relaxed">
                 <li>Grok 3 can efficiently generate sophisticated code and swiftly identify and fix errors, thanks to its enhanced speed and reasoning capabilities.</li>
                 <li>With its DeepSearch technology, Grok 3 helps researchers process extensive datasets and formulate accurate hypotheses across fields like chemistry, physics, and biology.</li>
                 <li>Grok 3 excels at tackling complex mathematical equations and deconstructing intricate problems.</li>
@@ -248,7 +248,7 @@ export default function BlogDetails() {
               <div className="mt-6">
                 <button
                   onClick={handleShare}
-                  className="flex items-center gap-2 text-gray-400 hover:text-blue-600 focus:outline-none"
+                  className="flex items-center gap-2 text-gray-300 hover:text-blue-600 focus:outline-none"
                   aria-label="Share this article"
                 >
                   <Share2 size={20} />

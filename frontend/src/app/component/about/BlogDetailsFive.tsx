@@ -36,7 +36,7 @@ export default function BlogDetailsFive() {
       <div className="container mx-auto px-6 pt-24 pb-16">
         <article className="prose prose-lg prose-invert mx-auto">
           
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-8 text-center">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl text-gray-300 font-bold mb-8 text-center">
             Buy Sora 2 & Sora 2 Pro in Bangladesh — Only on OneBrain with 10+ Free AI Tools
           </h1>
 
@@ -91,16 +91,16 @@ export default function BlogDetailsFive() {
           
             <h2 className="text-xl lg:text-2xl font-bold mt-8 mb-4">🚀 Why Sora Is a Game Changer for Bangladeshi Creators</h2>
             <ol className="list-decimal pl-6 space-y-3">
-              <li className="text-xl"><strong>Text-to-Video in Minutes <br /> <br /> </strong> Instead of spending hours shooting and editing, just type your idea— <br /> “A girl walking through a rainy street in Dhaka, cinematic style.” <br /> and Sora instantly creates it. <br /> You can tweak angles, lighting, and camera motion, making it ideal for content creators who want speed without sacrificing quality.</li>
-              <li className="text-xl"><strong>No Expensive Gear or Editing Skills Needed <br /> <br /> </strong> Cameras, mics, and editing software can cost a fortune. Sora eliminates all that. All you need is your imagination and internet connection. <br /> <br /> This is especially powerful for <strong>students, freelancers, and small businesses</strong> in Bangladesh who want to create professional content without heavy investment.</li>
-              <li className="text-xl"><strong>Bangladesh-Friendly Pricing and Access <br /><br /></strong> Many AI platforms are either <strong>not available in Bangladesh</strong> or require <strong> international payment methods.</strong>OneBrain solved that problem. <br /> You can now Buy <strong>Sora 2 or Sora 2 Pro directly in Taka,</strong> using <strong>bKash, Nagad, or Rocket,</strong> starting at just ৳699. <br /> <br /> That means no VPNs, no dollar cards, and no technical barriers — only pure creativity. <br /> <br />
+              <li ><strong className="text-xl">Text-to-Video in Minutes <br /> <br /> </strong> Instead of spending hours shooting and editing, just type your idea— <br /> “A girl walking through a rainy street in Dhaka, cinematic style.” <br /> and Sora instantly creates it. <br /> You can tweak angles, lighting, and camera motion, making it ideal for content creators who want speed without sacrificing quality.</li>
+              <li ><strong className="text-xl">No Expensive Gear or Editing Skills Needed <br /> <br /> </strong> Cameras, mics, and editing software can cost a fortune. Sora eliminates all that. All you need is your imagination and internet connection. <br /> <br /> This is especially powerful for <strong>students, freelancers, and small businesses</strong> in Bangladesh who want to create professional content without heavy investment.</li>
+              <li ><strong className="text-xl">Bangladesh-Friendly Pricing and Access <br /><br /></strong> Many AI platforms are either <strong>not available in Bangladesh</strong> or require <strong> international payment methods.</strong>OneBrain solved that problem. <br /> You can now Buy <strong>Sora 2 or Sora 2 Pro directly in Taka,</strong> using <strong>bKash, Nagad, or Rocket,</strong> starting at just ৳699. <br /> <br /> That means no VPNs, no dollar cards, and no technical barriers — only pure creativity. <br /> <br />
                👉 Try it here: <Link href="https://onebrain.app" className="text-blue-400 underline">Buy Sora 2 in Bangladesh — OneBrain
               </Link></li> <br />
-              <li className="text-xl" ><strong>Professional-Quality Output <br /> <br /></strong> Sora isn’t just another video toy — it creates videos that actually look good.
+              <li  ><strong className="text-xl">Professional-Quality Output <br /> <br /></strong> Sora isn’t just another video toy — it creates videos that actually look good.
                  Using advanced AI models, it produces <strong>smooth motion, realistic visuals, and cinematic scenes</strong> that were previously only possible with professional editing software. <br /> br 
                  With <strong>Sora 2 Pro</strong>, you even get access to longer video durations and more advanced customization options — ideal for YouTube creators or marketing agencies.
               </li>
-              <li className="text-xl"><strong>Perfect for Social Media, Ads & Education <br /><br /></strong> From quick <strong>Instagram Reels</strong> to <strong>YouTube explainers</strong>, Sora adapts to your needs. 
+              <li ><strong className="text-xl">Perfect for Social Media, Ads & Education <br /><br /></strong> From quick <strong>Instagram Reels</strong> to <strong>YouTube explainers</strong>, Sora adapts to your needs. 
               <ul> <br />
                 <li ><strong>For marketers:</strong>Turn ad copy into video ads
                 </li>

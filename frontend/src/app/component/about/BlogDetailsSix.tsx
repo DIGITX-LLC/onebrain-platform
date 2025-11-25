@@ -69,7 +69,7 @@ export default function BlogDetailsSix() {
           </div> */}
 
          
-          <div className="space-y-6">
+          <div className="space-y-6 text-gray-300">
 
             <p className="text-gray-300">
               The future of smart content creation is here — and it’s powered by Nano Banana AI.
