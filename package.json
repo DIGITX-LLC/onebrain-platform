@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "cd frontend && pnpm run dev",
     "build": "npx -y pnpm@8.15.6 --dir frontend run build",
-    "start": "cd frontend && pnpm run start",
+    "start": "npx -y pnpm@8.15.6 --dir frontend run build && npx -y pnpm@8.15.6 --dir frontend run start",
     "lint": "cd frontend && pnpm run lint",
     "install:frontend": "npx -y pnpm@8.15.6 --dir frontend install",
     "heroku-postbuild": "rm -rf frontend/.next && npx -y pnpm@8.15.6 --dir frontend install --no-frozen-lockfile && npx -y pnpm@8.15.6 --dir frontend run build"
