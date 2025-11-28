@@ -8,7 +8,6 @@
     "dev": "next dev",
     "build": "next build",
     "postbuild": "next-sitemap",
-    "prestart": "rimraf .next",
     "start": "next start",
     "lint": "next lint"
   },
