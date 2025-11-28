@@ -148,42 +148,35 @@ export default function BlogDetailsSeven() {
             
 
             <h3 className="text-xl font-semibold text-gray-300">Image AI Tools</h3>
-            <p className="text-gray-300">
-              <ul className="list-disc pl-6 space-y-2">
-                <li>Nano Banana & Kontext Restore: Repair blurry or damaged images, enhance photos, and restore old images.</li>
-                <li>Grok AI & Gemini Banana AI: Generate creative visuals, social media graphics, and marketing images from text prompts.</li>
-                 <li>Photo Editing Prompts: Improve images with AI suggestions for color correction, style transfer, and design enhancement.
-                 </li>
-                <li>Workflow Support: Perfect for vlog editing workflows, thumbnails, and creative media projects.</li>
-              </ul>
-            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Nano Banana & Kontext Restore: Repair blurry or damaged images, enhance photos, and restore old images.</li>
+              <li>Grok AI & Gemini Banana AI: Generate creative visuals, social media graphics, and marketing images from text prompts.</li>
+              <li>Photo Editing Prompts: Improve images with AI suggestions for color correction, style transfer, and design enhancement.
+              </li>
+              <li>Workflow Support: Perfect for vlog editing workflows, thumbnails, and creative media projects.</li>
+            </ul>
 
             <h3 className="text-xl font-semibold text-gray-300">Video AI Tools</h3>
-            <p className="text-gray-300">
-               <ul className="list-disc pl-6 space-y-2">
-                <li>Runway ML, Hailuo AI, VEO3, Sedance, Wan AI: Convert text to video, create animations, and produce professional-quality video content.
-                </li>
-                <li>AI Video Editing: Add effects, transitions, and motion graphics quickly.</li>
-                 <li>Text-to-Video AI: Create explainer videos, tutorials, or social media content without expensive equipment.
-                 </li>
-                <li>Watermark-Free Output: Some tools allow video creation without watermark, ideal for creators starting out.</li>
-              </ul>
-            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Runway ML, Hailuo AI, VEO3, Sedance, Wan AI: Convert text to video, create animations, and produce professional-quality video content.
+              </li>
+              <li>AI Video Editing: Add effects, transitions, and motion graphics quickly.</li>
+              <li>Text-to-Video AI: Create explainer videos, tutorials, or social media content without expensive equipment.
+              </li>
+              <li>Watermark-Free Output: Some tools allow video creation without watermark, ideal for creators starting out.</li>
+            </ul>
 
             <h3 className="text-xl font-semibold text-gray-300">Audio & Music AI Tools</h3>
-            <p className="text-gray-300">
-              <ul className="list-disc pl-6 space-y-2">
-                <li>ElevenLabs AI: Generate human-like voiceovers, clone voices, or create custom AI voices.
-                </li>
-                <li>Udio AI: Turn text into music tracks, jingles, or background scores.
-               </li>
-                 <li>Humanizer & Audio Enhancers: Make AI-generated speech sound more natural for podcasts, reels, and presentations.
-
-                 </li>
-                <li>Multimedia Integration: Combine audio, video, and images to produce complete multimedia projects.
-               </li>
-              </ul>
-            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>ElevenLabs AI: Generate human-like voiceovers, clone voices, or create custom AI voices.
+              </li>
+              <li>Udio AI: Turn text into music tracks, jingles, or background scores.
+              </li>
+              <li>Humanizer & Audio Enhancers: Make AI-generated speech sound more natural for podcasts, reels, and presentations.
+              </li>
+              <li>Multimedia Integration: Combine audio, video, and images to produce complete multimedia projects.
+              </li>
+            </ul>
             <p>All of these AI tools are included for free with the Creator Pack, giving you a complete AI creative studio under one subscription.</p>
 
            
