@@ -52,7 +52,8 @@ export function createBlogData() {
 
         <h3>Future Implications</h3>
         <p>The development of these models represents a significant step forward in AI technology, promising even more advanced capabilities in future iterations.</p>
-      `
+      `,
+      component:"details1"
     },
     {
       id: 2,
@@ -100,7 +101,8 @@ export function createBlogData() {
           <li>Resource Optimization</li>
           <li>User Experience</li>
         </ul>
-      `
+      `,
+      component:"details2"
     },
     {
       id: 3,
@@ -148,7 +150,8 @@ export function createBlogData() {
           <li>User Interface Design</li>
           <li>Integration Capabilities</li>
         </ul>
-      `
+      `,
+      component:"details3"
     },
     {
       id: 4,
@@ -204,114 +207,175 @@ export function createBlogData() {
 
         <h3>Experience Smarter AI Today</h3>
         <p>Your creativity, productivity, and business deserve the best. Get started with OneBrain to unlock easy and affordable ChatGPT buy BD deals, experiment with a ChatGPT image edit prompt, or enjoy the powerful features of ChatGPT-4 and ChatGPT-5 and many more models —all tailored for Bangladesh.</p>
-      `
+      `,
+        component:"details4"
     },
     {
       id: 5,
       title: 'Buy Sora 2 & Sora 2 Pro in Bangladesh — Only on OneBrain with 10+ Free AI Tools',
       excerpt: 'Buy Sora 2 (699 Taka) and Sora 2 Pro (1,999 Taka) exclusively on OneBrain in Bangladesh! Get 10+ premium AI...',
       image: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Blog%20poster.png',
-      content: `
-        <h1>Meta Description:</h1>
-         <h2>Buy Sora 2 & Sora 2 Pro in Bangladesh — Only on OneBrain with 10+ Free AI Tools</h2>
-         <p>Buy Sora 2 (699 Taka) and Sora 2 Pro (1,999 Taka) exclusively on OneBrain in Bangladesh! Get 10+ premium AI tools free for text, image, audio, and video generation.</p>
-    
-        <p>The future of content creation, <strong>Sora 2 and Sora 2 Pro are now available exclusively on OneBrain in Bangladesh.</strong> These advanced AI models, powered by OpenAI, turn your text or images into professional videos in just a few clicks.</p>
-    
-        <p>In 2025, <strong>AI video generation</strong> is the next big thing. From YouTube Shorts to TikTok and Instagram Reels, videos are now the language of the internet. But for most Bangladeshi creators, producing high-quality videos can be expensive, time-consuming, and technically challenging.</p>
-    
-        <p>That’s why the arrival of <strong>Sora AI</strong> — available exclusively on OneBrain — is a total game changer. This powerful AI video generator lets you turn <strong>text prompts into professional-grade videos</strong> in just minutes.</p>
-        <p>Let’s explore why Sora is creating so much buzz — and how Bangladeshi creators can use it to create smarter, faster, and cheaper.</p>
+      content: `<h1>Buy Sora 2 & Sora 2 Pro in Bangladesh — Only on OneBrain with 10+ Free AI Tools</h1>
 
+<p>The future of content creation, <strong>Sora 2 and Sora 2 Pro are now available exclusively on OneBrain in Bangladesh.</strong> These advanced AI models, powered by OpenAI, turn your text or images into professional videos in just a few clicks.</p>
 
-        <h3>What Is Sora AI?</h3>
-        <p><strong>Sora</strong> is an <strong>AI-powered text-to-video generator</strong> that makes storytelling easy for everyone — from individual creators to marketing teams. <br> Just type a scene description or script, and Sora automatically generates a full video complete with visuals, movements, and cinematic effects.</p>
-        <p>Whether you’re creating educational content, social media clips, or promo videos, Sora gives you the tools to bring your ideas to life — no camera, no editing software, and no experience needed.
-         <br> On OneBrain, you can access Sora 2 and Sora 2 Pro, two of the most advanced versions available for Bangladeshi users.
-        </P>
-        <p>On OneBrain, you can access Sora 2 and Sora 2 Pro, two of the most advanced versions available for Bangladeshi users.</p>
-     
+<p>In 2025, one thing is clear — AI video generation is the next big thing in content creation. From YouTube Shorts to TikTok and Instagram Reels, videos are now the language of the internet. But for most Bangladeshi creators, producing high-quality videos can be expensive, time-consuming, and technically challenging.</p>
 
-         <h3><strong>Why Sora Is a Game Changer for Bangladeshi Creators</strong></h3>
+<p>That’s why the arrival of <strong>Sora AI</strong> — available exclusively on OneBrain — is a total game changer. This powerful AI video generator lets you turn text prompts into professional-grade videos in just minutes.</p>
 
-         <ul>
-           <li><strong>Text-to-Video in Minutes</strong> Simply type your idea and Sora instantly creates it. Tweak angles, lighting, and camera motion with ease.</li>
-           <li><strong>No Expensive Gear or Editing Skills Needed:</strong> All you need is imagination and internet connection.</li>
-           <li><strong>Bangladesh-Friendly Pricing and Access:</strong> Buy Sora 2 (৳699) or Sora 2 Pro (৳1,999) directly in Taka using bKash, Nagad, or Rocket.</li>
-           <li><strong>Professional-Quality Output:</strong> Smooth motion, realistic visuals, and cinematic scenes, perfect for social media, marketing, and education.</li>
-         </ul>
+<p>Let’s explore why Sora is creating so much buzz — and how Bangladeshi creators can use it to create smarter, faster, and cheaper.</p>
 
-        <h3>Key Features</h3>
-         <ul>
-           <li>Text-to-Video: Convert scripts, articles, or blog posts into dynamic videos</li>
-           <li>AI Image-to-Video: Turn images into professional videos using intelligent AI prompts</li>
-           <li>High-Quality Output: Suitable for YouTube, social media, marketing campaigns, and presentations</li>
-           <li>User-Friendly Interface: Easy for both beginners and professionals</li>
-           <li>OpenAI-Powered Intelligence: Creative and context-aware video generation</li>
-           <li>Fast & Efficient: Produce professional videos faster than traditional editing</li>
-         </ul>
+<h2>What Is Sora AI?</h2>
+<p><strong>Sora</strong> is an AI-powered text-to-video generator developed to make storytelling easier for everyone — from individual creators to marketing teams. You simply type a scene description or script, and Sora automatically generates a full video — complete with visuals, movements, and cinematic effects.</p>
 
-     <h3>Sora 2 vs Sora 2 Pro: Feature Comparison</h3>
-     <table>
-      <tr><th>Feature</th><th>Sora 2</th><th>Sora 2 Pro</th></tr>
-      <tr><td>Resolution</td><td>Up to 1280×720 (HD)</td><td>Up to 1792×1024 (HD), higher resolutions</td></tr>
-      <tr><td>Video Quality</td><td>Standard video quality</td><td>Professional-grade, cinematic-quality video</td></tr>
-      <tr><td>Performance</td><td>Rapid video generation</td><td>Optimized for high-quality, stable generation for commercial use</td></tr>
-      <tr><td>Target Audience</td><td>Content creators, social media, educational content</td><td>Advertisers, filmmakers, marketing professionals</td></tr>
-      <tr><td>Use Cases</td><td>Quick videos, social media content, demos</td><td>High-resolution commercial videos, ads, professional films</td></tr>
-      <tr><td>Audio-Visual Sync</td><td>Standard</td><td>Enhanced for professional content</td></tr>
-     </table>
+<p>Whether you’re creating educational content, social media clips, or promo videos, Sora gives you the tools to bring your ideas to life — no camera, no editing software, and no experience needed. On OneBrain, you can access Sora 2 and Sora 2 Pro, two of the most advanced versions available for Bangladeshi users.</p>
 
-     <h3>Buy Sora 2 & Sora 2 Pro in Bangladesh — Affordable, Personal, and All-in-One!</h3>
-     <p>OneBrain offers Sora 2 for ৳699 and Sora 2 Pro for ৳1,999, including 10+ free premium AI tools for text, image, audio, and video creation.</p>
+<h2>Why Sora Is a Game Changer for Bangladeshi Creators</h2>
+<ol>
+    <li>
+        <strong>Text-to-Video in Minutes:</strong> Instead of spending hours shooting and editing, just type your idea — <em>“A girl walking through a rainy street in Dhaka, cinematic style.”</em> and Sora instantly creates it. You can tweak angles, lighting, and camera motion, making it ideal for content creators who want speed without sacrificing quality.
+    </li>
+    <li>
+        <strong>No Expensive Gear or Editing Skills Needed:</strong> Cameras, mics, and editing software can cost a fortune. Sora eliminates all that. All you need is your imagination and internet connection. This is especially powerful for students, freelancers, and small businesses in Bangladesh who want to create professional content without heavy investment.
+    </li>
+    <li>
+        <strong>Bangladesh-Friendly Pricing and Access:</strong> Many AI platforms are either not available in Bangladesh or require international payment methods. OneBrain solved that problem. You can now buy Sora 2 or Sora 2 Pro directly in Taka, using bKash, Nagad, or Rocket, starting at just ৳699. That means no VPNs, no dollar cards, and no technical barriers — only pure creativity.
+        <br>👉 <a href="#">Try it here: Buy Sora 2 in Bangladesh — OneBrain</a>
+    </li>
+    <li>
+        <strong>Professional-Quality Output:</strong> Sora isn’t just another video toy — it creates videos that actually look good. Using advanced AI models, it produces smooth motion, realistic visuals, and cinematic scenes that were previously only possible with professional editing software. With Sora 2 Pro, you even get access to longer video durations and more advanced customization options — ideal for YouTube creators or marketing agencies.
+    </li>
+    <li>
+        <strong>Perfect for Social Media, Ads & Education:</strong> From quick Instagram Reels to YouTube explainers, Sora adapts to your needs.
+        <ul>
+            <li>For marketers: Turn ad copy into video ads</li>
+            <li>For educators: Create tutorials and explainer videos</li>
+            <li>For freelancers: Generate client content faster</li>
+            <li>For influencers: Create unique short-form videos daily</li>
+        </ul>
+    </li>
+</ol>
 
-     <h3>Creator Pack: Perfect for Regular AI Creators (৳699)</h3>
-     <ul>
-      <li>Sora 2 AI text-to-video and image-to-video generation</li>
-      <li>Access to 10+ premium AI tools: ChatGPT Premium, Gemini Premium, DeepSeek, Claude, Llama, Grok, Perplexity, Qwen, Mistral, Nano Banana, Kontext Restore, Runway ML, Hailuo, Seedance, VGen, ElevenLabs, Udio AI, Humanizer</li>
-      <li>15,00,000 Pro Tokens</li>
-      <li>Unlimited chat & attachments</li>
-     </ul>
+<h2>Key Features</h2>
+<ul>
+    <li>Text-to-Video: Instantly convert scripts, articles, or blog posts into dynamic videos</li>
+    <li>AI Image-to-Video: Turn images into professional videos using intelligent AI prompts</li>
+    <li>High-Quality Output: Suitable for YouTube, social media, marketing campaigns, and presentations</li>
+    <li>User-Friendly Interface: Easy for both beginners and professionals</li>
+    <li>OpenAI-Powered Intelligence: Advanced AI ensures accurate, creative, and context-aware video generation</li>
+    <li>Fast & Efficient: Create professional videos much faster than traditional editing methods</li>
+</ul>
 
-     <h3>Performance Pack: For Heavy AI Creators (৳1,999)</h3>
-     <ul>
-      <li>Sora 2 Pro — faster rendering, 4K output</li>
-      <li>All Creator Pack tools included</li>
-      <li>Additional professional AI tools: KlingAI All Models</li>
-      <li>45,00,000 Pro Tokens</li>
-      <li>Unlimited chat & attachments</li>
-     </ul>
+<h2>Sora 2 vs Sora 2 Pro: Feature Comparison</h2>
+<table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+        <th>Feature</th>
+        <th>Sora 2</th>
+        <th>Sora 2 Pro</th>
+    </tr>
+    <tr>
+        <td>Resolution</td>
+        <td>Up to 1280×720 (HD)</td>
+        <td>Up to 1792×1024 (HD), higher resolutions</td>
+    </tr>
+    <tr>
+        <td>Video Quality</td>
+        <td>Standard video quality suitable for most use cases</td>
+        <td>Professional-grade, cinematic-quality video</td>
+    </tr>
+    <tr>
+        <td>Performance</td>
+        <td>Ideal for rapid video generation and prototyping</td>
+        <td>Optimized for high-quality, stable generation for commercial use</td>
+    </tr>
+    <tr>
+        <td>Target Audience</td>
+        <td>Content creators, social media, prototypes, educational content</td>
+        <td>Advertisers, filmmakers, marketing professionals</td>
+    </tr>
+    <tr>
+        <td>Use Cases</td>
+        <td>Quick video production, social media content, product demos</td>
+        <td>High-resolution commercial videos, advertisements, professional films</td>
+    </tr>
+    <tr>
+        <td>Audio-Visual Sync</td>
+        <td>Standard audio synchronization</td>
+        <td>Enhanced synchronization for high-quality, professional content</td>
+    </tr>
+</table>
 
-     <h3>What You Can Do with Sora AI via OneBrain</h3>
-     <ul>
-      <li>Convert Text into Videos</li>
-      <li>Generate Videos from Images</li>
-      <li>Experiment with Premium AI Tools</li>
-      <li>Produce Multimedia Projects</li>
-     </ul>
+<h2>Buy Sora 2 & Sora 2 Pro in Bangladesh — Affordable, Personal, and All-in-One!</h2>
+<p>Looking for Sora 2 or Sora 2 Pro at the best price in Bangladesh? OneBrain is your ultimate destination. Not only do you get access to OpenAI-powered video generation tools, but you also unlock 10+ premium AI tools for text, image, audio, and video — all in one platform.</p>
 
-     <h3>Where and How to Buy Sora 2 & Sora 2 Pro in Bangladesh</h3>
-     <ol>
-      <li>Visit OneBrain and sign up with email and phone number</li>
-      <li>Select your pack: Creator Pack (৳699) or Performance Pack (৳1,999)</li>
-      <li>Pay securely using Bkash, Nagad, Rocket, or VISA</li>
-      <li>Start creating — instant access to Sora AI and AI tools</li>
-     </ol>
+<h3>Why choose OneBrain?</h3>
+<ul>
+    <li>Affordable Pricing: Sora 2 for 699 Taka, Sora 2 Pro for 1,999 Taka</li>
+    <li>Exclusive Access: The only platform in Bangladesh offering Sora 2 & Sora 2 Pro</li>
+    <li>All-in-One Platform: Create text, image, audio, and video content without multiple subscriptions</li>
+    <li>Fully Personal Accounts: No sharing, no privacy concerns</li>
+    <li>Privacy Assured: Your projects and data remain secure</li>
+    <li>Zero Hassle: Instant access after purchase; no waiting, no complicated setups</li>
+    <li>Experiment Freely: Thousands of Pro Tokens and unlimited chat & attachments with advanced AI models</li>
+</ul>
 
-     <h3>Frequently Asked Questions (FAQs)</h3>
-     <ul>
-      <li><strong>Q:</strong> What is Sora 2 and Sora 2 Pro?<br><strong>A:</strong> Sora 2 generates videos from text/images; Sora 2 Pro has advanced features for longer, higher-quality videos.</li>
-      <li><strong>Q:</strong> How does Sora 2 help content creators?<br><strong>A:</strong> Quickly turns text and images into professional videos.</li>
-      <li><strong>Q:</strong> Where can I buy them in Bangladesh?<br><strong>A:</strong> Only on OneBrain.</li>
-      <li><strong>Q:</strong> What is included in the Creator Pack?<br><strong>A:</strong> Sora 2 + 10+ free AI tools for text, video, audio, and images.</li>
-      <li><strong>Q:</strong> How much does the Creator Pack cost?<br><strong>A:</strong> ৳699</li>
-      <li><strong>Q:</strong> How quickly can I start using them?<br><strong>A:</strong> Instant access after sign-up and payment.</li>
-      </ul>
+<h3>Creator Pack: Perfect for Regular AI Creators (৳699)</h3>
+<ul>
+    <li>Sora 2 — AI text-to-video and image-to-video generation</li>
+    <li>Access to 10+ premium AI tools: ChatGPT Premium, Gemini Premium, DeepSeek, Claude, Llama, Grok, Perplexity, Qwen, Mistral, Nano Banana, Kontext Restore, Runway ML, Hailuo, Seedance, VGen, ElevenLabs, Udio AI, Humanizer</li>
+    <li>15,00,000 Pro Tokens</li>
+    <li>Unlimited chat & attachments</li>
+</ul>
 
-     <h3>Final Thought</h3>
-     <p>OneBrain offers hassle-free, fully personal, and secure AI tools for Bangladeshi creators. Start creating today with Sora 2 (৳699), Sora 2 Pro (৳1,999), and 10+ premium AI tools — all in one platform.</p>
-      `
-    },
+<h3>Performance Pack: For Heavy AI Creators (৳1,999)</h3>
+<ul>
+    <li>Sora 2 Pro — AI text-to-video and image-to-video with faster rendering and 4K output</li>
+    <li>Includes all Creator Pack tools</li>
+    <li>Additional professional AI tools: KlingAI All Models</li>
+    <li>45,00,000 Pro Tokens</li>
+    <li>Unlimited chat & attachments</li>
+</ul>
+
+<h3>What You Can Do with Sora AI via OneBrain</h3>
+<ul>
+    <li>Convert Text into Videos</li>
+    <li>Generate Videos from Images</li>
+    <li>Experiment with Premium AI Tools</li>
+    <li>Produce Multimedia Projects</li>
+</ul>
+
+<h3>Where and How to Buy Sora 2 & Sora 2 Pro in Bangladesh</h3>
+<ol>
+    <li>Visit OneBrain and sign up using your email and phone number</li>
+    <li>Select your pack: Creator Pack (৳699) or Performance Pack (৳1,999)</li>
+    <li>Pay securely using Bkash, Nagad, Rocket, or VISA</li>
+    <li>Start creating — instant access to Sora AI and AI tools</li>
+</ol>
+
+<h2>Frequently Asked Questions (FAQs)</h2>
+<ul>
+    <li><strong>Q:</strong> What is Sora 2 and Sora 2 Pro?<br><strong>A:</strong> Sora 2 generates videos from text or images, and Sora 2 Pro has advanced features for longer, higher-quality videos.</li>
+    <li><strong>Q:</strong> How does Sora 2 help content creators?<br><strong>A:</strong> It turns text and images into professional videos quickly and easily.</li>
+    <li><strong>Q:</strong> How do I create a video using Sora AI?<br><strong>A:</strong> Enter your text or upload an image, click generate, and download the video.</li>
+    <li><strong>Q:</strong> Where can I buy Sora 2 & Sora 2 Pro in Bangladesh?<br><strong>A:</strong> They are only available on OneBrain in Bangladesh.</li>
+    <li><strong>Q:</strong> What is included in the Creator Pack?<br><strong>A:</strong> Sora 2 and 10+ free premium AI tools for text, video, audio, and images.</li>
+    <li><strong>Q:</strong> How much does the Creator Pack cost?<br><strong>A:</strong> Just ৳699 for all tools in one plan.</li>
+    <li><strong>Q:</strong> How quickly can I start using Sora 2 & Sora 2 Pro?<br><strong>A:</strong> Instant access after sign-up and payment.</li>
+</ul>
+
+<h2>Final Thought</h2>
+<p>If you are looking for hassle-free, fully personal, and secure AI tools, OneBrain is your ultimate choice for Sora 2 and Sora 2 Pro in Bangladesh. For professional-quality AI video creation, buying Sora 2 & Sora 2 Pro via OneBrain is the smartest decision:</p>
+
+<ul>
+    <li>Sora 2 (৳699) — AI text-to-video and image-to-video generation</li>
+    <li>Sora 2 Pro (৳1,999) — Advanced features for high-quality, longer videos</li>
+    <li>10+ premium AI tools included in each pack</li>
+    <li>OneBrain’s all-in-one platform for text, image, audio, and video creation</li>
+</ul>
+
+<p>Start creating today at <a href="https://onebrain.app/">onebrain.app</a> and unlock Sora 2, Sora 2 Pro, and 10+ premium AI tools — all with your chosen plan, fully personal, secure, and hassle-free.</p>
+`,
+ component:"details5"},
     {
       id: 6,
       title: ' What is Nano Banana AI?',
@@ -420,7 +484,8 @@ export function createBlogData() {
       <h3>Final Thought</h3>
       <p>For creators, marketers, and students in Bangladesh, Nano Banana AI via OneBrain is the smartest and most affordable AI choice. Start today at <a href="https://onebrain.app">onebrain.app</a> and unlock your all-in-one AI creative studio with Nano Banana AI — Your ideas, your visuals, your creativity — powered by AI.</p>
     `
-    },
+    ,
+      component:"details6"},
     {
       id: 7,
       title: 'ElevenLabs AI: Text-to-Speech, Voice Clone & Pricing in BD',
@@ -513,8 +578,10 @@ export function createBlogData() {
 
       <h3>Final Thought</h3>
       <p>For professional AI voiceovers and complete multimedia content in Bangladesh, ElevenLabs via OneBrain is the smartest choice. For just ৳699, get ElevenLabs AI, 15,00,000 Pro Tokens, and full access to AI tools — all in one subscription. Start creating today at <a href="https://onebrain.app">onebrain.app</a>.</p>
-    `
-  }
+    `,
+    component:"details7"
+  },
+  
 
   ];
 }
