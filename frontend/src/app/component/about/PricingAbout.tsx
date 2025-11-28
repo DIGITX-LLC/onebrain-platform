@@ -34,7 +34,10 @@ const AIToolsIcons: Record<string, string> = {
   restorerWhite: '/assets/models/flux-w.svg',
   quizMakerWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/quiz-maker.svg',
   elevenlabsWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Elevenlabs%20Logo%20(1).svg',
-  soraWhite:'/assets/models/runway-white.png'
+  soraWhite:'/assets/models/runway-white.png',
+  seedream:'/assets/models/bytedancelogo.png',
+  pixverse:'/assets/favicon-pixverse.svg',
+  lightricks2 :'/assets/lightricksWhite.png',
   
  
 };
@@ -112,6 +115,7 @@ export default function PricingAbout({
            
       'seedream': 'seedream',
        'pixverse': 'pixverse',
+       'lightricks2': 'lightricks2',
        'lightricks 2': 'lightricks2',
 
       'kontext restore': 'kontextRestore'
@@ -160,7 +164,10 @@ export default function PricingAbout({
       'nano banana': 'veo3',
       'sora': 'soraWhite',
       'sora v2': 'soraWhite',
-      // 'seedream': 'seedream',
+      'seedream': 'seedream',
+  'pixverse': 'pixverse',
+  'lightricks 2': 'lightricks2',
+  'lightricks2': 'lightricks2',
 
       // ===== SPECIAL MODEL MAPPINGS =====
       // Google Imagen 4 -> Gemini logo
@@ -267,10 +274,10 @@ export default function PricingAbout({
       badge: "Unlimited Image",
       features: [
         "Everything on the Student Plan",
-        "Image Generation Model",
+        "Image Generation Models",
         // "• Kontext Restore",
-        "• Nano Banana Pro",
         "• Nano Banana",
+        "• Nano Banana Pro",
         "Image Restorer Model",
         "• Kontext Restore",
         "Video Generation Models",
