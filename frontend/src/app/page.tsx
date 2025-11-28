@@ -295,27 +295,27 @@ export default function Home() {
   }, []);
 
   const updates = [
+    // {
+    //   version: "1.5.5.1",
+    //   status: "Released",
+    //   statusImage:
+    //     "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released.svg",
+    //   image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released-image.svg",
+    //   features: [
+    //     "Added Google’s latest AI video generation model Veo3.1.",
+    //     "Added Google’s low-cost video + audio generation model Veo3.1 Fast.",
+    //     "Introduced new text-to-video and image-to-video model Pixverse 5.",
+    //     "Integrated fastest and cheapest image generation model Flux.",
+    //     "Added a new 4K-quality image generation model Seedream-4.",
+    //     "Enhanced color accuracy across the platform based on user feedback.",
+    //   ],
+    // },
     {
-      version: "1.5.5.1",
+      version: "1.5.6",
       status: "Released",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released-image.svg",
-      features: [
-        "Added Google’s latest AI video generation model Veo3.1.",
-        "Added Google’s low-cost video + audio generation model Veo3.1 Fast.",
-        "Introduced new text-to-video and image-to-video model Pixverse 5.",
-        "Integrated fastest and cheapest image generation model Flux.",
-        "Added a new 4K-quality image generation model Seedream-4.",
-        "Enhanced color accuracy across the platform based on user feedback.",
-      ],
-    },
-    {
-      version: "1.5.6",
-      status: "In Progress",
-      statusImage:
-        "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress.svg",
-      image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress-image.svg",
       features: [
         "Image generation is implemented on the Conversation chat screen.", 
         "Improve Overall Chat Response across all the LLM models.",
@@ -324,16 +324,28 @@ export default function Home() {
     },
     {
       version: "1.5.7",
-      status: "Planned",
+      status: "In Progress",
       statusImage:
-        "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned.svg",
-      image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned-image.svg",
+        "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress.svg",
+      image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress-image.svg",
       features: [
         "Canvas mode implementation with edit Preview and download feature.",
         "Create, edit & download PDF, XLS & DOC files.",
         "Context Memory management dashboard implemented for control.",
       ],
     },
+    // {
+    //   version: "1.5.7",
+    //   status: "Planned",
+    //   statusImage:
+    //     "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned.svg",
+    //   image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned-image.svg",
+    //   features: [
+    //     "Canvas mode implementation with edit Preview and download feature.",
+    //     "Create, edit & download PDF, XLS & DOC files.",
+    //     "Context Memory management dashboard implemented for control.",
+    //   ],
+    // },
   ];
 
 
