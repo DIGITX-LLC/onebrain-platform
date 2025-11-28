@@ -2,9 +2,6 @@
   "name": "onebrain-platform",
   "version": "1.0.0",
   "private": true,
-  "engines": {
-    "node": "20.x"
-  },
   "packageManager": "pnpm@8.15.6",
   "scripts": {
     "dev": "cd frontend && pnpm run dev",

@@ -52,7 +52,8 @@ export function createBlogData() {
 
         <h3>Future Implications</h3>
         <p>The development of these models represents a significant step forward in AI technology, promising even more advanced capabilities in future iterations.</p>
-      `
+      `,
+      component:"details1"
     },
     {
       id: 2,
@@ -100,7 +101,8 @@ export function createBlogData() {
           <li>Resource Optimization</li>
           <li>User Experience</li>
         </ul>
-      `
+      `,
+      component:"details2"
     },
     {
       id: 3,
@@ -148,7 +150,8 @@ export function createBlogData() {
           <li>User Interface Design</li>
           <li>Integration Capabilities</li>
         </ul>
-      `
+      `,
+      component:"details3"
     },
     {
       id: 4,
@@ -204,7 +207,381 @@ export function createBlogData() {
 
         <h3>Experience Smarter AI Today</h3>
         <p>Your creativity, productivity, and business deserve the best. Get started with OneBrain to unlock easy and affordable ChatGPT buy BD deals, experiment with a ChatGPT image edit prompt, or enjoy the powerful features of ChatGPT-4 and ChatGPT-5 and many more models —all tailored for Bangladesh.</p>
-      `
-    }
+      `,
+        component:"details4"
+    },
+    {
+      id: 5,
+      title: 'Buy Sora 2 & Sora 2 Pro in Bangladesh — Only on OneBrain with 10+ Free AI Tools',
+      excerpt: 'Buy Sora 2 (699 Taka) and Sora 2 Pro (1,999 Taka) exclusively on OneBrain in Bangladesh! Get 10+ premium AI...',
+      image: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Blog%20poster.png',
+      content: `<h1>Buy Sora 2 & Sora 2 Pro in Bangladesh — Only on OneBrain with 10+ Free AI Tools</h1>
+
+<p>The future of content creation, <strong>Sora 2 and Sora 2 Pro are now available exclusively on OneBrain in Bangladesh.</strong> These advanced AI models, powered by OpenAI, turn your text or images into professional videos in just a few clicks.</p>
+
+<p>In 2025, one thing is clear — AI video generation is the next big thing in content creation. From YouTube Shorts to TikTok and Instagram Reels, videos are now the language of the internet. But for most Bangladeshi creators, producing high-quality videos can be expensive, time-consuming, and technically challenging.</p>
+
+<p>That’s why the arrival of <strong>Sora AI</strong> — available exclusively on OneBrain — is a total game changer. This powerful AI video generator lets you turn text prompts into professional-grade videos in just minutes.</p>
+
+<p>Let’s explore why Sora is creating so much buzz — and how Bangladeshi creators can use it to create smarter, faster, and cheaper.</p>
+
+<h2>What Is Sora AI?</h2>
+<p><strong>Sora</strong> is an AI-powered text-to-video generator developed to make storytelling easier for everyone — from individual creators to marketing teams. You simply type a scene description or script, and Sora automatically generates a full video — complete with visuals, movements, and cinematic effects.</p>
+
+<p>Whether you’re creating educational content, social media clips, or promo videos, Sora gives you the tools to bring your ideas to life — no camera, no editing software, and no experience needed. On OneBrain, you can access Sora 2 and Sora 2 Pro, two of the most advanced versions available for Bangladeshi users.</p>
+
+<h2>Why Sora Is a Game Changer for Bangladeshi Creators</h2>
+<ol>
+    <li>
+        <strong>Text-to-Video in Minutes:</strong> Instead of spending hours shooting and editing, just type your idea — <em>“A girl walking through a rainy street in Dhaka, cinematic style.”</em> and Sora instantly creates it. You can tweak angles, lighting, and camera motion, making it ideal for content creators who want speed without sacrificing quality.
+    </li>
+    <li>
+        <strong>No Expensive Gear or Editing Skills Needed:</strong> Cameras, mics, and editing software can cost a fortune. Sora eliminates all that. All you need is your imagination and internet connection. This is especially powerful for students, freelancers, and small businesses in Bangladesh who want to create professional content without heavy investment.
+    </li>
+    <li>
+        <strong>Bangladesh-Friendly Pricing and Access:</strong> Many AI platforms are either not available in Bangladesh or require international payment methods. OneBrain solved that problem. You can now buy Sora 2 or Sora 2 Pro directly in Taka, using bKash, Nagad, or Rocket, starting at just ৳699. That means no VPNs, no dollar cards, and no technical barriers — only pure creativity.
+        <br>👉 <a href="#">Try it here: Buy Sora 2 in Bangladesh — OneBrain</a>
+    </li>
+    <li>
+        <strong>Professional-Quality Output:</strong> Sora isn’t just another video toy — it creates videos that actually look good. Using advanced AI models, it produces smooth motion, realistic visuals, and cinematic scenes that were previously only possible with professional editing software. With Sora 2 Pro, you even get access to longer video durations and more advanced customization options — ideal for YouTube creators or marketing agencies.
+    </li>
+    <li>
+        <strong>Perfect for Social Media, Ads & Education:</strong> From quick Instagram Reels to YouTube explainers, Sora adapts to your needs.
+        <ul>
+            <li>For marketers: Turn ad copy into video ads</li>
+            <li>For educators: Create tutorials and explainer videos</li>
+            <li>For freelancers: Generate client content faster</li>
+            <li>For influencers: Create unique short-form videos daily</li>
+        </ul>
+    </li>
+</ol>
+
+<h2>Key Features</h2>
+<ul>
+    <li>Text-to-Video: Instantly convert scripts, articles, or blog posts into dynamic videos</li>
+    <li>AI Image-to-Video: Turn images into professional videos using intelligent AI prompts</li>
+    <li>High-Quality Output: Suitable for YouTube, social media, marketing campaigns, and presentations</li>
+    <li>User-Friendly Interface: Easy for both beginners and professionals</li>
+    <li>OpenAI-Powered Intelligence: Advanced AI ensures accurate, creative, and context-aware video generation</li>
+    <li>Fast & Efficient: Create professional videos much faster than traditional editing methods</li>
+</ul>
+
+<h2>Sora 2 vs Sora 2 Pro: Feature Comparison</h2>
+<table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+        <th>Feature</th>
+        <th>Sora 2</th>
+        <th>Sora 2 Pro</th>
+    </tr>
+    <tr>
+        <td>Resolution</td>
+        <td>Up to 1280×720 (HD)</td>
+        <td>Up to 1792×1024 (HD), higher resolutions</td>
+    </tr>
+    <tr>
+        <td>Video Quality</td>
+        <td>Standard video quality suitable for most use cases</td>
+        <td>Professional-grade, cinematic-quality video</td>
+    </tr>
+    <tr>
+        <td>Performance</td>
+        <td>Ideal for rapid video generation and prototyping</td>
+        <td>Optimized for high-quality, stable generation for commercial use</td>
+    </tr>
+    <tr>
+        <td>Target Audience</td>
+        <td>Content creators, social media, prototypes, educational content</td>
+        <td>Advertisers, filmmakers, marketing professionals</td>
+    </tr>
+    <tr>
+        <td>Use Cases</td>
+        <td>Quick video production, social media content, product demos</td>
+        <td>High-resolution commercial videos, advertisements, professional films</td>
+    </tr>
+    <tr>
+        <td>Audio-Visual Sync</td>
+        <td>Standard audio synchronization</td>
+        <td>Enhanced synchronization for high-quality, professional content</td>
+    </tr>
+</table>
+
+<h2>Buy Sora 2 & Sora 2 Pro in Bangladesh — Affordable, Personal, and All-in-One!</h2>
+<p>Looking for Sora 2 or Sora 2 Pro at the best price in Bangladesh? OneBrain is your ultimate destination. Not only do you get access to OpenAI-powered video generation tools, but you also unlock 10+ premium AI tools for text, image, audio, and video — all in one platform.</p>
+
+<h3>Why choose OneBrain?</h3>
+<ul>
+    <li>Affordable Pricing: Sora 2 for 699 Taka, Sora 2 Pro for 1,999 Taka</li>
+    <li>Exclusive Access: The only platform in Bangladesh offering Sora 2 & Sora 2 Pro</li>
+    <li>All-in-One Platform: Create text, image, audio, and video content without multiple subscriptions</li>
+    <li>Fully Personal Accounts: No sharing, no privacy concerns</li>
+    <li>Privacy Assured: Your projects and data remain secure</li>
+    <li>Zero Hassle: Instant access after purchase; no waiting, no complicated setups</li>
+    <li>Experiment Freely: Thousands of Pro Tokens and unlimited chat & attachments with advanced AI models</li>
+</ul>
+
+<h3>Creator Pack: Perfect for Regular AI Creators (৳699)</h3>
+<ul>
+    <li>Sora 2 — AI text-to-video and image-to-video generation</li>
+    <li>Access to 10+ premium AI tools: ChatGPT Premium, Gemini Premium, DeepSeek, Claude, Llama, Grok, Perplexity, Qwen, Mistral, Nano Banana, Kontext Restore, Runway ML, Hailuo, Seedance, VGen, ElevenLabs, Udio AI, Humanizer</li>
+    <li>15,00,000 Pro Tokens</li>
+    <li>Unlimited chat & attachments</li>
+</ul>
+
+<h3>Performance Pack: For Heavy AI Creators (৳1,999)</h3>
+<ul>
+    <li>Sora 2 Pro — AI text-to-video and image-to-video with faster rendering and 4K output</li>
+    <li>Includes all Creator Pack tools</li>
+    <li>Additional professional AI tools: KlingAI All Models</li>
+    <li>45,00,000 Pro Tokens</li>
+    <li>Unlimited chat & attachments</li>
+</ul>
+
+<h3>What You Can Do with Sora AI via OneBrain</h3>
+<ul>
+    <li>Convert Text into Videos</li>
+    <li>Generate Videos from Images</li>
+    <li>Experiment with Premium AI Tools</li>
+    <li>Produce Multimedia Projects</li>
+</ul>
+
+<h3>Where and How to Buy Sora 2 & Sora 2 Pro in Bangladesh</h3>
+<ol>
+    <li>Visit OneBrain and sign up using your email and phone number</li>
+    <li>Select your pack: Creator Pack (৳699) or Performance Pack (৳1,999)</li>
+    <li>Pay securely using Bkash, Nagad, Rocket, or VISA</li>
+    <li>Start creating — instant access to Sora AI and AI tools</li>
+</ol>
+
+<h2>Frequently Asked Questions (FAQs)</h2>
+<ul>
+    <li><strong>Q:</strong> What is Sora 2 and Sora 2 Pro?<br><strong>A:</strong> Sora 2 generates videos from text or images, and Sora 2 Pro has advanced features for longer, higher-quality videos.</li>
+    <li><strong>Q:</strong> How does Sora 2 help content creators?<br><strong>A:</strong> It turns text and images into professional videos quickly and easily.</li>
+    <li><strong>Q:</strong> How do I create a video using Sora AI?<br><strong>A:</strong> Enter your text or upload an image, click generate, and download the video.</li>
+    <li><strong>Q:</strong> Where can I buy Sora 2 & Sora 2 Pro in Bangladesh?<br><strong>A:</strong> They are only available on OneBrain in Bangladesh.</li>
+    <li><strong>Q:</strong> What is included in the Creator Pack?<br><strong>A:</strong> Sora 2 and 10+ free premium AI tools for text, video, audio, and images.</li>
+    <li><strong>Q:</strong> How much does the Creator Pack cost?<br><strong>A:</strong> Just ৳699 for all tools in one plan.</li>
+    <li><strong>Q:</strong> How quickly can I start using Sora 2 & Sora 2 Pro?<br><strong>A:</strong> Instant access after sign-up and payment.</li>
+</ul>
+
+<h2>Final Thought</h2>
+<p>If you are looking for hassle-free, fully personal, and secure AI tools, OneBrain is your ultimate choice for Sora 2 and Sora 2 Pro in Bangladesh. For professional-quality AI video creation, buying Sora 2 & Sora 2 Pro via OneBrain is the smartest decision:</p>
+
+<ul>
+    <li>Sora 2 (৳699) — AI text-to-video and image-to-video generation</li>
+    <li>Sora 2 Pro (৳1,999) — Advanced features for high-quality, longer videos</li>
+    <li>10+ premium AI tools included in each pack</li>
+    <li>OneBrain’s all-in-one platform for text, image, audio, and video creation</li>
+</ul>
+
+<p>Start creating today at <a href="https://onebrain.app/">onebrain.app</a> and unlock Sora 2, Sora 2 Pro, and 10+ premium AI tools — all with your chosen plan, fully personal, secure, and hassle-free.</p>
+`,
+ component:"details5"},
+    {
+      id: 6,
+      title: ' What is Nano Banana AI?',
+      excerpt: 'The future of smart content creation is here — and it’s powered by Nano Banana AI.Whether you’re a student...',
+      image: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Nano%20Banana%20in%20Bangladesh%20(4).jpg',
+      content: `
+      <h1>What is Nano Banana AI?</h1>
+      <p>The future of smart content creation is here — and it’s powered by Nano Banana AI.
+      Whether you’re a student, marketer, designer, or content creator, Nano Banana helps you write, design, and create visually stunning content with the help of advanced artificial intelligence.
+      </p>
+      <p>And when you buy Nano Banana AI via OneBrain in Bangladesh, you unlock the Creator Pack for just ৳699, which includes Nano Banana AI, 15,00,000 Pro Tokens, and full access to dozens of premium AI tools for text, image, video, and audio — all bundled together for free.</p>
+      <p>This makes it one of the most powerful and affordable AI solutions in Bangladesh, designed for creators who want to generate complete multimedia content from a single platform.</p>
+
+      <h3>What is Nano Banana AI?</h3>
+      <p><strong>Nano Banana AI</strong> is an advanced generative AI tool that allows you to create engaging content, visuals, and ideas instantly. It’s built for creators who need fast, accurate, and creative results without spending hours editing or designing.</p>
+
+      <h3>Key Features:</h3>
+      <ul>
+        <li><strong>AI Writing Assistant:</strong> Generate blog posts, captions, ad copy, and ideas within seconds.</li>
+        <li><strong>Image Enhancement:</strong> Restore, edit, or generate high-quality images from text.</li>
+        <li><strong>Creative Prompts:</strong> Get unique and ready-to-use prompts for social media or branding.</li>
+        <li><strong>Bangla & English Support:</strong> Works fluently in both Bangla and English.</li>
+        <li><strong>Integration with Other AI Tools:</strong> Combine Nano Banana outputs with video, audio, and chat models.</li>
+      </ul>
+
+      <h3>Why Choose Nano Banana from OneBrain?</h3>
+      <ul>
+        <li><strong>Affordable Pricing:</strong> The Creator Pack is only ৳699, offering full Nano Banana access and more.</li>
+        <li><strong>All-in-One AI Access:</strong> Includes text, image, video, and audio tools — all in one subscription.</li>
+        <li><strong>15,00,000 Pro Tokens:</strong> Freedom to explore and experiment without usage limits.</li>
+        <li><strong>Bangladesh-Friendly Payment:</strong> Pay using bKash, Nagad, or international cards.</li>
+        <li><strong>Instant Access:</strong> Start creating right after payment — no complicated setup needed.</li>
+      </ul>
+
+      <h3>What You Can Do with Nano Banana via OneBrain</h3>
+      <ul>
+        <li> Generate Blogs & Captions: Instantly produce professional writing for websites or marketing.</li>
+        <li> Create AI Prompts: Get optimized prompts for design, coding, or creative writing.</li>
+        <li> Enhance or Restore Images: Fix blurry, damaged, or low-resolution photos automatically.</li>
+        <li> Combine Multimedia Content: Integrate visuals with voice, video, and music using other included AI tools.</li>
+        <li> Experiment Freely: Use 15,00,000 Pro Tokens to test and explore every model inside OneBrain.</li>
+      </ul>
+
+      <h3>AI Tools Included in the Creator Pack</h3>
+      <p>Buying Nano Banana AI via OneBrain gives you access to a full range of AI models across multiple categories — text, image, video, and audio.</p>
+
+      <h4> Text & Chat AI Tools</h4>
+      <ul>
+        <li>ChatGPT, Claude, Gemini, Qwen, Grok, DeepSeek, Perplexity AI — write blogs, code faster, summarize text, generate essays, or optimize SEO content.</li>
+        <li>Smart prompts for writing, editing, and translation.</li>
+        <li>AI chatbot builder for Bangla & English support.</li>
+      </ul>
+
+      <h4> Image AI Tools</h4>
+      <ul>
+        <li>Nano Banana & Kontext Restore: Enhance, repair, and generate new visuals instantly.</li>
+        <li>Grok AI & Gemini Banana AI: Create marketing visuals, thumbnails, or social media designs.</li>
+        <li>Editing Tools: Auto-color correction, restoration, and creative enhancement for digital use.</li>
+      </ul>
+
+      <h4> Video AI Tools</h4>
+      <ul>
+        <li>Runway ML, Hailuo AI, VEO3, Sedance, Wan AI: Convert text to video or animation without expensive software.</li>
+        <li>Add motion effects and transitions.</li>
+        <li>Create YouTube videos, explainers, or reels effortlessly.</li>
+        <li>Produce watermark-free professional videos.</li>
+      </ul>
+
+      <h4> Audio & Music AI Tools</h4>
+      <ul>
+        <li>ElevenLabs AI: Clone voices or generate studio-quality text-to-speech.</li>
+        <li>Udio AI: Create AI-generated background music, songs, or jingles.</li>
+        <li>Audio Enhancers: Improve sound clarity for podcasts and presentations.</li>
+        <li>Integrate Nano Banana text and visuals with AI voice and music tools for complete multimedia projects.</li>
+      </ul>
+
+      <h3>Unlimited Chat & File Attachments</h3>
+      <p>Even after using your Pro Tokens, OneBrain continues to offer unlimited chat access with AI models and file attachments — ensuring you can keep creating without restrictions.</p>
+
+      <h3>Extended Benefits of the Creator Pack</h3>
+      <ul>
+        <li> Complete multimedia AI suite under one subscription</li>
+        <li> Affordable price — only ৳699 for all premium tools</li>
+        <li> Fast and scalable content production</li>
+        <li> Ideal for students, freelancers, and businesses</li>
+        <li> All-in-one creative convenience via OneBrain</li>
+      </ul>
+
+      <h3>How to Buy Nano Banana AI in Bangladesh</h3>
+      <ol>
+        <li>Visit: onebrain.app</li>
+        <li>Sign Up: Create your OneBrain account using email or phone.</li>
+        <li>Select: The Creator Pack (৳699) — includes Nano Banana + 15,00,000 Pro Tokens</li>
+        <li>Pay Securely: via bKash, Nagad, or international cards.</li>
+        <li>Start Creating: Get instant access to Nano Banana AI and all other included tools.</li>
+      </ol>
+
+      <h3>Nano Banana Price in Bangladesh</h3>
+      <table>
+        <tr><th>Plan</th><th>Duration</th><th>Key Features</th><th>Price</th></tr>
+        <tr><td>Free Plan</td><td>Lifetime</td><td>Limited access</td><td>৳0</td></tr>
+        <tr><td>Creator Pack (Premium)</td><td>Monthly</td><td>Full access to all AI tools + 15,00,000 tokens</td><td>৳699</td></tr>
+        <tr><td>Pro Plan</td><td>Yearly</td><td>All features + Exclusive updates</td><td>৳3000–৳3500</td></tr>
+      </table>
+
+      <h3>Final Thought</h3>
+      <p>For creators, marketers, and students in Bangladesh, Nano Banana AI via OneBrain is the smartest and most affordable AI choice. Start today at <a href="https://onebrain.app">onebrain.app</a> and unlock your all-in-one AI creative studio with Nano Banana AI — Your ideas, your visuals, your creativity — powered by AI.</p>
+    `
+    ,
+      component:"details6"},
+    {
+      id: 7,
+      title: 'ElevenLabs AI: Text-to-Speech, Voice Clone & Pricing in BD',
+      excerpt: 'Meta : Buy ElevenLabs AI in Bangladesh – clone voices, convert text-to-speech, and access 10+ free AI tools for video...',
+      image: ' https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Elevenlab%20in%20Bangladesh%20(2).jpg',
+       content: `
+      <h2>The Future of Content Creation with ElevenLabs AI</h2>
+      <p>The future of content creation is here, and it sounds human. ElevenLabs AI is the ultimate tool for creators, educators, marketers, and businesses who want high-quality, human-like voiceovers, voice cloning, and studio-level text-to-speech — all in one platform.</p>
+      <p>Buy ElevenLabs AI via OneBrain in Bangladesh and unlock the Creator Pack for just ৳699, which includes ElevenLabs AI, 15,00,000 Pro Tokens, and full access to dozens of premium AI tools for text, image, video, and audio — all included for free.</p>
+
+      <h3>What is ElevenLabs AI?</h3>
+      <ul>
+        <li><strong>Text-to-Speech Conversion:</strong> Turn any text into natural, expressive, human-like speech instantly.</li>
+        <li><strong>Voice Cloning:</strong> Clone existing voices or create custom AI voices for storytelling, content, or branding.</li>
+        <li><strong>Multi-Language Support:</strong> Bangla, Hindi, Urdu, and English.</li>
+        <li><strong>Popular Voices & Customization:</strong> Use pre-built voices like Adam or craft your own AI voice.</li>
+        <li><strong>Accent Flexibility:</strong> Add British, American, or other accents for professional results.</li>
+      </ul>
+
+      <h3>Why Choose ElevenLabs via OneBrain?</h3>
+      <ul>
+        <li>Affordable Pricing: Creator Pack only ৳699 for full ElevenLabs access.</li>
+        <li>Full AI Suite: Access dozens of premium AI tools — text, image, video, audio included.</li>
+        <li>15,00,000 Pro Tokens: Experiment freely across AI tasks.</li>
+        <li>All-in-One Platform: Consolidates voice, text, image, video, and music AI tools.</li>
+      </ul>
+
+      <h3>What You Can Do with ElevenLabs</h3>
+      <ul>
+        <li>Clone voices or create custom AI voices in Bangla, Hindi, Urdu, or British accent.</li>
+        <li>Convert text into speech for articles, scripts, blogs, and presentations.</li>
+        <li>Generate voiceovers for videos, reels, podcasts, e-learning, or presentations.</li>
+        <li>Experiment freely with Pro Tokens across ElevenLabs and other AI tools.</li>
+        <li>Combine multimedia assets: voice, video, images, and music for complete professional projects.</li>
+        <li>Access all-in-one AI tools for free with the Creator Pack.</li>
+      </ul>
+
+      <h3>All-Inclusive AI Suite in Creator Pack</h3>
+      <h4>Text & Chat AI Tools:</h4>
+      <ul>
+        <li>ChatGPT, Claude, Gemini, Qwen, Grok, DeepSeek, Perplexity AI</li>
+        <li>Virtual Agent AI & Chatbots for Bangla & English</li>
+        <li>Prompt-Based Tools for photo editing, coding, creative writing</li>
+        <li>AI Research & Comparison: Choose the best AI for your needs</li>
+      </ul>
+
+      <h4>Image AI Tools:</h4>
+      <ul>
+        <li>Nano Banana & Kontext Restore: Repair, enhance, restore images</li>
+        <li>Grok AI & Gemini Banana AI: Generate visuals, social media graphics, marketing images</li>
+        <li>Photo Editing Prompts for color correction, style transfer, design enhancement</li>
+      </ul>
+
+      <h4>Video AI Tools:</h4>
+      <ul>
+        <li>Runway ML, Hailuo AI, VEO3, Sedance, Wan AI: Convert text to video, create animations</li>
+        <li>AI Video Editing: Effects, transitions, motion graphics</li>
+        <li>Text-to-Video AI: Explainer videos, tutorials, social content</li>
+        <li>Watermark-Free Output</li>
+      </ul>
+
+      <h4>Audio & Music AI Tools:</h4>
+      <ul>
+        <li>ElevenLabs AI: Human-like voiceovers, clone voices, custom AI voices</li>
+        <li>Udio AI: Convert text into music tracks, jingles, background scores</li>
+        <li>Humanizer & Audio Enhancers</li>
+        <li>Multimedia Integration: Combine audio, video, images</li>
+      </ul>
+
+      <h3>Unlimited Chat & Attachments</h3>
+      <p>Even after using Pro Tokens, OneBrain offers unlimited chat and file attachments with AI models.</p>
+
+      <h3>Extended Benefits of Creator Pack</h3>
+      <ul>
+        <li>Complete multimedia AI suite: text, audio, image, video, music</li>
+        <li>Affordable Access: All premium tools bundled in one plan for ৳699</li>
+        <li>Time-Saving: Produce content efficiently</li>
+        <li>Scalable Projects: Multiple tasks and media types</li>
+        <li>All-in-One Convenience: No multiple subscriptions needed</li>
+      </ul>
+
+      <h3>How to Buy ElevenLabs & Price in Bangladesh</h3>
+      <ol>
+        <li>Visit OneBrain: onebrain.app</li>
+        <li>Sign Up: Register with email and phone number</li>
+        <li>Select Creator Pack: ৳699 (ElevenLabs AI + 15,00,000 Pro Tokens + full AI suite)</li>
+        <li>Pay Securely: Local and international options</li>
+        <li>Start Creating: Instant access to ElevenLabs AI and all AI tools</li>
+      </ol>
+
+      <h3>Final Thought</h3>
+      <p>For professional AI voiceovers and complete multimedia content in Bangladesh, ElevenLabs via OneBrain is the smartest choice. For just ৳699, get ElevenLabs AI, 15,00,000 Pro Tokens, and full access to AI tools — all in one subscription. Start creating today at <a href="https://onebrain.app">onebrain.app</a>.</p>
+    `,
+    component:"details7"
+  },
+  
+
   ];
 }

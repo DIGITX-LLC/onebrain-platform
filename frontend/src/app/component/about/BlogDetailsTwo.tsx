@@ -170,51 +170,51 @@ export default function BlogDetailsTwo() {
 
         {/* Content Overlay */}
         <div className="relative px-6 py-12">
-          <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-full mx-auto"> {/* Adjusted to full width */}
+          <div className="bg-base shadow-lg rounded-lg p-8 w-full max-w-full mx-auto"> {/* Adjusted to full width */}
             <h1 className="text-4xl font-bold text-blue-900 mb-4">
               ChatGPT vs. DeepSeek: Which AI Chatbot Is Right for You?
             </h1>
             <section className="mb-8">
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 AI chatbots have become essential tools in personal and professional settings, transforming how we communicate, create, and solve problems. Two leading AI chatbots are ChatGPT, developed by OpenAI, and DeepSeek, developed by DeepSeek, a Chinese AI company. While both have strong features, they differ in pricing, functionality, and security. This comparison explores these differences to help you choose the right AI assistant.
               </p>
-              <p className="text-gray-700 leading-relaxed mt-4">
+              <p className="text-gray-300 leading-relaxed mt-4">
                 Both ChatGPT and DeepSeek excel as user-friendly AI chatbots designed to assist with a wide variety of tasks, from drafting emails to solving technical problems. However, they have key differences that set them apart. ChatGPT is known for its robust features and polished user experience, while DeepSeek stands out for its free access and customizability.
               </p>
             </section>
-            <section className="mb-8 text-gray-800">
-              <h2 className="text-2xl font-semibold text-black-800 mb-4">AI Models: Both Have Strong Offerings</h2>
-              <p className="text-gray-700 leading-relaxed">
+            <section className="mb-8 text-gray-300">
+              <h2 className="text-2xl font-semibold text-gray-300 mb-4">AI Models: Both Have Strong Offerings</h2>
+              <p className="text-gray-300 leading-relaxed">
                 Both platforms feature state-of-the-art AI models designed for various tasks. However, their usage and performance vary in some aspects.
               </p>
-              <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-4">ChatGPT Models</h3>
-              <ul className="list-disc pl-6 text-gray-700 leading-relaxed">
+              <h3 className="text-xl font-semibold text-gray-300 mt-6 mb-4">ChatGPT Models</h3>
+              <ul className="list-disc pl-6 text-gray-300 leading-relaxed">
                 <li>
-                  <strong className="text-gray-700">GPT-4o</strong>: ChatGPT’s model is well-suited backs like general language generation and reasoning tasks, making it a versatile tool for many types of work.
+                  <strong className="text-gray-300">GPT-4o</strong>: ChatGPT’s model is well-suited backs like general language generation and reasoning tasks, making it a versatile tool for many types of work.
                 </li>
               </ul>
-              <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-4">DeepSeek Models</h3>
-              <ul className="list-disc pl-6 text-gray-700 leading-relaxed"> {/* Added pl-6 to fix padding */}
+              <h3 className="text-xl font-semibold text-gray-300 mt-6 mb-4">DeepSeek Models</h3>
+              <ul className="list-disc pl-6 text-gray-300 leading-relaxed"> {/* Added pl-6 to fix padding */}
                 <li>
-                  <strong className="text-gray-700">DeepSeek R-2</strong>: Comparable to GPT models for text-based tasks.
+                  <strong className="text-gray-300">DeepSeek R-2</strong>: Comparable to GPT models for text-based tasks.
                 </li>
                 <li>
-                  <strong className="text-gray-700">DeepSeek Reasoning Models</strong>: Similar to OpenAI’s o1 for advanced reasoning tasks.
+                  <strong className="text-gray-300">DeepSeek Reasoning Models</strong>: Similar to OpenAI’s o1 for advanced reasoning tasks.
                 </li>
               </ul>
-              <p className="text-gray-700 leading-relaxed mt-4">
+              <p className="text-gray-300 leading-relaxed mt-4">
                 DeepSeek’s models are comparable to ChatGPT’s in many ways. However, DeepSeek offers the added benefit of allowing users to download models and run them locally. This gives tech-savvy users more control, a feature not available with ChatGPT.
               </p>
-              <p className="text-gray-700 leading-relaxed mt-4">
+              <p className="text-gray-300 leading-relaxed mt-4">
                 Despite some model differences, both platforms perform equally well for everyday tasks, with specialized research tasks being the only area where performance may significantly differ.
               </p>
             </section>
-            <section className="mb-8 text-gray-800">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">ChatGPT: A More Polished Experience</h2>
-              <p className="text-gray-700 leading-relaxed">
+            <section className="mb-8 text-gray-300">
+              <h2 className="text-2xl font-semibold text-gray-300 mb-4">ChatGPT: A More Polished Experience</h2>
+              <p className="text-gray-300 leading-relaxed">
                 One major advantage of ChatGPT is its level of refinement. It offers a wealth of features that make it an all-around, highly effective AI assistant:
               </p>
-              <ul className="list-disc pl-6 text-gray-700 leading-relaxed mt-4">
+              <ul className="list-disc pl-6 text-gray-300 leading-relaxed mt-4">
                 <li>ChatGPT can understand and process images, which is crucial for professionals working with visual data.</li>
                 <li>ChatGPT enables voice-based interaction and real-time vision-based assistance using your camera.</li>
                 <li>Users can personalize ChatGPT’s behavior and memory, tailoring its responses to individual needs across sessions.</li>
@@ -223,46 +223,46 @@ export default function BlogDetailsTwo() {
                 <li>ChatGPT allows users to create custom models for specific tasks.</li>
                 <li>Available for both Windows and Mac, providing versatility across devicess.</li>
               </ul>
-              <p className="text-gray-700 leading-relaxed mt-4">
+              <p className="text-gray-300 leading-relaxed mt-4">
                 In contrast, DeepSeek offers fewer advanced features. While its technology is impressive, the platform lacks image processing, voice features, and advanced collaborative tools. This makes DeepSeek feel more basic compared to the feature-rich ChatGPT.
               </p>
             </section>
-            <section className="mb-8 text-gray-800">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">DeepSeek: More Accessible and Cost-Effective</h2>
-              <p className="text-gray-700 leading-relaxed">
+            <section className="mb-8 text-gray-300">
+              <h2 className="text-2xl font-semibold text-gray-300 mb-4">DeepSeek: More Accessible and Cost-Effective</h2>
+              <p className="text-gray-300 leading-relaxed">
                 One of DeepSeek’s standout features is its free access. While ChatGPT Plus costs $20/month for enhanced functionality, DeepSeek offers its full suite of models without any cost. This makes it an ideal choice for users on a budget. However, DeepSeek may have some limitations, such as daily message caps, and the free version doesn’t offer as many advanced features as ChatGPT.
               </p>
-              <p className="text-gray-700 leading-relaxed mt-4">
+              <p className="text-gray-300 leading-relaxed mt-4">
                 Another key advantage of DeepSeek is that it allows users to run models locally, offering more control and customization, which is particularly appealing to developers or those with technical expertise. This is something ChatGPT does not provide.
               </p>
-              <p className="text-gray-700 leading-relaxed mt-4">
+              <p className="text-gray-300 leading-relaxed mt-4">
                 While DeepSeek offers impressive functionality, it has a few drawbacks:
               </p>
-              <ul className="list-disc pl-6 text-gray-700 leading-relaxed mt-4">
+              <ul className="list-disc pl-6 text-gray-300 leading-relaxed mt-4">
                 <li>DeepSeek’s servers may experience downtime, affecting the reliability of the service.</li>
                 <li>Based in China, DeepSeek operates under different data privacy regulations, which may raise concerns for users handling sensitive data. In contrast, ChatGPT provides enterprise-level security, making it a more secure choice for such cases.</li>
               </ul>
             </section>
-            <section className="mb-8 text-gray-800">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">Which Is Better: DeepSeek or ChatGPT?</h2>
-              <p className="text-gray-700 leading-relaxed">
+            <section className="mb-8 text-gray-300">
+              <h2 className="text-2xl font-semibold text-gray-300 mb-4">Which Is Better: DeepSeek or ChatGPT?</h2>
+              <p className="text-gray-300 leading-relaxed">
                 The choice between DeepSeek and ChatGPT depends largely on your priorities:
               </p>
-              <ul className="list-disc pl-6 text-gray-700 leading-relaxed mt-4">
+              <ul className="list-disc pl-6 text-gray-300 leading-relaxed mt-4">
                 <li>
-                  <strong className="text-gray-800">DeepSeek</strong>: Perfect for users who want free access to powerful AI models and local control over the technology. If you’re budget-conscious or need more flexibility in model usage, DeepSeek is an excellent option.
+                  <strong className="text-gray-300">DeepSeek</strong>: Perfect for users who want free access to powerful AI models and local control over the technology. If you’re budget-conscious or need more flexibility in model usage, DeepSeek is an excellent option.
                 </li>
                 <li>
-                  <strong className="text-gray-800">ChatGPT</strong>: Offers a more polished, feature-rich, and secure experience. With advanced features like image support, voice interactions, and integrations with other tools, it is a more comprehensive solution for individuals or teams who need a reliable AI assistant.
+                  <strong className="text-gray-300">ChatGPT</strong>: Offers a more polished, feature-rich, and secure experience. With advanced features like image support, voice interactions, and integrations with other tools, it is a more comprehensive solution for individuals or teams who need a reliable AI assistant.
                 </li>
               </ul>
-              <p className="text-gray-700 leading-relaxed mt-4">
-                <strong className="text-gray-800">Conclusion</strong>: DeepSeek excels in terms of affordability and local access, making it an attractive choice for casual users or those with technical expertise. However, if you’re looking for a more professional, feature-complete, and secure AI assistant, ChatGPT is the better option.
+              <p className="text-gray-300 leading-relaxed mt-4">
+                <strong className="text-gray-300">Conclusion</strong>: DeepSeek excels in terms of affordability and local access, making it an attractive choice for casual users or those with technical expertise. However, if you’re looking for a more professional, feature-complete, and secure AI assistant, ChatGPT is the better option.
               </p>
               <div className="mt-6">
                 <button
                   onClick={handleShare}
-                  className="flex items-center gap-2 text-gray-800 hover:text-blue-600 focus:outline-none"
+                  className="flex items-center gap-2 text-gray-300 hover:text-blue-600 focus:outline-none"
                   aria-label="Share this article"
                 >
                   <Share2 size={20} />

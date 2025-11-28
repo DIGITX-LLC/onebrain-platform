@@ -79,7 +79,7 @@ export default function BlogDetailsOne() {
             : 'top-6 bg-transparent'
           }`}
       >
- <Link href="/about">
+        <Link href="/about">
           <img
             src="https://digitxevents.com/wp-content/uploads/2025/03/onebrain_ab_logo.svg"
             alt="OneBrain Logo"
@@ -147,48 +147,48 @@ export default function BlogDetailsOne() {
 
         {/* Content Overlay */}
         <div className="relative px-6 py-12">
-          <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-full mx-auto">
+          <div className="bg-base shadow-lg rounded-lg p-8 w-full max-w-full mx-auto">
             <h1 className="text-4xl font-bold text-blue-900 mb-4">
               Comparing Llama 3.3, GPT-4o, and Grok 3: AI Models Head-to-Head
             </h1>
             <section className="mb-8">
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 The AI landscape is evolving rapidly, with models like Meta’s Llama 3.3, OpenAI’s GPT-4o, and xAI’s Grok 3 pushing boundaries in performance, efficiency, and versatility. Llama 3.3 offers open-source flexibility, GPT-4o excels in multimodal capabilities, and Grok 3 prioritizes advanced reasoning. This blog compares these three models, exploring their strengths, benchmarks, and ideal use cases to help you choose the best fit for your needs.
               </p>
             </section>
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">Llama 3.3 Overview</h2>
-              <p className="text-gray-700 leading-relaxed">
+              <h2 className="text-2xl font-semibold text-gray-300 mb-4">Llama 3.3 Overview</h2>
+              <p className="text-gray-300 leading-relaxed">
                 Meta’s Llama 3.3 is a powerful open-source multilingual large language model featuring 70 billion parameters. Pre-trained and instruction-tuned, it’s engineered for high efficiency and scalability. Utilizing state-of-the-art methods, the model is capable of tackling a wide variety of tasks and has been trained on a massive dataset of over 15 trillion tokens.
               </p>
-              <p className="text-gray-700 leading-relaxed mt-4">
+              <p className="text-gray-300 leading-relaxed mt-4">
                 As an auto-regressive model built on an enhanced transformer architecture, Llama 3.3 delivers impressive results across multiple benchmarks. It achieves this while maintaining low training costs through smart resource management. The model supports extended context windows and is equipped with sophisticated reasoning abilities, enabling it to handle complex and detailed tasks. While primarily designed for processing text inputs, it can also manage structured data, making it highly adaptable for different use cases.
               </p>
             </section>
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">GPT-4o Overview</h2>
-              <p className="text-gray-700 leading-relaxed">
+              <h2 className="text-2xl font-semibold text-gray-300 mb-4">GPT-4o Overview</h2>
+              <p className="text-gray-300 leading-relaxed">
                 Introduced in May 2024, GPT-4o represents OpenAI’s most advanced flagship multimodal model to date, engineered to be the fastest and most cost-efficient high-performance solution currently available. GPT-4o demonstrates exceptional capabilities in processing and generating content across multiple modalities, including text, audio, and imagery. This multimodal proficiency enables the model to interpret and respond to both linguistic and visual inputs, facilitating more natural and intuitive user interactions. For example, it can accurately translate a menu from an image, provide historical context for the cuisine, and offer personalized recommendations.
               </p>
-              <p className="text-gray-700 leading-relaxed mt-4">
+              <p className="text-gray-300 leading-relaxed mt-4">
                 With substantial improvements in computational efficiency, GPT-4o delivers significantly faster response times while operating at a lower cost. Within the API, it is twice as fast and priced at half the cost of GPT-4-turbo, making it highly suitable for deployment at scale. Moreover, GPT-4o features an enhanced neural architecture that allows it to follow complex instructions more effectively and sustain coherent context over extended dialogues. This advancement reduces the likelihood of misinterpretation and enhances the relevance of its responses.
               </p>
             </section>
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">Grok 3 Overview</h2>
-              <p className="text-gray-700 leading-relaxed">
+              <h2 className="text-2xl font-semibold text-gray-300 mb-4">Grok 3 Overview</h2>
+              <p className="text-gray-300 leading-relaxed">
                 Grok 3, developed by xAI, is a sophisticated large language model optimized for advanced reasoning, math, coding, and real-time data analysis. With capabilities like DeepSearch, it excels at processing large datasets, debugging code, and generating insights across domains like finance and science. While less customizable than open-source models like Llama 3.3, Grok 3 prioritizes speed and reliability for complex problem-solving.
               </p>
-              <p className="text-gray-700 leading-relaxed mt-4">
+              <p className="text-gray-300 leading-relaxed mt-4">
                 Grok 3’s strength lies in its ability to handle intricate tasks requiring deep understanding, making it ideal for applications where quick, accurate decisions are critical. Its architecture supports extended context and coherent responses, positioning it as a strong contender in the AI landscape.
               </p>
             </section>
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">Benchmark Comparison</h2>
-              <p className="text-gray-700 leading-relaxed">
+              <h2 className="text-2xl font-semibold text-gray-300 mb-4">Benchmark Comparison</h2>
+              <p className="text-gray-300 leading-relaxed">
                 To understand how Llama 3.3, GPT-4o, and Grok 3 stack up, we’ve compiled benchmark data for key metrics. Note that Grok 3 data is limited here, as some benchmarks are proprietary or unavailable.
               </p>
-              <table className="w-full text-left border-collapse mt-4 text-gray-800 ">
+              <table className="w-full text-left border-collapse mt-4 text-gray-300 ">
                 <thead>
                   <tr className="bg-black-100">
                     <th className="border p-2">Benchmark</th>
@@ -270,36 +270,36 @@ export default function BlogDetailsOne() {
                 </tbody>
               </table>
             </section>
-            <section className="mb-8 text-gray-800 ">
-              <h2 className="text-2xl font-semibold text-black-700 mb-4">Comparison Insights</h2>
-              <p className="text-black-700 leading-relaxed">
+            <section className="mb-8 text-gray-300 ">
+              <h2 className="text-2xl font-semibold text-gray-300 mb-4">Comparison Insights</h2>
+              <p className="text-gray-300 leading-relaxed">
                 Each model shines in distinct areas, making the best choice dependent on your specific use case:
               </p>
-              <ul className="list-disc pl-6 text-black-700 leading-relaxed mt-4">
+              <ul className="list-disc pl-6 text-gray-300 leading-relaxed mt-4">
                 <li>
-                  <strong className='text-gray-800 '>GPT-4o</strong>: Excels in benchmarks like HumanEval (90.2%) and MMLU
+                  <strong className='text-gray-300 '>GPT-4o</strong>: Excels in benchmarks like HumanEval (90.2%) and MMLU
                   (88.7%), showcasing strong reasoning and code generation. Its multimodal capabilities
                   make it ideal for applications involving text, images, and audio, such as translating
                   visual content or building interactive assistants. However, it underperforms in
                   specialized domains like MATH (75.9%) and GPQA (53.6%), where other models edge out.
                 </li>
                 <li>
-                  <strong className='text-gray-800 '>Llama 3.3</strong>: Performs exceptionally well on MATH (77%) and IFEval
+                  <strong className='text-gray-300 '>Llama 3.3</strong>: Performs exceptionally well on MATH (77%) and IFEval
                   (92.1%), highlighting its problem-solving and instruction-following strengths. Its
                   open-source nature and 70B parameter efficiency make it perfect for customizable,
                   cost-effective solutions. However, it trails slightly in HumanEval (88.4%) and GPQA
                   (50.5%) compared to GPT-4o.
                 </li>
                 <li>
-                  <strong className='text-gray-800 '>Grok 3</strong>: While benchmark data is limited here, Grok 3’s focus on
+                  <strong className='text-gray-300 '>Grok 3</strong>: While benchmark data is limited here, Grok 3’s focus on
                   reasoning and real-time analysis makes it a strong contender for complex tasks like
                   financial modeling or scientific research. Unlike Llama 3.3, it’s not open-source,
                   but its DeepSearch and context retention rival GPT-4o’s coherence in extended
                   dialogues.
                 </li>
               </ul>
-              <p className="text-black-700 leading-relaxed mt-4">
-                <strong className='text-gray-800 '>Conclusion</strong>: Choose GPT-4o for multimodal and scalable applications,
+              <p className="text-gray-300 leading-relaxed mt-4">
+                <strong className='text-gray-300 '>Conclusion</strong>: Choose GPT-4o for multimodal and scalable applications,
                 Llama 3.3 for flexible, open-source projects, or Grok 3 for reasoning-intensive tasks
                 requiring speed and depth. Evaluate your priorities—cost, customization, or
                 specialization—to pick the right model.
@@ -307,7 +307,7 @@ export default function BlogDetailsOne() {
               <div className="mt-6">
                 <button
                   onClick={handleShare}
-                  className="flex items-center gap-2 text-gray-800 hover:text-blue-600 focus:outline-none"
+                  className="flex items-center gap-2 text-gray-300 hover:text-blue-600 focus:outline-none"
                   aria-label="Share this article"
                 >
                   <Share2 size={20} />
