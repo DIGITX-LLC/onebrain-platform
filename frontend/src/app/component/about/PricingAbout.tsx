@@ -35,6 +35,8 @@ const AIToolsIcons: Record<string, string> = {
   quizMakerWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/quiz-maker.svg',
   elevenlabsWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Elevenlabs%20Logo%20(1).svg',
   soraWhite:'/assets/models/runway-white.png'
+  
+ 
 };
 
 interface GenerateImageUpTo {
@@ -107,6 +109,11 @@ export default function PricingAbout({
       'alimai': 'alimAiWhite',
       'alim ai': 'alimAiWhite',
       'nano banana': 'veo3Black',
+           
+      'seedream': 'seedream',
+       'pixverse': 'pixverse',
+       'lightricks 2': 'lightricks2',
+
       'kontext restore': 'kontextRestore'
     };
 
@@ -153,6 +160,7 @@ export default function PricingAbout({
       'nano banana': 'veo3',
       'sora': 'soraWhite',
       'sora v2': 'soraWhite',
+      // 'seedream': 'seedream',
 
       // ===== SPECIAL MODEL MAPPINGS =====
       // Google Imagen 4 -> Gemini logo
@@ -228,12 +236,24 @@ export default function PricingAbout({
       icon: <Star className="h-4 w-4 text-green-400" />,
       badge: "Unlimited Chat",
       features: [
-        "AI Image Editing & Generations models",
+        // "AI Image Editing & Generations models",
+        "• ChatGPT Premium",
+        "• Gemini Premium",
+        "• DeepSeek Premium",
+        "• Grok Premium",
+        "• Claude Premium",
+        "• Llama Premium",
+        "• Perplexity Premium",
+        "• Qwen Premium",
+        "• Mistral Premium",
+        "Image Generation Models",
         "• ImageX",
         "• Flux",
+        "• Seedream 4",
+        "Image Editing Models",
         "• Kontext Pro",
-        "• Quiz Maker",
-        "AI Detector",
+        // "• Quiz Maker",
+        // "AI Detector",
         "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
       ]
     },
@@ -247,20 +267,30 @@ export default function PricingAbout({
       badge: "Unlimited Image",
       features: [
         "Everything on the Student Plan",
-        "AI Image Repair Model",
-        "• Kontext Restore",
+        "Image Generation Model",
+        // "• Kontext Restore",
+        "• Nano Banana Pro",
         "• Nano Banana",
-        "AI Video Generation",
-        "• Vgen",
+        "Image Restorer Model",
+        "• Kontext Restore",
+        "Video Generation Models",
+        "• Pixverse",
+         "• RunwayML",
+        // "• Vgen",
         "• Seedance",
-        "• Hailou 2 Fast",
-        "• Wan 2.2",
-        "• RunwayML",
-        "• KlingAI V2.1",
+        // "• Hailou 2 Fast",
+        // "• Wan 2.2",
+       
+        "• KlingAI V2.1, V2.5 Turbo",
+        "• Hailou",
+        "• Wan",
         "• Sora V2",
-        "AI Text to Speech & Music",
+        "• Lightricks 2",
+        "Text to Speech & Music",
         "• UdioAI",
         "• Elevenlabs",
+        "Tools",
+        "• Humanizer",
         "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
       ]
     },
@@ -273,9 +303,12 @@ export default function PricingAbout({
       badge: "KlingAI",
       features: [
         "Everything on the Creator Plan",
-        "AI Video Generation",
+        // "AI Video Generation",
+         "More Video Generation Model",
+        "• KlingAl All Models",
         "• Sora V2 Pro",
-        "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
+        "• Veo3.1 Fast",
+        // "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
       ]
     },
     {
@@ -286,10 +319,12 @@ export default function PricingAbout({
       icon: <Crown className="h-4 w-4 text-yellow-400" />,
       badge: "VEO3",
       features: [
-        "You Own All Available Models",
-        "AI Video Generation",
+        // "You Own All Available Models",
+        "More Video Generation Model",
         "• VEO3",
-        "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
+        "• VEO3.1",
+        // "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
+        "You Own All Available Models"
       ]
     }
   ];
