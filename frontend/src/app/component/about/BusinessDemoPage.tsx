@@ -73,6 +73,10 @@ export default function BusinessDemoPage() {
       <section className="relative pt-40 pb-20 md:pt-52 md:pb-32 px-6 container mx-auto text-center">
          {/* Background Glow */}
          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-white/5 rounded-full blur-[120px] -z-10 pointer-events-none" />
+         
+         {/* Golden Glow Effect - Intensified */}
+         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[#FFD700]/30 rounded-full blur-[100px] -z-10 pointer-events-none mix-blend-screen"></div>
+         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-[#FFA500]/20 rounded-full blur-[80px] -z-10 pointer-events-none animate-pulse delay-75"></div>
 
          <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -92,10 +96,6 @@ export default function BusinessDemoPage() {
             </div>
             
             <div className="absolute inset-0 bg-[url('/assets/grid-pattern.svg')] opacity-20 [mask-image:linear-gradient(to_bottom,white,transparent)] pointer-events-none"></div>
-            
-            {/* Golden Glow Effect - Intensified */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[#FFD700]/30 rounded-full blur-[100px] -z-10 pointer-events-none mix-blend-screen"></div>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-[#FFA500]/20 rounded-full blur-[80px] -z-10 pointer-events-none animate-pulse delay-75"></div>
             
             <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed mb-10 relative z-10">
                 Empower your workforce with a secure, branded AI platform. Give your team access to top AI models with centralized billing in <strong>BDT</strong>.
