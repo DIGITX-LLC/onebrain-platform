@@ -71,9 +71,12 @@ export default function BusinessDemoPage() {
 
       {/* HERO SECTION */}
       <section className="relative pt-40 pb-20 md:pt-52 md:pb-32 px-6 container mx-auto text-center overflow-hidden">
-         {/* Golden Glow Effect - Visible */}
-         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[600px] bg-gradient-radial from-[#FFD700]/40 via-[#FFA500]/20 to-transparent rounded-full blur-3xl"></div>
-         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-[#D4AF37]/30 rounded-full blur-[120px] animate-pulse"></div>
+         {/* Static Golden Background Effect */}
+         <div className="absolute inset-0 pointer-events-none">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] h-[800px] bg-gradient-radial from-[#D4AF37]/15 via-[#D4AF37]/5 to-transparent"></div>
+            <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-[#FFD700]/10 rounded-full blur-[100px]"></div>
+            <div className="absolute bottom-1/4 left-1/4 w-[500px] h-[500px] bg-[#FFA500]/10 rounded-full blur-[100px]"></div>
+         </div>
 
          <motion.div
             initial={{ opacity: 0, y: 20 }}
