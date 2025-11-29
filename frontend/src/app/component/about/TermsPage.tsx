@@ -3,15 +3,13 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, ArrowRight } from "lucide-react";
-import { createBlogData, slugify } from '../../utils/slugify';
+import { Menu, X } from "lucide-react";
 import Footer from '../Footer';
 
-export default function BlogPage() {
+export default function TermsPage() {
   const [isSticky, setIsSticky] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const blogs = createBlogData(); 
 
   useEffect(() => {
     const handleResize = () => {
@@ -80,9 +78,8 @@ export default function BlogPage() {
                             </Link>
                         </li>
                      ))}
-                     {/* Active Blog Link */}
                      <li>
-                        <Link href="/blog" className="relative px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 text-white bg-white/10 shadow-inner block">
+                        <Link href="/blog" className="relative px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 text-gray-400 hover:text-white hover:bg-white/5 block">
                             Blog
                         </Link>
                      </li>
@@ -145,62 +142,94 @@ export default function BlogPage() {
                 transition={{ duration: 0.8 }}
             >
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6">
-                    <span className="text-gray-200">Insights &</span> <span className="bg-gradient-to-r from-blue-400 to-indigo-500 text-transparent bg-clip-text">Innovations</span>
+                    Terms of <span className="bg-gradient-to-r from-blue-400 to-indigo-500 text-transparent bg-clip-text">Service</span>
                 </h1>
                 <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto font-light">
-                    Explore the latest trends, tutorials, and updates from the world of Artificial Intelligence and OneBrain.
+                    Last Updated: November 2025
                 </p>
             </motion.div>
          </div>
       </div>
 
-      {/* Blog Cards Grid */}
+      {/* Content Section */}
       <div className="container mx-auto pb-24 px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogs.map((blog, index) => (
-            <motion.div 
-                key={blog.id} 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group"
-            >
-              <Link href={`/blog/${slugify(blog.title)}`} className="block h-full">
-                  <div className="relative h-full bg-[#0F0F13] border border-white/10 rounded-3xl overflow-hidden hover:border-white/20 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-900/10 hover:-translate-y-1 flex flex-col">
-                    
-                    {/* Image Container */}
-                    <div className="relative h-48 md:h-56 overflow-hidden bg-[#1A1B2E]">
-                       <Image 
-                            src={blog.image} 
-                            alt={blog.title}
-                            fill
-                            className="object-cover transition-transform duration-700 group-hover:scale-105"
-                       />
-                       <div className="absolute inset-0 bg-gradient-to-t from-[#0F0F13] to-transparent opacity-60" />
-                    </div>
+        <div className="max-w-4xl mx-auto bg-[#0F0F13] border border-white/10 rounded-3xl p-8 md:p-12 shadow-2xl">
+            <div className="prose prose-invert prose-lg max-w-none text-gray-300">
+                <p className="lead">
+                    Welcome to OneBrain. By accessing or using our website and services, you agree to be bound by these Terms of Service. OneBrain is a product of <strong>DigitX LLC</strong>, headquartered in New York, USA, and operating in Bangladesh.
+                </p>
 
-                    {/* Content */}
-                    <div className="p-6 md:p-8 flex-1 flex flex-col">
-                        <div className="mb-4">
-                            <span className="inline-block px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-blue-400 font-medium mb-3">
-                                Article
-                            </span>
-                            <h2 className="text-xl font-bold text-white mb-3 leading-tight group-hover:text-blue-400 transition-colors">
-                                {blog.title}
-                            </h2>
-                            <p className="text-gray-400 text-sm line-clamp-3 leading-relaxed">
-                                {blog.excerpt}
-                            </p>
-                        </div>
-                        
-                        <div className="mt-auto pt-4 flex items-center text-sm font-medium text-gray-300 group-hover:text-white transition-colors">
-                            Read Article <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
-                        </div>
-                    </div>
-                  </div>
-              </Link>
-            </motion.div>
-          ))}
+                <h3>1. Acceptance of Terms</h3>
+                <p>
+                    By accessing or using the OneBrain platform ("Service"), accessible from https://ai.onebrain.app, you agree to be bound by these Terms and Conditions. If you disagree with any part of these terms, you may not access the Service. These terms apply to all visitors, users, and others who access or use the Service in Bangladesh and globally.
+                </p>
+
+                <h3>2. Governing Law & Jurisdiction</h3>
+                <p>
+                    These Terms shall be governed and construed in accordance with the laws of <strong>Bangladesh</strong>, without regard to its conflict of law provisions.
+                </p>
+                <p>
+                    You agree that any legal action or proceeding between you and OneBrain (or DigitX LLC) for any purpose concerning these Terms or the parties' obligations hereunder shall be brought exclusively in a court of competent jurisdiction sitting in <strong>Dhaka, Bangladesh</strong>. You hereby waive any objection to the venue of such courts.
+                </p>
+
+                <h3>3. Use License & Restrictions</h3>
+                <p>
+                    Permission is granted to use OneBrain for personal or commercial purposes as per your subscription plan. However, you may not:
+                </p>
+                <ul>
+                    <li>Modify, copy, or attempt to reverse engineer any software contained on OneBrain's website;</li>
+                    <li>Use the materials for any illegal purpose or in violation of any laws in Bangladesh;</li>
+                    <li>Share your account credentials with others (unless permitted by an Enterprise plan);</li>
+                    <li>Use the Service to generate content that is defamatory, obscene, or violates the rights of others.</li>
+                </ul>
+
+                <h3>4. Disclaimer of Warranties ("As Is")</h3>
+                <p>
+                    The Service is provided on an "AS IS" and "AS AVAILABLE" basis. OneBrain and DigitX LLC make no warranties, expressed or implied, and hereby disclaim and negate all other warranties including, without limitation, implied warranties of merchantability, fitness for a particular purpose, or non-infringement of intellectual property.
+                </p>
+                <p>
+                    OneBrain does not warrant that the Service will be uninterrupted, secure, or error-free, or that any defects will be corrected.
+                </p>
+
+                <h3>5. Limitation of Liability</h3>
+                <p className="uppercase font-bold text-sm tracking-wide text-gray-400">
+                    READ CAREFULLY: THIS SECTION LIMITS OUR LIABILITY TO THE MAXIMUM EXTENT PERMITTED BY BANGLADESH LAW.
+                </p>
+                <p>
+                    In no event shall OneBrain, DigitX LLC, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from:
+                </p>
+                <ul>
+                    <li>Your access to or use of or inability to access or use the Service;</li>
+                    <li>Any conduct or content of any third party on the Service;</li>
+                    <li>Any content obtained from the Service; and</li>
+                    <li>Unauthorized access, use, or alteration of your transmissions or content.</li>
+                </ul>
+                <p>
+                    To the maximum extent permitted by applicable law, OneBrain's total liability to you for any claims arising out of or relating to these terms or your use of the service shall be limited to the amount you paid us for the service in the 12 months prior to the claim.
+                </p>
+
+                <h3>6. Indemnification</h3>
+                <p>
+                    You agree to defend, indemnify and hold harmless OneBrain, DigitX LLC, and their licensee and licensors, and their employees, contractors, agents, officers, and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees) resulting from your use and access of the Service, or your violation of these Terms.
+                </p>
+
+                <h3>7. Class Action Waiver</h3>
+                <p>
+                    You agree that any arbitration or proceeding shall be limited to the dispute between us and you individually. To the full extent permitted by law, (i) no arbitration or proceeding shall be joined with any other; (ii) there is no right or authority for any dispute to be arbitrated or resolved on a class action-basis or to utilize class action procedures; and (iii) there is no right or authority for any dispute to be brought in a purported representative capacity on behalf of the general public or any other persons.
+                </p>
+
+                <h3>8. Changes to Terms</h3>
+                <p>
+                    We reserve the right, at our sole discretion, to modify or replace these Terms at any time. By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms.
+                </p>
+
+                <h3>9. Contact Us</h3>
+                <p>
+                    If you have any questions about these Terms, please contact us at:
+                    <br />
+                    <span className="text-blue-400">support@onebrain.app</span>
+                </p>
+            </div>
         </div>
       </div>
 

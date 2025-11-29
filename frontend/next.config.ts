@@ -46,6 +46,12 @@ const nextConfig: NextConfig = {
         hostname: 'digitxgroup.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

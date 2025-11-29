@@ -1,12 +1,11 @@
 "use client";
 import { useState } from 'react';
-import { FaFacebook, FaEnvelope } from 'react-icons/fa';
 import { IoIosArrowDown, IoIosArrowForward } from 'react-icons/io';
 import Link from "next/link";
 import Image from "next/image";
-import ButtonAnimatedGradient from './ButtonAnimatedGradient';
 import DynamicButton from './DynamicButton';
 import { Mail } from 'lucide-react';
+
 export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -81,135 +80,93 @@ export default function FaqSection() {
   ];
 
   return (
-    <section id="faqSection" className="py-16 px-6 container mx-auto text-white">
-      <div className="grid md:grid-cols-3 gap-8 justify-center items-center">
+    <section id="faqSection" className="py-4 px-6 container mx-auto text-white">
+      <div className="grid lg:grid-cols-12 gap-6">
         
         {/* Left Side (FAQ Introduction) */}
-        <div className="flex flex-col w-full items-center text-center">
-          <h2 className="text-3xl md:text-4xl font-bold">Frequently Asked Questions</h2>
-          <p className="text-gray-400 mt-2 max-w-md">
-            Should you have any further questions or encounter any difficulties, please feel free to join our community forum or reach out to us directly via email.
+        <div className="lg:col-span-4 flex flex-col items-start text-left">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight leading-tight">
+            Frequently Asked <br/> <span className="text-gray-400">Questions</span>
+          </h2>
+          <p className="text-gray-400 mt-4 text-lg font-light leading-relaxed">
+            Find answers to common questions about OneBrain's features, pricing, and capabilities.
           </p>
-          <div className="mt-6 lg:flex flex-col md:flex-row w-full gap-4 ">
+          <div className="mt-4 flex flex-col w-full gap-4">
             <a
               href="https://facebook.com/groups/2238159246577852/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full "
+              className="w-full group"
             >
-              <DynamicButton
-                label="Community Support"
-                size="w-full h-[45px] mb-3 lg:mb-0 rounded-full font-normal p-0 text-sm flex items-center justify-center"
-                icon={<Image src="/assets/Facebook.svg" alt="facebook" width={16} height={16} className="mr-2 w-4 h-4" />}
-              />
+              <div className="flex items-center justify-between w-full bg-[#1A1B2E] border border-white/10 rounded-xl px-5 py-4 hover:bg-[#232438] hover:border-white/20 transition-all duration-300">
+                  <div className="flex items-center gap-3">
+                      <div className="p-2 bg-white/5 rounded-lg border border-white/5 group-hover:border-white/10">
+                        <Image src="/assets/Facebook.svg" alt="facebook" width={20} height={20} className="w-5 h-5 opacity-80 group-hover:opacity-100" />
+                      </div>
+                      <span className="font-medium text-gray-200 group-hover:text-white">Community Support</span>
+                  </div>
+                  <IoIosArrowForward className="text-gray-500 group-hover:text-white transition-colors" />
+              </div>
             </a>
 
             <a
               href="mailto:info@onebrain.app"
-              className="w-full"
+              className="w-full group"
             >
-              <DynamicButton
-                label="Email Support"
-                size="w-full h-[45px] rounded-full font-normal p-0 text-sm flex items-center justify-center"
-                icon={<Mail className="mr-2 w-4 h-4" />}
-              />
+              <div className="flex items-center justify-between w-full bg-[#1A1B2E] border border-white/10 rounded-xl px-5 py-4 hover:bg-[#232438] hover:border-white/20 transition-all duration-300">
+                  <div className="flex items-center gap-3">
+                      <div className="p-2 bg-white/5 rounded-lg border border-white/5 group-hover:border-white/10">
+                        <Mail className="w-5 h-5 text-gray-300 group-hover:text-white" />
+                      </div>
+                      <span className="font-medium text-gray-200 group-hover:text-white">Email Support</span>
+                  </div>
+                  <IoIosArrowForward className="text-gray-500 group-hover:text-white transition-colors" />
+              </div>
             </a>
           </div>
         </div>
 
         {/* Right Side (FAQ Section) */}
-        <div className="space-y-2 md:col-span-2">
+        <div className="lg:col-span-8 flex flex-col gap-2">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="rounded-2xl overflow-hidden border border-[#4a5aaa]  bg-gradient-to-l  from-black to-[#0E1747]  animate-border"
+              className="rounded-lg overflow-hidden border border-white/5 bg-[#0F0F13] hover:border-white/10 transition-colors duration-300"
             >
               <button
-                className="w-full flex justify-between items-center p-4 text-left text-white bg-transparent hover:bg-gray-800"
+                className="w-full flex justify-between items-center p-4 text-left text-white bg-transparent hover:bg-white/5 transition-colors"
                 onClick={() => toggleFAQ(index)}
               >
-                <span className="flex items-center">
-                  {openIndex === index ? <IoIosArrowDown className="mr-2" /> : <IoIosArrowForward className="mr-2" />}
+                <span className="flex items-center gap-4 text-base md:text-lg font-medium text-gray-200">
+                  {openIndex === index ? (
+                      <div className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                          <IoIosArrowDown className="w-4 h-4" />
+                      </div>
+                  ) : (
+                      <div className="w-6 h-6 rounded-full bg-white/5 border border-white/5 flex items-center justify-center shrink-0">
+                          <IoIosArrowForward className="w-4 h-4 text-gray-500" />
+                      </div>
+                  )}
                   {faq.question}
                 </span>
               </button>
 
-              {openIndex === index && (
-                <div className="p-4 bg-gray-900 text-gray-300">
+              <div 
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                    openIndex === index ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+                }`}
+              >
+                <div className="p-5 pt-0 text-gray-400 font-light leading-relaxed border-t border-white/5 mx-5 mt-2">
                   {/* If answer contains HTML list, render safely */}
                   <div dangerouslySetInnerHTML={{ __html: faq.answer }} />
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>
 
       </div>
 
-      {/* OneBrain Promo Section */}
-      <div  className="md:py-16 py-8 flex justify-center px-4 sm:px-6 lg:px-12 xl:px-0">
-      <div className="w-full max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-full bg-gradient-to-b  from-black to-[#0E1747] border border-[#656FE2] shadow-[0_0_20px_rgba(157,167,216,0.5)] p-6 sm:p-10 rounded-2xl text-center transition-all duration-300 hover:shadow-[0_0_40px_rgba(138,232,255,0.3)]">
-
-          {/* Logo */}
-          <Image
-            src="/assets/oneBrainLogo.svg"
-            alt="OneBrain Logo"
-            width={224}
-            height={80}
-            className="mx-auto w-32 sm:w-40 md:w-56 transition-transform duration-300 hover:scale-110"
-          />
-
-          {/* Headline */}
-          <h3 className="text-white text-2xl sm:text-3xl md:text-4xl font-extrabold mt-6">
-            Give yourself a smarter brain
-          </h3>
-
-          {/* Subtitle */}
-          <p className="text-gray-400 mt-3 text-base sm:text-lg md:text-xl">
-            Activate brain clusters, ignite thinking sparks. Your intelligent assistant, always here.
-          </p>
-
-          {/* Buttons */}
-          <div className="mt-8 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
-  <Link href="https://ai.onebrain.app/login">
-      <DynamicButton
-      label="Free Trial"
-      size="w-full h-[45px] rounded-full px-8 font-medium p-0 text-sm flex items-center justify-center"
-    />
-  </Link>
-
-  <Link href="https://ai.onebrain.app/login">
-  <DynamicButton
-      label=""
-      size="w-full h-[45px] rounded-full font-medium px-8  p-0 text-sm flex items-center justify-center"
-              icon={
-          <div className="flex items-center">
-            <Image 
-              src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/images-removebg-preview.png" 
-              alt="Star Icon" 
-              width={32} 
-              height={32} 
-              className="w-6 h-6 sm:w-4 sm:h-4 mr-2 object-contain" 
-            />
-            <div className="flex items-center gap-0">
-              <span className="text-sm">Try</span>
-              <Image 
-                src="/assets/pro.svg" 
-                alt="Try Pro" 
-                width={32} 
-                height={32} 
-                className="w-8 h-8" 
-              />
-            </div>
-          </div>
-        }
-    />
-
-  </Link>
-</div>
-
-        </div>
-      </div>
 
     </section>
   );

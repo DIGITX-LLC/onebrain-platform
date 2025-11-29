@@ -1,76 +1,87 @@
-import { ArrowUpIcon, MessageCircle } from "lucide-react";
+import { ArrowUpRight, Video, Sparkles } from "lucide-react";
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 
-export default function uploadImage() {
+export default function UploadImage() {
 
   return (
-    <div className=" max-w-6xl mx-auto  font-sans pt-16 grid grid-cols-1 lg:grid-cols-2  gap-12">
-     
-        {/* left section */}
-        <div className=" space-y-10 ">
-           <div className="flex gap-2">
-            <Image src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Vector.png" alt="Icon" width={40} height={40} /> 
-            <h2 className="text-2xl lg:text-4xl font-medium">Sora</h2>
-           </div>
+    <section className="max-w-7xl mx-auto font-sans px-4 sm:px-6 lg:px-8">
+        {/* Header / Content Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-12">
+            
+            {/* Left Text Content */}
+            <div className="space-y-8">
+               <div className="flex items-center gap-3">
+                <div className="p-2 bg-white/10 rounded-xl border border-white/10 backdrop-blur-sm">
+                    <Video className="w-6 h-6 text-white" />
+                </div>
+                <h2 className="text-2xl font-medium text-gray-200 tracking-wide">Cinematic Video Studio</h2>
+               </div>
 
-           <div className=" space-y-4">
-            <h1 className="font-bold text-base lg:text-5xl">From words to words </h1>
-            <p className="font-normal  text-base">Start with a prompt or upload an image to create videos <br /> with unprecedented realism in any style: cinematic, <br /> animated, photorealistic, or surreal.</p>
-           </div>
+               <div className="space-y-6">
+                <h1 className="font-bold text-4xl lg:text-6xl leading-tight">
+                    <span className="text-white">From Words</span><br/>
+                    <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-red-400 text-transparent bg-clip-text">to Worlds</span>
+                </h1>
+                <p className="font-light text-lg lg:text-xl text-gray-400 leading-relaxed max-w-lg">
+                    Access the industry's most powerful video models including <span className="text-gray-200">Sora, Veo, RunwayML, Kling, Hailuo, Wan,</span> and <span className="text-gray-200">Litetricks</span>.
+                </p>
+                <p className="text-gray-500 text-base leading-relaxed">
+                    Whether for commercial production or hobbyist creation, explore affordable models for every level. Create cinematic, animated, or photorealistic videos with ease.
+                </p>
+               </div>
 
-           <div className="rounded-lg bg-[#111118] flex gap-2 mt-15 border border-gray-500 ">
-            <p className="p-2 text-[#94A3B8]">Music, sound effects, and dialogue are automatically included in <br /> videos to make every scene complete.</p>
-              <div className="p-2">
-                <button className="bg-white  p-2 rounded-full">
-                <ArrowUpIcon className="h-6 w-6 text-black " />
-                </button>
-              </div>
-           </div>
+               {/* Feature Box */}
+               <div className="rounded-2xl bg-[#1A1B2E] p-6 border border-white/10 relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/10 blur-3xl -z-10 rounded-full" />
+                
+                <div className="flex items-start justify-between gap-4">
+                    <div className="space-y-2">
+                        <div className="flex items-center gap-2 text-purple-300 mb-1">
+                            <Sparkles className="w-4 h-4" />
+                            <span className="text-xs font-bold uppercase tracking-wider">Auto-Enhanced</span>
+                        </div>
+                        <p className="text-gray-400 text-sm leading-relaxed">
+                            Music, sound effects, and dialogue are automatically generated to make every scene complete and immersive.
+                        </p>
+                    </div>
+                    <div className="mt-2">
+                        <button className="bg-white text-black p-3 rounded-full hover:scale-110 transition-transform duration-300 shadow-[0_0_20px_-5px_rgba(255,255,255,0.5)]">
+                            <ArrowUpRight className="h-5 w-5" />
+                        </button>
+                    </div>
+                </div>
+               </div>
+            </div>
 
+            {/* Right Video Grid */}
+            <div className="relative grid grid-cols-2 gap-3 p-3 rounded-3xl border border-white/10 bg-[#0F0F13] shadow-2xl">
+                {/* Decorative glow */}
+                <div className="absolute inset-0 bg-purple-500/5 blur-2xl -z-10 rounded-3xl" />
+
+                <div className="flex flex-col gap-3 mt-8">
+                    <div className="relative rounded-xl overflow-hidden border border-white/5 group">
+                        <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors" />
+                        <video src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/video1.mp4" className="w-full h-[160px] object-cover" autoPlay loop muted controls={false} playsInline></video>
+                    </div>
+                    <div className="relative rounded-xl overflow-hidden border border-white/5 group">
+                        <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors" />
+                        <video src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/video2.mp4" className="w-full h-[240px] object-cover" autoPlay loop muted controls={false} playsInline></video>
+                    </div>
+                </div>
+
+                <div className="flex flex-col gap-3 mb-8">
+                    <div className="relative rounded-xl overflow-hidden border border-white/5 group">
+                        <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors" />
+                        <video src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/video3.mp4" className="w-full h-[240px] object-cover" autoPlay loop muted controls={false} playsInline></video>
+                    </div>
+                    <div className="relative rounded-xl overflow-hidden border border-white/5 group">
+                        <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors" />
+                        <video src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/video4.mp4" className="w-full h-[160px] object-cover" autoPlay loop muted controls={false} playsInline></video>
+                    </div>
+                </div>
+            </div>
         </div>
-
-
-
-    {/* Right section */}
-      <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-2">
-    
-        <div className="flex flex-col gap-2">
-         
-          <video src=" https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/video1.mp4" className="w-full h-[153px] rounded-lg object-cover" 
-          autoPlay
-          loop
-          muted
-          controls={false}
-          playsInline></video>
-
-          <video src=" https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/video2.mp4" className="w-full h-[280px] rounded-lg object-cover" 
-          autoPlay
-          loop
-          muted
-          controls={false}
-          playsInline></video>
-        </div>
-
-        <div className="flex flex-col gap-2">
-          
-          <video src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/video3.mp4" className="w-full h-[280px] rounded-lg object-cover" 
-          autoPlay
-          loop
-          muted
-          controls={false}
-          playsInline></video>
-
-          <video src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/video4.mp4" className="w-full h-[154px] rounded-lg object-cover" 
-          autoPlay
-          loop
-          muted
-          controls={false}
-          playsInline></video>
-        </div>
-      </div>
-
-    
-    </div>
+    </section>
   );
 }
