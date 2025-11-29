@@ -376,12 +376,19 @@ export default function PricingAbout({
                             <span className="text-sm text-gray-500 font-normal">/mo</span>
                         </div>
                         
-                        {/* Token Badge */}
-                        {plan.tokens > 0 && (
+                        {/* Token Badge or Unlimited Chat Badge */}
+                        {plan.tokens > 0 ? (
                             <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/5 border border-white/10 group-hover:bg-white/10 group-hover:border-white/15 transition-all">
                                 <Image src="/assets/coin.svg" width={12} height={12} className="w-3 h-3 opacity-80" alt="coin" />
                                 <span className="text-[10px] font-semibold text-gray-300 uppercase tracking-wide">
                                     {plan.tokens.toLocaleString('en-IN')} Tokens
+                                </span>
+                            </div>
+                        ) : (
+                            <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/5 border border-white/10 group-hover:bg-white/10 group-hover:border-white/15 transition-all">
+                                <Sparkles className="w-3 h-3 text-gray-300" />
+                                <span className="text-[10px] font-semibold text-gray-300 tracking-wide">
+                                    Unlimited chat with personal memory
                                 </span>
                             </div>
                         )}
