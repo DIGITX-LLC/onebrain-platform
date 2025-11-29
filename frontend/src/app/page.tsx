@@ -877,12 +877,14 @@ export default function Home() {
                       console.log("Sign-in clicked");
                       setIsOpen(false);
                     }}
-                    className="block w-full"
+                    className="group relative w-full flex items-center justify-center px-4 py-3 text-sm font-medium text-white transition-all duration-300 bg-[#1A1B2E] border border-blue-500/30 rounded-xl hover:bg-[#232438] hover:border-blue-500/50 hover:shadow-[0_0_20px_-5px_rgba(59,130,246,0.3)] overflow-hidden"
                   >
-                    <DynamicButton
-                      label="Sign-In"
-                      size="w-full px-4 h-[45px] rounded-xl font-medium block text-sm"
-                    />
+                    <span className="relative z-10 flex items-center gap-2">
+                      Sign In
+                      <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      </svg>
+                    </span>
                   </a>
                 </li>
               </ul>
