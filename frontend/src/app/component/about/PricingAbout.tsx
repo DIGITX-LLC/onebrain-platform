@@ -261,7 +261,7 @@ export default function PricingAbout({
         "AI Video Generation",
         "• Seedance",
         "• Wan 2.2",
-        "AI Text to Speech",
+        "Voice/Audio Generation",
         "• Elevenlabs",
         "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
       ]
