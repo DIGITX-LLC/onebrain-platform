@@ -249,7 +249,8 @@ export default function PricingAbout({
         "AI Study Tools",
         "• Quiz Maker",
         "• Study Mode",
-        "Unlimited chat & attachments with personal memory"
+        "Unlimited chat & attachments with personal memory*",
+        "* Fair usage policy applies"
       ]
     },
     {
@@ -277,7 +278,8 @@ export default function PricingAbout({
         "• Wan 2.2",
         "Voice/Audio Generation",
         "• Elevenlabs",
-        "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
+        "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)*",
+        "* Fair usage policy applies"
       ]
     },
     {
@@ -298,7 +300,8 @@ export default function PricingAbout({
         "• KlingAI V2.1",
         "• Sora V2",
         "• Sora V2 Pro",
-        "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
+        "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)*",
+        "* Fair usage policy applies"
       ]
     },
     {
@@ -312,7 +315,8 @@ export default function PricingAbout({
         "You Own All Available Models",
         "AI Video Generation",
         "• VEO3",
-        "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
+        "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)*",
+        "* Fair usage policy applies"
       ]
     }
   ];
