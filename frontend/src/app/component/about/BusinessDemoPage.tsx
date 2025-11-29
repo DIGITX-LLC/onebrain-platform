@@ -93,6 +93,9 @@ export default function BusinessDemoPage() {
             
             <div className="absolute inset-0 bg-[url('/assets/grid-pattern.svg')] opacity-20 [mask-image:linear-gradient(to_bottom,white,transparent)] pointer-events-none"></div>
             
+            {/* Golden Glow Effect */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-[#D4AF37]/20 rounded-full blur-[120px] -z-10 pointer-events-none animate-pulse"></div>
+            
             <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed mb-10 relative z-10">
                 Empower your workforce with a secure, branded AI platform. Give your team access to top AI models with centralized billing in <strong>BDT</strong>.
             </p>
