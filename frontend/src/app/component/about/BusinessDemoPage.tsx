@@ -167,6 +167,75 @@ export default function BusinessDemoPage() {
         </div>
       </section>
 
+      {/* INDUSTRIES SECTION */}
+      <section className="py-24 bg-[#030205] relative overflow-hidden">
+         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+         
+         <div className="container mx-auto px-6 relative z-10">
+            <div className="text-center mb-16">
+                <span className="text-blue-400 font-medium tracking-wider uppercase text-sm mb-3 block">Industries</span>
+                <h2 className="text-3xl md:text-5xl font-bold text-white">Built for Bangladesh's Top Sectors</h2>
+                <p className="text-gray-400 mt-4 max-w-2xl mx-auto">Tailored AI solutions for every industry need, ensuring privacy and efficiency.</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {/* Software */}
+                <div className="p-6 rounded-2xl bg-[#0A0A0F] border border-white/5 hover:border-white/10 hover:bg-[#0F0F15] transition-all">
+                    <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center mb-4 text-blue-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    </div>
+                    <h3 className="text-lg font-bold text-white mb-2">Software & IT</h3>
+                    <p className="text-sm text-gray-400">Secure code generation, automated documentation, and private code analysis without leaking IP.</p>
+                </div>
+
+                {/* Marketing */}
+                <div className="p-6 rounded-2xl bg-[#0A0A0F] border border-white/5 hover:border-white/10 hover:bg-[#0F0F15] transition-all">
+                    <div className="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center mb-4 text-purple-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20v-6M6 20V10M18 20V4"></path></svg>
+                    </div>
+                    <h3 className="text-lg font-bold text-white mb-2">Marketing Agencies</h3>
+                    <p className="text-sm text-gray-400">Generate Bangla & English content, creative visuals, and marketing copy at scale with brand consistency.</p>
+                </div>
+
+                {/* E-commerce */}
+                <div className="p-6 rounded-2xl bg-[#0A0A0F] border border-white/5 hover:border-white/10 hover:bg-[#0F0F15] transition-all">
+                    <div className="w-10 h-10 rounded-lg bg-green-500/10 flex items-center justify-center mb-4 text-green-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    </div>
+                    <h3 className="text-lg font-bold text-white mb-2">E-commerce & Retail</h3>
+                    <p className="text-sm text-gray-400">Automate product descriptions, enhance customer support, and analyze market trends instantly.</p>
+                </div>
+
+                {/* Education */}
+                <div className="p-6 rounded-2xl bg-[#0A0A0F] border border-white/5 hover:border-white/10 hover:bg-[#0F0F15] transition-all">
+                    <div className="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center mb-4 text-yellow-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                    </div>
+                    <h3 className="text-lg font-bold text-white mb-2">Education & EdTech</h3>
+                    <p className="text-sm text-gray-400">Personalized learning assistants, research summaries, and automated grading support for institutions.</p>
+                </div>
+
+                {/* Legal */}
+                <div className="p-6 rounded-2xl bg-[#0A0A0F] border border-white/5 hover:border-white/10 hover:bg-[#0F0F15] transition-all">
+                    <div className="w-10 h-10 rounded-lg bg-red-500/10 flex items-center justify-center mb-4 text-red-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h3 className="text-lg font-bold text-white mb-2">Legal & Finance</h3>
+                    <p className="text-sm text-gray-400">Analyze contracts and financial reports securely on private servers without exposing client data.</p>
+                </div>
+
+                {/* News Media */}
+                <div className="p-6 rounded-2xl bg-[#0A0A0F] border border-white/5 hover:border-white/10 hover:bg-[#0F0F15] transition-all">
+                    <div className="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center mb-4 text-cyan-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path><path d="M18 14h-8"></path><path d="M15 18h-5"></path><path d="M10 6h8v4h-8V6Z"></path></svg>
+                    </div>
+                    <h3 className="text-lg font-bold text-white mb-2">News & Media</h3>
+                    <p className="text-sm text-gray-400">Draft articles, translate news to Bangla instantly, and summarize global reports for local audience.</p>
+                </div>
+            </div>
+         </div>
+      </section>
+
       {/* HOW IT WORKS */}
       <section className="py-24 container mx-auto px-6">
          <div className="max-w-4xl mx-auto">
