@@ -135,11 +135,11 @@ export default function BusinessDemoPage() {
                 {/* Feature 2 */}
                 <div className="p-8 rounded-3xl bg-[#030205] border border-white/10 hover:border-white/20 transition-colors group">
                     <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <Zap className="w-6 h-6 text-white" />
+                        <LayoutDashboard className="w-6 h-6 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-3">Centralized BDT Billing</h3>
+                    <h3 className="text-xl font-bold text-white mb-3">Train on Private Data</h3>
                     <p className="text-gray-400 leading-relaxed">
-                        No more individual reimbursements. Pay for your entire team's usage with a single invoice via <strong>bKash, Nagad, or Bank Transfer</strong>.
+                        Create custom AI models trained on your documents. Securely upload files to a <strong>private knowledge base</strong> that never leaves your ecosystem.
                     </p>
                 </div>
 
