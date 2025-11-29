@@ -150,6 +150,7 @@ export default function PricingAbout({
       'kontext restore': 'restorerWhite',
       'kontext upscaler': 'restorerWhite',
       'quiz maker': 'quizMakerWhite',
+      'study mode': 'quizMakerWhite',
       'elevenlabsWhite': 'elevenlabsWhite',
       'nano banana': 'veo3',
       'sora': 'soraWhite',
@@ -245,6 +246,9 @@ export default function PricingAbout({
         "• Perplexity",
         "• Mistral",
         "• Qwen",
+        "AI Study Tools",
+        "• Quiz Maker",
+        "• Study Mode",
         "Unlimited chat & attachments with personal memory"
       ]
     },
@@ -264,7 +268,6 @@ export default function PricingAbout({
         "• ImageX",
         "• Flux",
         "• Kontext Pro",
-        "• Quiz Maker",
         "AI Detector",
         "AI Image Repair Model",
         "• Kontext Restore",
