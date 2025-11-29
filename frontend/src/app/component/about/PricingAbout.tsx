@@ -344,7 +344,7 @@ export default function PricingAbout({
               {/* Popular Badge */}
               {isPopular && !isCurrentPlan && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
-                  <div className="bg-gradient-to-r from-blue-600 via-blue-500 to-blue-600 text-white px-5 py-1.5 rounded-full text-xs font-bold shadow-xl shadow-blue-500/50 tracking-wide border-2 border-blue-400/50 flex items-center gap-1.5">
+                  <div className="bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-500 text-black px-5 py-1.5 rounded-full text-xs font-bold shadow-xl shadow-amber-500/50 tracking-wide border-2 border-amber-300/60 flex items-center gap-1.5">
                     <Sparkles className="w-3 h-3" />
                     MOST POPULAR
                   </div>
