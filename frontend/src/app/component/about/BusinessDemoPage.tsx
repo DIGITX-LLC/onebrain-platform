@@ -80,23 +80,33 @@ export default function BusinessDemoPage() {
             transition={{ duration: 0.8 }}
             className="max-w-4xl mx-auto"
          >
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-8 leading-[1.1]">
-                Your Company's <br />
-                <span className="bg-gradient-to-r from-gray-100 via-gray-400 to-gray-600 text-transparent bg-clip-text">Private AI Workspace</span> <br />
-                <span className="text-3xl md:text-5xl text-gray-500 block mt-2">in Bangladesh</span>
-            </h1>
+            <div className="relative z-10">
+                <span className="inline-block px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-gray-300 mb-6 backdrop-blur-sm">
+                    For Enterprise & Large Teams
+                </span>
+                <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-8 leading-[1.1]">
+                    Your Company's <br />
+                    <span className="bg-gradient-to-r from-blue-200 via-white to-blue-200 text-transparent bg-clip-text drop-shadow-sm">Private AI Workspace</span> <br />
+                    <span className="text-3xl md:text-5xl text-gray-500 block mt-2">in Bangladesh</span>
+                </h1>
+            </div>
             
-            <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed mb-10">
+            <div className="absolute inset-0 bg-[url('/assets/grid-pattern.svg')] opacity-20 [mask-image:linear-gradient(to_bottom,white,transparent)] pointer-events-none"></div>
+            
+            <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed mb-10 relative z-10">
                 Empower your workforce with a secure, branded AI platform. Give your team access to top AI models with centralized billing in <strong>BDT</strong>.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
                 <button 
                     onClick={scrollToBooking}
-                    className="px-8 py-4 text-lg font-bold text-black bg-white rounded-full hover:bg-gray-200 transition-all shadow-[0_0_30px_-10px_rgba(255,255,255,0.3)] flex items-center gap-2"
+                    className="group px-8 py-4 text-lg font-bold text-black bg-white rounded-full hover:bg-gray-100 transition-all shadow-[0_0_40px_-10px_rgba(255,255,255,0.5)] flex items-center gap-2 relative overflow-hidden"
                 >
-                    Book a Demo
-                    <ArrowDown className="w-5 h-5" />
+                    <span className="relative z-10 flex items-center gap-2">
+                        Book a Demo
+                        <ArrowDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
+                    </span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent -translate-x-full group-hover:animate-shine" />
                 </button>
                 <p className="text-sm text-gray-500 mt-4 sm:mt-0">Schedule a session with our team.</p>
             </div>
