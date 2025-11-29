@@ -82,11 +82,12 @@ export default function BusinessDemoPage() {
          >
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-8 leading-[1.1]">
                 Launch Your Own <br />
-                <span className="bg-gradient-to-r from-gray-100 via-gray-400 to-gray-600 text-transparent bg-clip-text">Branded AI Platform</span>
+                <span className="bg-gradient-to-r from-gray-100 via-gray-400 to-gray-600 text-transparent bg-clip-text">Branded AI Platform</span> <br />
+                <span className="text-3xl md:text-5xl text-gray-500 block mt-2">in Bangladesh</span>
             </h1>
             
             <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed mb-10">
-                Scale your business with a fully white-labeled AI solution. Use your own logo, domain, and brand identity powered by OneBrain's enterprise infrastructure.
+                The first-ever White-Label AI Solution for Bangladeshi Entrepreneurs & Enterprises. Use your own logo, domain, and pricing with full <strong>bKash/Nagad</strong> payment integration.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -125,31 +126,31 @@ export default function BusinessDemoPage() {
                     <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <Palette className="w-6 h-6 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-3">Custom Branding</h3>
+                    <h3 className="text-xl font-bold text-white mb-3">Custom Branding & Bangla UI</h3>
                     <p className="text-gray-400 leading-relaxed">
-                        Your platform, your rules. Upload your logo, set your primary colors, and customize the UI to match your brand identity perfectly.
+                        Your platform, your rules. Upload your logo, set your colors, and offer a fully localized <strong>Bangla interface</strong> for your local users.
                     </p>
                 </div>
 
                 {/* Feature 2 */}
                 <div className="p-8 rounded-3xl bg-[#030205] border border-white/10 hover:border-white/20 transition-colors group">
                     <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <Globe className="w-6 h-6 text-white" />
+                        <Zap className="w-6 h-6 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-3">Custom Domain</h3>
+                    <h3 className="text-xl font-bold text-white mb-3">Native bKash & Nagad</h3>
                     <p className="text-gray-400 leading-relaxed">
-                        Host the platform on your own domain (e.g., ai.yourcompany.com). We handle the SSL and hosting; you keep the traffic.
+                        Built-in local payment gateways. Collect subscriptions directly in <strong>BDT</strong> via bKash, Nagad, or Bank Transfer instantly.
                     </p>
                 </div>
 
                 {/* Feature 3 */}
                 <div className="p-8 rounded-3xl bg-[#030205] border border-white/10 hover:border-white/20 transition-colors group">
                     <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <Zap className="w-6 h-6 text-white" />
+                        <Globe className="w-6 h-6 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-3">Instant Deployment</h3>
+                    <h3 className="text-xl font-bold text-white mb-3">Custom Domain (.com.bd)</h3>
                     <p className="text-gray-400 leading-relaxed">
-                        Get up and running in minutes. Our turn-key solution means you can start onboarding users immediately without technical setup.
+                        Host on your own domain (e.g., ai.yourcompany.com.bd). We handle the SSL and hosting with <strong>local optimization</strong> for lowest latency.
                     </p>
                 </div>
             </div>
@@ -181,16 +182,16 @@ export default function BusinessDemoPage() {
                     <div className="md:w-1/2 md:text-right md:pr-12 order-2 md:order-1"></div>
                     <div className="absolute left-0 md:left-1/2 w-14 h-14 rounded-full bg-[#030205] border border-white/20 flex items-center justify-center text-xl font-bold text-white z-10 -translate-x-1/2 md:translate-x-[-50%]">2</div>
                     <div className="md:w-1/2 md:pl-12 order-3 md:order-2">
-                        <h3 className="text-2xl font-bold text-white mb-2">Apply Branding</h3>
-                        <p className="text-gray-400">Upload your assets, configure your DNS for custom domain, and set up your support email.</p>
+                        <h3 className="text-2xl font-bold text-white mb-2">Connect Local Payments</h3>
+                        <p className="text-gray-400">Upload your assets and connect your personal <strong>bKash/Nagad merchant</strong> accounts to receive funds directly.</p>
                     </div>
                 </div>
 
                 {/* Step 3 */}
                 <div className="relative flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-0">
                     <div className="md:w-1/2 md:text-right md:pr-12 order-2 md:order-1">
-                        <h3 className="text-2xl font-bold text-white mb-2">Go Live Instantly</h3>
-                        <p className="text-gray-400">Launch your fully branded AI platform to your users. Start monetizing or empowering your team immediately.</p>
+                        <h3 className="text-2xl font-bold text-white mb-2">Go Live & Earn BDT</h3>
+                        <p className="text-gray-400">Launch your fully branded AI platform to your users in Bangladesh. Start monetizing immediately.</p>
                     </div>
                     <div className="absolute left-0 md:left-1/2 w-14 h-14 rounded-full bg-white text-black flex items-center justify-center text-xl font-bold z-10 -translate-x-1/2 md:translate-x-[-50%]">3</div>
                     <div className="md:w-1/2 md:pl-12 order-3 md:order-2"></div>
@@ -207,7 +208,7 @@ export default function BusinessDemoPage() {
                 <div className="p-10 md:p-16 md:w-2/5 bg-gradient-to-br from-[#1A1B2E] to-[#030205] flex flex-col justify-center">
                     <h2 className="text-3xl font-bold text-white mb-6">Ready to Launch?</h2>
                     <p className="text-gray-300 mb-8 leading-relaxed">
-                        Schedule a demo with our white-label experts. We'll show you the admin panel, discuss pricing, and help you plan your launch.
+                        Schedule a demo with our <strong>Dhaka-based team</strong>. We'll show you the admin panel, discuss <strong>BDT pricing</strong>, and help you plan your launch.
                     </p>
                     
                     <div className="space-y-4">
@@ -217,11 +218,11 @@ export default function BusinessDemoPage() {
                         </div>
                         <div className="flex items-center gap-3">
                             <CheckCircle className="w-5 h-5 text-green-400" />
-                            <span className="text-sm text-gray-300">Pricing & Commission Models</span>
+                            <span className="text-sm text-gray-300">BDT Pricing & Local Support</span>
                         </div>
                         <div className="flex items-center gap-3">
                             <CheckCircle className="w-5 h-5 text-green-400" />
-                            <span className="text-sm text-gray-300">Technical Setup Guide</span>
+                            <span className="text-sm text-gray-300">Payment Gateway Setup Guide</span>
                         </div>
                     </div>
                 </div>
