@@ -132,8 +132,10 @@ export default function PricingAbout({
       'kling': 'klingWhite',
       'klingai': 'klingWhite',
       'veo3': 'veo3',
+      'veo 3.1 fast': 'veo3',
       'vgen': 'vGenWhite',
       'pixverse': 'vGenWhite',
+      'litetricks': 'vGenWhite',
       'seedance': 'seedanceWhite',
       'hailou': 'hailou',
       'wan': 'wanWhite',
@@ -272,14 +274,12 @@ export default function PricingAbout({
       tokens: 4500000,
       bestFor: "For heavy AI creators",
       icon: <Crown className="h-5 w-5 text-white" />,
-      badge: "KlingAI",
+      badge: "VEO3",
       features: [
         "Everything on the Pro Plan",
         "Premium AI Video Generation",
-        "• RunwayML",
-        "• KlingAI V2.1",
-        "• Sora V2",
-        "• Sora V2 Pro",
+        "• VEO 3.1 Fast",
+        "• Litetricks",
         "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
       ]
     },
