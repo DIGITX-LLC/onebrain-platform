@@ -280,6 +280,10 @@ export default function PricingAbout({
         "Premium AI Video Generation",
         "• VEO 3.1 Fast",
         "• Litetricks",
+        "• RunwayML",
+        "• KlingAI V2.1",
+        "• Sora V2",
+        "• Sora V2 Pro",
         "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
       ]
     },
