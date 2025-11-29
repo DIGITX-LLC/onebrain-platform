@@ -231,18 +231,12 @@ export default function PricingAbout({
     {
       name: "Student",
       price: 299,
-      tokens: 600000,
+      tokens: 0,
       bestFor: "Perfect for trying AI tools",
       icon: <Star className="h-5 w-5 text-white" />,
       badge: "Unlimited Chat",
       features: [
-        "AI Image Editing & Generations models",
-        "• ImageX",
-        "• Flux",
-        "• Kontext Pro",
-        "• Quiz Maker",
-        "AI Detector",
-        "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
+        "Unlimited chat & attachments with advanced AI models"
       ]
     },
     {
@@ -255,6 +249,12 @@ export default function PricingAbout({
       badge: "Unlimited Image",
       features: [
         "Everything on the Student Plan",
+        "AI Image Editing & Generations",
+        "• ImageX",
+        "• Flux",
+        "• Kontext Pro",
+        "• Quiz Maker",
+        "AI Detector",
         "AI Image Repair Model",
         "• Kontext Restore",
         "• Nano Banana",
@@ -377,12 +377,14 @@ export default function PricingAbout({
                         </div>
                         
                         {/* Token Badge */}
-                        <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/5 border border-white/10 group-hover:bg-white/10 group-hover:border-white/15 transition-all">
-                             <Image src="/assets/coin.svg" width={12} height={12} className="w-3 h-3 opacity-80" alt="coin" />
-                             <span className="text-[10px] font-semibold text-gray-300 uppercase tracking-wide">
-                                {plan.tokens.toLocaleString('en-IN')} Tokens
-                             </span>
-                        </div>
+                        {plan.tokens > 0 && (
+                            <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/5 border border-white/10 group-hover:bg-white/10 group-hover:border-white/15 transition-all">
+                                <Image src="/assets/coin.svg" width={12} height={12} className="w-3 h-3 opacity-80" alt="coin" />
+                                <span className="text-[10px] font-semibold text-gray-300 uppercase tracking-wide">
+                                    {plan.tokens.toLocaleString('en-IN')} Tokens
+                                </span>
+                            </div>
+                        )}
                     </div>
 
                     {/* Features List */}
