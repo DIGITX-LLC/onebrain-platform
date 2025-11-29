@@ -258,7 +258,7 @@ export default function PricingAbout({
         "AI Image Repair Model",
         "• Kontext Restore",
         "• Nano Banana",
-        "Budget AI Video Generation",
+        "AI Video Generation",
         "• Seedance",
         "• Wan 2.2",
         "AI Text to Speech",
