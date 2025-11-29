@@ -118,8 +118,8 @@ export default function BusinessDemoPage() {
                     From Teams of Two to Teams of Thousands
                 </span>
                 <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-8 leading-[1.1]">
-                    Your Company's <br />
-                    <span className="bg-gradient-to-r from-blue-200 via-white to-blue-200 text-transparent bg-clip-text drop-shadow-sm">Private AI Workspace</span> <br />
+                    Your Business's Own <br />
+                    <span className="bg-gradient-to-r from-blue-200 via-white to-blue-200 text-transparent bg-clip-text drop-shadow-sm">Branded AI Platform</span> <br />
                     <span className="text-3xl md:text-5xl text-gray-500 block mt-2">in Bangladesh</span>
                 </h1>
             </div>
