@@ -10,6 +10,20 @@ export default function BusinessDemoPage() {
   
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const scrollToFeatures = () => {
+    const element = document.getElementById('features-section');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToHowItWorks = () => {
+    const element = document.getElementById('how-it-works-section');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const scrollToBooking = () => {
     const element = document.getElementById('booking-calendar');
     if (element) {
@@ -60,10 +74,10 @@ export default function BusinessDemoPage() {
 
             {/* Desktop Nav */}
             <div className="hidden md:flex items-center gap-6">
-                 <button onClick={scrollToBooking} className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
+                 <button onClick={scrollToFeatures} className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
                     Features
                  </button>
-                 <button onClick={scrollToBooking} className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
+                 <button onClick={scrollToHowItWorks} className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
                     How it Works
                  </button>
                  
@@ -147,7 +161,7 @@ export default function BusinessDemoPage() {
       </section>
 
       {/* FEATURES GRID */}
-      <section className="py-20 bg-[#0A0A0F] border-y border-white/5">
+      <section id="features-section" className="py-20 bg-[#0A0A0F] border-y border-white/5">
         <div className="container mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Feature 1 */}
@@ -256,7 +270,7 @@ export default function BusinessDemoPage() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="py-24 container mx-auto px-6">
+      <section id="how-it-works-section" className="py-24 container mx-auto px-6">
          <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">Launch in 3 Simple Steps</h2>
             
