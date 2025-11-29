@@ -246,10 +246,10 @@ export default function PricingAbout({
       ]
     },
     {
-      name: "Creator",
+      name: "Pro",
       price: 699,
       tokens: 1500000,
-      bestFor: "Great for regular AI users",
+      bestFor: "Perfect for chat, video & images",
       icon: <Zap className="h-5 w-5 text-white" />,
       isPopular: true,
       badge: "Unlimited Image",
