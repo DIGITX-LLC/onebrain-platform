@@ -18,7 +18,14 @@ export default function BusinessDemoPage() {
   };
 
   return (
-    <div className='bg-[#030205] w-full min-h-screen text-white selection:bg-gray-500/30 overflow-x-hidden'>
+    <div className='bg-[#030205] w-full min-h-screen text-white selection:bg-gray-500/30 overflow-x-hidden relative'>
+      
+      {/* Global Golden Background Effect - From Top Right */}
+      <div className="fixed inset-0 pointer-events-none z-0">
+         <div className="absolute top-0 right-0 w-[1400px] h-[1400px] bg-gradient-radial from-[#D4AF37]/15 via-[#D4AF37]/8 to-transparent translate-x-1/3 -translate-y-1/4"></div>
+         <div className="absolute top-1/4 right-0 w-[800px] h-[800px] bg-[#FFD700]/12 rounded-full blur-[120px] translate-x-1/4"></div>
+         <div className="absolute top-1/2 right-1/4 w-[600px] h-[600px] bg-[#FFA500]/8 rounded-full blur-[100px]"></div>
+      </div>
       
       {/* Navigation Header */}
       <div className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-6 px-4">
@@ -71,13 +78,6 @@ export default function BusinessDemoPage() {
 
       {/* HERO SECTION */}
       <section className="relative pt-40 pb-20 md:pt-52 md:pb-32 px-6 container mx-auto text-center overflow-hidden">
-         {/* Static Golden Background Effect */}
-         <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] h-[800px] bg-gradient-radial from-[#D4AF37]/15 via-[#D4AF37]/5 to-transparent"></div>
-            <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-[#FFD700]/10 rounded-full blur-[100px]"></div>
-            <div className="absolute bottom-1/4 left-1/4 w-[500px] h-[500px] bg-[#FFA500]/10 rounded-full blur-[100px]"></div>
-         </div>
-
          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
