@@ -1082,16 +1082,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Business Section */}
-        <BusinessSection />
-
         {/* Mobile App Countdown Section */}
         <div id="mobileAppSection" className="py-10 md:py-16 relative z-10">
           <MobileCountdown />
         </div>
-
-        {/* Affiliate / Reseller Section */}
-        <AffiliateSection />
 
         {/* FAQ Section */}
         <div>
