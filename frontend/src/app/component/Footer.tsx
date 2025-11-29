@@ -98,14 +98,6 @@ export default function Footer() {
                 </button>
               </li>
               <li>
-                <button
-                  onClick={() => handleNavigation("mobileAppSection")}
-                  className="hover:text-white transition-colors text-left hover:translate-x-1 duration-200 inline-block"
-                >
-                  Mobile App
-                </button>
-              </li>
-              <li>
                 <Link
                   href="/business"
                   className="hover:text-white transition-colors text-left hover:translate-x-1 duration-200 inline-block"

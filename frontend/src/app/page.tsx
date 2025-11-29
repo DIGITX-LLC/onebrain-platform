@@ -591,7 +591,6 @@ export default function Home() {
                   { name: "AI Models", id: "featuresSection", activeId: "ai-models" },
                   { name: "Pricing", id: "oneBrainPromoSection", activeId: "pricing" },
                   { name: "Updates", id: "updatesSection", activeId: "brain-upgrading-log" },
-                  { name: "Mobile App", id: "mobileAppSection", activeId: "mobile-app" },
                   { name: "Contact Us", id: "faqSection", activeId: "contact-us" },
                 ].map((item) => (
                   <li key={item.id}>

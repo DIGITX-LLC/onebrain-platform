@@ -69,7 +69,6 @@ export default function PrivacyPolicyPage() {
                         { name: "AI Models", href: "/#featuresSection" },
                         { name: "Pricing", href: "/#oneBrainPromoSection" },
                         { name: "Updates", href: "/#updatesSection" },
-                        { name: "Mobile App", href: "/#mobileAppSection" },
                         { name: "Contact Us", href: "/#faqSection" },
                      ].map((item) => (
                         <li key={item.name}>
@@ -109,7 +108,6 @@ export default function PrivacyPolicyPage() {
                         { name: "AI Models", href: "/#featuresSection" },
                         { name: "Pricing", href: "/#oneBrainPromoSection" },
                         { name: "Updates", href: "/#updatesSection" },
-                        { name: "Mobile App", href: "/#mobileAppSection" },
                         { name: "Contact Us", href: "/#faqSection" },
                         { name: "Blog", href: "/blog" },
                     ].map((item) => (
