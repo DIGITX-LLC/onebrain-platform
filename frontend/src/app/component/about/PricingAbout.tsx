@@ -236,7 +236,16 @@ export default function PricingAbout({
       icon: <Star className="h-5 w-5 text-white" />,
       badge: "Unlimited Chat",
       features: [
-        "Unlimited chat & attachments with advanced AI models"
+        "Access to Top AI Chat Models",
+        "• ChatGPT",
+        "• Gemini",
+        "• DeepSeek",
+        "• Grok",
+        "• Llama",
+        "• Perplexity",
+        "• Mistral",
+        "• Qwen",
+        "Unlimited chat & attachments with personal memory"
       ]
     },
     {
