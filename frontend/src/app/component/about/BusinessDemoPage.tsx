@@ -148,9 +148,9 @@ export default function BusinessDemoPage() {
                     <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <ShieldCheck className="w-6 h-6 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-3">Enterprise Security</h3>
+                    <h3 className="text-xl font-bold text-white mb-3">Private Server Storage</h3>
                     <p className="text-gray-400 leading-relaxed">
-                        Keep your company data secure. Admin controls, user management, and private workspaces ensure your intellectual property stays safe.
+                        Maintain complete data sovereignty. Option to deploy on your own <strong>private server</strong> so your company data never leaves your infrastructure.
                     </p>
                 </div>
             </div>
