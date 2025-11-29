@@ -22,9 +22,24 @@ export default function BusinessDemoPage() {
       
       {/* Global Golden Background Effect - From Top Right */}
       <div className="fixed inset-0 pointer-events-none z-0">
-         <div className="absolute top-0 right-0 w-[1400px] h-[1400px] bg-gradient-radial from-[#D4AF37]/15 via-[#D4AF37]/8 to-transparent translate-x-1/3 -translate-y-1/4"></div>
-         <div className="absolute top-1/4 right-0 w-[800px] h-[800px] bg-[#FFD700]/12 rounded-full blur-[120px] translate-x-1/4"></div>
-         <div className="absolute top-1/2 right-1/4 w-[600px] h-[600px] bg-[#FFA500]/8 rounded-full blur-[100px]"></div>
+         <div 
+            className="absolute top-0 right-0 w-[1400px] h-[1400px] translate-x-1/3 -translate-y-1/4"
+            style={{
+               background: 'radial-gradient(circle at center, rgba(212, 175, 55, 0.15) 0%, rgba(212, 175, 55, 0.08) 40%, transparent 70%)'
+            }}
+         ></div>
+         <div 
+            className="absolute top-1/4 right-0 w-[800px] h-[800px] rounded-full blur-[120px] translate-x-1/4"
+            style={{
+               background: 'rgba(255, 215, 0, 0.12)'
+            }}
+         ></div>
+         <div 
+            className="absolute top-1/2 right-1/4 w-[600px] h-[600px] rounded-full blur-[100px]"
+            style={{
+               background: 'rgba(255, 165, 0, 0.08)'
+            }}
+         ></div>
       </div>
       
       {/* Navigation Header */}
