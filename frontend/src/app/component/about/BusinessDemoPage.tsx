@@ -81,13 +81,13 @@ export default function BusinessDemoPage() {
             className="max-w-4xl mx-auto"
          >
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-8 leading-[1.1]">
-                Launch Your Own <br />
-                <span className="bg-gradient-to-r from-gray-100 via-gray-400 to-gray-600 text-transparent bg-clip-text">Branded AI Platform</span> <br />
+                Your Company's <br />
+                <span className="bg-gradient-to-r from-gray-100 via-gray-400 to-gray-600 text-transparent bg-clip-text">Private AI Workspace</span> <br />
                 <span className="text-3xl md:text-5xl text-gray-500 block mt-2">in Bangladesh</span>
             </h1>
             
             <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed mb-10">
-                The first-ever White-Label AI Solution for Bangladeshi Entrepreneurs & Enterprises. Use your own logo, domain, and pricing with full <strong>bKash/Nagad</strong> payment integration.
+                Empower your workforce with a secure, branded AI platform. Give your team access to top AI models with centralized billing in <strong>BDT</strong>.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -126,9 +126,9 @@ export default function BusinessDemoPage() {
                     <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <Palette className="w-6 h-6 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-3">Custom Branding & Bangla UI</h3>
+                    <h3 className="text-xl font-bold text-white mb-3">Company Branding</h3>
                     <p className="text-gray-400 leading-relaxed">
-                        Your platform, your rules. Upload your logo, set your colors, and offer a fully localized <strong>Bangla interface</strong> for your local users.
+                        A unified workspace that looks and feels like your company. Custom logo, colors, and domain to keep your team's experience professional.
                     </p>
                 </div>
 
@@ -137,20 +137,20 @@ export default function BusinessDemoPage() {
                     <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <Zap className="w-6 h-6 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-3">Native bKash & Nagad</h3>
+                    <h3 className="text-xl font-bold text-white mb-3">Centralized BDT Billing</h3>
                     <p className="text-gray-400 leading-relaxed">
-                        Built-in local payment gateways. Collect subscriptions directly in <strong>BDT</strong> via bKash, Nagad, or Bank Transfer instantly.
+                        No more individual reimbursements. Pay for your entire team's usage with a single invoice via <strong>bKash, Nagad, or Bank Transfer</strong>.
                     </p>
                 </div>
 
                 {/* Feature 3 */}
                 <div className="p-8 rounded-3xl bg-[#030205] border border-white/10 hover:border-white/20 transition-colors group">
                     <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <Globe className="w-6 h-6 text-white" />
+                        <ShieldCheck className="w-6 h-6 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-3">Custom Domain (.com.bd)</h3>
+                    <h3 className="text-xl font-bold text-white mb-3">Enterprise Security</h3>
                     <p className="text-gray-400 leading-relaxed">
-                        Host on your own domain (e.g., ai.yourcompany.com.bd). We handle the SSL and hosting with <strong>local optimization</strong> for lowest latency.
+                        Keep your company data secure. Admin controls, user management, and private workspaces ensure your intellectual property stays safe.
                     </p>
                 </div>
             </div>
@@ -182,16 +182,16 @@ export default function BusinessDemoPage() {
                     <div className="md:w-1/2 md:text-right md:pr-12 order-2 md:order-1"></div>
                     <div className="absolute left-0 md:left-1/2 w-14 h-14 rounded-full bg-[#030205] border border-white/20 flex items-center justify-center text-xl font-bold text-white z-10 -translate-x-1/2 md:translate-x-[-50%]">2</div>
                     <div className="md:w-1/2 md:pl-12 order-3 md:order-2">
-                        <h3 className="text-2xl font-bold text-white mb-2">Connect Local Payments</h3>
-                        <p className="text-gray-400">Upload your assets and connect your personal <strong>bKash/Nagad merchant</strong> accounts to receive funds directly.</p>
+                        <h3 className="text-2xl font-bold text-white mb-2">Onboard Your Team</h3>
+                        <p className="text-gray-400">Invite your employees, assign roles, and manage access. Set usage limits and monitor team activity.</p>
                     </div>
                 </div>
 
                 {/* Step 3 */}
                 <div className="relative flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-0">
                     <div className="md:w-1/2 md:text-right md:pr-12 order-2 md:order-1">
-                        <h3 className="text-2xl font-bold text-white mb-2">Go Live & Earn BDT</h3>
-                        <p className="text-gray-400">Launch your fully branded AI platform to your users in Bangladesh. Start monetizing immediately.</p>
+                        <h3 className="text-2xl font-bold text-white mb-2">Boost Productivity</h3>
+                        <p className="text-gray-400">Your team gets instant access to advanced AI tools in a secure environment. Watch efficiency soar.</p>
                     </div>
                     <div className="absolute left-0 md:left-1/2 w-14 h-14 rounded-full bg-white text-black flex items-center justify-center text-xl font-bold z-10 -translate-x-1/2 md:translate-x-[-50%]">3</div>
                     <div className="md:w-1/2 md:pl-12 order-3 md:order-2"></div>
