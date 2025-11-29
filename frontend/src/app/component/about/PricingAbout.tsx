@@ -258,6 +258,8 @@ export default function PricingAbout({
       badge: "Unlimited Image",
       features: [
         "Everything on the Student Plan",
+        "Premium AI Chat Model",
+        "• Claude",
         "AI Image Editing & Generations",
         "• ImageX",
         "• Flux",
