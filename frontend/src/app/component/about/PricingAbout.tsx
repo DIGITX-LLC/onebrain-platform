@@ -273,7 +273,7 @@ export default function PricingAbout({
       ]
     },
     {
-      name: "Performance",
+      name: "Creator",
       price: 1999,
       tokens: 4500000,
       bestFor: "For heavy AI creators",
