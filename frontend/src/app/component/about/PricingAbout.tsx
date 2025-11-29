@@ -28,7 +28,6 @@ const AIToolsIcons: Record<string, string> = {
   hailou: '/assets/models/hailuo-color.png',
   wanWhite: '/assets/models/qwen-black.svg',
   voiceWhite: '/assets/models/voice-white.svg',
-  udioWhite: '/assets/models/UdioAI White.svg',
   runwayWhite: '/assets/models/runway-white.png',
   runwayml: '/assets/models/runway-white.png',
   humanizerWhite: '/assets/models/Humanizer White.svg',
@@ -138,8 +137,6 @@ export default function PricingAbout({
       'hailou': 'hailou',
       'wan': 'wanWhite',
       'speechai': 'voiceWhite',
-      'udio': 'udioWhite',
-      'udioai': 'udioWhite',
       'elevenlabs': 'elevenlabsWhite',
       'runway': 'runwayWhite',
       'runwayml': 'runwayWhite',
@@ -263,8 +260,7 @@ export default function PricingAbout({
         "• Seedance",
         "• Hailou 2 Fast",
         "• Wan 2.2",
-        "AI Text to Speech & Music",
-        "• UdioAI",
+        "AI Text to Speech",
         "• Elevenlabs",
         "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
       ]
