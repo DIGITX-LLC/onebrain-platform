@@ -82,7 +82,7 @@ export default function BusinessDemoPage() {
          >
             <div className="relative z-10">
                 <span className="inline-block px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-gray-300 mb-6 backdrop-blur-sm">
-                    For Enterprise & Large Teams
+                    From Teams of Two to Teams of Thousands
                 </span>
                 <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-8 leading-[1.1]">
                     Your Company's <br />
