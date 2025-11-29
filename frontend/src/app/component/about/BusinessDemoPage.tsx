@@ -70,13 +70,10 @@ export default function BusinessDemoPage() {
       )}
 
       {/* HERO SECTION */}
-      <section className="relative pt-40 pb-20 md:pt-52 md:pb-32 px-6 container mx-auto text-center">
-         {/* Background Glow */}
-         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-white/5 rounded-full blur-[120px] -z-10 pointer-events-none" />
-         
-         {/* Golden Glow Effect - Intensified */}
-         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[#FFD700]/30 rounded-full blur-[100px] -z-10 pointer-events-none mix-blend-screen"></div>
-         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-[#FFA500]/20 rounded-full blur-[80px] -z-10 pointer-events-none animate-pulse delay-75"></div>
+      <section className="relative pt-40 pb-20 md:pt-52 md:pb-32 px-6 container mx-auto text-center overflow-hidden">
+         {/* Golden Glow Effect - Visible */}
+         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[600px] bg-gradient-radial from-[#FFD700]/40 via-[#FFA500]/20 to-transparent rounded-full blur-3xl"></div>
+         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-[#D4AF37]/30 rounded-full blur-[120px] animate-pulse"></div>
 
          <motion.div
             initial={{ opacity: 0, y: 20 }}
