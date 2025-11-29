@@ -191,11 +191,11 @@ export default function PricingAbout({
 
     if (icon) {
       return (
-        <div className={`flex items-center gap-2.5 ${isSubFeature ? 'ml-2' : ''} py-1`}>
-          <div className="relative w-4 h-4 shrink-0 rounded-md bg-white/5 p-0.5 border border-white/5 group-hover:bg-white/10 transition-colors">
+        <div className={`flex items-center gap-2 ${isSubFeature ? 'ml-1.5' : ''} py-0.5`}>
+          <div className="relative w-3.5 h-3.5 shrink-0 rounded bg-white/5 p-0.5 border border-white/5 group-hover:bg-white/10 transition-colors">
              <Image src={icon} alt={feature} fill className="object-contain brightness-0 invert opacity-90" />
           </div>
-          <span className="text-xs text-gray-400 group-hover:text-gray-200 transition-colors flex-1 font-normal leading-tight">
+          <span className="text-[11px] text-gray-400 group-hover:text-gray-200 transition-colors flex-1 font-normal leading-tight">
             {feature}
           </span>
         </div>
@@ -205,9 +205,9 @@ export default function PricingAbout({
     // Fallback for features without icons
     if (isSubFeature) {
       return (
-        <div className="flex items-center gap-2.5 ml-2 py-1">
-          <div className="w-1.5 h-1.5 rounded-full bg-white/20 shrink-0" />
-          <span className="text-xs text-gray-500 group-hover:text-gray-400 transition-colors flex-1 font-normal leading-tight">
+        <div className="flex items-center gap-2 ml-1.5 py-0.5">
+          <div className="w-1 h-1 rounded-full bg-white/20 shrink-0" />
+          <span className="text-[11px] text-gray-500 group-hover:text-gray-400 transition-colors flex-1 font-normal leading-tight">
             {feature}
           </span>
         </div>
@@ -215,11 +215,11 @@ export default function PricingAbout({
     }
 
     return (
-      <div className="flex items-start gap-2.5 py-1 mt-3 first:mt-0">
-         <div className="mt-0.5 p-1 rounded-md bg-white/5 border border-white/10 shrink-0 group-hover:bg-white/10 transition-colors">
-            <Check className="w-3 h-3 text-gray-400 group-hover:text-gray-300 transition-colors" />
+      <div className="flex items-start gap-2 py-0.5 mt-2 first:mt-0">
+         <div className="mt-0.5 p-0.5 rounded bg-white/5 border border-white/10 shrink-0 group-hover:bg-white/10 transition-colors">
+            <Check className="w-2.5 h-2.5 text-gray-400 group-hover:text-gray-300 transition-colors" />
          </div>
-        <span className="text-sm text-gray-300 group-hover:text-gray-100 transition-colors flex-1 font-medium leading-snug">
+        <span className="text-xs text-gray-300 group-hover:text-gray-100 transition-colors flex-1 font-medium leading-snug">
            {feature}
         </span>
       </div>
@@ -343,60 +343,60 @@ export default function PricingAbout({
                 <div className="absolute inset-0 rounded-2xl bg-[#0F0F13] m-[1px]" />
                 
                 {/* Card Content */}
-                <div className="relative h-full bg-[#0F0F13]/90 backdrop-blur-xl rounded-[15px] p-6 flex flex-col overflow-hidden border border-white/5 group-hover:border-white/10 transition-all duration-300">
+                <div className="relative h-full bg-[#0F0F13]/90 backdrop-blur-xl rounded-[15px] p-5 flex flex-col overflow-hidden border border-white/5 group-hover:border-white/10 transition-all duration-300">
                     
                     {/* Top Gradient Glow */}
                     <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-white/5 to-transparent opacity-60 pointer-events-none" />
 
                     {/* Header */}
-                    <div className="relative z-10 mb-6 h-[120px] flex flex-col justify-start">
-                        <div className="flex items-center gap-3 mb-4">
-                            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 flex items-center justify-center group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-white/5 transition-all duration-300">
+                    <div className="relative z-10 mb-4 h-[90px] flex flex-col justify-start">
+                        <div className="flex items-center gap-2.5 mb-3">
+                            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-white/10 to-white/5 border border-white/10 flex items-center justify-center group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-white/5 transition-all duration-300">
                                 {plan.icon}
                             </div>
                             <div className="flex-1">
-                                <h3 className="text-xl font-bold text-white tracking-tight group-hover:text-gray-100 transition-colors leading-tight">
+                                <h3 className="text-lg font-bold text-white tracking-tight group-hover:text-gray-100 transition-colors leading-tight">
                                     {plan.name}
                                 </h3>
                             </div>
                         </div>
 
-                        <p className="text-xs text-gray-500 font-normal leading-relaxed">
+                        <p className="text-xs text-gray-500 font-normal leading-snug">
                             {plan.bestFor}
                         </p>
                     </div>
 
                     {/* Pricing */}
-                    <div className="relative z-10 mb-6 pb-6 border-b border-white/5 group-hover:border-white/10 transition-colors h-[120px] flex flex-col justify-center">
-                        <div className="flex items-baseline gap-1.5 mb-4">
-                            <span className="text-4xl font-bold text-white tracking-tight">
+                    <div className="relative z-10 mb-4 pb-4 border-b border-white/5 group-hover:border-white/10 transition-colors h-[95px] flex flex-col justify-center">
+                        <div className="flex items-baseline gap-1.5 mb-3">
+                            <span className="text-3xl font-bold text-white tracking-tight">
                                 {currencySymbol}{plan.price.toLocaleString()}
                             </span>
                             <span className="text-sm text-gray-500 font-normal">/mo</span>
                         </div>
                         
                         {/* Token Badge */}
-                        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 group-hover:bg-white/10 group-hover:border-white/15 transition-all">
-                             <Image src="/assets/coin.svg" width={14} height={14} className="w-3.5 h-3.5 opacity-80" alt="coin" />
-                             <span className="text-[11px] font-semibold text-gray-300 uppercase tracking-wide">
+                        <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/5 border border-white/10 group-hover:bg-white/10 group-hover:border-white/15 transition-all">
+                             <Image src="/assets/coin.svg" width={12} height={12} className="w-3 h-3 opacity-80" alt="coin" />
+                             <span className="text-[10px] font-semibold text-gray-300 uppercase tracking-wide">
                                 {plan.tokens.toLocaleString('en-IN')} Tokens
                              </span>
                         </div>
                     </div>
 
                     {/* Features List */}
-                    <div className="relative z-10 flex-1 mb-6 min-h-[280px] max-h-[380px] flex flex-col">
-                        <p className="text-[10px] font-semibold text-gray-500 uppercase tracking-widest mb-4 flex items-center gap-2 flex-shrink-0">
-                            <Sparkles className="w-3 h-3 opacity-50" />
+                    <div className="relative z-10 flex-1 mb-5 min-h-[240px] max-h-[320px] flex flex-col">
+                        <p className="text-[10px] font-semibold text-gray-500 uppercase tracking-widest mb-3 flex items-center gap-1.5 flex-shrink-0">
+                            <Sparkles className="w-2.5 h-2.5 opacity-50" />
                             What's Included
                         </p>
-                        <div className="space-y-1 overflow-y-auto pr-1 custom-scrollbar flex-1">
+                        <div className="space-y-0.5 overflow-y-auto pr-1 custom-scrollbar flex-1">
                             {plan.features.map((feature, i) => (
                             <div key={i}>
                                 {typeof feature === 'string' && feature.startsWith('•') ? (
                                 renderFeatureWithIcon(feature.substring(2).trim(), true)
                                 ) : (
-                                <div className={`${i > 0 ? 'mt-2' : ''}`}>
+                                <div className={`${i > 0 ? 'mt-1.5' : ''}`}>
                                     {typeof feature === 'string' ? renderFeatureWithIcon(feature, false) : null}
                                 </div>
                                 )}
@@ -410,7 +410,7 @@ export default function PricingAbout({
                         onClick={() => window.location.href = 'https://ai.onebrain.app/login'}
                         disabled={isCurrentPlan}
                         className={`
-                            relative z-10 w-full h-[48px] rounded-xl font-semibold text-sm uppercase tracking-wide transition-all duration-300 flex items-center justify-center flex-shrink-0
+                            relative z-10 w-full h-[44px] rounded-lg font-semibold text-sm uppercase tracking-wide transition-all duration-300 flex items-center justify-center flex-shrink-0
                             ${isCurrentPlan
                                 ? "bg-[#1A1B2E] text-gray-400 border border-white/5 cursor-default"
                                 : "bg-gradient-to-b from-[#1A1B2E] to-[#13141F] text-white border border-white/10 hover:from-[#232438] hover:to-[#1A1B2E] hover:border-white/20 hover:shadow-[0_4px_20px_-5px_rgba(255,255,255,0.15)] active:scale-[0.98]"
