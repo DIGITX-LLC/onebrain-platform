@@ -15,17 +15,19 @@ const AIModelIcons: Record<string, string> = {
   qwenBlack: '/assets/models/qwen-black.svg',
   alimAiWhite: '/assets/models/AlimAi-w.svg',
   kontextRestore: '/assets/models/flux-w.svg'
+
 };
 
 const AIToolsIcons: Record<string, string> = {
   imageXWhite: '/assets/models/ImageX White.png',
   fluxWhite: '/assets/models/flux-w.svg',
+  seedream:'/assets/models/SeeDream 4.0 Logo.png',
   klingWhite: '/assets/models/kling-white.svg',
   veo3: '/assets/models/veo3-black.png',
   veo3Black: '/assets/models/veo3-black.png',
   vGenWhite: '/assets/models/vGen-white.svg',
   seedanceWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/seedance-logo.png', // Using vGen icon for Seedance temporarily
-  hailou: '/assets/models/hailuo-color.png',
+  hailuo: '/assets/models/hailuo-color.png',
   wanWhite: '/assets/models/qwen-black.svg',
   voiceWhite: '/assets/models/voice-white.svg',
   runwayWhite: '/assets/models/runway-white.png',
@@ -34,7 +36,9 @@ const AIToolsIcons: Record<string, string> = {
   restorerWhite: '/assets/models/flux-w.svg',
   quizMakerWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/quiz-maker.svg',
   elevenlabsWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Elevenlabs%20Logo%20(1).svg',
-  soraWhite: '/assets/models/chatgpt.svg'
+  soraWhite: '/assets/models/chatgpt.svg',
+  udio:'/assets/models/udio-white.png',
+  lightricks:'/assets/models/lightricks.png'
 };
 
 interface GenerateImageUpTo {
@@ -107,7 +111,8 @@ export default function PricingAbout({
       'alimai': 'alimAiWhite',
       'alim ai': 'alimAiWhite',
       'nano banana': 'veo3Black',
-      'kontext restore': 'kontextRestore'
+      'kontext restore': 'kontextRestore',
+      'hailuo': 'hailuo'
     };
 
     // Find matching model name
@@ -129,6 +134,7 @@ export default function PricingAbout({
       // ===== AI TOOLS (from Tools-Data) =====
       'imagex': 'imageXWhite',
       'flux': 'fluxWhite',
+      'seedream': 'seedream',
       'kling': 'klingWhite',
       'klingai': 'klingWhite',
       'veo3': 'veo3',
@@ -137,7 +143,7 @@ export default function PricingAbout({
       'pixverse': 'vGenWhite',
       'litetricks': 'vGenWhite',
       'seedance': 'seedanceWhite',
-      'hailou': 'hailou',
+      'hailuo': 'hailuo',
       'wan': 'wanWhite',
       'speechai': 'voiceWhite',
       'elevenlabs': 'elevenlabsWhite',
@@ -155,6 +161,8 @@ export default function PricingAbout({
       'nano banana': 'veo3',
       'sora': 'soraWhite',
       'sora v2': 'soraWhite',
+      'udio': 'udio',
+      'lightricks':'lightricks',
 
       // ===== SPECIAL MODEL MAPPINGS =====
       // Google Imagen 4 -> Gemini logo
@@ -232,29 +240,36 @@ export default function PricingAbout({
     {
       name: "Student",
       price: 299,
-      tokens: 0,
+      tokens: 600000,
       bestFor: "Perfect for trying AI tools",
       icon: <Star className="h-5 w-5 text-white" />,
       badge: "Unlimited Chat",
       features: [
         "Access to Top AI Chat Models",
-        "• ChatGPT",
-        "• Gemini",
-        "• DeepSeek",
-        "• Grok",
-        "• Llama",
-        "• Perplexity",
-        "• Mistral",
-        "• Qwen",
-        "AI Study Tools",
-        "• Quiz Maker",
-        "• Study Mode",
-        "Unlimited chat & attachments with personal memory*",
-        "* Fair usage policy applies"
+        "• ChatGPT Premium",
+        "• Gemini Premium",
+        "• DeepSeek Premium",
+        "• Grok Premium",
+        "• Claude Premium",
+        "• Llama Premium",
+        "• Perplexity Premium",
+        "• Qwen Premium",
+        "• Mistral Premium",
+        "Image Generation Models",
+        "• ImageX",
+        "• Flux",
+        "• Seedream 4",
+        // "AI Study Tools",
+        // "• Quiz Maker",
+        // "• Study Mode",
+        "Image Editing Models",
+        "• Kontext Pro",
+        "Unlimited chat & attachments with all advanced AI models (after Pro Tokens are finished)",
+        // "* Fair usage policy applies"
       ]
     },
     {
-      name: "Pro",
+      name: "Creator",
       price: 699,
       tokens: 1500000,
       bestFor: "Perfect for chat, video & images",
@@ -262,46 +277,57 @@ export default function PricingAbout({
       isPopular: true,
       badge: "Unlimited Image",
       features: [
-        "Everything on the Student Plan",
-        "Premium AI Chat Model",
-        "• Claude",
-        "AI Image Editing & Generations",
-        "• ImageX",
-        "• Flux",
-        "• Kontext Pro",
-        "AI Detector",
-        "AI Image Repair Model",
-        "• Kontext Restore",
+        "Everything on the Creator Plan",
+        // "Premium AI Chat Model",
+        // "• Claude",
+        "Image Generation Models",
         "• Nano Banana",
-        "AI Video Generation",
+        "• Nano Banana Pro",
+
+        // "• ImageX",
+        // "• Flux",
+        // "• Kontext Pro",
+        // "AI Detector",
+        "Image Restorer Model",
+        "• Kontext Restore",
+        "Video Generation Models",
+        "• Pixverse 4.5 & 5",
+        "• RunwayML",
         "• Seedance",
-        "• Wan 2.2",
-        "Voice/Audio Generation",
+        "• KlingAI V2.1, V2.5 Turbo",
+        "• Hailuo",
+        "• Wan",
+        "• Sora V2",
+        "• Lightricks 2",
+        "Text To Speech And Music",
+        "• UdioAI",
         "• Elevenlabs",
-        "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)*",
-        "* Fair usage policy applies"
+        "Tools",
+        "• Humanizer",
+        "Unlimited chat & attachments with all advanced AI models (after Pro Tokens are finished)*",
+        // "* Fair usage policy applies"
       ]
     },
     {
-      name: "Creator",
+      name: "Performance",
       price: 1999,
       tokens: 4500000,
       bestFor: "For heavy AI creators",
       icon: <Crown className="h-5 w-5 text-white" />,
       badge: "VEO3",
       features: [
-        "Everything on the Pro Plan",
-        "Premium AI Video Generation",
-        "• VEO 3.1 Fast",
-        "• Litetricks",
-        "• PixVerse",
-        "• Hailou 2 Fast",
-        "• RunwayML",
-        "• KlingAI V2.1",
-        "• Sora V2",
+        "Everything on the Performance Plan",
+        "More Video Generation Model",
+        // "• VEO 3.1 Fast",
+        // "• Litetricks",
+        // "• PixVerse",
+        // "• Hailou 2 Fast",
+        // "• RunwayML",
+        "• KlingAI All Models",
         "• Sora V2 Pro",
-        "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)*",
-        "* Fair usage policy applies"
+        "• Veo3.1 Fast",
+        // "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)*",
+        // "* Fair usage policy applies"
       ]
     },
     {
@@ -312,11 +338,13 @@ export default function PricingAbout({
       icon: <Crown className="h-5 w-5 text-white" />,
       badge: "VEO3",
       features: [
+        // "You Own All Available Models",
+        "More Video Generation Models",
+        "• Veo3",
+        "• Veo3.1",
         "You Own All Available Models",
-        "AI Video Generation",
-        "• VEO3",
-        "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)*",
-        "* Fair usage policy applies"
+        // "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)*",
+        // "* Fair usage policy applies"
       ]
     }
   ];
