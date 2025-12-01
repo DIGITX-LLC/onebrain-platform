@@ -12,51 +12,63 @@ export default function ImageStudio() {
                 <div className="grid grid-cols-2 gap-4 p-4 rounded-3xl border border-white/10 bg-[#0F0F13] shadow-2xl">
                     <div className="absolute inset-0 bg-blue-500/5 blur-2xl -z-10 rounded-3xl" />
                     
-                    <div className="relative h-40 rounded-xl overflow-hidden border border-white/10 group">
-                        <Image 
-                            src="https://images.unsplash.com/photo-1535378437327-b64c8da2d86f?q=80&w=800&auto=format&fit=crop" 
-                            alt="Realism AI Art" 
-                            fill 
-                            className="object-cover transition-transform duration-500 group-hover:scale-110"
-                        />
+                    <div className="relative h-40 rounded-xl overflow-hidden border border-white/10 group bg-[#0A0A0F]">
+                        <div className="absolute inset-0 flex items-center justify-center p-4">
+                            <Image 
+                                src={'/assets/models/ImageX White.png'}
+                                alt="OpenAI ImageX" 
+                                width={120}
+                                height={120}
+                                className="object-contain transition-transform duration-500 group-hover:scale-110"
+                            />
+                        </div>
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-3">
-                            <span className="text-xs font-medium text-white">Realism</span>
+                            <span className="text-xs font-medium text-white">OpenAI ImageX</span>
                         </div>
                     </div>
 
-                    <div className="relative h-40 rounded-xl overflow-hidden border border-white/10 group">
-                        <Image 
-                            src="https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=800&auto=format&fit=crop" 
-                            alt="Anime Style AI Art" 
-                            fill 
-                            className="object-cover transition-transform duration-500 group-hover:scale-110"
-                        />
+                    <div className="relative h-40 rounded-xl overflow-hidden border border-white/10 group bg-[#0A0A0F]">
+                        <div className="absolute inset-0 flex items-center justify-center p-4">
+                            <Image 
+                                src={'/assets/models/veo3-black.png'}
+                                alt="Google Nano Banana Pro" 
+                                width={120}
+                                height={120}
+                                className="object-contain transition-transform duration-500 group-hover:scale-110"
+                            />
+                        </div>
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-3">
-                            <span className="text-xs font-medium text-white">Anime</span>
+                            <span className="text-xs font-medium text-white">Google Nano Banana Pro</span>
                         </div>
                     </div>
 
-                    <div className="relative h-40 rounded-xl overflow-hidden border border-white/10 group">
-                        <Image 
-                            src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=800&auto=format&fit=crop" 
-                            alt="3D Render AI Art" 
-                            fill 
-                            className="object-cover transition-transform duration-500 group-hover:scale-110"
-                        />
+                    <div className="relative h-40 rounded-xl overflow-hidden border border-white/10 group bg-[#0A0A0F]">
+                        <div className="absolute inset-0 flex items-center justify-center p-4">
+                            <Image 
+                                src={'/assets/models/SeeDream 4.0 Logo.png'}
+                                alt="Seedream" 
+                                width={120}
+                                height={120}
+                                className="object-contain transition-transform duration-500 group-hover:scale-110"
+                            />
+                        </div>
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-3">
-                            <span className="text-xs font-medium text-white">3D Art</span>
+                            <span className="text-xs font-medium text-white">Seedream</span>
                         </div>
                     </div>
 
-                    <div className="relative h-40 rounded-xl overflow-hidden border border-white/10 group">
-                        <Image 
-                            src="https://images.unsplash.com/photo-1634152962476-4b8a00e1915c?q=80&w=800&auto=format&fit=crop" 
-                            alt="Vector Illustration AI Art" 
-                            fill 
-                            className="object-cover transition-transform duration-500 group-hover:scale-110"
-                        />
+                    <div className="relative h-40 rounded-xl overflow-hidden border border-white/10 group bg-[#0A0A0F]">
+                        <div className="absolute inset-0 flex items-center justify-center p-4">
+                            <Image 
+                                src={'/assets/models/flux-w.svg'}
+                                alt="Flux" 
+                                width={120}
+                                height={120}
+                                className="object-contain transition-transform duration-500 group-hover:scale-110"
+                            />
+                        </div>
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-3">
-                            <span className="text-xs font-medium text-white">Vector</span>
+                            <span className="text-xs font-medium text-white">Flux</span>
                         </div>
                     </div>
                 </div>
@@ -93,9 +105,14 @@ export default function ImageStudio() {
                 </p>
                </div>
 
-               <button className="inline-flex items-center gap-2 text-white border-b border-white/20 pb-1 hover:border-white transition-colors">
+               <a 
+                   href="https://ai.onebrain.app/" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   className="inline-flex items-center gap-2 text-white border-b border-white/20 pb-1 hover:border-white transition-colors cursor-pointer"
+               >
                    Start Generating <ArrowUpRight className="w-4 h-4" />
-               </button>
+               </a>
             </div>
         </div>
     </section>
