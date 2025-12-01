@@ -306,34 +306,34 @@ export default function Home() {
 
   const updates = [
     {
-      version: "1.5.5.1",
+      version: "1.5.6",
       status: "Released",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released-image.svg",
       features: [
-        "Added Google’s latest AI video generation model Veo.",
-        "Added Google’s low-cost video + audio generation model Veo Fast.",
-        "Introduced new text-to-video and image-to-video model Pixverse 5.",
-        "Integrated fastest and cheapest image generation model Flux.",
-        "Added a new 4K-quality image generation model Seedream-4.",
-        "Enhanced color accuracy across the platform based on user feedback.",
+        "Added new models: ChatGPT 5.1, Grok 4.1 Fast, Google Nano Banana Pro, and Lightricks 2 Fast.",
+        "Enhanced chat outputs to better reflect native tone, clarity, and conversational style.",
+        'Added a one-click "Regenerate Response" button for instant refinement.',
+        "Introduced Dynamic Vision Model Routing for smarter, more accurate attachment analysis.",
+        "Enabled full conversation exports via PDF and Markdown (.md).",
+        "Redesigned the chat bar with a modern capsule style and fixed mobile table scrolling.",
       ],
     },
     {
-      version: "1.5.6",
+      version: "1.5.7",
       status: "In Progress",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress-image.svg",
       features: [
-        "Image generation is implemented on the Conversation chat screen.", 
-        "Improve Overall Chat Response across all the LLM models.",
-        "Changed New Capsule chat bar style matching latest UI in the market.",
+        "Added new AI models Gemini 3 Pro and Perplexity Sonar.", 
+        "Implemented a dashboard for Context Memory Management control.",
+        "Launched the reimagined and refreshed OneBrain website.",
       ],
     },
     {
-      version: "1.5.7",
+      version: "1.5.8",
       status: "Planned",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned.svg",
@@ -341,7 +341,7 @@ export default function Home() {
       features: [
         "Canvas mode implementation with edit Preview and download feature.",
         "Create, edit & download PDF, XLS & DOC files.",
-        "Context Memory management dashboard implemented for control.",
+        
       ],
     },
   ];
