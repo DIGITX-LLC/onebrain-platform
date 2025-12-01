@@ -46,9 +46,19 @@ export default function UploadImage() {
                         </p>
                     </div>
                     <div className="mt-2">
-                        <button className="bg-white text-black p-3 rounded-full hover:scale-110 transition-transform duration-300 shadow-[0_0_20px_-5px_rgba(255,255,255,0.5)]">
+                        {/* <button className="bg-white text-black p-3 rounded-full hover:scale-110 transition-transform duration-300 shadow-[0_0_20px_-5px_rgba(255,255,255,0.5)]">
                             <ArrowUpRight className="h-5 w-5" />
-                        </button>
+                        </button> */}
+                        <a 
+                             href="https://dev.onebrain.app/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                          >
+                        <button className="bg-white text-black p-3 rounded-full hover:scale-110 transition-transform duration-300 shadow-[0_0_20px_-5px_rgba(255,255,255,0.5)]">
+                                <ArrowUpRight className="h-5 w-5" />
+                            </button>
+                        </a>
+
                     </div>
                 </div>
                </div>

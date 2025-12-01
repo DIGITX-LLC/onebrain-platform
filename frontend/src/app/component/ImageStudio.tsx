@@ -106,7 +106,7 @@ export default function ImageStudio() {
                </div>
 
                <a 
-                   href="https://ai.onebrain.app/" 
+                   href="https://dev.onebrain.app/" 
                    target="_blank" 
                    rel="noopener noreferrer"
                    className="inline-flex items-center gap-2 text-white border-b border-white/20 pb-1 hover:border-white transition-colors cursor-pointer"
