@@ -269,7 +269,7 @@ export default function PricingAbout({
       ]
     },
     {
-      name: "Creator",
+      name: "Pro",
       price: 699,
       tokens: 1500000,
       bestFor: "Perfect for chat, video & images",
@@ -309,7 +309,7 @@ export default function PricingAbout({
       ]
     },
     {
-      name: "Performance",
+      name: "Creator",
       price: 1999,
       tokens: 4500000,
       bestFor: "For heavy AI creators",
