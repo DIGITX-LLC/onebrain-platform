@@ -169,26 +169,28 @@ export default function AffiliateDemoPage() {
             </motion.div>
          </div>
 
-         {/* Right Side: Calendar */}
-         <div className="lg:w-2/3 w-full h-full min-h-[500px] lg:min-h-0 bg-[#0F0F13] border border-white/10 rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl relative flex-1 flex flex-col">
-            
-               <div className="relative w-full h-full flex-1">
-                  <div className="absolute inset-0 flex items-center justify-center z-0">
-                      <div className="flex flex-col items-center gap-3 opacity-50">
-                          <div className="w-8 h-8 rounded-full border-2 border-white/20 border-t-white animate-spin"></div>
-                          <p className="text-gray-600 text-xs">Loading Calendar...</p>
-                      </div>
-                  </div>
-                  <iframe 
-                      src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2X_example_placeholder?gv=true" 
-                      style={{border: 0}} 
-                      width="100%" 
-                      height="100%" 
-                      className="relative z-10 w-full h-full bg-[#0F0F13]"
-                      frameBorder="0"
-                  ></iframe>
-               </div>
-         </div>
+        {/* Right Side: Calendar */}
+<div className="lg:w-2/3 w-full flex-1 h-full min-h-[500px] bg-[#0F0F13] border border-white/10 rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl relative flex flex-col">
+   
+   <div className="relative bg-white w-full h-full flex-1">
+      <div className="absolute inset-0 flex items-center justify-center z-0">
+          <div className="flex flex-col items-center gap-3 opacity-50">
+              <div className="w-8 h-8 rounded-full border-2 border-white/20 border-t-white animate-spin"></div>
+              <p className="text-white text-xs">Loading Calendar...</p>
+          </div>
+      </div>
+      
+      <iframe 
+          src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1QS2IclaPa_-oQ1QXscXpR8Tq0IbT5nARDwN6CWZ0SevrEN9ZRD16jHwONc8tBCCLm01UyG6ZZ?gv=true" 
+          style={{ border: 0 }} 
+          width="100%" 
+          height="100%" 
+          frameBorder="0"
+          className="relative z-10 w-full h-full"
+      ></iframe>
+
+   </div>
+</div>
       </main>
 
       {/* Minimal Footer */}

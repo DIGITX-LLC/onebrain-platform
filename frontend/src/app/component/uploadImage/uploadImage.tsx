@@ -50,7 +50,7 @@ export default function UploadImage() {
                             <ArrowUpRight className="h-5 w-5" />
                         </button> */}
                         <a 
-                             href="https://dev.onebrain.app/" 
+                             href="https://ai.onebrain.app/login" 
                             target="_blank" 
                             rel="noopener noreferrer"
                           >
