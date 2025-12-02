@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import OpenAIAchievement from "../about/OpenAIAchievement";
 
 // Move mediaImages outside component to prevent re-creation on each render
 const mediaImages = [
@@ -137,38 +138,34 @@ const MediaGallery: React.FC = () => {
 
   // Loading placeholder component
   const LoadingPlaceholder = ({ className }: { className?: string }) => (
-    <div className={`animate-pulse bg-gradient-to-r from-gray-800 to-gray-700 rounded-xl flex items-center justify-center ${className}`}>
-      <div className="text-gray-400 text-center">
-        <div className="w-8 h-8 border-2 border-gray-400 border-t-transparent rounded-full animate-spin mx-auto mb-2"></div>
-        <div className="text-sm">Loading...</div>
+    <div className={`animate-pulse bg-[#1A1B2E] border border-white/10 rounded-[2rem] flex items-center justify-center ${className}`}>
+      <div className="text-gray-500 text-center">
+        <div className="w-8 h-8 border-2 border-gray-500 border-t-transparent rounded-full animate-spin mx-auto mb-2"></div>
+        <div className="text-xs font-medium">Loading...</div>
       </div>
     </div>
   );
 
   if (isInitialLoading) {
     return (
-      <section className="py-12 px-6 min-h-[80vh] flex items-center justify-center">
+      <section className="py-16 px-6 min-h-[600px] flex items-center justify-center overflow-hidden">
         <div className="container mx-auto max-w-6xl">
           {/* Header Section */}
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 tracking-tight">
-              Success and Achievement
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+              Success & <span className="bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 text-transparent bg-clip-text">Achievement</span>
             </h2>
-            <p className="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+            <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
               Success and achievement embody the pursuit of goals through dedication and resilience, 
               reflecting personal growth and lasting impact.
             </p>
           </div>
 
           {/* Loading State */}
-          <div className="relative flex items-center justify-center min-h-[500px] md:min-h-[600px] lg:min-h-[700px]">
+          <div className="relative flex items-center justify-center h-[400px]">
             <div className="relative">
               {/* Main loading placeholder */}
-              <LoadingPlaceholder className="w-[280px] h-[350px] md:w-[320px] md:h-[400px] lg:w-[360px] lg:h-[450px] shadow-2xl" />
-              
-              {/* Side loading placeholders */}
-              <LoadingPlaceholder className="absolute top-2 -left-32 w-[240px] h-[300px] md:w-[280px] md:h-[350px] lg:w-[300px] lg:h-[380px] opacity-50 blur-sm" />
-              <LoadingPlaceholder className="absolute top-2 -right-32 w-[240px] h-[300px] md:w-[280px] md:h-[350px] lg:w-[300px] lg:h-[380px] opacity-50 blur-sm" />
+              <LoadingPlaceholder className="w-[280px] h-[350px] md:w-[320px] md:h-[400px] lg:w-[340px] lg:h-[420px] shadow-2xl" />
             </div>
           </div>
         </div>
@@ -177,23 +174,25 @@ const MediaGallery: React.FC = () => {
   }
 
   return (
-    <section className="py-12 px-6 min-h-[80vh] flex items-center justify-center">
+    <section className="py-16 px-6 overflow-hidden">
       <div className="container mx-auto max-w-6xl">
         {/* Header Section */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 tracking-tight">
-            Success and Achievement
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+            Success & <span className="bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 text-transparent bg-clip-text">Achievement</span>
           </h2>
-          <p className="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-            Success and achievement embody the pursuit of goals through dedication and resilience, 
-            reflecting personal growth and lasting impact.
+          <p className="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed">
+            OneBrain is the <span className="text-gray-200 font-medium">first-ever Bangladeshi AI startup</span> offering multi-LLM capabilities in a single platform. Our mission is to make advanced Artificial Intelligence <span className="text-gray-200 font-medium">affordable and accessible for everyone</span> in the nation. OneBrain is a proud product of <span className="text-white font-medium">DigitX LLC</span>, headquartered in New York, operating in the global tech market since <span className="text-white font-medium">2019</span> with offices in multiple countries beyond Bangladesh.
           </p>
         </div>
+
+        {/* OpenAI Achievement - Top of Section */}
+        <OpenAIAchievement />
 
         {/* Carousel Section */}
         <div className="relative">
           {/* Main Carousel Container with overlapping cards effect */}
-          <div className="relative flex items-center justify-center min-h-[500px] md:min-h-[600px] lg:min-h-[700px]">
+          <div className="relative flex items-center justify-center h-[450px] md:h-[500px] perspective-1000">
             {/* Background cards for depth effect */}
             <div className="absolute inset-0 flex items-center justify-center">
               {extendedImages.map((image, index) => {
@@ -207,43 +206,43 @@ const MediaGallery: React.FC = () => {
                 let zIndex = 0;
                 let opacity = 0.3;
                 let scale = 0.8;
-                let blur = 'blur-sm';
+                let filter = 'brightness(0.5) blur(4px)';
                 
                 if (offset === 0) {
                   // Current/active card
-                  transform = 'translateX(0) translateY(0) rotateY(0deg)';
+                  transform = 'translateX(0) translateZ(0) rotateY(0deg)';
                   zIndex = 30;
                   opacity = 1;
                   scale = 1;
-                  blur = '';
+                  filter = 'brightness(1) blur(0px)';
                 } else if (offset === 1) {
                   // Next card (right)
-                  transform = 'translateX(150px) translateY(15px) rotateY(-15deg)';
+                  transform = 'translateX(140px) translateZ(-50px) rotateY(-10deg)';
                   zIndex = 20;
-                  opacity = 0.7;
-                  scale = 0.9;
-                  blur = 'blur-[1px]';
+                  opacity = 0.6;
+                  scale = 0.85;
+                  filter = 'brightness(0.6) blur(2px)';
                 } else if (offset === -1) {
                   // Previous card (left)
-                  transform = 'translateX(-150px) translateY(15px) rotateY(15deg)';
+                  transform = 'translateX(-140px) translateZ(-50px) rotateY(10deg)';
                   zIndex = 20;
-                  opacity = 0.7;
-                  scale = 0.9;
-                  blur = 'blur-[1px]';
+                  opacity = 0.6;
+                  scale = 0.85;
+                  filter = 'brightness(0.6) blur(2px)';
                 } else if (offset === 2) {
                   // Far right card
-                  transform = 'translateX(250px) translateY(25px) rotateY(-25deg)';
+                  transform = 'translateX(240px) translateZ(-100px) rotateY(-20deg)';
                   zIndex = 10;
-                  opacity = 0.4;
-                  scale = 0.8;
-                  blur = 'blur-sm';
+                  opacity = 0.3;
+                  scale = 0.75;
+                  filter = 'brightness(0.4) blur(4px)';
                 } else if (offset === -2) {
                   // Far left card
-                  transform = 'translateX(-250px) translateY(25px) rotateY(25deg)';
+                  transform = 'translateX(-240px) translateZ(-100px) rotateY(20deg)';
                   zIndex = 10;
-                  opacity = 0.4;
-                  scale = 0.8;
-                  blur = 'blur-sm';
+                  opacity = 0.3;
+                  scale = 0.75;
+                  filter = 'brightness(0.4) blur(4px)';
                 }
 
                 const isImageLoaded = loadedImages.has(image.url);
@@ -251,16 +250,19 @@ const MediaGallery: React.FC = () => {
                 return (
                   <div
                     key={`${image.url}-${index}`}
-                    className={`absolute ease-out ${blur} ${
-                      isTransitioning ? 'transition-all duration-700' : ''
-                    }`}
+                    className={`absolute ease-out transition-all duration-700`}
                     style={{
                       transform: `${transform} scale(${scale})`,
                       zIndex,
                       opacity,
+                      filter
                     }}
                   >
-                    <div className="relative w-[280px] h-[350px] md:w-[320px] md:h-[400px] lg:w-[360px] lg:h-[450px] rounded-xl overflow-hidden shadow-2xl">
+                    <div className="relative w-[260px] h-[360px] md:w-[300px] md:h-[420px] lg:w-[320px] lg:h-[460px] rounded-[2rem] overflow-hidden shadow-2xl bg-[#0F0F13] border border-white/10 group">
+                      
+                      {/* Glossy shine effect */}
+                      <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none"></div>
+
                       {!isImageLoaded ? (
                         <LoadingPlaceholder className="w-full h-full" />
                       ) : (
@@ -268,10 +270,10 @@ const MediaGallery: React.FC = () => {
                           src={image.url}
                           alt={image.alt}
                           fill
-                          className="object-contain transition-transform duration-700"
+                          className="object-cover transition-transform duration-700"
                           priority={absOffset === 0} // Only prioritize the current image
-                          quality={85} // Optimize quality vs size
-                          sizes="(max-width: 768px) 280px, (max-width: 1024px) 320px, 360px"
+                          quality={90}
+                          sizes="(max-width: 768px) 280px, (max-width: 1024px) 320px, 340px"
                           onLoad={() => {
                             // Ensure image is marked as loaded even if preload didn't work
                             setLoadedImages(prev => new Set([...prev, image.url]));
@@ -290,4 +292,4 @@ const MediaGallery: React.FC = () => {
   );
 };
 
-export default MediaGallery; 
+export default MediaGallery;
