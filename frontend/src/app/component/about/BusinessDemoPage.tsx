@@ -312,53 +312,56 @@ export default function BusinessDemoPage() {
          </div>
       </section>
 
-      {/* BOOKING SECTION */}
-      <section id="booking-calendar" className="py-20 bg-[#0A0A0F]">
-         <div className="container mx-auto px-6">
-            <div className="max-w-6xl mx-auto bg-[#030205] border border-white/10 rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
-                {/* Left: Call to Action */}
-                <div className="p-10 md:p-16 md:w-2/5 bg-gradient-to-br from-[#1A1B2E] to-[#030205] flex flex-col justify-center">
-                    <h2 className="text-3xl font-bold text-white mb-6">Ready to Launch?</h2>
-                    <p className="text-gray-300 mb-8 leading-relaxed">
-                        Schedule a demo with our <strong>Dhaka-based team</strong>. We'll show you the admin panel, discuss <strong>BDT pricing</strong>, and help you plan your launch.
-                    </p>
-                    
-                    <div className="space-y-4">
-                        <div className="flex items-center gap-3">
-                            <CheckCircle className="w-5 h-5 text-green-400" />
-                            <span className="text-sm text-gray-300">Full Platform Walkthrough</span>
-                        </div>
-                        <div className="flex items-center gap-3">
-                            <CheckCircle className="w-5 h-5 text-green-400" />
-                            <span className="text-sm text-gray-300">BDT Pricing & Local Support</span>
-                        </div>
-                        <div className="flex items-center gap-3">
-                            <CheckCircle className="w-5 h-5 text-green-400" />
-                            <span className="text-sm text-gray-300">Payment Gateway Setup Guide</span>
-                        </div>
-                    </div>
-                </div>
+     {/* BOOKING SECTION */}
+<section id="booking-calendar" className="py-20 bg-[#0A0A0F]">
+  <div className="container mx-auto px-6">
+    <div className="max-w-6xl mx-auto bg-[#030205] border border-white/10 rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row items-stretch">
+      
+      {/* Left: Call to Action */}
+      <div className="p-10 md:p-16 md:w-2/5 bg-gradient-to-br from-[#1A1B2E] to-[#030205] flex flex-col justify-center">
+        <h2 className="text-3xl font-bold text-white mb-6">Ready to Launch?</h2>
+        <p className="text-gray-300 mb-8 leading-relaxed">
+          Schedule a demo with our <strong>Dhaka-based team</strong>. We'll show you the admin panel, discuss <strong>BDT pricing</strong>, and help you plan your launch.
+        </p>
 
-                {/* Right: Calendar */}
-                <div className="md:w-3/5 h-[600px] relative bg-[#0F0F13]">
-                    <div className="absolute inset-0 flex items-center justify-center z-0">
-                        <div className="flex flex-col items-center gap-3 opacity-50">
-                            <div className="w-8 h-8 rounded-full border-2 border-white/20 border-t-white animate-spin"></div>
-                            <p className="text-gray-600 text-xs">Loading Calendar...</p>
-                        </div>
-                    </div>
-                    <iframe 
-                        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2X_example_placeholder?gv=true" 
-                        style={{border: 0}} 
-                        width="100%" 
-                        height="100%" 
-                        className="relative z-10 w-full h-full bg-[#0F0F13]"
-                        frameBorder="0"
-                    ></iframe>
-                </div>
-            </div>
-         </div>
-      </section>
+        <div className="space-y-4">
+          <div className="flex items-center gap-3">
+            <CheckCircle className="w-5 h-5 text-green-400" />
+            <span className="text-sm text-gray-300">Full Platform Walkthrough</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <CheckCircle className="w-5 h-5 text-green-400" />
+            <span className="text-sm text-gray-300">BDT Pricing & Local Support</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <CheckCircle className="w-5 h-5 text-green-400" />
+            <span className="text-sm text-gray-300">Payment Gateway Setup Guide</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Right: Calendar */}
+      <div className="md:w-3/5 h-[600px] md:h-[700px] lg:h-[800px] relative bg-[#0F0F13] shadow-black/30 shadow-[inset_10px_0_20px_-10px_rgba(0,0,0,0.5)]">
+        {/* Loading Indicator */}
+        <div className="absolute inset-0 bg-white shadow-black/30 shadow-[inset_10px_0_20px_-10px_rgba(0,0,0,0.5)] flex items-center justify-center z-0">
+          <div className="flex flex-col  items-center gap-3 opacity-50">
+            <div className="w-8 h-8 rounded-full border-2 border-white/20 border-t-white animate-spin"></div>
+            <p className="text-white text-xs">Loading Calendar...</p>
+          </div>
+        </div>
+
+        {/* Iframe */}
+        <iframe
+          src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1QS2IclaPa_-oQ1QXscXpR8Tq0IbT5nARDwN6CWZ0SevrEN9ZRD16jHwONc8tBCCLm01UyG6ZZ?gv=true"
+          className="absolute inset-0 w-full h-full"
+          style={{ border: 0 }}
+        ></iframe>
+        {/* <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1QS2IclaPa_-oQ1QXscXpR8Tq0IbT5nARDwN6CWZ0SevrEN9ZRD16jHwONc8tBCCLm01UyG6ZZ?gv=true" style={{ border: 0 }} width="100%" height="600" frameBorder="0"></iframe> */}
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Footer */}
       <footer className="py-8 text-center text-xs text-gray-600 border-t border-white/5">
