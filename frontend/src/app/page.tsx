@@ -15,6 +15,15 @@ import DynamicButton from './component/about/DynamicButton';
 import MobileCountdown from './component/about/MobileCountdown';
 import MediaGallery from './component/mediaGallery/MediaGallery';
 import UploadImage from "./component/uploadImage/uploadImage";
+import ImageStudio from "./component/ImageStudio";
+import AudioStudio from "./component/AudioStudio";
+import ModernHeroOrbit from './component/ModernHeroOrbit';
+import ComparisonSection from './component/ComparisonSection';
+import BusinessSection from './component/BusinessSection';
+import PaymentPartners from './component/PaymentPartners';
+import Footer from './component/Footer';
+import PersonalModels from './component/PersonalModels';
+import AffiliateSection from './component/AffiliateSection';
 
 // Update Card Component with optimized image loading
 interface UpdateData {
@@ -33,10 +42,10 @@ const UpdateCard: React.FC<{ update: UpdateData; index: number }> = ({ update, i
 
   return (
     <div
-      className="relative p-8 rounded-2xl text-center shadow-lg transition-transform transform hover:scale-105 border-2 border-[#656FE2] bg-gradient-to-b from-black to-[#0E1747]"
+      className="relative p-8 rounded-3xl text-center shadow-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-primary/20 glass-card group overflow-hidden"
     >
       {/* Animated Border Wrapper */}
-      <div className=" animate-border"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-transparent to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
       {/* Card Content */}
       <div className="relative z-10">
@@ -244,6 +253,7 @@ export default function Home() {
         { id: "featuresSection", name: "ai-models" },
         { id: "oneBrainPromoSection", name: "pricing" },
         { id: "updatesSection", name: "brain-upgrading-log" },
+        { id: "mobileAppSection", name: "mobile-app" },
         { id: "faqSection", name: "contact-us" },
       ];
 
@@ -296,34 +306,34 @@ export default function Home() {
 
   const updates = [
     {
-      version: "1.5.5.1",
+      version: "1.5.6",
       status: "Released",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released-image.svg",
       features: [
-        "Added Google’s latest AI video generation model Veo3.1.",
-        "Added Google’s low-cost video + audio generation model Veo3.1 Fast.",
-        "Introduced new text-to-video and image-to-video model Pixverse 5.",
-        "Integrated fastest and cheapest image generation model Flux.",
-        "Added a new 4K-quality image generation model Seedream-4.",
-        "Enhanced color accuracy across the platform based on user feedback.",
+        "Added new models: ChatGPT 5.1, Grok 4.1 Fast, Google Nano Banana Pro, and Lightricks 2 Fast.",
+        "Enhanced chat outputs to better reflect native tone, clarity, and conversational style.",
+        'Added a one-click "Regenerate Response" button for instant refinement.',
+        "Introduced Dynamic Vision Model Routing for smarter, more accurate attachment analysis.",
+        "Enabled full conversation exports via PDF and Markdown (.md).",
+        "Redesigned the chat bar with a modern capsule style and fixed mobile table scrolling.",
       ],
     },
     {
-      version: "1.5.6",
+      version: "1.5.7",
       status: "In Progress",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress-image.svg",
       features: [
-        "Image generation is implemented on the Conversation chat screen.", 
-        "Improve Overall Chat Response across all the LLM models.",
-        "Changed New Capsule chat bar style matching latest UI in the market.",
+        "Added new AI models Gemini 3 Pro and Perplexity Sonar.", 
+        "Implemented a dashboard for Context Memory Management control.",
+        "Launched the reimagined and refreshed OneBrain website.",
       ],
     },
     {
-      version: "1.5.7",
+      version: "1.5.8",
       status: "Planned",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned.svg",
@@ -331,7 +341,7 @@ export default function Home() {
       features: [
         "Canvas mode implementation with edit Preview and download feature.",
         "Create, edit & download PDF, XLS & DOC files.",
-        "Context Memory management dashboard implemented for control.",
+        
       ],
     },
   ];
@@ -524,21 +534,21 @@ export default function Home() {
 
   return (
     <div
-      className="bg-[#030205] text-white min-h-screen relative"
-      style={{
-        background: 'linear-gradient(0deg, hsla(0, 0%, 0%, 1) 0%, hsla(240, 63%, 10%, 1) 95%, hsla(241, 61%, 26%, 1) 100%)'
-      }}
+      className="text-white min-h-screen relative selection:bg-blue-500/30"
     >
       {/* Navigation Header */}
       <div
-        className={`fixed  ${isSticky ? "" : "absolute"
-          } left-1/2 transform -translate-x-1/2 px-2 sm:px-4  flex z-50  items-center justify-between w-[95%] sm:w-[95%] max-w-7xl transition-all duration-300`}
+        className={`fixed left-1/2 transform -translate-x-1/2 px-2 sm:px-4 flex z-50 items-center justify-between w-[95%] sm:w-[95%] max-w-7xl transition-all duration-500 ease-in-out`}
         style={{
-          top: isSticky ? "8px" : isMobile ? "12px" : "1.5rem",
-          transition: "top 0.3s ease-in-out",
+          top: isSticky ? "16px" : isMobile ? "20px" : "2rem",
         }}
       >
-        <div className={`${(isSticky || isMobile || isTablet) ? "backdrop-blur-[10px] bg-white/5 border border-white/20 rounded-full" : ""} px-2 sm:px-4 py-2 flex items-center justify-between w-full max-w-7xl rounded-full transition-all duration-300`}>
+        <div className={`
+          px-2 sm:px-4 py-3 flex items-center justify-between w-full max-w-7xl rounded-full transition-all duration-500 ease-in-out
+          ${(isSticky || isMobile || isTablet) 
+            ? "glass-card shadow-2xl shadow-black/50 bg-[#0A0A0F]/80 backdrop-blur-xl border border-white/10" 
+            : "bg-transparent border border-transparent"}
+        `}>
 
 
           {/* Logo - Always Left Corner */}
@@ -562,7 +572,7 @@ export default function Home() {
           {showBurgerMenu && (
           <button
             onClick={toggleMenu}
-            className="text-white focus:outline-none p-2 hover:bg-white/20 rounded-full transition-all duration-200 relative z-20 flex-shrink-0"
+            className="text-white focus:outline-none p-2 hover:bg-white/10 rounded-full transition-all duration-200 relative z-20 flex-shrink-0"
             aria-label="Toggle menu"
           >
             {isOpen ? <X size={20} className="sm:w-6 sm:h-6" /> : <Menu size={20} className="sm:w-6 sm:h-6" />}
@@ -570,124 +580,80 @@ export default function Home() {
         )}
           {/* Desktop Navigation - Middle */}
           {!showBurgerMenu && (
-            <nav className={`${isSticky ? ' ' : ' bg-white/5 border border-white/20'}  h-[40px] sm:h-[45px] flex items-center justify-center rounded-full transition-all duration-300`}>
-              <ul className="flex items-center gap-1 xl:gap-2 text-gray-300 px-4">
-                {/* AI Models */}
-                {isActiveSection("ai-models") ? (
-                  <li className="px-1 py-1">
-                    <DynamicButton
-                      label="AI Models"
-                      size="w-auto px-3 xl:px-4 h-[35px] rounded-full font-normal block text-sm"
-                    />
-                  </li>
-                ) : (
-                  <li
-                    className="hover:text-white font-medium transition-all duration-300 cursor-pointer px-3 xl:px-4 py-2 rounded-full hover:bg-white/10"
+            <nav className="hidden md:flex items-center justify-center">
+              <ul className={`flex items-center gap-1 lg:gap-2 rounded-full p-1 transition-all duration-300 ${
+                (isSticky || isMobile || isTablet) 
+                  ? "bg-transparent border-transparent" 
+                  : "bg-white/5 border border-white/5 backdrop-blur-sm"
+              }`}>
+                {/* Navigation Links Helper */}
+                {[
+                  { name: "AI Models", id: "featuresSection", activeId: "ai-models" },
+                  { name: "Pricing", id: "oneBrainPromoSection", activeId: "pricing" },
+                  { name: "Updates", id: "updatesSection", activeId: "brain-upgrading-log" },
+                  { name: "Contact Us", id: "faqSection", activeId: "contact-us" },
+                ].map((item) => (
+                  <li key={item.id}>
+                    <button
                     onClick={(e) => {
                       e.preventDefault();
-                      e.stopPropagation();
-                      console.log("Route clicked");
-                      handleRouteClick("featuresSection");
+                        handleRouteClick(item.id);
                     }}
+                      className={`relative px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 ${
+                        isActiveSection(item.activeId)
+                          ? "text-white bg-white/10 shadow-inner"
+                          : "text-gray-400 hover:text-white hover:bg-white/5"
+                      }`}
                   >
-                    <span className="text-sm">AI Models</span>
+                      {item.name}
+                    </button>
                   </li>
-                )}
+                ))}
 
-                {/* Pricing */}
-                {isActiveSection("pricing") ? (
-                  <li className="px-1 py-1">
-                    <DynamicButton
-                      label="Pricing"
-                      size="w-auto px-3 xl:px-4 h-[35px] rounded-full font-normal block text-sm"
-                    />
-                  </li>
-                ) : (
-                  <li
-                    className="hover:text-white font-medium transition-all duration-300 cursor-pointer px-3 xl:px-4 py-2 rounded-full hover:bg-white/10"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      console.log("Route clicked");
-                      handleRouteClick("oneBrainPromoSection");
-                    }}
+                {/* Business Link */}
+                <li>
+                  <Link
+                    href="/business"
+                    className={`relative px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 block ${
+                      isActiveRoute("/business")
+                        ? "text-white bg-white/10 shadow-inner"
+                        : "text-gray-400 hover:text-white hover:bg-white/5"
+                    }`}
                   >
-                    <span className="text-sm">Pricing</span>
-                  </li>
-                )}
+                    Business
+                  </Link>
+                </li>
 
-                {/* Brain Upgrading Log */}
-                {isActiveSection("brain-upgrading-log") ? (
-                  <li className="px-1 py-1">
-                    <DynamicButton
-                      label="Brain Upgrading Log"
-                      size="w-auto px-3 xl:px-4 h-[35px] rounded-full font-normal block text-sm"
-                    />
-                  </li>
-                ) : (
-                  <li
-                    className="hover:text-white font-medium transition-all duration-300 cursor-pointer px-3 xl:px-4 py-2 rounded-full hover:bg-white/10"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      console.log("Route clicked");
-                      handleRouteClick("updatesSection");
-                    }}
+                {/* Blog Link (Separate because it's a route) */}
+                <li>
+                  <Link
+                    href="/blog"
+                    className={`relative px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 block ${
+                      isActiveRoute("/blog")
+                        ? "text-white bg-white/10 shadow-inner"
+                        : "text-gray-400 hover:text-white hover:bg-white/5"
+                    }`}
                   >
-                    <span className="text-sm">Brain Upgrading Log</span>
-                  </li>
-                )}
-
-                {/* Blog */}
-                {isActiveRoute("/blog") ? (
-                  <li className="px-1 py-1">
-                    <DynamicButton
-                      label="Blog"
-                      size="w-auto px-3 xl:px-4 h-[35px] rounded-full font-normal block text-sm"
-                    />
-                  </li>
-                ) : (
-                  <li className="px-1 py-1">
-                    <Link href="/blog">
-                      <span className="hover:text-white font-medium transition-all duration-300 cursor-pointer px-3 xl:px-4 py-2 rounded-full hover:bg-white/10 text-sm block">
-                        Blog
-                      </span>
+                    Blog
                     </Link>
                   </li>
-                )}
-
-                {/* Contact Us */}
-                {isActiveSection("contact-us") ? (
-                  <li className="px-1 py-1">
-                    <DynamicButton
-                      label="Contact us"
-                      size="w-auto px-3 xl:px-4 h-[35px] rounded-full font-normal block text-sm"
-                    />
-                  </li>
-                ) : (
-                  <li
-                    className="hover:text-white font-medium transition-all duration-300 cursor-pointer px-3 xl:px-4 py-2 rounded-full hover:bg-white/10"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      console.log("Route clicked");
-                      handleRouteClick("faqSection");
-                    }}
-                  >
-                    <span className="text-sm">Contact Us</span>
-                  </li>
-                )}
-
-                {/* Sign In */}
-                <li className="px-1 py-1 ml-2">
-                  <a href="https://ai.onebrain.app/login" rel="noopener noreferrer">
-                    <DynamicButton
-                      label="Sign-In"
-                      size="w-auto px-3 xl:px-4 h-[35px] rounded-full font-normal block text-sm"
-                    />
-                  </a>
-                </li>
               </ul>
+
+              {/* Sign In Button */}
+              <div className="ml-4 pl-4 border-l border-white/10">
+                <a 
+                  href="https://ai.onebrain.app/login" 
+                  rel="noopener noreferrer"
+                  className="group relative inline-flex items-center justify-center px-6 py-2 text-sm font-medium text-white transition-all duration-300 bg-[#1A1B2E] border border-blue-500/30 rounded-full hover:bg-[#232438] hover:border-blue-500/50 hover:shadow-[0_0_20px_-5px_rgba(59,130,246,0.3)] overflow-hidden"
+                >
+                  <span className="relative z-10 flex items-center gap-2">
+                    Sign In
+                    <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
             </nav>
           )}
         </div>
@@ -764,12 +730,12 @@ export default function Home() {
                   )}
                 </li>
 
-                {/* Brain Upgrading Log */}
+                {/* Updates */}
                 <li className="px-5 py-1">
                   {isActiveSection("brain-upgrading-log") ? (
                     <div className="w-full">
                       <DynamicButton
-                        label="Brain Upgrading Log"
+                        label="Updates"
                         size="w-full px-4 h-[45px] rounded-xl font-medium block text-sm"
                       />
                     </div>
@@ -783,12 +749,65 @@ export default function Home() {
                       onClick={(e) => {
                         e.preventDefault();
                         e.stopPropagation();
-                        console.log("Brain Upgrading Log clicked");
+                        console.log("Updates clicked");
                         handleRouteClick("updatesSection");
                       }}
                     >
-                      Brain Upgrading Log
+                      Updates
                     </button>
+                  )}
+                </li>
+
+                {/* Mobile App */}
+                <li className="px-5 py-1">
+                  {isActiveSection("mobile-app") ? (
+                    <div className="w-full">
+                      <DynamicButton
+                        label="Mobile App"
+                        size="w-full px-4 h-[45px] rounded-xl font-medium block text-sm"
+                      />
+                    </div>
+                  ) : (
+                    <button
+                      type="button"
+                      className="w-full text-left px-4 py-3 text-white hover:bg-white/10 transition-all duration-200 cursor-pointer rounded-xl font-medium text-sm"
+                      onMouseDown={(e) => {
+                        e.preventDefault();
+                      }}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        console.log("Mobile App clicked");
+                        handleRouteClick("mobileAppSection");
+                      }}
+                    >
+                      Mobile App
+                    </button>
+                  )}
+                </li>
+
+                {/* Business */}
+                <li className="px-5 py-1">
+                  {isActiveRoute("/business") ? (
+                    <div className="w-full">
+                      <DynamicButton
+                        label="Business"
+                        size="w-full px-4 h-[45px] rounded-xl font-medium block text-sm"
+                      />
+                    </div>
+                  ) : (
+                    <Link
+                      href="/business"
+                      onClick={(e) => {
+                        console.log("Business clicked");
+                        setIsOpen(false);
+                      }}
+                      className="block w-full"
+                    >
+                      <span className="w-full text-left px-4 py-3 text-white hover:bg-white/10 transition-all duration-200 cursor-pointer rounded-xl font-medium text-sm block">
+                        Business
+                      </span>
+                    </Link>
                   )}
                 </li>
 
@@ -857,12 +876,14 @@ export default function Home() {
                       console.log("Sign-in clicked");
                       setIsOpen(false);
                     }}
-                    className="block w-full"
+                    className="group relative w-full flex items-center justify-center px-4 py-3 text-sm font-medium text-white transition-all duration-300 bg-[#1A1B2E] border border-blue-500/30 rounded-xl hover:bg-[#232438] hover:border-blue-500/50 hover:shadow-[0_0_20px_-5px_rgba(59,130,246,0.3)] overflow-hidden"
                   >
-                    <DynamicButton
-                      label="Sign-In"
-                      size="w-full px-4 h-[45px] rounded-xl font-medium block text-sm"
-                    />
+                    <span className="relative z-10 flex items-center gap-2">
+                      Sign In
+                      <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      </svg>
+                    </span>
                   </a>
                 </li>
               </ul>
@@ -874,174 +895,185 @@ export default function Home() {
 
 
         {/* Hero Section */}
-        <section className="min-h-screen container flex flex-col items-center justify-center text-center bg-cover bg-center relative md:pt-24">
-          <div className="relative w-full h-[320px] xs:h-[350px] sm:h-[400px] md:h-[450px] lg:h-[500px] xl:h-[550px] flex flex-col-reverse md:flex-row items-center justify-center px-4 md:gap-8 ">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-28 pb-12 md:pt-36 md:pb-20">
+          {/* Ambient Background Glow */}
+          <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-white/5 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+          
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 items-center justify-items-center">
+            
             {/* Left Side - Text Section */}
-            <div className="flex-1 flex items-center justify-center mt-8 md:mt-0">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-center md:text-left">
-                <span className="text-white">Multiverse of</span>
-                <span className="bg-gradient-to-r from-[#6a9cfb] to-[#b2d2ff] text-transparent bg-clip-text ml-[20px]">AI</span>
-              </h1>
-            </div>
-            {/* Right Side - AI Circle (responsive) - Now appears above on mobile */}
-            <div className="flex-1 flex items-center justify-center relative">
-              <div className="relative w-[260px] h-[260px] xs:w-[280px] xs:h-[280px] sm:w-[320px] sm:h-[320px] md:w-[340px] md:h-[340px]  2xl:w-[420px] 2xl:h-[420px]">
-                {/* SVG for circle border and lines */}
-                <svg viewBox="0 0 100 100" className="absolute left-0 top-0 w-full h-full z-0 pointer-events-none">
-                  <circle cx="50" cy="50" r="42" stroke="#7da6ff" strokeWidth=".5" fill="none" opacity="0.5" />
-                </svg>
-                {/* Central Logo */}
-                <div className="absolute left-1/2 top-[50%] -translate-x-1/2 -translate-y-1/2 z-10 flex items-center justify-center shadow-lg" >
-                  <Image 
-                    className=" xs:w-[200px] xs:h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[380px] xl:h-[380px] 2xl:w-[400px] 2xl:h-[400px] object-contain" 
-                    src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/OpenAI_Playground_2025-05-06_at_12.09.18_1__1_-removebg-preview.png" 
-                    alt="OneBrain"
-                    width={400}
-                    height={400}
-                  />
-                </div>
-                {/* 8 AI Icons in a circle with glow */}
-                {[
-                  { src: "/assets/meta.svg", alt: 'Meta' },
-                  { src: "/assets/grok_beamanimation.svg", alt: 'Grok' },
-                  { src: "/assets/deepseek-color.svg", alt: 'Deepseek' },
-                  { src: "/assets/models/Anthropic Ai.svg", alt: 'Claude' },
-                  { src: "/assets/models/qwen.svg", alt: 'Qwen' },
-                  { src: "/assets/gemini-color.svg", alt: 'Gemini' },
-                  { src: "/assets/gpt_beam.svg", alt: 'GPT' },
-                  { src: "/assets/models/perplexity.svg", alt: 'Perplexity' },
-                  { src: "/assets/models/mistral.svg", alt: 'Mistral' },
-                ].map((icon, i) => {
-                  const angle = (i / 8) * 2 * Math.PI;
-                  const r = 42; // Circle radius
-                  const iconSize = 13; // Icon size percentage
-                  const x = 50 + Math.cos(angle) * r;
-                  const y = 50 + Math.sin(angle) * r;
-                  return (
-                    <div
-                      key={i}
-                      className="absolute"
-                      style={{
-                        left: `calc(${x}% - ${iconSize / 2}%)`,
-                        top: `calc(${y}% - ${iconSize / 2}%)`,
-                        width: `${iconSize}%`,
-                        height: `${iconSize}%`,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        zIndex: 2,
-                      }}
-                    >
-                      {/* Glow */}
-                      <div style={{
-                        position: 'absolute',
-                        left: 0,
-                        top: 0,
-                        width: '100%',
-                        height: '100%',
-                        borderRadius: '50%',
-                        background: 'radial-gradient(circle, rgba(255,255,255,.9) 60%, transparent 100%)',
-                        filter: 'blur(2px)',
-                        zIndex: 1,
-                      }} />
-                      {/* Icon */}
-                      <Image src={icon.src} alt={icon.alt} width={40} height={40} style={{ width: '90%', height: '90%', position: 'relative', zIndex: 2, objectFit: 'contain' }} />
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="flex flex-col items-center md:items-start justify-center text-center md:text-left z-10 max-w-xl w-full order-2 md:order-1"
+            >
+              <div className="inline-flex items-center px-3 py-1 rounded-full border border-white/5 bg-white/[0.03] text-xs font-medium text-gray-400 mb-6 backdrop-blur-sm">
+                <span className="flex h-2 w-2 rounded-full bg-green-500/80 mr-2 animate-pulse"></span>
+                v1.5.5.1 Now Live
                     </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-          <div className="pointer-events-auto mt-10 md:mt-0 mb-8 xs:mb-10 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24">
+              
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight mb-6">
+                <span className="text-gray-300 drop-shadow-md">All Top AI Models</span>
+                <span className="block mt-2 bg-gradient-to-b from-gray-400 via-gray-500 to-gray-700 text-transparent bg-clip-text pb-2 drop-shadow-sm">One Subscription</span>
+              </h1>
+              <p className="text-lg md:text-xl text-gray-500 mb-8 max-w-lg leading-relaxed font-light">
+                Ideate with <span className="text-gray-400 font-medium">Chat</span> models, visualize with <span className="text-gray-400 font-medium">Image & Video</span> tools, and tell stories with <span className="text-gray-400 font-medium">Audio</span> generation. We bring all the latest AI you need for daily use into one platform. Save money by replacing multiple expensive subscriptions with one simple, affordable plan.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 w-full justify-center md:justify-start">
             <a
               href="https://ai.onebrain.app/login"
               rel="noopener noreferrer"
-              className="inline-block  cursor-pointer touch-manipulation select-none"
-              style={{
-                position: "relative",
+                  className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-full bg-[#1A1B2E] text-gray-200 border border-white/10 px-8 font-medium transition-all duration-300 hover:bg-[#232438] hover:text-white hover:border-white/20 hover:shadow-[0_0_20px_-5px_rgba(255,255,255,0.1)] focus:outline-none"
+                >
+                  <span className="mr-2">Get Started</span>
+                  <ArrowUpRight className="h-5 w-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+                </a>
+                
+                <button 
+                  onClick={() => scrollToSection("featuresSection")}
+                  className="inline-flex h-12 items-center justify-center rounded-full border border-white/5 bg-white/[0.03] px-8 font-medium text-gray-400 backdrop-blur-sm transition-all duration-300 hover:bg-white/5 hover:text-gray-200 hover:border-white/10"
+                >
+                  Explore Models
+                </button>
+        </div>
+            </motion.div>
 
-                pointerEvents: "auto",
-                touchAction: "manipulation",
-                WebkitTouchCallout: "none",
-                WebkitUserSelect: "none",
-                userSelect: "none",
-              }}
+            {/* Right Side - AI Circle */}
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+              className="flex items-center justify-center w-full order-1 md:order-2"
             >
-              <DynamicButton
-                label="Get Started"
-                size="w-[120px] h-[45px] rounded-full font-normal block"
-              />
-            </a>
-          </div>
+               <ModernHeroOrbit />
+            </motion.div>
+        </div>
         </section>
-
-        {/* Mobile App Countdown Section */}
-        <MobileCountdown />
-
-        {/* Trending Section */}
-        <div className="container " id="vo3TrendingSection">
-          <Vo3TrendingSection />
-        </div>
         
+        {/* Comparison Section */}
+        <ComparisonSection />
 
-        {/*  sora upload image ection*/}
-        <div className="container ">
-             <UploadImage />
-          
-        </div>
-        
-        {/* Features Section */}
+        {/* Users Section (Universities, MNCs, Freelancers) */}
         <section
-          id="featuresSection"
-          className="py-16 px-6   mx-auto relative container"
+          className="py-16 md:py-20 container mx-auto relative"
         >
-          <div className="py-6 rounded-lg text-center">
-            <h2 className="md:text-4xl text-xxl font-semibold text-white">
-              Revolutionizing the workflow for thousands of users
+          <div className="text-center max-w-4xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight leading-tight">
+              The Best Platform for <span className="bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 text-transparent bg-clip-text">Students, AI Creators & Everyone</span>
             </h2>
-            <p className="text-gray text-2xl mt-2 mb-8">Powered by</p>
+            <p className="text-gray-400 text-lg md:text-xl font-light max-w-3xl mx-auto">
+              Empowering <span className="text-gray-200 font-medium">students</span>, teachers, medical professionals, freelancers, and anyone who wants to adopt AI. OneBrain scales with you, from daily tasks to complex industry workflows.
+            </p>
 
-            {/* Logo Slider */}
-            <div className="relative overflow-hidden mt-6 w-full container">
-              <div className="flex animate-infinite-scroll space-x-10" style={{ width: 'max-content', minWidth: '100%' }}>
-                {allLogo.map((logo, index) => (
-                  <Image
+            {/* User Groups Ticker */}
+            <div className="relative overflow-hidden mt-16 w-full">
+              <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-[#030205] to-transparent z-10"></div>
+              <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-[#030205] to-transparent z-10"></div>
+              
+              <div className="flex animate-infinite-scroll space-x-6 md:space-x-10 w-max">
+                {[
+                  // Universities
+                  "BUET", "Dhaka University", "North South University", "BRAC University", "AUST", "IUT",
+                  // Companies
+                  "Grameenphone", "Robi", "Banglalink", "Pathao", "Bkash", "Samsung",
+                  // Freelance/Global
+                  "Upwork Top Rated", "Fiverr Pro", "Toptal"
+                ].map((name, index) => (
+                  <div 
                     key={index}
-                    src={logo.src}
-                    alt={logo.name}
-                    width={40}
-                    height={40}
-                    className="h-10 w-auto flex-shrink-0"
-                  />
+                    className="flex items-center justify-center bg-[#1A1B2E]/50 px-6 py-3 rounded-full backdrop-blur-md border border-white/5 hover:border-white/20 transition-all duration-300 group"
+                  >
+                    <span className="text-gray-400 font-medium text-sm md:text-base group-hover:text-gray-200 whitespace-nowrap">
+                      {name}
+                    </span>
+                  </div>
+                ))}
+                 {/* Duplicate for smooth loop */}
+                 {[
+                  "BUET", "Dhaka University", "North South University", "BRAC University", "AUST", "IUT",
+                  "Grameenphone", "Robi", "Banglalink", "Pathao", "Bkash", "Samsung",
+                  "Upwork Top Rated", "Fiverr Pro", "Toptal"
+                ].map((name, index) => (
+                  <div 
+                    key={`dup-${index}`} 
+                    className="flex items-center justify-center bg-[#1A1B2E]/50 px-6 py-3 rounded-full backdrop-blur-md border border-white/5 hover:border-white/20 transition-all duration-300 group"
+                  >
+                    <span className="text-gray-400 font-medium text-sm md:text-base group-hover:text-gray-200 whitespace-nowrap">
+                      {name}
+                    </span>
+                  </div>
                 ))}
               </div>
             </div>
           </div>
         </section>
 
-        {/* Pricing segment Section */}
-        <div className="">
-          <h2 className="md:text-4xl text-2xl   text-white text-center flex items-center justify-center gap-2">
-            Be The AI <Image src="/assets/pro.svg" alt="pro" width={64} height={64} className="w-16 h-16" />
+        {/* Capabilities Header - Bridging Ticker and Feature Sections */}
+        <div id="featuresSection" className="container mx-auto px-4 text-center pt-12 pb-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="text-blue-400 font-medium tracking-wider uppercase text-sm mb-3 block">Unlimited Capabilities</span>
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
+              Your All-in-One Creative Studio
           </h2>
-
+            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+              Switch seamlessly between the world's best AI models for writing, coding, and cinematic video generation.
+            </p>
+          </motion.div>
         </div>
-        <div id="oneBrainPromoSection" className="mt-10">
-          <PricingAbout
 
+        {/* Trending Section (Chat Capability) */}
+        <section className="container py-6 md:py-12" id="vo3TrendingSection">
+          <Vo3TrendingSection />
+        </section>
+        
+        {/* Image Capability */}
+        <section className="container py-6 md:py-12">
+             <ImageStudio />
+        </section>
+
+        {/*  Sora / Video Capability */}
+        <section className="container py-6 md:py-12">
+             <UploadImage />
+        </section>
+
+        {/* Audio Capability */}
+        <section className="container py-6 md:py-12">
+             <AudioStudio />
+        </section>
+
+        {/* Personal Models Section */}
+        <PersonalModels />
+        
+        {/* Pricing segment Section */}
+        <section id="oneBrainPromoSection" className="py-16 md:py-20 container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-5xl font-bold text-white flex items-center justify-center gap-3">
+              Be The AI <Image src="/assets/pro.svg" alt="pro" width={80} height={40} className="h-12 w-auto" />
+            </h2>
+            <p className="mt-6 text-gray-400 text-lg max-w-2xl mx-auto">Unlock premium features and access the most powerful AI models without limits.</p>
+        </div>
+
+          <PricingAbout
             topUpPlans={[]}
             currentPlan={null}
             location="bd"
             handleSelectPlan={(params) => console.log(params)}
           />
-        </div>
+        </section>
 
         {/* Updates Section */}
         <section
           id="updatesSection"
-          className="py-16 px-6 max-w-6xl mx-auto text-white container"
+          className="py-12 px-6 max-w-6xl mx-auto text-white container"
         >
-          <h2 className="md:text-4xl text-3xl font-bold text-center mb-12">
+          <h2 className="md:text-4xl text-3xl font-bold text-center mb-10 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-500 text-transparent bg-clip-text">
             Brain Upgrading Log
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -1051,43 +1083,11 @@ export default function Home() {
           </div>
         </section>
 
-        {/* join comunity Section */}
-        <div className="flex justify-center items-center gap-4 container">
-          <a
-            href="https://facebook.com/groups/2238159246577852/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-6 py-3  text-lg  bg-[linear-gradient(360deg,_hsla(235,68%,64%,1)_0%,_hsla(240,100%,27%,1)_73%)] border border-[#656FE2] text-white rounded-full font-medium shadow-md focus:outline-none"
-          >
-            Join Facebook community
-            <ArrowUpRight size={20} />
-          </a>
+        {/* Mobile App Countdown Section */}
+        <div id="mobileAppSection" className="py-10 md:py-16 relative z-10">
+          <MobileCountdown />
         </div>
 
-        {/* Partners Section */}
-        <section className="py-16 px-6 container mx-auto ">
-          <h2 className="md:text-4xl text-xxl font-300 text-center mb-12 ">
-            Trusted by outstanding teams worldwide
-          </h2>
-          <div className="relative overflow-hidden mt-6 w-full">
-            <div
-              ref={scrollRef}
-              className="overflow-hidden flex justify-center items-center space-x-10"
-              style={{ width: 'max-content', minWidth: '100%' }}
-            >
-              {trustedByArray.map((logo, index) => (
-                <Image
-                  key={index}
-                  src={logo.src}
-                  alt={logo.name}
-                  width={40}
-                  height={40}
-                  className="h-10 w-auto flex-shrink-0"
-                />
-              ))}
-            </div>
-          </div>
-        </section>
         {/* FAQ Section */}
         <div>
           <FaqSection />
@@ -1096,195 +1096,11 @@ export default function Home() {
         {/* Media Gallery Section */}
         <MediaGallery />
 
-        {/* Payment Partner section */}
-        <section className="py-8 px-6 container md:mb-10">
-          <h2 className="md:text-4xl text-xxl font-bold text-center mb-12">
-            Payment Partners
-          </h2>
-          <div className="relative overflow-hidden md:mt-6 w-full">
-            <Image src="/assets/payment_partner.svg" alt="partner logo" width={1200} height={300} className="w-full" />
-          </div>
-        </section>
-
-        {/* social media section */}
-        <section className=" flex container items-center">
-          <h2 className="text-base font-semibold text-white mr-5">
-            Follow Us
-          </h2>
-          <div className="">
-            <div className="flex items-center gap-4 ">
-              <a
-                href="https://facebook.com/groups/2238159246577852/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src="/assets/about/Frame.svg"
-                  alt="Facebook"
-                  width={20}
-                  height={20}
-                  className="w-5 h-5"
-                />
-              </a>
-              <a
-                href="https://wa.me/8801988121220"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-5 h-5"
-              >
-                <Image
-                  src="/assets/Frame (3).svg"
-                  alt="WhatsApp"
-                  width={20}
-                  height={20}
-                  className="w-5 h-5"
-                />
-              </a>
-            </div>
-          </div>
-        </section>
+        {/* Payment Partner & Socials Section */}
+        <PaymentPartners />
 
         {/* Footer Section */}
-        <footer className="py-10 px-6 relative text-white">
-          {/* Spotlight Effect */}
-          <div
-            onMouseMove={handleMouseMove}
-            ref={boxWrapper}
-            className="group relative rounded-lg  overflow-hidden w-full mx-auto"
-          >
-            <div
-              className="pointer-events-none absolute opacity-0 z-50 rounded-lg w-full h-full group-hover:opacity-100 transition duration-300"
-              style={{
-                background: `
-              radial-gradient(
-                250px circle at ${overlayColor.x}px ${overlayColor.y}px,
-                rgba(255, 255, 255, 0.137),
-                transparent 80%
-              )
-            `,
-              }}
-            />
-
-            <div className="container mx-auto border-t border-[#F1F3F414] pt-10 flex flex-col md:flex-row justify-between items-start text-white">
-              {/* Left Section - Branding */}
-              <div>
-                {/* Tagline */}
-                <Image
-                  src="https://digitxevents.com/wp-content/uploads/2025/07/Multiverse-of-AI.svg"
-                  alt="Multiverse of AI"
-                  width={200}
-                  height={24}
-                  className="mt-1 h-6 w-auto"
-                />
-
-                {/* Contact */}
-                <div className="relative">
-                  <p className="text-white mt-2">Contact: +880 1988121220</p>
-                </div>
-
-                {/* Address */}
-                <p className="text-white text-sm">
-                  Level 8, MTB Building, Software Technology Park,
-                </p>
-                <p className="text-white text-sm">Jashore-7400, Bangladesh</p>
-
-                {/* Copyright */}
-                <p className="text-sm text-white mt-2 flex items-center gap-1">
-                  © 2025 <span>OneBr<span style={{ color: '#3FBFF4' }}>ai</span>n</span> By
-                  <a
-                    href="https://digitxgroup.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Image
-                      src="https://digitxevents.com/wp-content/uploads/2025/07/digitx_logo.png"
-                      alt="DIGITX"
-                      width={60}
-                      height={16}
-                      className="h-4 w-auto inline-block"
-                    />
-                  </a>
-                </p>
-              </div>
-
-              {/* Center Section - Product */}
-              <div className="mt-6 md:mt-0">
-                <h4 className="text-[#60A5FA] font-normal">Product</h4>
-                <ul className="text-white mt-2 space-y-1">
-                  <li>
-                    <button
-                      onClick={() => scrollToSection("vo3TrendingSection")}
-                      className="hover:text-white transition text-left"
-                    >
-                      What&apos;s New
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      onClick={() => scrollToSection("oneBrainPromoSection")}
-                      className="hover:text-white transition text-left"
-                    >
-                      Pricing and Plans
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      onClick={() => scrollToSection("updatesSection")}
-                      className="hover:text-white transition text-left"
-                    >
-                      Features Overview
-                    </button>
-                  </li>
-                  <li>
-                    <Link
-                      href="/blog"
-                      className="hover:text-white transition"
-                    >
-                      Blog
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Right Section - Company */}
-              <div className="mt-6 md:mt-0">
-                <h4 className="text-[#60A5FA] font-normal">Company</h4>
-                <ul className="text-white mt-2 space-y-1">
-                  <li>
-                    <button
-                      onClick={() => scrollToSection("faqSection")}
-                      className="hover:text-white transition text-left"
-                    >
-                      FAQ
-                    </button>
-                  </li>
-                  <li>
-                    <a href="https://ai.onebrain.app/terms" className="hover:text-white transition">
-                      Terms of Service
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://ai.onebrain.app/privacy-policy"
-                      className="hover:text-white transition"
-                    >
-                      Privacy Policy
-                    </a>
-                  </li>
-                  <li>
-                    <button
-                      onClick={() => scrollToSection("faqSection")}
-                      className="hover:text-white transition text-left"
-                    >
-                      Contact
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </footer>
+        <Footer />
       </div> </div>
   );
 }

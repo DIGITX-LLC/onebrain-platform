@@ -1,5 +1,5 @@
 "use client";
-import { Star, Zap, Crown, Sparkles, CheckCircle2 } from "lucide-react";
+import { Star, Zap, Crown, Sparkles, CheckCircle2, Check } from "lucide-react";
 import Image from "next/image";
 
 // Import icons for AI models and tools
@@ -15,26 +15,30 @@ const AIModelIcons: Record<string, string> = {
   qwenBlack: '/assets/models/qwen-black.svg',
   alimAiWhite: '/assets/models/AlimAi-w.svg',
   kontextRestore: '/assets/models/flux-w.svg'
+
 };
 
 const AIToolsIcons: Record<string, string> = {
   imageXWhite: '/assets/models/ImageX White.png',
   fluxWhite: '/assets/models/flux-w.svg',
+  seedream:'/assets/models/SeeDream 4.0 Logo.png',
   klingWhite: '/assets/models/kling-white.svg',
   veo3: '/assets/models/veo3-black.png',
   veo3Black: '/assets/models/veo3-black.png',
   vGenWhite: '/assets/models/vGen-white.svg',
   seedanceWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/seedance-logo.png', // Using vGen icon for Seedance temporarily
-  hailou: '/assets/models/hailuo-color.png',
+  hailuo: '/assets/models/hailuo-color.png',
   wanWhite: '/assets/models/qwen-black.svg',
   voiceWhite: '/assets/models/voice-white.svg',
-  udioWhite: '/assets/models/UdioAI White.svg',
   runwayWhite: '/assets/models/runway-white.png',
+  runwayml: '/assets/models/runway-white.png',
   humanizerWhite: '/assets/models/Humanizer White.svg',
   restorerWhite: '/assets/models/flux-w.svg',
   quizMakerWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/quiz-maker.svg',
   elevenlabsWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Elevenlabs%20Logo%20(1).svg',
-  soraWhite:'/assets/models/runway-white.png'
+  soraWhite: '/assets/models/chatgpt.svg',
+  udio:'/assets/models/udio-white.png',
+  lightricks:'/assets/models/lightricks.png'
 };
 
 interface GenerateImageUpTo {
@@ -107,7 +111,8 @@ export default function PricingAbout({
       'alimai': 'alimAiWhite',
       'alim ai': 'alimAiWhite',
       'nano banana': 'veo3Black',
-      'kontext restore': 'kontextRestore'
+      'kontext restore': 'kontextRestore',
+      'hailuo': 'hailuo'
     };
 
     // Find matching model name
@@ -129,16 +134,18 @@ export default function PricingAbout({
       // ===== AI TOOLS (from Tools-Data) =====
       'imagex': 'imageXWhite',
       'flux': 'fluxWhite',
+      'seedream': 'seedream',
       'kling': 'klingWhite',
       'klingai': 'klingWhite',
       'veo3': 'veo3',
+      'veo 3.1 fast': 'veo3',
       'vgen': 'vGenWhite',
+      'pixverse': 'vGenWhite',
+      'litetricks': 'vGenWhite',
       'seedance': 'seedanceWhite',
-      'hailou': 'hailou',
+      'hailuo': 'hailuo',
       'wan': 'wanWhite',
       'speechai': 'voiceWhite',
-      'udio': 'udioWhite',
-      'udioai': 'udioWhite',
       'elevenlabs': 'elevenlabsWhite',
       'runway': 'runwayWhite',
       'runwayml': 'runwayWhite',
@@ -149,10 +156,13 @@ export default function PricingAbout({
       'kontext restore': 'restorerWhite',
       'kontext upscaler': 'restorerWhite',
       'quiz maker': 'quizMakerWhite',
+      'study mode': 'quizMakerWhite',
       'elevenlabsWhite': 'elevenlabsWhite',
       'nano banana': 'veo3',
       'sora': 'soraWhite',
       'sora v2': 'soraWhite',
+      'udio': 'udio',
+      'lightricks':'lightricks',
 
       // ===== SPECIAL MODEL MAPPINGS =====
       // Google Imagen 4 -> Gemini logo
@@ -190,9 +200,11 @@ export default function PricingAbout({
 
     if (icon) {
       return (
-        <div className={`flex items-center gap-2 ${isSubFeature ? 'ml-4' : ''}`}>
-          <Image src={icon} alt={feature} width={16} height={16} className="w-4 h-4 rounded-sm" />
-          <span className="text-sm text-gray-300 flex-1">
+        <div className={`flex items-center gap-1.5 ${isSubFeature ? 'ml-1' : ''} py-0.5`}>
+          <div className="relative w-3 h-3 shrink-0 rounded bg-white/5 p-0.5 border border-white/5 group-hover:bg-white/10 transition-colors">
+             <Image src={icon} alt={feature} fill className="object-contain brightness-0 invert opacity-90" />
+          </div>
+          <span className="text-[10px] text-gray-400 group-hover:text-gray-200 transition-colors flex-1 font-normal leading-tight">
             {feature}
           </span>
         </div>
@@ -202,9 +214,9 @@ export default function PricingAbout({
     // Fallback for features without icons
     if (isSubFeature) {
       return (
-        <div className="flex items-start gap-2">
-          <span className="text-gray-400 mt-0.5 ml-5">•</span>
-          <span className="text-sm text-gray-400 flex-1">
+        <div className="flex items-center gap-1.5 ml-1 py-0.5">
+          <div className="w-1 h-1 rounded-full bg-white/20 shrink-0" />
+          <span className="text-[10px] text-gray-500 group-hover:text-gray-400 transition-colors flex-1 font-normal leading-tight">
             {feature}
           </span>
         </div>
@@ -212,9 +224,14 @@ export default function PricingAbout({
     }
 
     return (
-      <span className="text-sm text-gray-300 flex-1 my-2">
-        ✅ {feature}
-      </span>
+      <div className="flex items-start gap-1.5 py-0.5 mt-1.5 first:mt-0">
+         <div className="mt-0.5 p-0.5 rounded bg-white/5 border border-white/10 shrink-0 group-hover:bg-white/10 transition-colors">
+            <Check className="w-2 h-2 text-gray-400 group-hover:text-gray-300 transition-colors" />
+         </div>
+        <span className="text-[10px] text-gray-300 group-hover:text-gray-100 transition-colors flex-1 font-medium leading-tight">
+           {feature}
+        </span>
+      </div>
     );
   };
 
@@ -225,57 +242,92 @@ export default function PricingAbout({
       price: 299,
       tokens: 600000,
       bestFor: "Perfect for trying AI tools",
-      icon: <Star className="h-4 w-4 text-green-400" />,
+      icon: <Star className="h-5 w-5 text-white" />,
       badge: "Unlimited Chat",
       features: [
-        "AI Image Editing & Generations models",
+        "Access to Top AI Chat Models",
+        "• ChatGPT Premium",
+        "• Gemini Premium",
+        "• DeepSeek Premium",
+        "• Grok Premium",
+        "• Claude Premium",
+        "• Llama Premium",
+        "• Perplexity Premium",
+        "• Qwen Premium",
+        "• Mistral Premium",
+        "Image Generation Models",
         "• ImageX",
         "• Flux",
+        "• Seedream 4",
+        // "AI Study Tools",
+        // "• Quiz Maker",
+        // "• Study Mode",
+        "Image Editing Models",
         "• Kontext Pro",
-        "• Quiz Maker",
-        "AI Detector",
-        "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
+        "Unlimited chat & attachments with all advanced AI models (after Pro Tokens are finished)",
+        // "* Fair usage policy applies"
+      ]
+    },
+    {
+      name: "Pro",
+      price: 699,
+      tokens: 1500000,
+      bestFor: "Perfect for chat, video & images",
+      icon: <Zap className="h-5 w-5 text-white" />,
+      isPopular: true,
+      badge: "Unlimited Image",
+      features: [
+        "Everything on the Creator Plan",
+        // "Premium AI Chat Model",
+        // "• Claude",
+        "Image Generation Models",
+        "• Nano Banana",
+        "• Nano Banana Pro",
+
+        // "• ImageX",
+        // "• Flux",
+        // "• Kontext Pro",
+        // "AI Detector",
+        "Image Restorer Model",
+        "• Kontext Restore",
+        "Video Generation Models",
+        "• Pixverse 4.5 & 5",
+        "• RunwayML",
+        "• Seedance",
+        "• KlingAI V2.1, V2.5 Turbo",
+        "• Hailuo",
+        "• Wan",
+        "• Sora V2",
+        "• Lightricks 2",
+        "Text To Speech And Music",
+        "• UdioAI",
+        "• Elevenlabs",
+        "Tools",
+        "• Humanizer",
+        "Unlimited chat & attachments with all advanced AI models (after Pro Tokens are finished)*",
+        // "* Fair usage policy applies"
       ]
     },
     {
       name: "Creator",
-      price: 699,
-      tokens: 1500000,
-      bestFor: "Great for regular AI users",
-      icon: <Zap className="h-4 w-4 text-blue-400" />,
-      isPopular: true,
-      badge: "Unlimited Image",
-      features: [
-        "Everything on the Student Plan",
-        "AI Image Repair Model",
-        "• Kontext Restore",
-        "• Nano Banana",
-        "AI Video Generation",
-        "• Vgen",
-        "• Seedance",
-        "• Hailou 2 Fast",
-        "• Wan 2.2",
-        "• RunwayML",
-        "• KlingAI V2.1",
-        "• Sora V2",
-        "AI Text to Speech & Music",
-        "• UdioAI",
-        "• Elevenlabs",
-        "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
-      ]
-    },
-    {
-      name: "Performance",
       price: 1999,
       tokens: 4500000,
       bestFor: "For heavy AI creators",
-      icon: <Crown className="h-4 w-4 text-purple-400" />,
-      badge: "KlingAI",
+      icon: <Crown className="h-5 w-5 text-white" />,
+      badge: "VEO3",
       features: [
-        "Everything on the Creator Plan",
-        "AI Video Generation",
+        "Everything on the Performance Plan",
+        "More Video Generation Model",
+        // "• VEO 3.1 Fast",
+        // "• Litetricks",
+        // "• PixVerse",
+        // "• Hailou 2 Fast",
+        // "• RunwayML",
+        "• KlingAI All Models",
         "• Sora V2 Pro",
-        "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
+        "• Veo3.1 Fast",
+        // "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)*",
+        // "* Fair usage policy applies"
       ]
     },
     {
@@ -283,13 +335,16 @@ export default function PricingAbout({
       price: 4999,
       tokens: 10000000,
       bestFor: "Ultimate AI powerhouse",
-      icon: <Crown className="h-4 w-4 text-yellow-400" />,
+      icon: <Crown className="h-5 w-5 text-white" />,
       badge: "VEO3",
       features: [
+        // "You Own All Available Models",
+        "More Video Generation Models",
+        "• Veo3",
+        "• Veo3.1",
         "You Own All Available Models",
-        "AI Video Generation",
-        "• VEO3",
-        "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)"
+        // "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)*",
+        // "* Fair usage policy applies"
       ]
     }
   ];
@@ -297,129 +352,129 @@ export default function PricingAbout({
   return (
     <div className="mx-auto max-w-7xl px-4">
       {/* Plans Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-9">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-5 items-stretch">
         {fixedPlans.map((plan, index) => {
           const isPopular = plan.isPopular;
           const isCurrentPlan = currentPlan?.name === plan.name;
 
           return (
-            <div key={index} className="relative">
+            <div key={index} className="relative group flex flex-col">
               {/* Current Plan Badge */}
               {isCurrentPlan && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-                  <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg flex items-center gap-1">
-                    <CheckCircle2 className="h-3 w-3" />
-
-                    Your Active Plan
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20 w-full text-center">
+                  <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#1A1B2E] to-[#13141F] border-2 border-white/20 text-white px-5 py-1.5 rounded-full text-xs font-bold shadow-xl tracking-wide">
+                    <CheckCircle2 className="h-3.5 w-3.5" />
+                    CURRENT PLAN
                   </div>
                 </div>
               )}
 
               {/* Popular Badge */}
               {isPopular && !isCurrentPlan && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-                  <div className="bg-gray-900 border-2 border-blue-800 text-white px-3 py-1 rounded-full text-xs font-bold">
-                    ⭐ Most Popular
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-20">
+                  <div className="bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-500 text-black px-3 py-0.5 rounded-full text-[10px] font-bold shadow-lg shadow-amber-500/40 tracking-wide border border-amber-300/60 flex items-center gap-1">
+                    <Sparkles className="w-2.5 h-2.5" />
+                    MOST POPULAR
                   </div>
                 </div>
               )}
 
-              {/* Special Badges */}
-              {plan.badge && !isCurrentPlan && (
-                <div className="absolute md:-top-2 -top-8 -right-4 md:-right-10 z-10">
-                  <div className="flex items-center justify-center gap-2 relative">
+              {/* Card Container */}
+              <div 
+                className={`
+                    h-full relative rounded-2xl p-[1px] transition-all duration-500
+                    ${isPopular ? 'bg-gradient-to-b from-white/20 via-white/10 to-transparent' : 'bg-white/5'}
+                    hover:bg-white/10 hover:shadow-[0_8px_30px_rgb(0,0,0,0.4)]
+                `}
+              >
+                <div className="absolute inset-0 rounded-2xl bg-[#0F0F13] m-[1px]" />
+                
+                {/* Card Content */}
+                <div className="relative h-full bg-[#0F0F13]/90 backdrop-blur-xl rounded-[15px] p-4 flex flex-col overflow-hidden border border-white/5 group-hover:border-white/10 transition-all duration-300">
+                    
+                    {/* Top Gradient Glow */}
+                    <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-white/5 to-transparent opacity-60 pointer-events-none" />
 
-                    <Image src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/priceClipTag" width={112} height={96} className="md:w-28 w-24 h-24 md:h-24" alt="coin" />
-                    <span className={`text-white text-[8px] md:text-[10px] font-normal absolute md:top-[43px] top-[43px] left-[50px] md:left-[50%] -translate-x-1/2 -translate-y-1/2 ${plan.badge === "Unlimited Chat" || plan.badge === "Unlimited Image" ? "pl-1 md:pl-2" : ""}`}>
-                      {plan.badge}
-                    </span>
-                  </div>
-                </div>
-              )}
+                    {/* Header */}
+                    <div className="relative z-10 mb-3 h-[70px] flex flex-col justify-start">
+                        <div className="flex items-center gap-2 mb-2">
+                            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-white/10 to-white/5 border border-white/10 flex items-center justify-center group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-white/5 transition-all duration-300">
+                                {plan.icon}
+                            </div>
+                            <div className="flex-1">
+                                <h3 className="text-base font-bold text-white tracking-tight group-hover:text-gray-100 transition-colors leading-tight">
+                                    {plan.name}
+                                </h3>
+                            </div>
+                        </div>
 
-              {/* Main Card */}
-              <div className="bg-gradient-to-b from-black to-[#0E1747] border-2 border-sky-600 rounded-3xl p-6 h-full backdrop-blur-sm hover:border-gray-500/50 transition-all duration-300 relative overflow-hidden">
-                {/* Gradient Background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-800/20 via-transparent to-gray-900/20 pointer-events-none"></div>
-
-                <div className="relative z-10">
-                  {/* Header */}
-                  <div className="text-center mb-6">
-                    <div className="w-12 h-12 mx-auto mb-3 bg-gray-700/50 rounded-lg flex items-center justify-center">
-                      {plan.icon}
+                        <p className="text-[11px] text-gray-500 font-normal leading-snug">
+                            {plan.bestFor}
+                        </p>
                     </div>
 
-                    <h3 className="text-xl font-bold text-white mb-1">
-                      <span className={`${plan.name === "Basic" ? "text-sky-600" :
-                        plan.name === "Creator" ? "text-yellow-600" :
-                          plan.name === "Pro Creator" ? "text-red-600" :
-                            plan.name === "Legend of AI" ? "text-orange-600" :
-                              "text-white"
-                        }`}>
-                        {plan.name}
-                      </span>
-
-                    </h3>
-                    <p className="text-sm text-gray-400">
-                      {plan.bestFor}
-                    </p>
-                  </div>
-
-                  {/* Token Info */}
-                  <div className="  rounded-3xl p-4 mb-6 border border-white/50">
-                    <div className="flex items-center justify-center gap-2 mb-1">
-                      <Image src="/assets/coin.svg" width={16} height={16} className="w-4 h-4" alt="coin" />
-                      <span className="text-white font-semibold">
-                        {plan.tokens.toLocaleString('en-IN')} Pro Tokens
-                      </span>
-                    </div>
-                    <p className="text-sm text-gray-400 text-center">
-                      Use with any AI model below
-                    </p>
-                  </div>
-
-                  {/* Pricing */}
-                  <div className="text-center mb-6">
-                    <span className="text-4xl font-medium bg-gradient-to-r from-white to-white/50 bg-clip-text text-transparent">
-                      {currencySymbol}{plan.price.toLocaleString()}
-                    </span>
-                  </div>
-
-                  {/* CTA Button */}
-                  <button
-                    onClick={() => window.location.href = 'https://ai.onebrain.app/login'}
-                    disabled={isCurrentPlan}
-                    className={`w-full py-2 px-4 rounded-3xl font-semibold text-sm transition-all duration-200 mb-6 ${isCurrentPlan
-                      ? "bg-gradient-to-r from-green-600 to-emerald-600 text-white cursor-default"
-                      : " bg-[#0E1747] border-2 border-sky-600 text-white transform hover:scale-[1.02]"
-                      }`}
-                  >
-                    {isCurrentPlan ? (
-                      <span className="flex items-center justify-center gap-2">
-                        <CheckCircle2 className="h-4 w-4" />
-                        Current Active Plan
-                      </span>
-                    ) : (
-                      <span className="flex items-center justify-center gap-2">
-                        🚀 Get Started
-                      </span>
-                    )}
-                  </button>
-
-                  {/* Features */}
-                  <div className="space-y-2">
-                    {plan.features.map((feature, i) => (
-                      <div key={i}>
-                        {feature.startsWith('•') ? (
-                          renderFeatureWithIcon(feature.substring(2).trim(), true)
+                    {/* Pricing */}
+                    <div className="relative z-10 mb-3 pb-3 border-b border-white/5 group-hover:border-white/10 transition-colors h-[75px] flex flex-col justify-center">
+                        <div className="flex items-baseline gap-1 mb-2">
+                            <span className="text-2xl font-bold text-white tracking-tight">
+                                {currencySymbol}{plan.price.toLocaleString()}
+                            </span>
+                            <span className="text-xs text-gray-500 font-normal">/mo</span>
+                        </div>
+                        
+                        {/* Token Badge or Unlimited Chat Badge */}
+                        {plan.tokens > 0 ? (
+                            <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-white/5 border border-white/10 group-hover:bg-white/10 group-hover:border-white/15 transition-all">
+                                <Image src="/assets/coin.svg" width={10} height={10} className="w-2.5 h-2.5 opacity-80" alt="coin" />
+                                <span className="text-[9px] font-semibold text-gray-300 uppercase tracking-wide">
+                                    {plan.tokens.toLocaleString('en-IN')} Tokens
+                                </span>
+                            </div>
                         ) : (
-                          <div className="my-2">
-                            {renderFeatureWithIcon(feature, false)}
-                          </div>
+                            <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-white/5 border border-white/10 group-hover:bg-white/10 group-hover:border-white/15 transition-all">
+                                <Sparkles className="w-2.5 h-2.5 text-gray-300" />
+                                <span className="text-[9px] font-semibold text-gray-300 tracking-wide">
+                                    Unlimited chat with personal memory
+                                </span>
+                            </div>
                         )}
-                      </div>
-                    ))}
-                  </div>
+                    </div>
+
+                    {/* Features List */}
+                    <div className="relative z-10 flex-1 mb-4 min-h-[200px] max-h-[280px] flex flex-col">
+                        <p className="text-[9px] font-semibold text-gray-500 uppercase tracking-widest mb-2 flex items-center gap-1 flex-shrink-0">
+                            <Sparkles className="w-2 h-2 opacity-50" />
+                            What's Included
+                        </p>
+                        <div className="space-y-0 overflow-y-auto pr-1 custom-scrollbar flex-1">
+                            {plan.features.map((feature, i) => (
+                            <div key={i}>
+                                {typeof feature === 'string' && feature.startsWith('•') ? (
+                                renderFeatureWithIcon(feature.substring(2).trim(), true)
+                                ) : (
+                                <div className={`${i > 0 ? 'mt-1.5' : ''}`}>
+                                    {typeof feature === 'string' ? renderFeatureWithIcon(feature, false) : null}
+                                </div>
+                                )}
+                            </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* CTA Button */}
+                    <button
+                        onClick={() => window.location.href = 'https://ai.onebrain.app/login'}
+                        disabled={isCurrentPlan}
+                        className={`
+                            relative z-10 w-full h-[38px] rounded-lg font-semibold text-xs uppercase tracking-wide transition-all duration-300 flex items-center justify-center flex-shrink-0
+                            ${isCurrentPlan
+                                ? "bg-[#1A1B2E] text-gray-400 border border-white/5 cursor-default"
+                                : "bg-gradient-to-b from-[#1A1B2E] to-[#13141F] text-white border border-white/10 hover:from-[#232438] hover:to-[#1A1B2E] hover:border-white/20 hover:shadow-[0_4px_20px_-5px_rgba(255,255,255,0.15)] active:scale-[0.98]"
+                            }
+                        `}
+                    >
+                        {isCurrentPlan ? "Current Plan" : "Get Started →"}
+                    </button>
                 </div>
               </div>
             </div>
@@ -429,60 +484,43 @@ export default function PricingAbout({
 
       {/* TopUp Plans Section */}
       {topUpPlans?.length > 0 && (
-        <div className="mx-auto mt-16">
-          <div className="text-center mb-8">
-            <div className="flex items-center justify-center gap-2 mb-3">
-              <div className="p-2 rounded-lg bg-purple-600/20 border border-purple-500/30">
-                <Sparkles className="h-5 w-5 text-purple-400" />
-              </div>
-              <h3 className="text-2xl font-bold text-white">Top-Up Plans</h3>
+        <div className="mx-auto mt-24 max-w-5xl">
+            <div className="text-center mb-12">
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Need More Power?</h3>
+                <p className="text-gray-400">Add more tokens to your account instantly with our Top-Up plans.</p>
             </div>
-          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {topUpPlans.map((topUpPlan) => (
               <div
                 key={topUpPlan._id}
-                className="bg-gray-900/40 border border-gray-600/30 rounded-xl p-6 backdrop-blur-sm hover:border-gray-500/50 transition-all duration-300"
+                className="group bg-[#0F0F13] border border-white/10 rounded-2xl p-6 hover:border-white/20 transition-all duration-300"
               >
-                <h3 className="text-xl font-bold text-white text-center mb-2">
+                <h3 className="text-lg font-medium text-white text-center mb-2">
                   {topUpPlan.name}
                 </h3>
-                <p className="text-sm text-gray-400 text-center mb-4">
-                  {topUpPlan.bestFor || "Boost your tokens"}
-                </p>
-                <div className="bg-gray-800/40 rounded-lg p-3 mb-4 border border-gray-600/20">
-                  <div className="flex items-center justify-center gap-2">
-                    <Image src="/assets/coin.svg" width={16} height={16} className="w-4 h-4" alt="coin" />
-                    <span className="text-white font-semibold">
-                      {topUpPlan.tokens.toLocaleString()} Tokens
-                    </span>
-                  </div>
+                
+                <div className="flex items-center justify-center gap-2 mb-6">
+                    <div className="px-3 py-1 rounded-full bg-white/5 border border-white/5 flex items-center gap-2">
+                        <Image src="/assets/coin.svg" width={14} height={14} className="w-3.5 h-3.5 opacity-70" alt="coin" />
+                        <span className="text-xs font-medium text-gray-300">
+                            {topUpPlan.tokens.toLocaleString()}
+                        </span>
+                    </div>
                 </div>
-                <div className="text-center mb-4">
-                  <span className="text-3xl font-bold text-white">
+
+                <div className="text-center mb-6">
+                  <span className="text-3xl font-bold text-white tracking-tight">
                     {currencySymbol}{topUpPlan.price.toLocaleString()}
                   </span>
                 </div>
+
                 <button
                   onClick={() => handleSelectPlan({ topUpId: topUpPlan._id })}
-                  className="w-full py-3 px-4 rounded-lg font-semibold text-sm bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white transition-all duration-200 transform hover:scale-[1.02]"
+                  className="w-full py-3 px-4 rounded-xl font-medium text-sm bg-white/10 hover:bg-white/20 text-white border border-white/5 hover:border-white/10 transition-all duration-200"
                 >
-                  🚀 Get Started
+                  Top Up Now
                 </button>
-                {topUpPlan.features && (
-                  <div className="space-y-2 mt-4">
-                    {topUpPlan.features.map((feature, i) => (
-                      <div key={i} className="flex items-start gap-2">
-                        <div className="mt-0.5">
-                          <svg className="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                          </svg>
-                        </div>
-                        <span className="text-sm text-gray-300 flex-1">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-                )}
               </div>
             ))}
           </div>
