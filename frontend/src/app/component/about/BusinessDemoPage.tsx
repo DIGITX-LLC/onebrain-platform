@@ -341,7 +341,7 @@ export default function BusinessDemoPage() {
       </div>
 
       {/* Right: Calendar */}
-      <div className="md:w-3/5 h-[600px] md:h-[700px] lg:h-[800px] relative bg-[#0F0F13] shadow-black/30 shadow-[inset_10px_0_20px_-10px_rgba(0,0,0,0.5)]">
+      <div className="md:w-3/5 h-[600px] md:h-[700px] lg:h-[800px] relative bg-[#0F0F13] shadow-black/30 ">
         {/* Loading Indicator */}
         <div className="absolute inset-0 bg-white shadow-black/30 shadow-[inset_10px_0_20px_-10px_rgba(0,0,0,0.5)] flex items-center justify-center z-0">
           <div className="flex flex-col  items-center gap-3 opacity-50">
