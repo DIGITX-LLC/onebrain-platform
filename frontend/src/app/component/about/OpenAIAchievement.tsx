@@ -65,7 +65,7 @@ export default function OpenAIAchievement() {
           <div className="relative h-[300px] md:h-[400px] lg:h-[500px] w-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl group">
              {/* Upload your image to 'frontend/public/assets/' and update the name here */}
              <Image 
-               src="/assets/IMG_9225.jpg" 
+               src="/assets/Achievement/IMG_9225.jpg" 
                alt="OneBrain Team at OpenAI DevDay 2025" 
                fill
                className="object-cover transition-transform duration-700 group-hover:scale-105"

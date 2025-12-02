@@ -21,13 +21,13 @@ const AIModelIcons: Record<string, string> = {
 const AIToolsIcons: Record<string, string> = {
   imageXWhite: '/assets/models/ImageX White.png',
   fluxWhite: '/assets/models/flux-w.svg',
-  seedream:'/assets/models/SeeDream 4.0 Logo.png',
+  seedream:'/assets/models/seeDream.svg',
   klingWhite: '/assets/models/kling-white.svg',
   veo3: '/assets/models/veo3-black.png',
   veo3Black: '/assets/models/veo3-black.png',
   vGenWhite: '/assets/models/vGen-white.svg',
-  seedanceWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/seedance-logo.png', // Using vGen icon for Seedance temporarily
-  hailuo: '/assets/models/hailuo-color.png',
+  seedanceWhite: '/assets/models/seeDance.svg', // Using vGen icon for Seedance temporarily
+  hailuo: '/assets/models/hailuo-color.svg',
   wanWhite: '/assets/models/qwen-black.svg',
   voiceWhite: '/assets/models/voice-white.svg',
   runwayWhite: '/assets/models/runway-white.png',
@@ -35,10 +35,10 @@ const AIToolsIcons: Record<string, string> = {
   humanizerWhite: '/assets/models/Humanizer White.svg',
   restorerWhite: '/assets/models/flux-w.svg',
   quizMakerWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/quiz-maker.svg',
-  elevenlabsWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/Elevenlabs%20Logo%20(1).svg',
+  elevenlabsWhite: '/assets/models/elevenlabs.svg',
   soraWhite: '/assets/models/chatgpt.svg',
   udio:'/assets/models/udio-white.png',
-  lightricks:'/assets/models/lightricks.png'
+  lightricks:'/assets/models/lightricks.svg'
 };
 
 interface GenerateImageUpTo {
@@ -269,7 +269,7 @@ export default function PricingAbout({
       ]
     },
     {
-      name: "Pro",
+      name: "Creator",
       price: 699,
       tokens: 1500000,
       bestFor: "Perfect for chat, video & images",
@@ -309,7 +309,7 @@ export default function PricingAbout({
       ]
     },
     {
-      name: "Creator",
+      name: "Performance",
       price: 1999,
       tokens: 4500000,
       bestFor: "For heavy AI creators",
