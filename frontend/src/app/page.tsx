@@ -961,7 +961,7 @@ export default function Home() {
         >
           <div className="text-center max-w-4xl mx-auto mb-12">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight leading-tight">
-              The Best Platform for <span className="bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 text-transparent bg-clip-text">Students, AI Creators & Everyone</span>
+              The Best Platform for <span className="bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 text-transparent bg-clip-text">Students, <br /> AI Creators & Everyone</span>
             </h2>
             <p className="text-gray-400 text-lg md:text-xl font-light max-w-3xl mx-auto">
               Empowering <span className="text-gray-200 font-medium">students</span>, teachers, medical professionals, freelancers, and anyone who wants to adopt AI. OneBrain scales with you, from daily tasks to complex industry workflows.

@@ -175,7 +175,8 @@ export default function Footer() {
                     className="opacity-70 hover:opacity-100 transition-opacity"
                 >
                     <Image
-                        src="https://digitxevents.com/wp-content/uploads/2025/07/digitx_logo.png"
+                        // src="https://digitxevents.com/wp-content/uploads/2025/07/digitx_logo.png"
+                        src="/assets/modelLogo/DIGITX.svg"
                         alt="DigitX"
                         width={60}
                         height={16}

@@ -37,7 +37,7 @@ const AIToolsIcons: Record<string, string> = {
   quizMakerWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/quiz-maker.svg',
   elevenlabsWhite: '/assets/models/elevenlabs.svg',
   soraWhite: '/assets/models/chatgpt.svg',
-  udio:'/assets/models/udio-white.png',
+  // udio:'/assets/models/udio-white.png',
   lightricks:'/assets/models/lightricks.svg'
 };
 
@@ -161,7 +161,7 @@ export default function PricingAbout({
       'nano banana': 'veo3',
       'sora': 'soraWhite',
       'sora v2': 'soraWhite',
-      'udio': 'udio',
+      // 'udio': 'udio',
       'lightricks':'lightricks',
 
       // ===== SPECIAL MODEL MAPPINGS =====
@@ -300,7 +300,7 @@ export default function PricingAbout({
         "• Sora V2",
         "• Lightricks 2",
         "Text To Speech And Music",
-        "• UdioAI",
+        // "• UdioAI",
         "• Elevenlabs",
         "Tools",
         "• Humanizer",

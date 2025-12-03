@@ -45,7 +45,7 @@ export default function ImageStudio() {
                     <div className="relative h-40 rounded-xl overflow-hidden border border-white/10 group bg-[#0A0A0F]">
                         <div className="absolute inset-0 flex items-center justify-center p-4">
                             <Image 
-                                src={'/assets/models/SeeDream 4.0 Logo.png'}
+                                src={'/assets/models/seeDream.svg'}
                                 alt="Seedream" 
                                 width={120}
                                 height={120}
