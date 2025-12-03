@@ -22,7 +22,8 @@ const defaultLogos = [
 
 export default function ModernHeroOrbit({ logos = defaultLogos }: ModernHeroOrbitProps) {
   // Only use first 8 logos for the circle to keep it symmetric
-  const activeLogos = logos.slice(0, 8);
+  // const activeLogos = logos.slice(0, 8);
+  const activeLogos = logos.slice(0, logos.length);
   
   return (
     <div className="relative w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] flex items-center justify-center">
@@ -39,20 +40,26 @@ export default function ModernHeroOrbit({ logos = defaultLogos }: ModernHeroOrbi
 
         {/* Logos */}
         {activeLogos.map((logo, i) => {
-          const angle = (i / 8) * 2 * Math.PI; // distribute 8 items
+          // const angle = (i / 8) * 2 * Math.PI;
+          const angle = (i / activeLogos.length) * 2 * Math.PI; // distribute 8 items
           const radius = 50; // 50% from center (edge of container)
           
           // Position calculation percentages
           const left = 50 + Math.cos(angle) * radius;
           const top = 50 + Math.sin(angle) * radius;
+          // const left = +(50 + Math.cos(angle) * radius).toFixed(2);
+          // const top = +(50 + Math.sin(angle) * radius).toFixed(2);
+ 
 
           return (
             <div
               key={i}
               className="absolute w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 -ml-6 -mt-6 sm:-ml-8 sm:-mt-8 md:-ml-10 md:-mt-10"
               style={{
-                left: `${left}%`,
-                top: `${top}%`,
+                // left: `${left}%`,
+                // top: `${top}%`,
+                left: `${Number(left.toFixed(3))}%`,
+                top: `${Number(top.toFixed(3))}%`,
               }}
             >
               {/* Counter-rotate container to keep icons upright */}

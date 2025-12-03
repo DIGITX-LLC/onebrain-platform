@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Brain, BookOpen, Sparkles, GraduationCap, Clock, Zap } from 'lucide-react';
+import Image from 'next/image';
 
 export default function PersonalModels() {
   return (
@@ -34,8 +35,15 @@ export default function PersonalModels() {
             
             <div className="relative z-10 flex flex-col h-full">
               <div className="flex items-start justify-between mb-8">
-                <div className="p-4 rounded-2xl bg-white/5 border border-white/10">
-                  <Brain className="w-10 h-10 text-white" />
+                <div className=" rounded-2xl bg-white/5 border border-white/10">
+                  {/* <Brain className="w-10 h-10 text-white" /> */}
+                  <Image 
+                   src="/assets/modelLogo/MAX.svg" 
+                   alt="Max Model Logo"
+                   width={60} 
+                    height={60}
+                    className='rounded-2xl'
+                   />
                 </div>
                 <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white text-xs font-bold uppercase tracking-wider">
                   Premium
@@ -78,8 +86,15 @@ export default function PersonalModels() {
             
             <div className="relative z-10 flex flex-col h-full">
               <div className="flex items-start justify-between mb-8">
-                <div className="p-4 rounded-2xl bg-white/5 border border-white/10">
-                  <GraduationCap className="w-10 h-10 text-gray-300" />
+                <div className="rounded-2xl bg-white/5 border border-white/10">
+                  {/* <GraduationCap className="w-10 h-10 text-gray-300" /> */}
+                  <Image 
+                    src="/assets/modelLogo/NEO.svg" 
+                     alt="Max Model Logo"
+                     width={60} 
+                    height={60}
+                    className='rounded-2xl'
+                    />
                 </div>
                 <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-300 text-xs font-bold uppercase tracking-wider">
                   Student

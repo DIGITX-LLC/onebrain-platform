@@ -156,9 +156,9 @@ export default function AffiliateDemoPage() {
         </div>
 
         {/* Right: Calendar */}
-        <div className="lg:w-2/3 w-full h-[500px] md:h-[650px] lg:h-[750px] bg-[#0F0F13] rounded-xl overflow-hidden border border-white/10 shadow-xl relative">
+        {/* <div className="lg:w-2/3 w-full h-[500px] md:h-[650px] lg:h-[750px] bg-[#0F0F13] rounded-xl overflow-hidden border border-white/10 shadow-xl relative">
 
-          {/* Loading UI */}
+          
           <div className="absolute inset-0 flex bg-white items-center justify-center z-0 pointer-events-none">
             <div className="flex flex-col items-center gap-3 opacity-40">
               <div className="w-8 h-8 rounded-full border-2 border-white/20 border-t-white animate-spin"></div>
@@ -171,7 +171,27 @@ export default function AffiliateDemoPage() {
             className="absolute inset-0 w-full h-full"
             style={{ border: 0 }}
           ></iframe>
+        </div> */}
+
+     <div className="md:w-3/5 h-[600px] md:h-[700px] lg:h-[800px] relative bg-[#0F0F13] shadow-black/30 ">
+        
+        <div className="absolute inset-0 bg-white shadow-black/30 shadow-[inset_10px_0_20px_-10px_rgba(0,0,0,0.5)] flex items-center justify-center z-0">
+          <div className="flex flex-col  items-center gap-3 opacity-50">
+            <div className="w-8 h-8 rounded-full border-2 border-white/20 border-t-white animate-spin"></div>
+            <p className="text-white text-xs">Loading Calendar...</p>
+          </div>
         </div>
+
+      
+        <iframe
+          src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1QS2IclaPa_-oQ1QXscXpR8Tq0IbT5nARDwN6CWZ0SevrEN9ZRD16jHwONc8tBCCLm01UyG6ZZ?gv=true"
+          className="absolute inset-0 w-full h-full"
+          style={{ border: 0 }}
+        ></iframe>
+    
+      </div>  
+
+
       </main>
 
       {/* Footer */}

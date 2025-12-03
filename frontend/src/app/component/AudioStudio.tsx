@@ -47,7 +47,7 @@ export default function AudioStudio() {
                         <div className="absolute inset-0 bg-orange-500/5 blur-3xl -z-10 rounded-full" />
                         
                         {/* Audio Wave Visualization */}
-                        <div className="flex gap-1 items-center h-32">
+                        <div className="flex gap-1 items-center h-32 mb-8">
                             {[45, 67, 32, 89, 54, 76, 43, 88, 35, 92, 61, 28, 74, 59, 83, 47, 66, 39, 81, 55].map((height, i) => (
                                 <div 
                                     key={i}
