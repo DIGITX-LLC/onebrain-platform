@@ -22,7 +22,8 @@ const defaultLogos = [
 
 export default function ModernHeroOrbit({ logos = defaultLogos }: ModernHeroOrbitProps) {
   // Only use first 8 logos for the circle to keep it symmetric
-  const activeLogos = logos.slice(0, 8);
+  // const activeLogos = logos.slice(0, 8);
+  const activeLogos = logos.slice(0, logos.length);
   
   return (
     <div className="relative w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] flex items-center justify-center">
@@ -39,7 +40,8 @@ export default function ModernHeroOrbit({ logos = defaultLogos }: ModernHeroOrbi
 
         {/* Logos */}
         {activeLogos.map((logo, i) => {
-          const angle = (i / 8) * 2 * Math.PI; // distribute 8 items
+          // const angle = (i / 8) * 2 * Math.PI;
+          const angle = (i / activeLogos.length) * 2 * Math.PI; // distribute 8 items
           const radius = 50; // 50% from center (edge of container)
           
           // Position calculation percentages
