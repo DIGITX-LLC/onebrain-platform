@@ -66,6 +66,7 @@ export default function OpenAIAchievement() {
              {/* Upload your image to 'frontend/public/assets/' and update the name here */}
              <Image 
                src="/assets/Achievement/IMG_9225.jpg" 
+              
                alt="OneBrain Team at OpenAI DevDay 2025" 
                fill
                className="object-cover transition-transform duration-700 group-hover:scale-105"

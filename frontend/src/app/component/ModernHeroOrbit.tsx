@@ -47,6 +47,9 @@ export default function ModernHeroOrbit({ logos = defaultLogos }: ModernHeroOrbi
           // Position calculation percentages
           const left = 50 + Math.cos(angle) * radius;
           const top = 50 + Math.sin(angle) * radius;
+          // const left = +(50 + Math.cos(angle) * radius).toFixed(2);
+          // const top = +(50 + Math.sin(angle) * radius).toFixed(2);
+ 
 
           return (
             <div

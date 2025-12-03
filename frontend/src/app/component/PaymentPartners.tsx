@@ -50,7 +50,7 @@ export default function PaymentPartners() {
             <h3 className="text-gray-300 font-medium uppercase tracking-wider text-sm">Follow Us</h3>
             <div className="flex items-center gap-4">
                 <a
-                    href="https://facebook.com/groups/2238159246577852/"
+                    href="https://www.facebook.com/onebrainapp"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 rounded-full bg-[#1A1B2E] border border-white/10 text-white hover:bg-blue-600 hover:border-blue-500 transition-all duration-300 group"

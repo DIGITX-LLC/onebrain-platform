@@ -61,7 +61,7 @@ export default function AudioStudio() {
                             ))}
                         </div>
                         
-                        <div className="absolute bottom-4 right-4 text-xs text-gray-500 font-mono">Powered by ElevenLabs</div>
+                        <div className="absolute bottom-1  lg:bottom-4 right-4 text-xs text-gray-500 font-mono">Powered by ElevenLabs</div>
                     </div>
                 </div>
             </div>
