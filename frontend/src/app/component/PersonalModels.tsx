@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Brain, BookOpen, Sparkles, GraduationCap, Clock, Zap } from 'lucide-react';
+import { BookOpen, Sparkles, Clock, Zap } from 'lucide-react';
 import Image from 'next/image';
 
 export default function PersonalModels() {
@@ -38,7 +38,7 @@ export default function PersonalModels() {
                 <div className=" rounded-2xl bg-white/5 border border-white/10">
                   {/* <Brain className="w-10 h-10 text-white" /> */}
                   <Image 
-                   src="/assets/modelLogo/MAX.svg" 
+                   src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/MAX%201.svg" 
                    alt="Max Model Logo"
                    width={60} 
                     height={60}
@@ -89,8 +89,8 @@ export default function PersonalModels() {
                 <div className="rounded-2xl bg-white/5 border border-white/10">
                   {/* <GraduationCap className="w-10 h-10 text-gray-300" /> */}
                   <Image 
-                    src="/assets/modelLogo/NEO.svg" 
-                     alt="Max Model Logo"
+                  src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/NEO%201.svg" 
+                     alt="Neo Model Logo"
                      width={60} 
                     height={60}
                     className='rounded-2xl'
