@@ -56,8 +56,10 @@ export default function ModernHeroOrbit({ logos = defaultLogos }: ModernHeroOrbi
               key={i}
               className="absolute w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 -ml-6 -mt-6 sm:-ml-8 sm:-mt-8 md:-ml-10 md:-mt-10"
               style={{
-                left: `${left}%`,
-                top: `${top}%`,
+                // left: `${left}%`,
+                // top: `${top}%`,
+                left: `${Number(left.toFixed(3))}%`,
+                top: `${Number(top.toFixed(3))}%`,
               }}
             >
               {/* Counter-rotate container to keep icons upright */}
