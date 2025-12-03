@@ -115,7 +115,7 @@ export default function MobileCountdown() {
           <div className="flex-1 flex flex-col items-center lg:items-start justify-center order-2 lg:order-1 text-center lg:text-left z-10 max-w-lg">
               <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-white/10 to-transparent border border-white/10 flex items-center justify-center mb-6 shadow-lg backdrop-blur-md">
                   {/* <Image src="/assets/oneBrainLogo.svg" alt="Logo" width={40} height={40} className="w-10 h-10 opacity-90" /> */}
-                  <Image src="/assets/App_Logo.svg" alt="Logo" width={40} height={40} className="w-10 h-10 opacity-90" />
+                  <Image src="/assets/App_Logo.svg" alt="Logo" fill className="rounded-2xl" />
               </div>
 
               <h3 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight leading-tight">
@@ -136,7 +136,8 @@ export default function MobileCountdown() {
                   <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="flex items-center gap-4 relative z-10">
                       <Image
-                        src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/playstore.svg"
+                        // src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/playstore.svg"
+                        src="/assets/modelLogo/Google_Play-Icon-Logo.wine.svg"
                         alt="Play Store"
                         width={36}
                         height={36}
