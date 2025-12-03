@@ -280,8 +280,8 @@ export default function BusinessDemoPage() {
                 <div className="absolute left-[27px] top-0 bottom-0 w-px bg-gradient-to-b from-white/20 via-white/10 to-transparent md:hidden"></div>
 
                 {/* Step 1 */}
-                <div className="relative flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-0">
-                    <div className="md:w-1/2 md:text-right md:pr-12 order-2 md:order-1">
+                <div className="relative ml-4 flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-0">
+                    <div className="md:w-1/2 ml-8 md:text-right md:pr-12 order-2 md:order-1">
                         <h3 className="text-2xl font-bold text-white mb-2">Select AI Models</h3>
                         <p className="text-gray-400">Choose from ChatGPT, Claude, Gemini, and others to power your platform. Mix and match based on your needs.</p>
                     </div>
@@ -290,18 +290,18 @@ export default function BusinessDemoPage() {
                 </div>
 
                 {/* Step 2 */}
-                <div className="relative flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-0">
+                <div className="relative ml-4 flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-0">
                     <div className="md:w-1/2 md:text-right md:pr-12 order-2 md:order-1"></div>
                     <div className="absolute left-0 md:left-1/2 w-14 h-14 rounded-full bg-[#030205] border border-white/20 flex items-center justify-center text-xl font-bold text-white z-10 -translate-x-1/2 md:translate-x-[-50%]">2</div>
-                    <div className="md:w-1/2 md:pl-12 order-3 md:order-2">
+                    <div className="md:w-1/2 ml-8 md:pl-12 order-3 md:order-2">
                         <h3 className="text-2xl font-bold text-white mb-2">Onboard Your Team</h3>
                         <p className="text-gray-400">Invite your employees, assign roles, and manage access. Set usage limits and monitor team activity.</p>
                     </div>
                 </div>
 
                 {/* Step 3 */}
-                <div className="relative flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-0">
-                    <div className="md:w-1/2 md:text-right md:pr-12 order-2 md:order-1">
+                <div className="relative ml-4 flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-0">
+                    <div className="md:w-1/2 ml-8 md:text-right md:pr-12 order-2 md:order-1">
                         <h3 className="text-2xl font-bold text-white mb-2">Boost Productivity</h3>
                         <p className="text-gray-400">Your team gets instant access to advanced AI tools in a secure environment. Watch efficiency soar.</p>
                     </div>
