@@ -21,13 +21,13 @@ const AIModelIcons: Record<string, string> = {
 const AIToolsIcons: Record<string, string> = {
   imageXWhite: '/assets/models/ImageX White.png',
   fluxWhite: '/assets/models/flux-w.svg',
-  seedream:'/assets/models/seeDream.svg',
+  seedream:'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/Seedream.png',
   klingWhite: '/assets/models/kling-white.svg',
   veo3: '/assets/models/veo3-black.png',
   veo3Black: '/assets/models/veo3-black.png',
   vGenWhite: '/assets/models/vGen-white.svg',
-  seedanceWhite: '/assets/models/seeDance.svg', // Using vGen icon for Seedance temporarily
-  hailuo: '/assets/models/hailuo-color.svg',
+  seedanceWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/seedance.png',
+  hailuo: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/hailuo-color.png',
   wanWhite: '/assets/models/qwen-black.svg',
   voiceWhite: '/assets/models/voice-white.svg',
   runwayWhite: '/assets/models/runway-white.png',
@@ -35,10 +35,10 @@ const AIToolsIcons: Record<string, string> = {
   humanizerWhite: '/assets/models/Humanizer White.svg',
   restorerWhite: '/assets/models/flux-w.svg',
   quizMakerWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/quiz-maker.svg',
-  elevenlabsWhite: '/assets/models/elevenlabs.svg',
+  elevenlabsWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/elevenlabs%20(1).svg',
   soraWhite: '/assets/models/chatgpt.svg',
   // udio:'/assets/models/udio-white.png',
-  lightricks:'/assets/models/lightricks.svg'
+  lightricks:'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/lightricks.png'
 };
 
 interface GenerateImageUpTo {
@@ -135,6 +135,8 @@ export default function PricingAbout({
       'imagex': 'imageXWhite',
       'flux': 'fluxWhite',
       'seedream': 'seedream',
+      'see dance': 'seedanceWhite',
+      'see-dance': 'seedanceWhite',
       'kling': 'klingWhite',
       'klingai': 'klingWhite',
       'veo3': 'veo3',
@@ -199,10 +201,12 @@ export default function PricingAbout({
     const icon = modelIcon || toolIcon;
 
     if (icon) {
+      const isExternal = icon.startsWith('http');
+      const iconClass = `object-contain ${isExternal ? '' : 'brightness-0 invert opacity-90'}`;
       return (
         <div className={`flex items-center gap-1.5 ${isSubFeature ? 'ml-1' : ''} py-0.5`}>
           <div className="relative w-3 h-3 shrink-0 rounded bg-white/5 p-0.5 border border-white/5 group-hover:bg-white/10 transition-colors">
-             <Image src={icon} alt={feature} fill className="object-contain brightness-0 invert opacity-90" />
+             <Image src={icon} alt={feature} fill className={iconClass} />
           </div>
           <span className="text-[10px] text-gray-400 group-hover:text-gray-200 transition-colors flex-1 font-normal leading-tight">
             {feature}
@@ -293,15 +297,15 @@ export default function PricingAbout({
         "Video Generation Models",
         "• Pixverse 4.5 & 5",
         "• RunwayML",
-        "• Seedance",
+        "• SeeDance",
         "• KlingAI V2.1, V2.5 Turbo",
         "• Hailuo",
         "• Wan",
         "• Sora V2",
-        "• Lightricks 2",
+        "• Lightricks",
         "Text To Speech And Music",
         // "• UdioAI",
-        "• Elevenlabs",
+        "• ElevenLabs",
         "Tools",
         "• Humanizer",
         "Unlimited chat & attachments with all advanced AI models (after Pro Tokens are finished)*",
@@ -444,7 +448,7 @@ export default function PricingAbout({
                     <div className="relative z-10 flex-1 mb-4 min-h-[200px] max-h-[280px] flex flex-col">
                         <p className="text-[9px] font-semibold text-gray-500 uppercase tracking-widest mb-2 flex items-center gap-1 flex-shrink-0">
                             <Sparkles className="w-2 h-2 opacity-50" />
-                            What's Included
+                            What&apos;s Included
                         </p>
                         <div className="space-y-0 overflow-y-auto pr-1 custom-scrollbar flex-1">
                             {plan.features.map((feature, i) => (

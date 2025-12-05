@@ -63,11 +63,11 @@ export default function MobileCountdown() {
                       aria-label="Get it on Google Play"
                     >
                       <Image
-                        src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/playstore.svg"
+                            src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/Google_Play-Icon-Logo.wine.svg"
                         alt="Get it on Google Play"
                         width={200}
                         height={60}
-                        className="h-14 md:h-16 w-auto object-contain brightness-0 invert"
+                            className="h-14 md:h-16 w-auto object-contain"
                         priority={false}
                       />
                     </a>
@@ -114,8 +114,7 @@ export default function MobileCountdown() {
           {/* Content Section */}
           <div className="flex-1 flex flex-col items-center lg:items-start justify-center order-2 lg:order-1 text-center lg:text-left z-10 max-w-lg">
               <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-white/10 to-transparent border border-white/10 flex items-center justify-center mb-6 shadow-lg backdrop-blur-md">
-                  <Image src="/assets/oneBrainLogo.svg" alt="Logo" width={40} height={40} className="w-10 h-10 opacity-90" /> 
-                  {/* <Image src="/assets/App_Logo.svg" alt="Logo" fill className="rounded-2xl" /> */}
+                  <Image src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/App%20Logo.svg" alt="App Logo" width={40} height={40} className="w-10 h-10 opacity-90" /> 
               </div>
 
               <h3 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight leading-tight">
@@ -136,12 +135,11 @@ export default function MobileCountdown() {
                   <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="flex items-center gap-4 relative z-10">
                       <Image
-                        src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/playstore.svg"
-                        // src="/assets/modelLogo/Google_Play-Icon-Logo.wine.svg"
+                            src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/Google_Play-Icon-Logo.wine.svg"
                         alt="Play Store"
                         width={36}
                         height={36}
-                        className="w-9 h-9" 
+                            className="w-9 h-9" 
                       />
                       <div className="text-left">
                           <div className="text-[10px] text-gray-400 uppercase font-medium leading-none mb-1">GET IT ON</div>
