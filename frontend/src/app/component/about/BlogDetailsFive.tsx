@@ -168,7 +168,7 @@ export default function BlogDetailsFive() {
 
                 <div className="space-y-6 text-gray-300">
                 <div className="p-8 md:p-12 -mt-20 relative z-10">
-                <h1 className="text-3xl md:text-5xl font-bold text-white mb-8 leading-tight">
+                <h1 className="text-3xl md:text-5xl mt-10 font-bold text-white mb-8 leading-tight">
                    Buy Sora 2 & Sora 2 Pro in Bangladesh - Only on OneBrain with 10+ Free AI Tools
                     </h1>
       <h3 className="font-bold text-xl lg:text-2xl">Meta Description:</h3>

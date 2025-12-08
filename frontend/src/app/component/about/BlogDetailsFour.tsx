@@ -175,7 +175,7 @@ export default function BlogDetailsFour() {
                         <span className="text-gray-500 flex items-center">• By Admin</span>
                     </div> */}
 
-                    <h1 className="text-3xl md:text-5xl font-bold text-white mb-8 leading-tight">
+                    <h1 className="text-3xl md:text-5xl mt-10 font-bold text-white mb-8 leading-tight">
                     How to Buy ChatGPT Premium Models in BD?
                     </h1>
 
