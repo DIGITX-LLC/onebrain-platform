@@ -168,7 +168,10 @@ export default function BlogDetailsFive() {
 
                 <div className="space-y-6 text-gray-300">
                 <div className="p-8 md:p-12 -mt-20 relative z-10">
-      <h1 className="font-bold text-xl lg:text-2xl">Meta Description:</h1>
+                <h1 className="text-3xl md:text-5xl font-bold text-white mb-8 leading-tight">
+                   Buy Sora 2 & Sora 2 Pro in Bangladesh - Only on OneBrain with 10+ Free AI Tools
+                    </h1>
+      <h3 className="font-bold text-xl lg:text-2xl">Meta Description:</h3>
       <p>Buy Sora 2 (699 Taka) and Sora 2 Pro (1,999 Taka) exclusively on OneBrain in Bangladesh! Get 10+ premium AI tools free for text, image, audio, and video generation.</p>
       <p>
       The future of content creation, <strong>Sora 2 and Sora 2 Pro are now available exclusively on OneBrain in Bangladesh.</strong>  These advanced AI models, powered by OpenAI, turn your text or images into professional videos in just a few clicks.
