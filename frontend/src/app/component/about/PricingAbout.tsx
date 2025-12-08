@@ -36,7 +36,9 @@ const AIToolsIcons: Record<string, string> = {
   restorerWhite: '/assets/models/flux-w.svg',
   quizMakerWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/quiz-maker.svg',
   elevenlabsWhite: '/assets/models/elevenlabs.svg',
-  soraWhite: '/assets/models/chatgpt.svg',
+  // soraWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/sora-color.svg',
+  soraWhite: '/assets/models/sora-color.svg',
+  // udio:'/assets/models/udio-white.png',
   // udio:'/assets/models/udio-white.png',
   lightricks:'/assets/models/lightricks.svg'
 };
@@ -132,6 +134,11 @@ export default function PricingAbout({
     // Map tool names to their corresponding icons
     const toolIconMap: { [key: string]: string } = {
       // ===== AI TOOLS (from Tools-Data) =====
+      // 'sora v2 pro': 'soraWhite',
+      // 'sora v2': 'soraWhite',
+      'sora': 'soraWhite',
+      // 'sora pro': 'soraWhite',
+  
       'imagex': 'imageXWhite',
       'flux': 'fluxWhite',
       'seedream': 'seedream',
@@ -159,8 +166,7 @@ export default function PricingAbout({
       'study mode': 'quizMakerWhite',
       'elevenlabsWhite': 'elevenlabsWhite',
       'nano banana': 'veo3',
-      'sora': 'soraWhite',
-      'sora v2': 'soraWhite',
+      
       // 'udio': 'udio',
       'lightricks':'lightricks',
 
@@ -202,7 +208,15 @@ export default function PricingAbout({
       return (
         <div className={`flex items-center gap-1.5 ${isSubFeature ? 'ml-1' : ''} py-0.5`}>
           <div className="relative w-3 h-3 shrink-0 rounded bg-white/5 p-0.5 border border-white/5 group-hover:bg-white/10 transition-colors">
-             <Image src={icon} alt={feature} fill className="object-contain brightness-0 invert opacity-90" />
+             {/* <Image src={icon} alt={feature} fill className="object-contain brightness-0 invert opacity-90" /> */}
+             <Image
+             src={icon}
+             alt={feature}
+              width={14}
+              height={14}
+             className="object-contain brightness-0 invert opacity-90"
+             />
+
           </div>
           <span className="text-[10px] text-gray-400 group-hover:text-gray-200 transition-colors flex-1 font-normal leading-tight">
             {feature}
