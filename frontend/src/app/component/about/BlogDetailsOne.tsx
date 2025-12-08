@@ -172,7 +172,7 @@ export default function BlogDetailsOne() {
                 <div className="relative h-[300px] md:h-[400px] w-full">
                     <Image 
                         src="https://digitxevents.com/wp-content/uploads/2025/04/2-4.png"
-                        alt="Llama 3.3 vs Grok 3"
+                        alt="Comparing Llama 3.3, GPT-4o, and Grok 3: AI Models Head-to-Head"
                         fill
                         className="object-cover"
                     />
@@ -186,7 +186,7 @@ export default function BlogDetailsOne() {
                         <span className="text-gray-500 flex items-center">• By Admin</span>
                     </div> */}
 
-                    <h1 className="text-3xl md:text-5xl font-bold text-white mb-8 leading-tight">
+                    <h1 className="text-3xl md:text-5xl mt-10 font-bold text-white mb-8 leading-tight">
                     Comparing Llama 3.3, GPT-4o, and Grok 3: AI Models Head-to-Head
                     </h1>
 
@@ -344,17 +344,18 @@ export default function BlogDetailsOne() {
                 requiring speed and depth. Evaluate your priorities—cost, customization, or
                 specialization—to pick the right model.
               </p>
-              <div className="mt-6">
-                <button
-                  onClick={handleShare}
-                  className="flex items-center gap-2 text-gray-300 hover:text-blue-600 focus:outline-none"
-                  aria-label="Share this article"
-                >
-                  <Share2 size={20} />
-                  <span>Share</span>
-                </button>
-              </div>
+              
             </section>
+                        
+                        <div className="mt-12 pt-8 border-t border-white/10">
+                            <button
+                                onClick={handleShare}
+                                className="flex items-center gap-3 px-6 py-3 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-white transition-all"
+                            >
+                                <Share2 size={18} />
+                                <span>Share this Article</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </article>
