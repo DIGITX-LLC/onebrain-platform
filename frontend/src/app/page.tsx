@@ -306,41 +306,39 @@ export default function Home() {
 
   const updates = [
     {
-      version: "1.5.6",
+      version: "1.5.7",
       status: "Released",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released-image.svg",
       features: [
-        "Added new models: ChatGPT 5.1, Grok 4.1 Fast, Google Nano Banana Pro, and Lightricks 2 Fast.",
-        "Enhanced chat outputs to better reflect native tone, clarity, and conversational style.",
-        'Added a one-click "Regenerate Response" button for instant refinement.',
-        "Introduced Dynamic Vision Model Routing for smarter, more accurate attachment analysis.",
-        "Enabled full conversation exports via PDF and Markdown (.md).",
-        "Redesigned the chat bar with a modern capsule style and fixed mobile table scrolling.",
+        "Gemini 3 Pro Preview: Deep reasoning, long-context understanding, precise instructions, coding, content generation, and complex workflows.",
+        "OneBrain Memory Engine: Fully personal AI that remembers your preferences and learns from you across any LLM.",
+        'Reimagined Website: Smarter, faster, and more intuitive browsing experience.',
+    
       ],
     },
     {
-      version: "1.5.7",
+      version: "1.5.8",
       status: "In Progress",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress-image.svg",
       features: [
-        "Added new AI models Gemini 3 Pro and Perplexity Sonar.", 
-        "Implemented a dashboard for Context Memory Management control.",
-        "Launched the reimagined and refreshed OneBrain website.",
+       "PixVerse 5.5 – Quick, stylized short clips.",
+       "Kling O1 – Flexible, all-in-one video generation & editing.",
+       "Runway Gen 4.5 – High-quality, realistic, production-ready videos.",
+       "Package revised as per user request.",
       ],
     },
     {
-      version: "1.5.8",
+      version: "2",
       status: "Planned",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned-image.svg",
       features: [
-        "Canvas mode implementation with edit Preview and download feature.",
-        "Create, edit & download PDF, XLS & DOC files.",
+        "Agentic Feather – Coming soon.",
         
       ],
     },
@@ -910,7 +908,7 @@ export default function Home() {
             >
               <div className="inline-flex items-center px-3 py-1 rounded-full border border-white/5 bg-white/[0.03] text-xs font-medium text-gray-400 mb-6 backdrop-blur-sm">
                 <span className="flex h-2 w-2 rounded-full bg-green-500/80 mr-2 animate-pulse"></span>
-                v1.5.5.1 Now Live
+                v1.5.7 Now Live
                     </div>
               
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight mb-6">
