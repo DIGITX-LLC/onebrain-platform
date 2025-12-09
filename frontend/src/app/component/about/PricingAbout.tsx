@@ -36,8 +36,8 @@ const AIToolsIcons: Record<string, string> = {
   restorerWhite: '/assets/models/flux-w.svg',
   quizMakerWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/quiz-maker.svg',
   elevenlabsWhite: '/assets/models/elevenlabs.svg',
-  soraWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/sora-color.svg',
-  // soraWhite: '/assets/models/sora-color.svg',
+  // soraWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/sora-color.svg',
+  soraWhite: '/assets/models/sora.svg',
   // udio:'/assets/models/udio-white.png',
   // udio:'/assets/models/udio-white.png',
   lightricks:'/assets/models/lightricks.svg'
@@ -114,7 +114,8 @@ export default function PricingAbout({
       'alim ai': 'alimAiWhite',
       'nano banana': 'veo3Black',
       'kontext restore': 'kontextRestore',
-      'hailuo': 'hailuo'
+      'hailuo': 'hailuo',
+      
     };
 
     // Find matching model name
