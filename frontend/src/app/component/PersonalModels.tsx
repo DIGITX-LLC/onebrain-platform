@@ -38,7 +38,7 @@ export default function PersonalModels() {
                 <div className=" rounded-2xl bg-white/5 border border-white/10">
                   {/* <Brain className="w-10 h-10 text-white" /> */}
                   <Image 
-                   src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/MAX%201.svg" 
+                   src="/assets/modelLogo/MAX.webp" 
                    alt="Max Model Logo"
                    width={60} 
                     height={60}
@@ -89,8 +89,8 @@ export default function PersonalModels() {
                 <div className="rounded-2xl bg-white/5 border border-white/10">
                   {/* <GraduationCap className="w-10 h-10 text-gray-300" /> */}
                   <Image 
-                  src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/NEO%201.svg" 
-                     alt="Neo Model Logo"
+                    src="/assets/modelLogo/NEO.webp" 
+                     alt="Max Model Logo"
                      width={60} 
                     height={60}
                     className='rounded-2xl'

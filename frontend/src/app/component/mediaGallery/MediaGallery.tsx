@@ -4,37 +4,71 @@ import Image from "next/image";
 import OpenAIAchievement from "../about/OpenAIAchievement";
 
 // Move mediaImages outside component to prevent re-creation on each render
+// const mediaImages = [
+//   {
+//     url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/acchivements/1.png",
+//     alt: "Achievement 1"
+//   },
+//   {
+//     url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/acchivements/2.png",
+//     alt: "Achievement 2"
+//   },
+//   {
+//     url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/acchivements/4.png",
+//     alt: "Achievement 4"
+//   },
+//   {
+//     url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/acchivements/5.png",
+//     alt: "Achievement 5"
+//   },
+//   {
+//     url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/acchivements/6.png",
+//     alt: "Achievement 6"
+//   },
+//   {
+//     url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/acchivements/7.png",
+//     alt: "Achievement 7"
+//   },
+//   {
+//     url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/acchivements/8.png",
+//     alt: "Achievement 8"
+//   },
+//   {
+//     url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/acchivements/9.png",
+//     alt: "Achievement 9"
+//   }
+// ];
 const mediaImages = [
   {
-    url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/acchivements/1.png",
+    url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/onebrainweb/1.webp",
     alt: "Achievement 1"
   },
   {
-    url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/acchivements/2.png",
+    url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/onebrainweb/2.webp",
     alt: "Achievement 2"
   },
   {
-    url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/acchivements/4.png",
+    url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/onebrainweb/4.webp",
     alt: "Achievement 4"
   },
   {
-    url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/acchivements/5.png",
+    url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/onebrainweb/5.webp",
     alt: "Achievement 5"
   },
   {
-    url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/acchivements/6.png",
+    url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/onebrainweb/6.webp",
     alt: "Achievement 6"
   },
   {
-    url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/acchivements/7.png",
+    url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/onebrainweb/7.webp",
     alt: "Achievement 7"
   },
   {
-    url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/acchivements/8.png",
+    url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/onebrainweb/8.webp",
     alt: "Achievement 8"
   },
   {
-    url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/acchivements/9.png",
+    url: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/onebrainweb/9.webp",
     alt: "Achievement 9"
   }
 ];

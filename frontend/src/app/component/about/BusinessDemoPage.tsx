@@ -148,13 +148,70 @@ export default function BusinessDemoPage() {
             <div className="mt-12 pt-8 border-t border-white/5 w-full">
                 <p className="text-xs text-gray-500 mb-6 uppercase tracking-widest">Powered by World Class Models</p>
                 <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
-                    <img src="/assets/chatgpt_slide.svg" alt="ChatGPT" className="h-5 md:h-7 w-auto brightness-0 invert opacity-50 hover:opacity-100 transition-opacity duration-300" />
+                    {/* <img src="/assets/chatgpt_slide.svg" alt="ChatGPT" className="h-5 md:h-7 w-auto brightness-0 invert opacity-50 hover:opacity-100 transition-opacity duration-300" />
                     <img src="/assets/clude_slide.svg" alt="Claude" className="h-5 md:h-7 w-auto brightness-0 invert opacity-50 hover:opacity-100 transition-opacity duration-300" />
                     <img src="/assets/gemini_slide.svg" alt="Gemini" className="h-5 md:h-7 w-auto brightness-0 invert opacity-50 hover:opacity-100 transition-opacity duration-300" />
                     <img src="/assets/grok_slide.svg" alt="Grok" className="h-4 md:h-6 w-auto brightness-0 invert opacity-50 hover:opacity-100 transition-opacity duration-300" />
                     <img src="/assets/deepski_slide.svg" alt="DeepSeek" className="h-5 md:h-7 w-auto brightness-0 invert opacity-50 hover:opacity-100 transition-opacity duration-300" />
                     <img src="/assets/lama_slide.svg" alt="Llama" className="h-5 md:h-7 w-auto brightness-0 invert opacity-50 hover:opacity-100 transition-opacity duration-300" />
-                    <img src="/assets/about/Group-427323058.svg" alt="Mistral" className="h-4 md:h-6 w-auto brightness-0 invert opacity-50 hover:opacity-100 transition-opacity duration-300" />
+                    <img src="/assets/about/Group-427323058.svg" alt="Mistral" className="h-4 md:h-6 w-auto brightness-0 invert opacity-50 hover:opacity-100 transition-opacity duration-300" /> */}
+                  
+                  <Image
+                    src="/assets/chatgpt_slide.svg"
+                    alt="ChatGPT"
+                    width={20}
+                    height={28}
+                    className="h-5 md:h-7 w-auto brightness-0 invert opacity-50 hover:opacity-100 transition-opacity duration-300"
+                  />
+
+                  <Image
+                    src="/assets/clude_slide.svg"
+                    alt="Claude"
+                    width={20}
+                    height={28}
+                    className="h-5 md:h-7 w-auto brightness-0 invert opacity-50 hover:opacity-100 transition-opacity duration-300"
+                   />
+
+                  <Image
+                    src="/assets/gemini_slide.svg"
+                    alt="Gemini"
+                    width={20}
+                    height={28}
+                    className="h-5 md:h-7 w-auto brightness-0 invert opacity-50 hover:opacity-100 transition-opacity duration-300"
+                  />
+
+                  <Image
+                    src="/assets/grok_slide.svg"
+                    alt="Grok"
+                    width={16}
+                    height={24}
+                    className="h-4 md:h-6 w-auto brightness-0 invert opacity-50 hover:opacity-100 transition-opacity duration-300"
+                  />
+
+                  <Image
+                    src="/assets/deepski_slide.svg"
+                    alt="DeepSeek"
+                    width={20}
+                    height={28}
+                    className="h-5 md:h-7 w-auto brightness-0 invert opacity-50 hover:opacity-100 transition-opacity duration-300"
+                  />
+
+                  <Image
+                    src="/assets/lama_slide.svg"
+                    alt="Llama"
+                    width={20}
+                    height={28}
+                    className="h-5 md:h-7 w-auto brightness-0 invert opacity-50 hover:opacity-100 transition-opacity duration-300"
+                  />
+
+                  <Image
+                    src="/assets/about/Group-427323058.svg"
+                    alt="Mistral"
+                    width={16}
+                    height={24}
+                    className="h-4 md:h-6 w-auto brightness-0 invert opacity-50 hover:opacity-100 transition-opacity duration-300"
+                  />
+                
                 </div>
             </div>
          </motion.div>
