@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/dist/client/script";
@@ -15,7 +15,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "OneBrain | #1 AI Platform in Bangladesh | ChatGPT, Claude, Gemini & More",
-  description: "Access all top AI models like ChatGPT-4o, Claude 3.5, Gemini, and DeepSeek in one platform. Bangladesh's best affordable AI solution with bKash payment. Generate text, images, video & audio instantly.",
+  description:
+    "Access all top AI models like ChatGPT-4o, Claude 3.5, Gemini, and DeepSeek in one platform. Bangladesh's best affordable AI solution with bKash payment. Generate text, images, video & audio instantly.",
   keywords: [
     "OneBrain",
     "AI Bangladesh",
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
     "Claude 3.5 Sonnet Bangladesh",
     "Gemini Pro Bangladesh",
     "DeepSeek AI BD",
-    "Multi-LLM Platform"
+    "Multi-LLM Platform",
   ],
   authors: [{ name: "DigitX LLC", url: "https://digitxgroup.com" }],
   creator: "OneBrain Team",
@@ -56,7 +57,8 @@ export const metadata: Metadata = {
     url: "https://ai.onebrain.app",
     siteName: "OneBrain - The Multiverse of AI",
     title: "OneBrain | Access ChatGPT, Claude, Gemini & More in Bangladesh",
-    description: "Unlock the power of world-class AI models in Bangladesh. Pay easily with bKash/Nagad. Write, Design, and Create with OneBrain.",
+    description:
+      "Unlock the power of world-class AI models in Bangladesh. Pay easily with bKash/Nagad. Write, Design, and Create with OneBrain.",
     images: [
       {
         url: "https://digitxevents.com/wp-content/uploads/2025/04/Blog-Poster.png", // Using a high-quality banner for OG
@@ -69,21 +71,25 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "OneBrain | Best AI Platform in Bangladesh",
-    description: "ChatGPT, Claude, Gemini & more under one subscription. Affordable & Accessible in Bangladesh. Join the AI revolution!",
+    description:
+      "ChatGPT, Claude, Gemini & more under one subscription. Affordable & Accessible in Bangladesh. Join the AI revolution!",
     images: ["https://digitxevents.com/wp-content/uploads/2025/04/Blog-Poster.png"],
     creator: "@OneBrainAI", // Assuming a handle, or generic
   },
   icons: {
     icon: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/generated-image-1-f5d3bdca-fd56-4c0b-8a29-814dbb372faa.png",
-    apple: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/generated-image-1-f5d3bdca-fd56-4c0b-8a29-814dbb372faa.png",
+    apple:
+      "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/generated-image-1-f5d3bdca-fd56-4c0b-8a29-814dbb372faa.png",
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
-  themeColor: "#030205",
 };
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
+export const themeColor = "#030205";
 
 export default function RootLayout({
   children,
