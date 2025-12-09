@@ -306,20 +306,20 @@ export default function Home() {
 
   const updates = [
     {
-      version: "1.5.7",
+      version: "1.5.8",
       status: "Released",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released-image.svg",
       features: [
-        "Gemini 3 Pro Preview: Deep reasoning, long-context understanding, precise instructions, coding, content generation, and complex workflows.",
-        "OneBrain Memory Engine: Fully personal AI that remembers your preferences and learns from you across any LLM.",
-        'Reimagined Website: Smarter, faster, and more intuitive browsing experience.',
+        "Package revised as per user request.",
+        "OneGallery – Generated images and videos, available for 30 days after creation.",
+        
     
       ],
     },
     {
-      version: "1.5.8",
+      version: "1.5.9",
       status: "In Progress",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress.svg",
@@ -328,11 +328,11 @@ export default function Home() {
        "PixVerse 5.5 – Quick, stylized short clips.",
        "Kling O1 – Flexible, all-in-one video generation & editing.",
        "Runway Gen 4.5 – High-quality, realistic, production-ready videos.",
-       "Package revised as per user request.",
+       
       ],
     },
     {
-      version: "2",
+      version: "2.0",
       status: "Planned",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned.svg",
@@ -908,7 +908,7 @@ export default function Home() {
             >
               <div className="inline-flex items-center px-3 py-1 rounded-full border border-white/5 bg-white/[0.03] text-xs font-medium text-gray-400 mb-6 backdrop-blur-sm">
                 <span className="flex h-2 w-2 rounded-full bg-green-500/80 mr-2 animate-pulse"></span>
-                v1.5.7 Now Live
+                v1.5.8 Now Live
                     </div>
               
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight mb-6">
