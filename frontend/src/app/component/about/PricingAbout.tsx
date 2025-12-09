@@ -37,7 +37,7 @@ const AIToolsIcons: Record<string, string> = {
   quizMakerWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/quiz-maker.svg',
   elevenlabsWhite: '/assets/models/elevenlabs.svg',
   // soraWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/sora-color.svg',
-  soraWhite: '/assets/models/sora.svg',
+  soraWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/sora.svg',
   // udio:'/assets/models/udio-white.png',
   // udio:'/assets/models/udio-white.png',
   lightricks:'/assets/models/lightricks.svg'
