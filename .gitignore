@@ -109,3 +109,4 @@ package-lock.json
 
 # Deployment
 .deployment-trigger 
+frontend/.dev.log

@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Brain, BookOpen, Sparkles, GraduationCap, Clock, Zap } from 'lucide-react';
+import { BookOpen, Sparkles, Clock, Zap } from 'lucide-react';
 import Image from 'next/image';
 
 export default function PersonalModels() {

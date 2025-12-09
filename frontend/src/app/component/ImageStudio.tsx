@@ -16,14 +16,14 @@ export default function ImageStudio() {
                         <div className="absolute inset-0 flex items-center justify-center p-4">
                             <Image 
                                 src={'/assets/models/ImageX White.png'}
-                                alt="OpenAI ImageX" 
+                                alt="ImageX powered by OpenAI" 
                                 width={120}
                                 height={120}
                                 className="object-contain transition-transform duration-500 group-hover:scale-110"
                             />
                         </div>
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-3">
-                            <span className="text-xs font-medium text-white">OpenAI ImageX</span>
+                            <span className="text-xs font-medium text-white">ImageX powered by OpenAI</span>
                         </div>
                     </div>
 
@@ -45,7 +45,7 @@ export default function ImageStudio() {
                     <div className="relative h-40 rounded-xl overflow-hidden border border-white/10 group bg-[#0A0A0F]">
                         <div className="absolute inset-0 flex items-center justify-center p-4">
                             <Image 
-                                src={'/assets/models/seeDream.svg'}
+                                src={'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/Seedream.png'}
                                 alt="Seedream" 
                                 width={120}
                                 height={120}
@@ -93,7 +93,7 @@ export default function ImageStudio() {
                 </p>
                 
                 <div className="flex flex-wrap gap-3">
-                    {["OpenAI ImageX", "Google Nano Banana Pro", "Seedream", "Flux"].map((model, i) => (
+                    {["ImageX powered by OpenAI", "Google Nano Banana Pro", "Seedream", "Flux"].map((model, i) => (
                         <span key={i} className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300 hover:bg-white/10 transition-colors">
                             {model}
                         </span>
@@ -101,7 +101,7 @@ export default function ImageStudio() {
                 </div>
 
                 <p className="text-gray-500 text-base leading-relaxed">
-                    From photorealistic rendering to stylized art, access OpenAI powered ImageX, Google's latest Nano Banana Pro, Seedream, and Flux all in one place.
+                    From photorealistic rendering to stylized art, access ImageX powered by OpenAI, Google's latest Nano Banana Pro, Seedream, and Flux all in one place.
                 </p>
                </div>
 

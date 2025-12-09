@@ -1,1 +1,1 @@
-web: cd frontend && pnpm start 
+web: npx -y pnpm@8.15.6 --dir frontend run start
