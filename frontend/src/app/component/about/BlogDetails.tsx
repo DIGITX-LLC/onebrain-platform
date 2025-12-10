@@ -261,6 +261,8 @@ export default function BlogDetails() {
         </div>
       </main>
 
+      
+
       {/* Footer */}
       <Footer />
     </div>
