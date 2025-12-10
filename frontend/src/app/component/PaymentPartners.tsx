@@ -27,12 +27,28 @@ export default function PaymentPartners() {
           {/* Image with Dark Mode Filter */}
           {/* We apply invert and hue-rotate to try and make white backgrounds black and keep colors somewhat accurate */}
           <div className="relative w-full h-[60px] md:h-[80px] flex items-center justify-center overflow-hidden">
-             <Image 
+             {/* <Image 
                 src="/assets/payment_partner.svg" 
                 alt="Payment Partners: bKash, Nagad, Rocket, Upay, DBBL, Visa, Mastercard, Amex" 
                 width={1200} 
                 height={150}
                 className="w-full h-full object-contain object-center filter hover:brightness-110 transition-all duration-300"
+                style={{
+                    // If the original image has white boxes, invert makes them black.
+                    // Hue rotate tries to correct the color inversion.
+                    // Note: This is a heuristic. Ideally, we'd use transparent PNGs.
+                    // If the user wants "redesign", a clean container is step 1.
+                    // If the white boxes are persistent, we might need to just embrace them or ask for assets.
+                    // For now, let's try to make it look intentional.
+                }}
+             /> */}
+
+               <Image 
+                src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/onebrainweb/Group%20427323201.svg" 
+                alt="Payment Partners: bKash, Nagad, Rocket, Upay, DBBL, Visa, Mastercard, Amex" 
+                width={1200} 
+                height={150}
+                className="object-cover object-center"
                 style={{
                     // If the original image has white boxes, invert makes them black.
                     // Hue rotate tries to correct the color inversion.
