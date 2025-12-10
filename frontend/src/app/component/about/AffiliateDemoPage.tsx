@@ -24,9 +24,18 @@ export default function AffiliateDemoPage() {
               alt="OneBrain Logo"
               width={180}
               height={40}
-              className="h-6 w-auto brightness-0 invert sm:h-8 md:h-9"
+              className="h-6 w-[120px] pl-2 xs:h-7 xs:w-[140px] sm:h-8 sm:w-[160px] md:h-10 md:w-[200px]"
             />
           </Link>
+          {/* <Link href="/" className="z-10">
+            <Image
+              src="/assets/oneBrainLogo.svg"
+              alt="OneBrain Logo"
+              width={180}
+              height={40}
+              className="h-6 w-auto brightness-0 invert sm:h-8 md:h-9"
+            />
+          </Link> */}
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-6">
