@@ -38,12 +38,19 @@ export default function PersonalModels() {
                 <div className=" rounded-2xl bg-white/5 border border-white/10">
                   {/* <Brain className="w-10 h-10 text-white" /> */}
                   <Image 
-                   src="/assets/modelLogo/MAX.webp" 
+                   src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/onebrainweb/MAX%201.svg" 
                    alt="Max Model Logo"
                    width={60} 
                     height={60}
                     className='rounded-2xl'
                    />
+                  {/* <Image 
+                   src="/assets/modelLogo/MAX.webp" 
+                   alt="Max Model Logo"
+                   width={60} 
+                    height={60}
+                    className='rounded-2xl'
+                   /> */}
                 </div>
                 <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white text-xs font-bold uppercase tracking-wider">
                   Premium
@@ -89,12 +96,19 @@ export default function PersonalModels() {
                 <div className="rounded-2xl bg-white/5 border border-white/10">
                   {/* <GraduationCap className="w-10 h-10 text-gray-300" /> */}
                   <Image 
-                    src="/assets/modelLogo/NEO.webp" 
+                    src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/onebrainweb/NEO%201.svg" 
                      alt="Max Model Logo"
                      width={60} 
                     height={60}
                     className='rounded-2xl'
                     />
+                  {/* <Image 
+                    src="/assets/modelLogo/NEO.webp" 
+                     alt="Max Model Logo"
+                     width={60} 
+                    height={60}
+                    className='rounded-2xl'
+                    /> */}
                 </div>
                 <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-300 text-xs font-bold uppercase tracking-wider">
                   Student
