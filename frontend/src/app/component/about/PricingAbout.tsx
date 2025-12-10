@@ -260,36 +260,37 @@ export default function PricingAbout({
     {
       name: "Student",
       price: 299,
-      tokens: 600000,
-      bestFor: "Perfect for trying AI tools",
+      // tokens: 600000,
+      bestFor: "Perfect for trying AI Models",
       icon: <Star className="h-5 w-5 text-white" />,
       badge: "Unlimited Chat",
       features: [
-        "Access to Top AI Chat Models",
-        "• ChatGPT Premium",
-        "• Gemini Premium",
-        "• DeepSeek Premium",
-        "• Grok Premium",
-        "• Claude Premium",
-        "• Llama Premium",
-        "• Perplexity Premium",
-        "• Qwen Premium",
-        "• Mistral Premium",
+        // "Access to Top AI Chat Models",
+        "• ChatGPT",
+        "• Gemini",
+        "• DeepSeek",
+        "• Grok",
+        "• Claude",
+        "• Llama",
+        "• Perplexity",
+        "• Qwen",
+        "• Mistral",
         "Image Generation Models",
-        "• ImageX",
-        "• Flux",
-        "• Seedream 4",
+        // "• ImageX",
+        // "• Flux",
+        "• Flux Schnell",
+        // "• Seedream 4",
         // "AI Study Tools",
         // "• Quiz Maker",
         // "• Study Mode",
-        "Image Editing Models",
-        "• Kontext Pro",
-        "Unlimited chat & attachments with all advanced AI models (after Pro Tokens are finished)",
+        // "Image Editing Models",
+        // "• Kontext Pro",
+        // "Unlimited chat & attachments with all advanced AI models (after Pro Tokens are finished)",
         // "* Fair usage policy applies"
       ]
     },
     {
-      name: "Creator",
+      name: "Pro",
       price: 699,
       tokens: 1500000,
       bestFor: "Perfect for chat, video & images",
@@ -297,54 +298,64 @@ export default function PricingAbout({
       isPopular: true,
       badge: "Unlimited Image",
       features: [
-        "Everything on the Creator Plan",
+        // "Everything on the Creator Plan",
+        "Everything on the Student",
         // "Premium AI Chat Model",
         // "• Claude",
         "Image Generation Models",
-        "• Nano Banana",
-        "• Nano Banana Pro",
+        
+        // "• Nano Banana Pro",
 
-        // "• ImageX",
-        // "• Flux",
+        "• ImageX",
+        "• Flux",
+        "• Seedream",
+        "• Nano Banana",
         // "• Kontext Pro",
         // "AI Detector",
         "Image Restore Model",
         "• Kontext Restore",
         "Video Generation Models",
-        "• Pixverse 4.5 & 5",
-        "• RunwayML",
+        // "• Pixverse 4.5 & 5",
+        // "• RunwayML",
         "• SeeDance",
-        "• KlingAI V2.1, V2.5 Turbo",
+        // "• KlingAI V2.1, V2.5 Turbo",
         "• Hailuo",
         "• Wan",
-        "• Sora V2",
-        "• Lightricks",
+        // "• Sora V2",
+        // "• Lightricks",
         "Text To Speech And Music",
         // "• UdioAI",
         "• ElevenLabs",
         "Tools",
         "• Humanizer",
-        "Unlimited chat & attachments with all advanced AI models (after Pro Tokens are finished)*",
+        // "Unlimited chat & attachments with all advanced AI models (after Pro Tokens are finished)*",
         // "* Fair usage policy applies"
       ]
     },
     {
-      name: "Performance",
+      name: "Creator",
       price: 1999,
       tokens: 4500000,
       bestFor: "For heavy AI creators",
       icon: <Crown className="h-5 w-5 text-white" />,
       badge: "VEO3",
       features: [
-        "Everything on the Performance Plan",
-        "More Video Generation Model",
+        "Everything on the Pro Plan",
+        "Video Generation Model",
         // "• VEO 3.1 Fast",
         // "• Litetricks",
-        // "• PixVerse",
+        "• PixVerse",
         // "• Hailou 2 Fast",
-        // "• RunwayML",
-        "• KlingAI All Models",
-        "• Sora V2 Pro",
+        "• RunwayML",
+        "• SeeDance",
+        "• KlingAI",
+        "• Hailuo",
+        "• Wan",
+        "• Sora",
+        // "• Sora Pro",
+        "• Lightricks",
+        // "• KlingAI All Models",
+        // "• Sora V2 Pro",
         "• Veo3.1 Fast",
         // "Unlimited chat & attachments with advanced AI models (after Pro Tokens are finished)*",
         // "* Fair usage policy applies"
@@ -359,7 +370,7 @@ export default function PricingAbout({
       badge: "VEO3",
       features: [
         // "You Own All Available Models",
-        "More Video Generation Models",
+        "Video Generation Model",
         "• Veo3",
         "• Veo3.1",
         "You Own All Available Models",
@@ -445,16 +456,17 @@ export default function PricingAbout({
                         {/* Token Badge or Unlimited Chat Badge */}
                         {plan.tokens > 0 ? (
                             <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-white/5 border border-white/10 group-hover:bg-white/10 group-hover:border-white/15 transition-all">
-                                <Image src="/assets/coin.svg" width={10} height={10} className="w-2.5 h-2.5 opacity-80" alt="coin" />
+                                {/* <Image src="/assets/coin.svg" width={10} height={10} className="w-2.5 h-2.5 opacity-80" alt="coin" /> */}
                                 <span className="text-[9px] font-semibold text-gray-300 uppercase tracking-wide">
-                                    {plan.tokens.toLocaleString('en-IN')} Tokens
+                                    {plan.tokens.toLocaleString('en-IN')} Pro Tokens
                                 </span>
                             </div>
                         ) : (
                             <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-white/5 border border-white/10 group-hover:bg-white/10 group-hover:border-white/15 transition-all">
-                                <Sparkles className="w-2.5 h-2.5 text-gray-300" />
+                                {/* <Sparkles className="w-2.5 h-2.5 text-gray-300" /> */}
                                 <span className="text-[9px] font-semibold text-gray-300 tracking-wide">
-                                    Unlimited chat with personal memory
+                                    Unlimited Chat With Memory
+                                    {/* Unlimited chat with personal memory */}
                                 </span>
                             </div>
                         )}
