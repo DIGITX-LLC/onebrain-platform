@@ -180,12 +180,20 @@ export default function BlogDetailsTwo() {
             <article className="bg-[#0F0F13] border border-white/10 rounded-3xl overflow-hidden shadow-2xl">
                 {/* Cover Image */}
                 <div className="relative h-[300px] md:h-[400px] w-full">
-                    <Image 
+                    {/* <Image 
                         src="https://digitxevents.com/wp-content/uploads/2025/04/blog_cover-2.png"
                         alt="ChatGPT vs. DeepSeek: Which AI Chatbot Is Right for You?"
                         fill
                         className="object-cover"
+                    /> */}
+
+                    <Image 
+                        src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/onebrainweb/Blog%20Poster%20(1).png"
+                        alt="ChatGPT vs. DeepSeek: Which AI Chatbot Is Right for You?"
+                        fill
+                        className="object-cover"
                     />
+                    
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0F0F13] to-transparent opacity-80" />
                 </div>
 

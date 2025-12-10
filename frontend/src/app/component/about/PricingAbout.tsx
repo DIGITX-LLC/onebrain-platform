@@ -270,7 +270,7 @@ export default function PricingAbout({
         "• Gemini",
         "• DeepSeek",
         "• Grok",
-        "• Claude",
+        // "• Claude",
         "• Llama",
         "• Perplexity",
         "• Qwen",
