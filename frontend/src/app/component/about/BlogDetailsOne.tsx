@@ -170,8 +170,14 @@ export default function BlogDetailsOne() {
             <article className="bg-[#0F0F13] border border-white/10 rounded-3xl overflow-hidden shadow-2xl">
                 {/* Cover Image */}
                 <div className="relative h-[300px] md:h-[400px] w-full">
-                    <Image 
+                    {/* <Image 
                         src="https://digitxevents.com/wp-content/uploads/2025/04/2-4.png"
+                        alt="Comparing Llama 3.3, GPT-4o, and Grok 3: AI Models Head-to-Head"
+                        fill
+                        className="object-cover"
+                    /> */}
+                    <Image 
+                        src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/onebrainweb/Blog%20Poster%20(2).png"
                         alt="Comparing Llama 3.3, GPT-4o, and Grok 3: AI Models Head-to-Head"
                         fill
                         className="object-cover"
