@@ -2,15 +2,22 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/dist/client/script";
+import ErrorBoundary from "./component/ErrorBoundary";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
+  fallback: ["system-ui", "arial"],
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
+  fallback: ["monospace"],
 });
 
 export const metadata: Metadata = {
@@ -101,6 +108,11 @@ export default function RootLayout({
      
         
    <head>
+  {/* Preconnect to CDN for faster asset loading */}
+  <link rel="preconnect" href="https://digitx-storage.blr1.cdn.digitaloceanspaces.com" />
+  <link rel="dns-prefetch" href="https://digitx-storage.blr1.cdn.digitaloceanspaces.com" />
+  <link rel="preconnect" href="https://digitxevents.com" />
+  <link rel="dns-prefetch" href="https://digitxevents.com" />
   
   {/* Google Analytics */}
   <Script
@@ -122,7 +134,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning={true}
       >
-        {children}
+        <ErrorBoundary>
+          {children}
+        </ErrorBoundary>
       </body>
     </html>
   );
