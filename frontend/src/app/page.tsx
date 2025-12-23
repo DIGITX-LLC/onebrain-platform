@@ -306,39 +306,39 @@ export default function Home() {
 
   const updates = [
     {
-      version: "1.5.8",
+      version: "2.1",
       status: "Released",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released-image.svg",
       features: [
-        "Package revised as per user request.",
-        "OneGallery – Generated images and videos, available for 30 days after creation.",
+        "Replace package token with BDT for the user's better understanding.",
+        "New AI Models Added: ChatGPT 5.2, Gemini 3 Pro Preview, Gemini 3 Flash.",
 
 
       ],
     },
     {
-      version: "1.5.9",
+      version: "2.2",
       status: "In Progress",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress-image.svg",
       features: [
-        "PixVerse 5.5 – Quick, stylized short clips.",
-        "Kling O1 – Flexible, all-in-one video generation & editing.",
-        "Runway Gen 4.5 – High-quality, realistic, production-ready videos.",
+        "OneBrain OneAPI (Beta) – Bangladesh’s first API Platform, OneAPI, provides access to all AI models, available for everyone.",
+        // "Kling O1 – Flexible, all-in-one video generation & editing.",
+        // "Runway Gen 4.5 – High-quality, realistic, production-ready videos.",
 
       ],
     },
     {
-      version: "2.0",
+      version: "2.3",
       status: "Planned",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned-image.svg",
       features: [
-        "Agentic Feather – Coming soon.",
+        "AI Agentic V2 – Lots of new features coming soon.",
 
       ],
     },
@@ -580,8 +580,8 @@ export default function Home() {
           {!showBurgerMenu && (
             <nav className="hidden md:flex items-center justify-center">
               <ul className={`flex items-center gap-1 lg:gap-2 rounded-full p-1 transition-all duration-300 ${(isSticky || isMobile || isTablet)
-                  ? "bg-transparent border-transparent"
-                  : "bg-white/5 border border-white/5 backdrop-blur-sm"
+                ? "bg-transparent border-transparent"
+                : "bg-white/5 border border-white/5 backdrop-blur-sm"
                 }`}>
                 {/* Navigation Links Helper */}
                 {[
@@ -597,8 +597,8 @@ export default function Home() {
                         handleRouteClick(item.id);
                       }}
                       className={`relative px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 ${isActiveSection(item.activeId)
-                          ? "text-white bg-white/10 shadow-inner"
-                          : "text-gray-400 hover:text-white hover:bg-white/5"
+                        ? "text-white bg-white/10 shadow-inner"
+                        : "text-gray-400 hover:text-white hover:bg-white/5"
                         }`}
                     >
                       {item.name}
@@ -611,8 +611,8 @@ export default function Home() {
                   <Link
                     href="/business"
                     className={`relative px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 block ${isActiveRoute("/business")
-                        ? "text-white bg-white/10 shadow-inner"
-                        : "text-gray-400 hover:text-white hover:bg-white/5"
+                      ? "text-white bg-white/10 shadow-inner"
+                      : "text-gray-400 hover:text-white hover:bg-white/5"
                       }`}
                   >
                     Business
@@ -624,8 +624,8 @@ export default function Home() {
                   <Link
                     href="/blog"
                     className={`relative px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 block ${isActiveRoute("/blog")
-                        ? "text-white bg-white/10 shadow-inner"
-                        : "text-gray-400 hover:text-white hover:bg-white/5"
+                      ? "text-white bg-white/10 shadow-inner"
+                      : "text-gray-400 hover:text-white hover:bg-white/5"
                       }`}
                   >
                     Blog
