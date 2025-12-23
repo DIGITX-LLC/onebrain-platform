@@ -235,7 +235,7 @@ export default function Home() {
   // Duplicate for seamless loop
   const allLogo = [...logos, ...logos];
   const trustedByArray = Object.values(trustedBy);
-  
+
   // Active route function
   const isActiveRoute = (route: string) => {
     return pathname === route;
@@ -314,8 +314,8 @@ export default function Home() {
       features: [
         "Package revised as per user request.",
         "OneGallery – Generated images and videos, available for 30 days after creation.",
-        
-    
+
+
       ],
     },
     {
@@ -325,10 +325,10 @@ export default function Home() {
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress-image.svg",
       features: [
-       "PixVerse 5.5 – Quick, stylized short clips.",
-       "Kling O1 – Flexible, all-in-one video generation & editing.",
-       "Runway Gen 4.5 – High-quality, realistic, production-ready videos.",
-       
+        "PixVerse 5.5 – Quick, stylized short clips.",
+        "Kling O1 – Flexible, all-in-one video generation & editing.",
+        "Runway Gen 4.5 – High-quality, realistic, production-ready videos.",
+
       ],
     },
     {
@@ -339,7 +339,7 @@ export default function Home() {
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned-image.svg",
       features: [
         "Agentic Feather – Coming soon.",
-        
+
       ],
     },
   ];
@@ -543,8 +543,8 @@ export default function Home() {
       >
         <div className={`
           px-2 sm:px-4 py-3 flex items-center justify-between w-full max-w-7xl rounded-full transition-all duration-500 ease-in-out
-          ${(isSticky || isMobile || isTablet) 
-            ? "glass-card shadow-2xl shadow-black/50 bg-[#0A0A0F]/80 backdrop-blur-xl border border-white/10" 
+          ${(isSticky || isMobile || isTablet)
+            ? "glass-card shadow-2xl shadow-black/50 bg-[#0A0A0F]/80 backdrop-blur-xl border border-white/10"
             : "bg-transparent border border-transparent"}
         `}>
 
@@ -568,22 +568,21 @@ export default function Home() {
             />
           </Link>
           {showBurgerMenu && (
-          <button
-            onClick={toggleMenu}
-            className="text-white focus:outline-none p-2 hover:bg-white/10 rounded-full transition-all duration-200 relative z-20 flex-shrink-0"
-            aria-label="Toggle menu"
-          >
-            {isOpen ? <X size={20} className="sm:w-6 sm:h-6" /> : <Menu size={20} className="sm:w-6 sm:h-6" />}
-          </button>
-        )}
+            <button
+              onClick={toggleMenu}
+              className="text-white focus:outline-none p-2 hover:bg-white/10 rounded-full transition-all duration-200 relative z-20 flex-shrink-0"
+              aria-label="Toggle menu"
+            >
+              {isOpen ? <X size={20} className="sm:w-6 sm:h-6" /> : <Menu size={20} className="sm:w-6 sm:h-6" />}
+            </button>
+          )}
           {/* Desktop Navigation - Middle */}
           {!showBurgerMenu && (
             <nav className="hidden md:flex items-center justify-center">
-              <ul className={`flex items-center gap-1 lg:gap-2 rounded-full p-1 transition-all duration-300 ${
-                (isSticky || isMobile || isTablet) 
-                  ? "bg-transparent border-transparent" 
+              <ul className={`flex items-center gap-1 lg:gap-2 rounded-full p-1 transition-all duration-300 ${(isSticky || isMobile || isTablet)
+                  ? "bg-transparent border-transparent"
                   : "bg-white/5 border border-white/5 backdrop-blur-sm"
-              }`}>
+                }`}>
                 {/* Navigation Links Helper */}
                 {[
                   { name: "AI Models", id: "featuresSection", activeId: "ai-models" },
@@ -593,16 +592,15 @@ export default function Home() {
                 ].map((item) => (
                   <li key={item.id}>
                     <button
-                    onClick={(e) => {
-                      e.preventDefault();
+                      onClick={(e) => {
+                        e.preventDefault();
                         handleRouteClick(item.id);
-                    }}
-                      className={`relative px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 ${
-                        isActiveSection(item.activeId)
+                      }}
+                      className={`relative px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 ${isActiveSection(item.activeId)
                           ? "text-white bg-white/10 shadow-inner"
                           : "text-gray-400 hover:text-white hover:bg-white/5"
-                      }`}
-                  >
+                        }`}
+                    >
                       {item.name}
                     </button>
                   </li>
@@ -612,11 +610,10 @@ export default function Home() {
                 <li>
                   <Link
                     href="/business"
-                    className={`relative px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 block ${
-                      isActiveRoute("/business")
+                    className={`relative px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 block ${isActiveRoute("/business")
                         ? "text-white bg-white/10 shadow-inner"
                         : "text-gray-400 hover:text-white hover:bg-white/5"
-                    }`}
+                      }`}
                   >
                     Business
                   </Link>
@@ -626,21 +623,20 @@ export default function Home() {
                 <li>
                   <Link
                     href="/blog"
-                    className={`relative px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 block ${
-                      isActiveRoute("/blog")
+                    className={`relative px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 block ${isActiveRoute("/blog")
                         ? "text-white bg-white/10 shadow-inner"
                         : "text-gray-400 hover:text-white hover:bg-white/5"
-                    }`}
+                      }`}
                   >
                     Blog
-                    </Link>
-                  </li>
+                  </Link>
+                </li>
               </ul>
 
               {/* Sign In Button */}
               <div className="ml-4 pl-4 border-l border-white/10">
-                <a 
-                  href="https://ai.onebrain.app/login" 
+                <a
+                  href="https://ai.onebrain.app/login"
                   rel="noopener noreferrer"
                   className="group relative inline-flex items-center justify-center px-6 py-2 text-sm font-medium text-white transition-all duration-300 bg-[#1A1B2E] border border-blue-500/30 rounded-full hover:bg-[#232438] hover:border-blue-500/50 hover:shadow-[0_0_20px_-5px_rgba(59,130,246,0.3)] overflow-hidden"
                 >
@@ -656,7 +652,7 @@ export default function Home() {
           )}
         </div>
 
-       
+
 
         {/* Mobile Dropdown Menu */}
         {showBurgerMenu && (
@@ -896,11 +892,11 @@ export default function Home() {
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-28 pb-12 md:pt-36 md:pb-20">
           {/* Ambient Background Glow */}
           <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-white/5 rounded-full blur-[120px] pointer-events-none -z-10"></div>
-          
+
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 items-center justify-items-center">
-            
+
             {/* Left Side - Text Section */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
@@ -908,9 +904,9 @@ export default function Home() {
             >
               <div className="inline-flex items-center px-3 py-1 rounded-full border border-white/5 bg-white/[0.03] text-xs font-medium text-gray-400 mb-6 backdrop-blur-sm">
                 <span className="flex h-2 w-2 rounded-full bg-green-500/80 mr-2 animate-pulse"></span>
-                v1.5.8 Now Live
-                    </div>
-              
+                v2.0 Now Live
+              </div>
+
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight mb-6">
                 <span className="text-gray-300 drop-shadow-md">All Top AI Models</span>
                 <span className="block mt-2 bg-gradient-to-b from-gray-400 via-gray-500 to-gray-700 text-transparent bg-clip-text pb-2 drop-shadow-sm">One Subscription</span>
@@ -918,38 +914,38 @@ export default function Home() {
               <p className="text-lg md:text-xl text-gray-500 mb-8 max-w-lg leading-relaxed font-light">
                 Ideate with <span className="text-gray-400 font-medium">Chat</span> models, visualize with <span className="text-gray-400 font-medium">Image & Video</span> tools, and tell stories with <span className="text-gray-400 font-medium">Audio</span> generation. We bring all the latest AI you need for daily use into one platform. Save money by replacing multiple expensive subscriptions with one simple, affordable plan.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4 w-full justify-center md:justify-start">
-            <a
-              href="https://ai.onebrain.app/login"
-              rel="noopener noreferrer"
+                <a
+                  href="https://ai.onebrain.app/login"
+                  rel="noopener noreferrer"
                   className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-full bg-[#1A1B2E] text-gray-200 border border-white/10 px-8 font-medium transition-all duration-300 hover:bg-[#232438] hover:text-white hover:border-white/20 hover:shadow-[0_0_20px_-5px_rgba(255,255,255,0.1)] focus:outline-none"
                 >
                   <span className="mr-2">Get Started</span>
                   <ArrowUpRight className="h-5 w-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                 </a>
-                
-                <button 
+
+                <button
                   onClick={() => scrollToSection("featuresSection")}
                   className="inline-flex h-12 items-center justify-center rounded-full border border-white/5 bg-white/[0.03] px-8 font-medium text-gray-400 backdrop-blur-sm transition-all duration-300 hover:bg-white/5 hover:text-gray-200 hover:border-white/10"
                 >
                   Explore Models
                 </button>
-        </div>
+              </div>
             </motion.div>
 
             {/* Right Side - AI Circle */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
               className="flex items-center justify-center w-full order-1 md:order-2"
             >
-               <ModernHeroOrbit />
+              <ModernHeroOrbit />
             </motion.div>
-        </div>
+          </div>
         </section>
-        
+
         {/* Comparison Section */}
         <ComparisonSection />
 
@@ -969,7 +965,7 @@ export default function Home() {
             <div className="relative overflow-hidden mt-16 w-full">
               <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-[#030205] to-transparent z-10"></div>
               <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-[#030205] to-transparent z-10"></div>
-              
+
               <div className="flex animate-infinite-scroll space-x-6 md:space-x-10 w-max">
                 {[
                   // Universities
@@ -979,7 +975,7 @@ export default function Home() {
                   // Freelance/Global
                   "Upwork Top Rated", "Fiverr Pro", "Toptal"
                 ].map((name, index) => (
-                  <div 
+                  <div
                     key={index}
                     className="flex items-center justify-center bg-[#1A1B2E]/50 px-6 py-3 rounded-full backdrop-blur-md border border-white/5 hover:border-white/20 transition-all duration-300 group"
                   >
@@ -988,14 +984,14 @@ export default function Home() {
                     </span>
                   </div>
                 ))}
-                 {/* Duplicate for smooth loop */}
-                 {[
+                {/* Duplicate for smooth loop */}
+                {[
                   "BUET", "Dhaka University", "North South University", "BRAC University", "AUST", "IUT",
                   "Grameenphone", "Robi", "Banglalink", "Pathao", "Bkash", "Samsung",
                   "Upwork Top Rated", "Fiverr Pro", "Toptal"
                 ].map((name, index) => (
-                  <div 
-                    key={`dup-${index}`} 
+                  <div
+                    key={`dup-${index}`}
                     className="flex items-center justify-center bg-[#1A1B2E]/50 px-6 py-3 rounded-full backdrop-blur-md border border-white/5 hover:border-white/20 transition-all duration-300 group"
                   >
                     <span className="text-gray-400 font-medium text-sm md:text-base group-hover:text-gray-200 whitespace-nowrap">
@@ -1019,7 +1015,7 @@ export default function Home() {
             <span className="text-blue-400 font-medium tracking-wider uppercase text-sm mb-3 block">Unlimited Capabilities</span>
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
               Your All-in-One Creative Studio
-          </h2>
+            </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
               Switch seamlessly between the world's best AI models for writing, coding, and cinematic video generation.
             </p>
@@ -1030,25 +1026,25 @@ export default function Home() {
         <section className="container py-6 md:py-12" id="vo3TrendingSection">
           <Vo3TrendingSection />
         </section>
-        
+
         {/* Image Capability */}
         <section className="container py-6 md:py-12">
-             <ImageStudio />
+          <ImageStudio />
         </section>
 
         {/*  Sora / Video Capability */}
         <section className="container py-6 md:py-12">
-             <UploadImage />
+          <UploadImage />
         </section>
 
         {/* Audio Capability */}
         <section className="container py-6 md:py-12">
-             <AudioStudio />
+          <AudioStudio />
         </section>
 
         {/* Personal Models Section */}
         <PersonalModels />
-        
+
         {/* Pricing segment Section */}
         <section id="oneBrainPromoSection" className="py-16 md:py-20 container mx-auto">
           <div className="text-center mb-12">
@@ -1056,7 +1052,7 @@ export default function Home() {
               Be The AI <Image src="/assets/pro.svg" alt="pro" width={80} height={40} className="h-12 w-auto" />
             </h2>
             <p className="mt-6 text-gray-400 text-lg max-w-2xl mx-auto">Unlock premium features and access the most powerful AI models without limits.</p>
-        </div>
+          </div>
 
           <PricingAbout
             topUpPlans={[]}
