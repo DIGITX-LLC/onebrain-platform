@@ -37,6 +37,7 @@ const AIToolsIcons: Record<string, string> = {
   quizMakerWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/quiz-maker.svg',
   // elevenlabsWhite: '/assets/models/elevenlabs.svg',
   elevenlabsWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/onebrainweb/elevenlabs%20(1).svg',
+  elevenMusicWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/onebrainweb/elevenlabs%20(1).svg',
   // soraWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/sora-color.svg',
   soraWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/sora.svg',
   // udio:'/assets/models/udio-white.png',
@@ -168,6 +169,7 @@ export default function PricingAbout({
       'kontext upscaler': 'restorerWhite',
       'quiz maker': 'quizMakerWhite',
       'study mode': 'quizMakerWhite',
+      'elevenmusic': 'elevenMusicWhite',
       'elevenlabsWhite': 'elevenlabsWhite',
       'nano banana': 'veo3',
 
@@ -294,6 +296,8 @@ export default function PricingAbout({
       price: 699,
       // tokens: 1500000,
       tokens: 750,
+      baseCredit: 699,
+      bonusCredit: 51,
       bestFor: "Perfect for chat, video & images",
       icon: <Zap className="h-5 w-5 text-white" />,
       isPopular: true,
@@ -339,6 +343,8 @@ export default function PricingAbout({
       price: 1999,
       // tokens: 4500000,
       tokens: 2250,
+      baseCredit: 1999,
+      bonusCredit: 251,
       bestFor: "For heavy AI creators",
       icon: <Crown className="h-5 w-5 text-white" />,
       badge: "VEO3",
@@ -370,6 +376,8 @@ export default function PricingAbout({
       price: 4999,
       // tokens: 10000000,
       tokens: 5749,
+      baseCredit: 4999,
+      bonusCredit: 750,
       bestFor: "Ultimate AI powerhouse",
       icon: <Crown className="h-5 w-5 text-white" />,
       badge: "VEO3",
@@ -463,9 +471,13 @@ export default function PricingAbout({
                       <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-white/5 border border-white/10 group-hover:bg-white/10 group-hover:border-white/15 transition-all">
                         {/* <Image src="/assets/coin.svg" width={10} height={10} className="w-2.5 h-2.5 opacity-80" alt="coin" /> */}
                         <span className="text-[9px] font-semibold text-gray-300 uppercase tracking-wide">
-                          TK{plan.tokens.toLocaleString('en-IN')} Cerdit
+                          TK{plan.tokens.toLocaleString('en-IN')} Credit
                         </span>
-                        <p className="text-gray-500 text-[9px]">(Bonus)</p>
+                        {plan.bonusCredit && (
+                          <span className="text-[9px] text-gray-400">
+                            (TK{plan.baseCredit} + TK{plan.bonusCredit} Bonus)
+                          </span>
+                        )}
                       </div>
                     ) : (
                       <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-white/5 border border-white/10 group-hover:bg-white/10 group-hover:border-white/15 transition-all">
