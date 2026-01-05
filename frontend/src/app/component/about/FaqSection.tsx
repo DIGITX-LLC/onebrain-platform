@@ -48,15 +48,15 @@ export default function FaqSection() {
         </ul>
       `
     },
-    { 
+    {
       question: "Do I get ChatGPT 5 and Grok 4 in the 299tk plan?",
       answer: "No. These advanced models are exclusive to the 699tk plan."
     },
-    { 
+    {
       question: "Does the 699tk plan include video generation?",
       answer: `Yes ✅. The 699tk plan includes KlingAI, RumwayML, Hailuo AI, and Wan 2.2 for video generation. The 299tk plan does not support video at all.`
     },
-    { 
+    {
       question: "Does the 699tk plan include audio generation?",
       answer: `Yes ✅. You get Elevenlabs for realistic voices and Udio AI for music/voice creation. The 299tk plan has no audio support.`
     },
@@ -69,11 +69,11 @@ export default function FaqSection() {
         </ul>
       `
     },
-    { 
+    {
       question: "What is the Humanizer and is it included in the 299tk plan?",
       answer: "The Humanizer makes AI output more natural and human-like. It is only available in the 699tk plan."
     },
-    { 
+    {
       question: "Who should choose the 699tk plan?",
       answer: "If you are a content creator, professional, or business needing advanced chat models, video, image, and audio tools without restrictions, the 699tk plan is the best choice. The 299tk plan is better suited for basic chat-only use."
     }
@@ -82,11 +82,11 @@ export default function FaqSection() {
   return (
     <section id="faqSection" className="py-4 px-6 container mx-auto text-white">
       <div className="grid lg:grid-cols-12 gap-6">
-        
+
         {/* Left Side (FAQ Introduction) */}
         <div className="lg:col-span-4 flex flex-col items-start text-left">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight leading-tight">
-            Frequently Asked <br/> <span className="text-gray-400">Questions</span>
+            Frequently Asked <br /> <span className="text-gray-400">Questions</span>
           </h2>
           <p className="text-gray-400 mt-4 text-lg font-light leading-relaxed">
             Find answers to common questions about OneBrain's features, pricing, and capabilities.
@@ -99,13 +99,13 @@ export default function FaqSection() {
               className="w-full group"
             >
               <div className="flex items-center justify-between w-full bg-[#1A1B2E] border border-white/10 rounded-xl px-5 py-4 hover:bg-[#232438] hover:border-white/20 transition-all duration-300">
-                  <div className="flex items-center gap-3">
-                      <div className="p-2 bg-white/5 rounded-lg border border-white/5 group-hover:border-white/10">
-                        <Image src="/assets/Facebook.svg" alt="facebook" width={20} height={20} className="w-5 h-5 opacity-80 group-hover:opacity-100" />
-                      </div>
-                      <span className="font-medium text-gray-200 group-hover:text-white">Community Support</span>
+                <div className="flex items-center gap-3">
+                  <div className="p-2 bg-white/5 rounded-lg border border-white/5 group-hover:border-white/10">
+                    <Image src="/assets/Facebook.svg" alt="facebook" width={20} height={20} className="w-5 h-5 opacity-80 group-hover:opacity-100" />
                   </div>
-                  <IoIosArrowForward className="text-gray-500 group-hover:text-white transition-colors" />
+                  <span className="font-medium text-gray-200 group-hover:text-white">Community Support</span>
+                </div>
+                <IoIosArrowForward className="text-gray-500 group-hover:text-white transition-colors" />
               </div>
             </a>
 
@@ -114,55 +114,100 @@ export default function FaqSection() {
               className="w-full group"
             >
               <div className="flex items-center justify-between w-full bg-[#1A1B2E] border border-white/10 rounded-xl px-5 py-4 hover:bg-[#232438] hover:border-white/20 transition-all duration-300">
-                  <div className="flex items-center gap-3">
-                      <div className="p-2 bg-white/5 rounded-lg border border-white/5 group-hover:border-white/10">
-                        <Mail className="w-5 h-5 text-gray-300 group-hover:text-white" />
-                      </div>
-                      <span className="font-medium text-gray-200 group-hover:text-white">Email Support</span>
+                <div className="flex items-center gap-3">
+                  <div className="p-2 bg-white/5 rounded-lg border border-white/5 group-hover:border-white/10">
+                    <Mail className="w-5 h-5 text-gray-300 group-hover:text-white" />
                   </div>
-                  <IoIosArrowForward className="text-gray-500 group-hover:text-white transition-colors" />
+                  <span className="font-medium text-gray-200 group-hover:text-white">Email Support</span>
+                </div>
+                <IoIosArrowForward className="text-gray-500 group-hover:text-white transition-colors" />
               </div>
             </a>
           </div>
         </div>
 
         {/* Right Side (FAQ Section) */}
-        <div className="lg:col-span-8 flex flex-col gap-2">
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className="rounded-lg overflow-hidden border border-white/5 bg-[#0F0F13] hover:border-white/10 transition-colors duration-300"
-            >
-              <button
-                className="w-full flex justify-between items-center p-4 text-left text-white bg-transparent hover:bg-white/5 transition-colors"
-                onClick={() => toggleFAQ(index)}
+        {/* <div className="lg:col-span-8 flex flex-col gap-2"> */}
+        <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+          {/* First Column */}
+          <div className="flex flex-col gap-2">
+            {/* {faqs.map((faq, index) => ( */}
+            {faqs.slice(0, Math.ceil(faqs.length / 2)).map((faq, index) => (
+              <div
+                key={index}
+                className="rounded-lg overflow-hidden border border-white/5 bg-[#0F0F13] hover:border-white/10 transition-colors duration-300"
               >
-                <span className="flex items-center gap-4 text-base md:text-lg font-medium text-gray-200">
-                  {openIndex === index ? (
+                <button
+                  className="w-full flex justify-between items-center p-4 min-h-[5.5rem] text-left text-white bg-transparent hover:bg-white/5 transition-colors"
+                  onClick={() => toggleFAQ(index)}
+                >
+                  <span className="flex items-center gap-4 text-base md:text-lg font-medium text-gray-200">
+                    {openIndex === index ? (
                       <div className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-                          <IoIosArrowDown className="w-4 h-4" />
+                        <IoIosArrowDown className="w-4 h-4" />
                       </div>
-                  ) : (
+                    ) : (
                       <div className="w-6 h-6 rounded-full bg-white/5 border border-white/5 flex items-center justify-center shrink-0">
-                          <IoIosArrowForward className="w-4 h-4 text-gray-500" />
+                        <IoIosArrowForward className="w-4 h-4 text-gray-500" />
                       </div>
-                  )}
-                  {faq.question}
-                </span>
-              </button>
+                    )}
+                    {faq.question}
+                  </span>
+                </button>
 
-              <div 
-                className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    openIndex === index ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
-                }`}
-              >
-                <div className="p-5 pt-0 text-gray-400 font-light leading-relaxed border-t border-white/5 mx-5 mt-2">
-                  {/* If answer contains HTML list, render safely */}
-                  <div dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                <div
+                  className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                >
+                  <div className="p-5 pt-0 text-gray-400 font-light leading-relaxed border-t border-white/5 mx-5 mt-2">
+                    {/* If answer contains HTML list, render safely */}
+                    <div dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          {/* Second Column */}
+          <div className="flex flex-col gap-2">
+            {faqs.slice(Math.ceil(faqs.length / 2)).map((faq, index) => {
+              const realIndex = index + Math.ceil(faqs.length / 2);
+              return (
+                <div
+                  key={realIndex}
+                  className="rounded-lg overflow-hidden border border-white/5 bg-[#0F0F13] hover:border-white/10 transition-colors duration-300"
+                >
+                  <button
+                    className="w-full flex justify-between items-center p-4 min-h-[5.5rem] text-left text-white bg-transparent hover:bg-white/5 transition-colors"
+                    onClick={() => toggleFAQ(realIndex)}
+                  >
+                    <span className="flex items-center gap-4 text-base md:text-lg font-medium text-gray-200">
+                      {openIndex === realIndex ? (
+                        <div className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                          <IoIosArrowDown className="w-4 h-4" />
+                        </div>
+                      ) : (
+                        <div className="w-6 h-6 rounded-full bg-white/5 border border-white/5 flex items-center justify-center shrink-0">
+                          <IoIosArrowForward className="w-4 h-4 text-gray-500" />
+                        </div>
+                      )}
+                      {faq.question}
+                    </span>
+                  </button>
+
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === realIndex ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                  >
+                    <div className="p-5 pt-0 text-gray-400 font-light leading-relaxed border-t border-white/5 mx-5 mt-2">
+                      {/* If answer contains HTML list, render safely */}
+                      <div dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
 
       </div>
