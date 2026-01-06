@@ -118,7 +118,7 @@ export default function Footer() {
                   onClick={() => handleNavigation("referralSection")}
                   className="hover:text-white transition-colors text-left hover:translate-x-1 duration-200 inline-block"
                 >
-                  Referral Program
+                  Referral
                 </button>
               </li>
               <li>
