@@ -42,7 +42,8 @@ const AIToolsIcons: Record<string, string> = {
   soraWhite: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/sora.svg',
   // udio:'/assets/models/udio-white.png',
   // udio:'/assets/models/udio-white.png',
-  lightricks: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/lightricks.png'
+  pixverse: 'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/onebrainweb/Group%20427323192.svg',
+  lightricks:'https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/lightricks.png'
 };
 
 interface GenerateImageUpTo {
@@ -152,7 +153,7 @@ export default function PricingAbout({
       'veo3': 'veo3',
       'veo 3.1 fast': 'veo3',
       'vgen': 'vGenWhite',
-      'pixverse': 'vGenWhite',
+      'pixverse': 'pixverse',
       'litetricks': 'vGenWhite',
       'seedance': 'seedanceWhite',
       'hailuo': 'hailuo',
