@@ -21,12 +21,12 @@ export default function Footer() {
 
   return (
     <footer className="py-16 px-6 border-t border-white/5 bg-[#030205] relative overflow-hidden">
-       {/* Background Glow */}
-       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-blue-900/10 rounded-full blur-[120px] -z-10 pointer-events-none" />
+      {/* Background Glow */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-blue-900/10 rounded-full blur-[120px] -z-10 pointer-events-none" />
 
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
-          
+
           {/* Left Section - Branding & Info (Span 5 cols) */}
           <div className="md:col-span-5 space-y-6">
             {/* Logo */}
@@ -39,30 +39,30 @@ export default function Footer() {
                 className="h-8 w-auto opacity-90 hover:opacity-100 transition-opacity"
               />
             </Link>
-            
+
             {/* Tagline - Styled as text instead of image for better quality */}
             <div className="space-y-1">
-                 <h3 className="text-xl font-bold text-white tracking-tight">
-                    The <span className="bg-gradient-to-r from-blue-400 to-indigo-500 text-transparent bg-clip-text">Multiverse</span> of AI
-                 </h3>
-                 <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
-                    Empowering Bangladesh with the world&apos;s most advanced AI models in one affordable platform.
-                 </p>
+              <h3 className="text-xl font-bold text-white tracking-tight">
+                The <span className="bg-gradient-to-r from-blue-400 to-indigo-500 text-transparent bg-clip-text">Multiverse</span> of AI
+              </h3>
+              <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
+                Empowering Bangladesh with the world&apos;s most advanced AI models in one affordable platform.
+              </p>
             </div>
 
             {/* Address Block */}
             <div className="pt-4 space-y-3 text-sm text-gray-400">
-                <div className="flex items-start gap-3">
-                    <span className="mt-1 block w-1.5 h-1.5 rounded-full bg-gray-600 shrink-0" />
-                    <p>
-                        Level 8, MTB Building, Software Technology Park,<br />
-                        Jashore-7400, Bangladesh
-                    </p>
-                </div>
-                <div className="flex items-center gap-3">
-                     <span className="block w-1.5 h-1.5 rounded-full bg-gray-600 shrink-0" />
-                    <p>Contact: <a href="tel:+8801988121220" className="text-gray-300 hover:text-white transition-colors">+880 1988121220</a></p>
-                </div>
+              <div className="flex items-start gap-3">
+                <span className="mt-1 block w-1.5 h-1.5 rounded-full bg-gray-600 shrink-0" />
+                <p>
+                  Level 8, MTB Building, Software Technology Park,<br />
+                  Jashore-7400, Bangladesh
+                </p>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="block w-1.5 h-1.5 rounded-full bg-gray-600 shrink-0" />
+                <p>Contact: <a href="tel:+8801988121220" className="text-gray-300 hover:text-white transition-colors">+880 1988121220</a></p>
+              </div>
             </div>
           </div>
 
@@ -112,6 +112,14 @@ export default function Footer() {
                 >
                   Blog
                 </Link>
+              </li>
+              <li>
+                <button
+                  onClick={() => handleNavigation("referralSection")}
+                  className="hover:text-white transition-colors text-left hover:translate-x-1 duration-200 inline-block"
+                >
+                  Referral
+                </button>
               </li>
               <li>
                 <Link
@@ -164,25 +172,25 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500">
-            <p>© 2025 OneBrain. All rights reserved.</p>
-            
-            <div className="flex items-center gap-2">
-                <span>A Product of</span>
-                <a
-                    href="https://digitxgroup.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="opacity-70 hover:opacity-100 transition-opacity"
-                >
-                    <Image
-                        src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/DIGITX.svg"
-                        alt="DigitX"
-                        width={60}
-                        height={16}
-                        className="h-4 w-auto"
-                    />
-                </a>
-            </div>
+          <p>© 2025 OneBrain. All rights reserved.</p>
+
+          <div className="flex items-center gap-2">
+            <span>A Product of</span>
+            <a
+              href="https://digitxgroup.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="opacity-70 hover:opacity-100 transition-opacity"
+            >
+              <Image
+                src="https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/DIGITX.svg"
+                alt="DigitX"
+                width={60}
+                height={16}
+                className="h-4 w-auto"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
