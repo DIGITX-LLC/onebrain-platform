@@ -23,7 +23,7 @@ import BusinessSection from './component/BusinessSection';
 import PaymentPartners from './component/PaymentPartners';
 import Footer from './component/Footer';
 import PersonalModels from './component/PersonalModels';
-import AffiliateSection from './component/AffiliateSection';
+import ReferralSection from './component/ReferralSection';
 
 // Update Card Component with optimized image loading
 interface UpdateData {
@@ -253,6 +253,7 @@ export default function Home() {
         { id: "featuresSection", name: "ai-models" },
         { id: "oneBrainPromoSection", name: "pricing" },
         { id: "updatesSection", name: "brain-upgrading-log" },
+        { id: "referralSection", name: "referral-program" },
         { id: "mobileAppSection", name: "mobile-app" },
         { id: "faqSection", name: "contact-us" },
       ];
@@ -589,6 +590,7 @@ export default function Home() {
                   { name: "Pricing", id: "oneBrainPromoSection", activeId: "pricing" },
                   { name: "Updates", id: "updatesSection", activeId: "brain-upgrading-log" },
                   { name: "Contact Us", id: "faqSection", activeId: "contact-us" },
+                  { name: "Referral", id: "referralSection", activeId: "referral-program" },
                 ].map((item) => (
                   <li key={item.id}>
                     <button
@@ -748,6 +750,34 @@ export default function Home() {
                       }}
                     >
                       Updates
+                    </button>
+                  )}
+                </li>
+
+                {/* Referral Program */}
+                <li className="px-5 py-1">
+                  {isActiveSection("referral-program") ? (
+                    <div className="w-full">
+                      <DynamicButton
+                        label="Referral"
+                        size="w-full px-4 h-[45px] rounded-xl font-medium block text-sm"
+                      />
+                    </div>
+                  ) : (
+                    <button
+                      type="button"
+                      className="w-full text-left px-4 py-3 text-white hover:bg-white/10 transition-all duration-200 cursor-pointer rounded-xl font-medium text-sm"
+                      onMouseDown={(e) => {
+                        e.preventDefault();
+                      }}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        // console.log("Referral Program clicked");
+                        handleRouteClick("referralSection");
+                      }}
+                    >
+                      Referral
                     </button>
                   )}
                 </li>
@@ -1076,6 +1106,9 @@ export default function Home() {
             ))}
           </div>
         </section>
+
+        {/* Referral Section */}
+        <ReferralSection />
 
         {/* Mobile App Countdown Section */}
         <div id="mobileAppSection" className="py-10 md:py-16 relative z-10">
