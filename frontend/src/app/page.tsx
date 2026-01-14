@@ -307,39 +307,39 @@ export default function Home() {
 
   const updates = [
     {
-      version: "2.1",
+      version: "2.3",
       status: "Released",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-released-image.svg",
       features: [
-        "Replace package token with BDT for the user's better understanding.",
-        "New AI Models Added: ChatGPT 5.2, Gemini 3 Pro Preview, Gemini 3 Flash.",
+        "OneAPI - Unified AI API platform for Bangladeshi developers; access all major AI models, BDT payments, simple and fast.",
+        "Facebook Messenger Agent - 24/7 automated replies for instant user support.",
+        "Bug Fixes & Improvements - General fixes and performance enhancements",
 
 
       ],
     },
     {
-      version: "2.2",
+      version: "2.4",
       status: "In Progress",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-inprogress-image.svg",
       features: [
-        "OneBrain OneAPI (Beta) – Bangladesh’s first API Platform, OneAPI, provides access to all AI models, available for everyone.",
-        // "Kling O1 – Flexible, all-in-one video generation & editing.",
-        // "Runway Gen 4.5 – High-quality, realistic, production-ready videos.",
-
+        // "OneBrain OneAPI (Beta) – Bangladesh’s first API Platform, OneAPI, provides access to all AI models, available for everyone.",
+        "Trending Image & Video Generation Model - Coming soon",
+      
       ],
     },
     {
-      version: "2.3",
+      version: "2.5",
       status: "Planned",
       statusImage:
         "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned.svg",
       image: "https://digitx-storage.blr1.cdn.digitaloceanspaces.com/Assets/onebrain-assets/about-page-version-planned-image.svg",
       features: [
-        "AI Agentic V2 – Lots of new features coming soon.",
+        "AI Agentic V2 - Many new features coming soon",
 
       ],
     },
