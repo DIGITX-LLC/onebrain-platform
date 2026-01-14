@@ -1,0 +1,29 @@
+name: onebrain-platform
+region: blr1
+
+services:
+  - name: frontend
+    source_dir: frontend
+    github:
+      branch: main
+      deploy_on_push: true
+    
+    build_command: pnpm install --no-frozen-lockfile && NODE_OPTIONS='--max-old-space-size=460' pnpm run build
+    run_command: NODE_OPTIONS='--max-old-space-size=460' pnpm start -H 0.0.0.0 -p ${PORT:-3000}
+    
+    environment_slug: node-js
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    
+    http_port: 3000
+    
+    routes:
+      - path: /
+    
+    envs:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        scope: RUN_TIME
+        value: "3000"
+
