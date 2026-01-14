@@ -8,21 +8,8 @@ import {
   ArrowRight, Check, Copy, 
   ChevronRight, CreditCard,
   Globe, AlertTriangle, XCircle, CheckCircle,
-  Code, Rocket, Users, Building2, Zap
+  Code, Rocket, Users, Building2
 } from "lucide-react";
-
-// Import icons for AI models
-const AIModelIcons: Record<string, string> = {
-  chatgpt: '/assets/models/chatgpt.svg',
-  gemini: '/assets/models/gemini.svg',
-  claudeWhite: '/assets/models/cloude-White.svg',
-  deepseek: '/assets/models/deepseek.svg',
-  grok: '/assets/models/grok.svg',
-  llama: '/assets/models/llama.svg',
-  perplexity: '/assets/models/perplexity.svg',
-  mistral: '/assets/models/mistral.svg',
-  qwenBlack: '/assets/models/qwen-black.svg',
-};
 
 // Animated code block component
 const CodeBlock = ({ code, language }: { code: string; language: string }) => {
@@ -133,6 +120,30 @@ print(response.json())`;
     { name: "Mistral", src: "/assets/models/mistral.svg" },
   ];
 
+  // Helper function to get model icon based on feature text
+  const getModelIcon = (feature: string) => {
+    const lowerFeature = feature.toLowerCase();
+    
+    if (lowerFeature.includes("gpt") || lowerFeature.includes("chatgpt") || lowerFeature.includes("openai")) {
+      return "/assets/models/chatgpt.svg";
+    } else if (lowerFeature.includes("claude") || lowerFeature.includes("anthropic")) {
+      return "/assets/models/cloude-White.svg";
+    } else if (lowerFeature.includes("gemini") || lowerFeature.includes("google")) {
+      return "/assets/models/gemini.svg";
+    } else if (lowerFeature.includes("grok") || lowerFeature.includes("x ai")) {
+      return "/assets/models/grok.svg";
+    } else if (lowerFeature.includes("deepseek")) {
+      return "/assets/models/deepseek.svg";
+    } else if (lowerFeature.includes("llama")) {
+      return "/assets/models/llama.svg";
+    } else if (lowerFeature.includes("qwen")) {
+      return "/assets/models/qwen.svg";
+    } else if (lowerFeature.includes("mistral")) {
+      return "/assets/models/mistral.svg";
+    }
+    return null;
+  };
+
   const pricingTiers = [
     {
       name: "Learner",
@@ -149,8 +160,7 @@ print(response.json())`;
       ],
       cta: "Get Started",
       popular: false,
-      badge: null,
-      modelIcons: ["chatgpt", "gemini", "deepseek", "grok"]
+      badge: null
     },
     {
       name: "Builder",
@@ -166,8 +176,7 @@ print(response.json())`;
       ],
       cta: "Get Started",
       popular: false,
-      badge: null,
-      modelIcons: ["chatgpt", "claudeWhite", "gemini", "deepseek"]
+      badge: null
     },
     {
       name: "Startup",
@@ -183,8 +192,7 @@ print(response.json())`;
       ],
       cta: "Get Started",
       popular: false,
-      badge: null,
-      modelIcons: ["chatgpt", "claudeWhite", "gemini", "grok"]
+      badge: null
     },
     {
       name: "Enterprise",
@@ -199,78 +207,10 @@ print(response.json())`;
       ],
       cta: "Get Started",
       popular: false,
-      badge: "Active",
-      modelIcons: ["chatgpt", "claudeWhite", "gemini", "grok"]
+      badge: "ACTIVE"
     }
   ];
 
-  // Model icon mapping
-  const modelIconMap: Record<string, string> = {
-    chatgpt: '/assets/models/chatgpt.svg',
-    gemini: '/assets/models/gemini.svg',
-    claudeWhite: '/assets/models/cloude-White.svg',
-    deepseek: '/assets/models/deepseek.svg',
-    grok: '/assets/models/grok.svg',
-    llama: '/assets/models/llama.svg',
-    mistral: '/assets/models/mistral.svg',
-  };
-
-  // Helper function to get AI model icon
-  const getModelIcon = (modelName: string) => {
-    const modelNameLower = modelName.toLowerCase();
-
-    // Map model names to their corresponding icons
-    const modelIconMapLookup: { [key: string]: string } = {
-      'chatgpt': 'chatgpt',
-      'gpt': 'chatgpt',
-      'gemini': 'gemini',
-      'claude': 'claudeWhite',
-      'deepseek': 'deepseek',
-      'grok': 'grok',
-      'llama': 'llama',
-      'perplexity': 'perplexity',
-      'mistral': 'mistral',
-      'qwen': 'qwenBlack',
-    };
-
-    // Find matching model name
-    for (const [key, iconKey] of Object.entries(modelIconMapLookup)) {
-      if (modelNameLower.includes(key)) {
-        return AIModelIcons[iconKey as keyof typeof AIModelIcons];
-      }
-    }
-
-    return null;
-  };
-
-  // Helper function to render feature with icon
-  const renderFeatureWithIcon = (feature: string) => {
-    const modelIcon = getModelIcon(feature);
-
-    if (modelIcon) {
-      return (
-        <div className="flex items-center gap-2">
-          <div className="relative w-4 h-4 shrink-0 rounded bg-white/5 p-0.5 border border-white/5">
-            <Image
-              src={modelIcon}
-              alt={feature}
-              width={14}
-              height={14}
-              className="w-full h-full object-contain brightness-0 invert opacity-90"
-            />
-          </div>
-          <span>{feature}</span>
-        </div>
-      );
-    }
-
-    return <span>{feature}</span>;
-  };
-
-  // Helper function to check if a feature is a model name
-  const isModelName = (feature: string): boolean => {
-    return getModelIcon(feature) !== null;
-  };
 
   return (
     <main className='bg-[#030205] w-full min-h-screen text-white selection:bg-white/20 overflow-x-hidden relative' itemScope itemType="https://schema.org/WebPage">
@@ -487,8 +427,7 @@ print(response.json())`;
               So We Built <span className="bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 text-transparent bg-clip-text">OneAPI</span>
             </h2>
             <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-              A single API that gives you access to every major AI model. 
-              Built from Dhaka, for developers everywhere in Bangladesh.
+              A single API that gives you access to every major AI model. Built for developers everywhere in Bangladesh.
             </p>
           </StorySection>
 
@@ -683,55 +622,66 @@ print(response.json())`;
             </p>
           </StorySection>
 
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4">
             {pricingTiers.map((tier, i) => (
               <StorySection key={i}>
-                <div className={`relative p-6 rounded-3xl border transition-all duration-300 glass-card group overflow-hidden h-full ${
-                  tier.badge ? "border-white/20 bg-gradient-to-br from-white/5 to-white/[0.02]" : "border-white/10"
+                <div className={`relative p-6 rounded-2xl border transition-all duration-300 glass-card group overflow-hidden h-full flex flex-col ${
+                  tier.badge ? "border-white/40 bg-gradient-to-br from-white/15 to-white/5" : "border-white/10"
                 }`}>
                   {tier.badge && (
-                    <div className="absolute top-4 right-4 px-3 py-1 bg-gray-700 rounded-full text-xs font-bold text-white">
+                    <div className="absolute top-4 right-4 px-2.5 py-1 bg-gray-500 rounded-full text-xs font-bold text-white hidden">
                       {tier.badge}
                     </div>
                   )}
                   
-                  <div className="relative z-10 mb-4">
-                    <h3 className="text-lg font-bold text-white mb-1">{tier.name}</h3>
-                  </div>
-                  
-                  <div className="relative z-10 mb-4">
-                    <span className="text-3xl font-bold text-white">{tier.price}</span>
-                    <span className="text-gray-500 text-sm">{tier.period}</span>
-                  </div>
-
-                  <div className="relative z-10 mb-4 pb-4 border-b border-white/10">
-                    <p className="text-gray-400 text-sm font-medium">{tier.credit}</p>
+                  {/* Header: Title and Price on same line */}
+                  <div className="relative z-10 mb-6 flex items-start justify-between gap-4">
+                    <h3 className="text-lg font-bold text-white">{tier.name}</h3>
+                    <div className="text-right shrink-0">
+                      <div className="flex items-baseline gap-1">
+                        <span className="text-2xl font-bold text-white">{tier.price}</span>
+                      </div>
+                      <span className="text-xs text-gray-400">{tier.period}</span>
+                    </div>
                   </div>
 
+                  {/* Credit Section */}
+                  <div className="relative z-10 mb-6 px-4 py-3 rounded-full bg-white/3 border border-gray-900">
+                    <p className="text-sm font-semibold text-white text-center">{tier.credit}</p>
+                  </div>
                   
-                  <ul className="relative z-10 space-y-4 mb-8">
-                    {tier.features.map((feature, j) => (
-                      <li key={j} className="flex items-start gap-3 text-gray-300 text-sm">
-                        {!isModelName(feature) && (
-                          <div className={`w-5 h-5 mt-0.5 shrink-0 rounded-full border-2 flex items-center justify-center ${tier.popular ? "border-gray-100 text-gray-100" : "border-gray-500 text-gray-500"}`}>
-                            <Zap className="w-2.5 h-2.5" strokeWidth={3} />
-                          </div>
-                        )}
-                        {renderFeatureWithIcon(feature)}
-                      </li>
-                    ))}
-                  </ul>
-                  
+                  {/* CTA Button */}
                   <a 
                     href="https://ai.onebrain.app/login"
-                    className={`relative z-10 block w-full py-3 rounded-full font-medium text-center transition-all ${
-                      tier.popular 
-                        ? "bg-white text-black hover:bg-gray-100" 
+                    className={`relative z-10 block w-full py-2.5 rounded-full font-medium text-center text-sm transition-all mb-6 ${
+                      tier.badge
+                        ? "bg-white/10 text-white border border-white/20 hover:bg-white/15" 
                         : "bg-white/5 text-white border border-white/10 hover:bg-white/10"
                     }`}
                   >
                     {tier.cta}
                   </a>
+
+                  {/* Features List */}
+                  <ul className="relative z-10 space-y-3 mb-6 flex-grow">
+                    {tier.features.map((feature, j) => {
+                      const modelIcon = getModelIcon(feature);
+                      return (
+                        <li key={j} className="flex items-start gap-2 text-gray-300 text-xs leading-relaxed">
+                          {modelIcon ? (
+                            <div className="mt-0.5 w-4 h-4 rounded  shrink-0 group-hover:bg-white/10 transition-colors flex items-center justify-center">
+                              <Image src={modelIcon} alt="model" width={12} height={12} className="w-5 h-5 opacity-70 group-hover:opacity-100 transition-opacity" />
+                            </div>
+                          ) : (
+                            <div className="mt-0.5 p-0.5 rounded-full bg-white/5 border border-white/10 shrink-0 group-hover:bg-white/10 transition-colors">
+                              <Check className="w-3 h-3 text-gray-400 group-hover:text-gray-300 transition-colors" />
+                            </div>
+                          )}
+                          <span>{feature}</span>
+                        </li>
+                      );
+                    })}
+                  </ul>
                 </div>
               </StorySection>
             ))}
