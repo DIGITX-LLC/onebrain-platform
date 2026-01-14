@@ -129,6 +129,14 @@ export default function Footer() {
                   Become a Partner
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/api-service"
+                  className="hover:text-white transition-colors text-left hover:translate-x-1 duration-200 inline-block"
+                >
+                  API Service
+                </Link>
+              </li>
             </ul>
           </div>
 
