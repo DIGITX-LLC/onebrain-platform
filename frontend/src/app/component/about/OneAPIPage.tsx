@@ -254,7 +254,7 @@ print(response.json())`;
             </button>
             
             <a 
-              href="https://ai.onebrain.app/login"
+              href={`${process.env.NEXT_PUBLIC_LOGIN_URL || 'https://ai.onebrain.app'}/api/login`}
               className="group relative inline-flex items-center justify-center px-6 py-2 text-sm font-medium text-white transition-all duration-300 bg-[#1A1B2E] border border-white/10 rounded-full hover:bg-[#232438] hover:border-white/20 hover:shadow-[0_0_20px_-5px_rgba(255,255,255,0.1)] overflow-hidden"
             >
               <span className="relative z-10 flex items-center gap-2">
@@ -286,7 +286,9 @@ print(response.json())`;
           <button onClick={() => scrollToSection('the-solution')} className="block w-full text-left px-4 py-3 text-white hover:bg-white/10 rounded-xl transition-colors">The Solution</button>
           <button onClick={() => scrollToSection('pricing')} className="block w-full text-left px-4 py-3 text-white hover:bg-white/10 rounded-xl transition-colors">Pricing</button>
           <div className="h-px bg-white/10 my-2"></div>
-          <a href="https://ai.onebrain.app/login" className="block w-full text-center px-4 py-3 text-white bg-[#1A1B2E] border border-white/10 rounded-xl font-medium hover:bg-[#232438]">Get API Key</a>
+          <a 
+          href={`${process.env.NEXT_PUBLIC_LOGIN_URL || 'https://ai.onebrain.app'}/api/login`}
+           className="block w-full text-center px-4 py-3 text-white bg-[#1A1B2E] border border-white/10 rounded-xl font-medium hover:bg-[#232438]">Get API Key</a>
         </motion.div>
       )}
 
@@ -308,7 +310,7 @@ print(response.json())`;
             {/* CTA */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
               <a 
-                href="https://ai.onebrain.app/login"
+                href={`${process.env.NEXT_PUBLIC_LOGIN_URL || 'https://ai.onebrain.app'}/api/login`}
                 className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-full bg-[#1A1B2E] text-gray-200 border border-white/10 px-8 font-medium transition-all duration-300 hover:bg-[#232438] hover:text-white hover:border-white/20 hover:shadow-[0_0_20px_-5px_rgba(255,255,255,0.1)] focus:outline-none"
               >
                 <span className="mr-2">Start Building Today</span>
@@ -652,7 +654,7 @@ print(response.json())`;
                   
                   {/* CTA Button */}
                   <a 
-                    href="https://ai.onebrain.app/login"
+                    href={`${process.env.NEXT_PUBLIC_LOGIN_URL || 'https://ai.onebrain.app'}/api/login`}
                     className={`relative z-10 block w-full py-2.5 rounded-full font-medium text-center text-sm transition-all mb-6 ${
                       tier.badge
                         ? "bg-white/10 text-white border border-white/20 hover:bg-white/15" 
@@ -706,7 +708,7 @@ print(response.json())`;
               
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
                 <a 
-                  href="https://ai.onebrain.app/login"
+                  href={`${process.env.NEXT_PUBLIC_LOGIN_URL || 'https://ai.onebrain.app'}/api/login`}
                   className="group/btn w-full sm:w-auto px-8 py-4 text-lg font-medium text-black bg-white rounded-full hover:bg-gray-100 transition-all flex items-center justify-center gap-2"
                 >
                   Get Your API Key
